@@ -65,6 +65,22 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   name = "Sponsors"
   pre = "<i class='fa fa-check fa-lg'></i>"
   url = "/sponsorship.html"
+  
+[[menu.main]]
+  weight = 6
+  identifier = "media"
+  name = "Media"
+  pre = "<i class='fa fa-check fa-lg'></i>"
+  url = "/media.html"
+  
+  
+[[menu.main]]
+  weight = 7
+  identifier = "coc"
+  name = "COC"
+  pre = "<i class='fa fa-check fa-lg'></i>"
+  url = "/coc.html"
+
 
 
 

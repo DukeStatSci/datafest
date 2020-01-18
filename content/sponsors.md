@@ -3,7 +3,6 @@ title: "Sign up"
 markup: "mmark"
 ---
 
-
 Registration for DataFest 2020 will open late February for team members and consultants. Please check back then!
 
 In the meantime, team options are listed below if you would like to begin forming your teams.
