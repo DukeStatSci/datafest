@@ -81,6 +81,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   pre = "<i class='fa fa-check fa-lg'></i>"
   url = "/coc.html"
 
+[[menu.main]]
+  weight = 8
+  identifier = "faq"
+  name = "FAQ"
+  pre = "<i class='fa fa-check fa-lg'></i>"
+  url = "/faq.html"
+
 
 
 
