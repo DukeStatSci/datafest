@@ -1,0 +1,751 @@
+---
+title: "Simple Linear Regression"
+subtitle: "Inference & Prediction"
+author: "Dr. Maria Tackett"
+date: "09.09.19"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210-sticker-icon.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3.5,
+	fig.width = 5.8333,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+class: middle, center
+
+### [Click for PDF of slides](04-slr-inf.pdf)
+
+---
+
+###Announcements 
+
+- Lab 02 due **tomorrow at 11:59p**
+    - Make sure the .md file is updated on GitHub!
+    
+- Reading 01 due Wednesday
+    
+- Supplemental notes on Github
+
+- How grading works
+
+---
+
+###Check in
+
+- Any questions from last class?
+
+- Any questions about the lab?
+
+- Any questions about course logistics?
+
+---
+
+
+###Today's Agenda
+
+- Assessing model fit
+
+- Model assumptions
+
+- Inference for regression 
+
+- Prediction 
+
+---
+
+###Packages and Data
+
+```{r packages}
+library(tidyverse)
+library(broom)
+library(modelr)
+library(knitr)
+library(fivethirtyeight) #fandango dataset
+library(cowplot) #plot_grid() function
+```
+
+
+```{r data}
+movie_scores <- fandango %>%
+  rename(critics = rottentomatoes, 
+         audience = rottentomatoes_user)
+```
+
+---
+
+###rottentomatoes.com
+
+Can the ratings from movie critics be used to predict what movies the audience will like? 
+
+--
+
+```{r, echo=FALSE,out.width = '70%',fig.align='center'}
+knitr::include_graphics("img/03/movie-rating-1.png")
+```
+
+--
+
+```{r, echo=FALSE,out.width = '70%',fig.align='center'}
+knitr::include_graphics("img/03/movie-rating-2.png")
+```
+
+---
+
+###Critic vs. Audience Ratings
+
+- To answer this question, we will analyze the critic and audience scores from rottentomatoes.com.  
+    - The data was first used in the article [Be Suspicious of Online Movie Ratings, Especially Fandango's](https://fivethirtyeight.com/features/fandango-movies-ratings/).
+
+- Variables: 
+    - **`critics`**: critics score for the film (0 - 100)
+    - **`audience`**: Audience score for the film (0 - 100)
+---
+
+.small[
+```{r message=FALSE, warning=FALSE}
+ggplot(data = movie_scores, mapping = aes(x = critics, 
+                                          y = audience)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Audience Score vs. Critics Score")
+```
+]
+
+---
+
+###The Model 
+
+```{r}
+model <- lm(audience ~ critics, data = movie_scores)
+tidy(model) %>%
+  kable(format = "markdown", digits = 3)
+```
+
+
+$$\hat{\text{audience}} =  32.316 + 0.519 \times \text{critics}$$
+
+--
+
+- <font class = "vocab">Slope: </font> For each additional percentage point in the critics score, the audience score is expected to increase by 0.519 percentage points on average.
+
+- <font class = "vocab">Intercept: </font> If a movie gets a 0% from the critics, the audience score is expected to be 32.316%.
+
+
+---
+
+class: middle, center
+
+###Assessing Model Fit
+
+---
+
+### $R^2$
+- We can use the coefficient of determination, $R^2$, as one way to measure how well the model fits the data
+    - specifically how well it explains variation in $Y$
+
+- $R^2$ is the proportion of variation in $Y$ that is explained by the regression line 
+    - $R^2$ values range from 0 to 1
+    - Typically report $R^2$ as a percentage 
+    
+- Ideally, we'll have $R^2$ close to 1; however, it is difficult to determine what exactly is a "good" value of $R^2$. 
+    - It depends on the context of the data.
+
+---
+
+### Calculating $R^2$
+.instructions[
+$$R^2 = \frac{\text{TSS} - \text{RSS}}{\text{TSS}} = 1 - \frac{\text{RSS}}{\text{TSS}}$$
+]
+- <font class="vocab">Total Sum of Squares: </font>Total variation in the $Y$'s before fitting the regression line
+$$\text{TSS}= \sum\limits_{i=1}^{n}(y_i - \bar{y})^2 = (n-1)s^2_y$$
+
+- <font class="vocab">Residual Sum of Squares (RSS): </font>Total variation in the $Y$'s around the regression line (sum of squared residuals)
+$$\text{RSS} = \sum\limits_{i=1}^{n}[y_i - (\hat{\beta}_0 + \hat{\beta}_1x_i)]^2$$
+
+---
+
+### Rotten Tomatoes Data
+
+```{r}
+glance(model,movie_scores)$r.squared
+```
+
+.alert[
+The critics score explains about `r round(rsquare(model,movie_scores) * 100,2)`% of the variation in audience scores on rottentomatoes.com.
+]
+
+---
+
+class: middle, center
+
+### Checking Model Assumptions 
+
+---
+
+### Assumptions for Regression 
+
+1. <font class="vocab">Linearity: </font>The plot of the mean value for $y$ against $x$ falls on a straight line
+
+2. <font class="vocab">Constant Variance: </font>The regression variance is the same for all values of $x$
+
+3. <font class="vocab">Normality: </font> For a given $x$, the distribution of $y$ around its mean is Normal
+
+4. <font class="vocab">Independence: </font>All observations are independent
+
+---
+
+### Checking Assumptions 
+
+We can use plots of the residuals to check the assumptions for regression.
+
+1. Scatterplot of $y$ vs. $x$ (linearity). 
+    - Check this before fitting the regression model.
+
+2. Plot of residuals vs. predictor variable (constant variance, linearity)
+
+3. Histogram and Normal QQ-Plot of residuals (Normality)
+
+---
+
+### Residuals vs. Predictor
+
+- When all the assumptions are true, the values of the residuals reflect random (chance) error
+
+- We can look at a plot of the residuals vs. the predictor variable
+
+- There should be no distinguishable pattern in the residuals plot, i.e. the residuals should be randomly scattered 
+
+- A non-random pattern suggests assumptions might be violated 
+
+---
+
+### Plots of Residuals
+
+```{r, echo=FALSE,out.width = '80%',fig.align='center'}
+knitr::include_graphics("img/02/resid_plots.png")
+```
+
+---
+
+.small[
+```{r}
+movie_scores <- movie_scores %>%
+  mutate(residuals = resid(model))
+```
+```{r}
+ggplot(data = movie_scores, mapping = aes(x = critics, y = residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept = 0, color = "red")+
+  labs(title = "Residuals vs. Critics Score")
+```
+]
+
+---
+
+### Checking Normality
+
+- Examine the distribution of the residuals to determine if the Normality assumption is satisfied 
+
+
+- Plot the residuals in a histogram and a Normal QQ plot to visualize their distribution and assess Normality
+
+- Most inference methods for regression are robust to some departures from Normality
+
+---
+
+### Normal QQ-Plot
+
+```{r, echo=FALSE,out.width = '100%',fig.align='center'}
+knitr::include_graphics("img/02/normal_qqplot.png")
+```
+
+---
+
+```{r} 
+ggplot(data = movie_scores, mapping = aes(x = residuals)) + 
+  geom_histogram() + 
+  labs(title = "Distribution of Residuals") 
+```
+
+---
+
+```{r}
+ggplot(data = movie_scores, mapping = aes(sample = residuals)) + 
+  stat_qq() + 
+  stat_qq_line() +
+  labs(title = "Normal QQ Plot of Residuals")
+```
+
+
+---
+
+### Checking Independence
+
+- Often, we can conclude that the independence assumption is sufficiently met based on a description of the data and how it was collected. 
+
+- Two common violations of the independence assumption: 
+    - <font class="vocab">Serial Effect</font>: If the data were collected over time, the residuals should be plotted in time order to determine if there is serial correlation 
+
+    - <font class="vocab">Cluster Effect</font>: You can plot the residuals vs. a group identifier or use different markers (colors/shapes) in the residual plot to determine if there is a cluster effect. 
+
+---
+
+### Example: Birth rate vs. Per Capita Income
+
+- A [2011 study by Pew Research](http://www.pewsocialtrends.org/2011/10/12/in-a-down-economy-fewer-births/) looked at the economy's effect on birthrate in the United States. 
+- We will look at data for Virginia and Washington D.C. years 2000 - 2009
+- Birth rate: Births per 100,000 women ages 15-44
+- Per Capita Income: average income per person
+
+---
+
+```{r, echo=F}
+pew_data <- read_csv("data/birthrate.csv")
+```
+<small>
+```{r}
+ggplot(data = pew_data, mapping = aes(x = percapitaincome, y = birthrate)) + 
+  geom_point() + 
+  geom_smooth(method = "lm",se=FALSE) + 
+  labs(title = "Birth rate vs. Per Capita Income", 
+       x = "Per Capita Income ($)", y = "Birth Rate") 
+```
+</small>
+
+---
+### Birthrate vs. Per Capita Income
+```{r}
+pew_model <- lm(birthrate ~ percapitaincome, data = pew_data)
+tidy(pew_model) %>%
+  kable(format = "markdown", digits = 3)
+```
+<br><br>
+
+$$\hat{\text{Birth Rate}} = -18.2 + 0.002 \times \text{ Per Capita Income}$$
+
+---
+
+### Residuals vs. Explanatory Variable
+<small>
+```{r}
+pew_data <- pew_data %>% 
+  mutate(residuals = resid(pew_model))
+```
+```{r echo=F}
+ggplot(data = pew_data, mapping = aes(x = percapitaincome, y = residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0, color = "red") +
+  labs(title = "Residuals vs. Per Capita Income", 
+       x = "Per Capita Income ($)")
+```
+</small>
+
+---
+
+### Residuals: Cluster Effect 
+```{r,echo=F}
+ggplot(data=pew_data, mapping = aes(x=percapitaincome,y=residuals,color=State)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(title="Residuals vs. Per Capita Income", 
+       x="Per Capita Income ($)")
+```
+
+---
+ 
+### Residuals: Serial Effect
+```{r,echo=F}
+ggplot(data=pew_data, aes(x=Year,y=residuals,color=State)) + geom_point() +
+  geom_hline(yintercept=0,color="red")+
+  labs("Residuals vs. Year") + 
+  scale_x_continuous(breaks=seq(2000,2009,1))
+```
+
+---
+
+class: middle, center
+
+### Inference for $\beta_1$
+
+---
+
+### Questions of interest
+
+In our example, we will treat the data as a random sample of movies from rottentomatoes.com
+
+**Questions of interest**
+- What is a plausible range of values of the true population slope for `critics`? (<font class = "vocab">confidence interval</font>)
+
+- Is there truly a linear relationship between the critic and audience scores? 
+    - We estimated $\hat{\beta}_1 = 0.519$, but is there sufficient evidence to conclude that the true population slope $\beta$ is different from 0? (<font class = "vocab">hypothesis test</font>)
+    
+---
+
+class: middle, center
+
+### What is a plausible range of values of the true population slope for `critics`?
+
+---
+
+### General form of the CI
+
+- Let <font class="vocab">SE</font> be the standard error of the statistic used to estimate the parameter of interest, then the general form of the confidence interval is
+
+.alert[
+$$\text{ Estimate} \pm \text{ (critical value) } \times \text{SE}$$
+]
+- *Note*: The critical value is determined by the distribution of the estimate (statistic) and the confidence level
+
+- For the regression slope: 
+    - $\hat{\beta}_1$ is the statistic used to estimate the parameter, $\beta_1$ 
+    - We will write the confidence interval as 
+    $$\mathbf{\hat{\beta}_1 \pm t^* SE(\hat{\beta}_1)}$$
+    
+---
+
+### Confidence interval for $\beta_1$
+
+- The confidence interval for the regression slope is 
+
+.alert[
+$$\mathbf{\hat{\beta}_1 \pm t^* SE(\hat{\beta}_1)}$$
+]
+
+- $t^*$ is the critical value associated with the confidence level.
+  + It is calculated from a $t$ distribution with $n-2$ degrees of freedom
+  
+- $SE(\hat{\beta}_1)$ is the standard error for the slope 
+
+$$SE(\hat{\beta}_1) = \sqrt{\frac{\hat{\sigma}^2}{\sum\limits_{i=1}^n (x_i - \bar{x})^2}} \hspace{2.5mm} = \hspace{2.5mm} \hat{\sigma}\sqrt{\frac{1}{(n-1)s_X^2}}$$
+
+---
+
+### What is $\hat{\sigma}$?
+
+- Recall, the residual is the difference between the observed response the predicted response (the estimated mean) 
+    - The residual for the ith observation, $(x_i, y_i)$, is
+    
+    $$e_i = y_i - (\hat{\beta}_0 + \hat{\beta}_1 x_i)$$ 
+
+- The <font class = "vocab">Residual Standard Error</font> is the estimate of variation about the regression line
+    - Also known as the **Root Mean Square Error (RMSE)**
+
+.alert[
+$$\hat{\sigma} = \sqrt{\frac{1}{n-2}\sum\limits_{i=1}^{n} e_i^2}$$
+]
+---
+
+### Why *t*? 
+
+.alert[
+$$\hat{\beta}_1 \sim N \Bigg(\beta_1, \sigma\sqrt{\frac{1}{(n-1)s_X^2}} \Bigg)$$
+]
+
+- We don't know $\sigma$, so we use the estimate $\hat{\sigma}$ in our calculations. Therefore, we use the *t* distribution when we calculate the confidence interval (and conduct hypothesis tests) to account for the extra variability that's been introduced
+
+- The critical value $t^*$ is calculated from the *t(n-2)* distribution - the *t* distribution with *n-2* degrees of freedom.
+
+---
+
+### Movies data: Critical value
+
+```{r}
+qt(0.975, 144)
+```
+
+```{r echo = F}
+ggplot(data.frame(x = c(-4, 4)), aes(x)) +
+  stat_function(fun = dt, args =list(df =144)) +
+  stat_function(fun = dt,   args =list(df =144),
+                xlim = c(-1.976575, 1.976575),
+                geom = "area", fill = "navy") + 
+  geom_text(x=0, y=0.15, label="0.95", color = "white", size = 10) +
+  geom_text(x = -2.2, y = 0.07, label = "-1.977", size = 3) + 
+  geom_text(x =  2.2, y = 0.07, label = "1.977", size = 3)
+```
+
+---
+### Calculating the 95% CI for $\beta_1$
+
+```{r echo = F}
+n <- nrow(movie_scores)
+var.x <- var(movie_scores$critics)
+sigma <- glance(model)$sigma
+beta1 <- tidy(model)$estimate[2]
+crit.val <- qt(0.975, n-2)
+summaries <- tibble(n = n, 
+                    var.x = var.x,
+                    sigma = sigma,
+                    beta1 = beta1, 
+                    crit.val = crit.val)
+summaries %>% kable(format = "markdown", digits = 3)
+```
+
+.instructions[
+Write the equation for the 95% confidence interval for $\beta_1$, the coefficient (slope) of `critics`. 
+]
+
+---
+
+### Interpretation 
+
+```{r}
+model %>%
+  tidy(conf.int=TRUE) %>%
+  kable(format = "markdown", digits = 3)
+```
+
+.instructions[
+Interpret the 95% confidence interval for $\beta_1$, the coefficient (slope) of critics.
+]
+
+---
+
+class: middle, center
+
+### Is there truly a linear relationship between the critic and audience scores?
+
+---
+
+### Recall: Outline of Hypothesis Test
+
+1. State the hypotheses
+
+2. Calculate the test statistic 
+
+3. Calculate the p-value
+
+4. State the conclusion in the context of the problem
+
+---
+
+### 1. State the hypotheses
+
+- We are often interested in testing whether there is a significant linear relationship between the explanatory and response variable 
+
+- If there is no linear relationship between the two variables, the population regression slope, $\beta_1$, would equal 0 
+--
+
+- We can test the hypotheses: 
+
+.alert[
+$$\begin{aligned}& H_0: \beta_1 = 0\\& H_a: \beta_1 \neq 0\end{aligned}$$
+]
+
+- This is the test conducted by the `lm()` function in R
+
+
+---
+
+### 2. Calculate the test statistic
+
+$$\begin{aligned}& H_0: \beta_1 = 0\\& H_a: \beta_1 \neq 0\end{aligned}$$
+
+
+.alert[
+**Test Statistic:**
+$$\begin{aligned}\text{test statistic} &= \frac{\text{Estimate} - \text{Hypothesized}}{SE} \\[10pt]
+&= \frac{\hat{\beta}_1 - 0}{SE(\hat{\beta}_1)}\end{aligned}$$
+]
+
+---
+
+### 3. Calculate the p-value
+
+<font class="vocab">p-value</font> is calculated from a $t$ distribution with $n-2$ degrees of freedom
+
+.alert[
+$$\text{p-value} = P(t \geq |\text{test statistic}|)$$
+]
+
+```{r echo = F}
+ggplot(data.frame(x = c(-4, 4)), aes(x)) +
+  stat_function(fun = dt, args =list(df =144)) +
+  stat_function(fun = dt,   args =list(df =144),
+                xlim = c(-4, -1.5),
+                geom = "area", fill = "navy") + 
+    stat_function(fun = dt,   args =list(df =144),
+                xlim = c(1.5, 4),
+                geom = "area", fill = "navy")
+```
+
+---
+
+
+class: middle, center
+
+.instructions[
+**Write the general interpretation of the p-value for tests of $\beta_1$.**
+]
+
+---
+
+### 4. State the conclusion 
+
+|  Magnitude of p-value |             Interpretation            |
+|:---------------------:|:-------------------------------------:|
+| p-value < 0.01        | strong evidence against $H_0$         |
+| 0.01 < p-value < 0.05 | moderate evidence against $H_0$       |
+| 0.05 < p-value < 0.1  | weak evidence against $H_0$           |
+| p-value > 0.1         | effectively no evidence against $H_0$ |
+<br> 
+<br>
+
+**Note:** These are general guidelines. The strength of evidence depends on the context of the problem.
+
+
+---
+
+### Movie data: Hypothesis test for $\beta_1$ 
+
+```{r}
+model %>%
+  tidy() %>%
+  kable(format = "markdown", digits = 3)
+```
+
+.instructions[
+a. State the hypotheses in (1) words and (2) statistical notation.  
+
+b. What is the meaning of the test statistic in the context of the problem? 
+
+c. What is the meaning of the p-value in the context of the problem?
+
+d. State the conclusion in context of the problem.
+]
+
+---
+
+class: middle, center
+
+### Predictions 
+
+---
+
+class: regular
+
+### Predictions for New Observations 
+
+- We can use the regression model to predict for a response at $x_0$
+
+$$\hat{y} =  \hat{\beta}_0 + \hat{\beta}_1 x_0$$
+<br> 
+
+- Because the regression models produces the mean response for a given value of $x_0$, it will produce the same estimate whether we want to predict the mean response at $x_0$ or an individual response at $x_0$ 
+
+---
+
+class: regular 
+
+### Movies Data
+
+.instructions[
+What is the predicted audience score **for a movie** that has a critic score of 60%?
+]
+<br><br>
+
+.instructions[
+What is the predicted average audience score **for the subset of movies** that have a critic score of 60%?
+]
+
+---
+
+class: regular 
+
+### Predictions for New Observations 
+
+- There is uncertainty in our predictions, so we need to calculate an a standard error (SE) to capture the uncertainty
+
+- The SE is different depending on whether you are predicting an average value or an individual value
+
+- SE is larger when predicting for an individual value than for an average value 
+
+---
+
+### Standard errors for predictions
+
+.alert[
+**Predicting the mean response**
+
+$$SE(\hat{\mu}) = \hat{\sigma}\sqrt{\frac{1}{n} + \frac{(x-\bar{x})^2}{\sum\limits_{i=1}^n(x_i - \bar{x})^2}}$$
+]
+<br><br>
+
+--
+
+.alert[
+**Predicting an individual response**
+
+$$SE(\hat{y}) = \hat{\sigma}\sqrt{1 + \frac{1}{n} + \frac{(x-\bar{x})^2}{\sum\limits_{i=1}^n(x_i - \bar{x})^2}}$$
+]
+
+---
+
+
+### Movie data: Predicting the mean response
+
+We wish to predict the <font class="vocab">mean</font> audience score for the subset of movies with a critics score of 60%. 
+
+
+```{r eval = F}
+x0 <- data.frame(critics = c(60))
+predict.lm(model, x0, interval = "confidence", conf.level = 0.95) #<<
+```
+
+.instructions[
+Interpret the interval in the context of the data.
+]
+
+---
+
+### Movies data: Predicting an individual response
+
+We wish to predict the <font class="vocab">mean</font> audience score for the subset of movies with a critics score of 60%. 
+
+
+```{r eval = F}
+x0 <- data.frame(critics = c(60))
+predict.lm(model, x0, interval = "prediction", conf.level = 0.95) #<<
+```
+
+.instructions[
+Interpret the interval in the context of the data.
+]
+
+
+
+

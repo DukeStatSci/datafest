@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Multinomial Logistic Regression</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Multinomial Logistic Regression
+## Review &amp; Practice
+### Dr. Maria Tackett
+### 11.11.19
+
+---
+
+
+
+
+class: middle, center
+
+### [Click for PDF of slides](21-multinomial-logistic-pt3.pdf)
+---
+
+### Announcements
+
+- Lab 09 due Tuesday at 11:59p
+
+- Project Regression Analysis due Wed, Nov 20 at 11:59p
+
+
+
+---
+
+### HW 05: Interpreting interaction term 
+
+- .vocab[Response ]: `log_odds_removed`
+
+
+
+
+|term                | estimate|
+|:-------------------|--------:|
+|(Intercept)         |   -1.123|
+|distance            |    0.018|
+|morphlight          |    0.374|
+|distance:morphlight |   -0.028|
+
+.question[
+.small[
+*"For every 1 km increase in distance, the log-odds that a light moth is removed from the tree trunk is (-0.028 + 0.018) = -0.01 times the log-odds of a dark moth being removed from the tree trunk."*
+
+1. Why is this interpretation incorrect?
+2. Rewrite the interpretation of the interaction effect in terms of `log_odds_removed`. 
+]
+]
+
+---
+### HW 05: Interpreting interaction term 
+ 
+
+|term                | estimate|
+|:-------------------|--------:|
+|(Intercept)         |   -1.123|
+|distance            |    0.018|
+|morphlight          |    0.374|
+|distance:morphlight |   -0.028|
+
+.question[
+1. Write the interpretation of the interaction effect in terms of the **odds** a moth is removed.
+]
+
+---
+
+class: middle, center
+
+### Multinomial Logistic Regression
+
+---
+
+### Practice: *Sesame Street*
+
+- We will analyze data from an [experiment by the Educational Testing Service](http://files.eric.ed.gov/fulltext/ED122799.pdf) to test the effectiveness of the children's program *Sesame Street*, an educational program designed to teach young children basic educational skills such as counting and the alphabet
+
+- As part of the experiment, children were assigned to one of two groups: those who were encouraged to watch the program and those who were not
+
+- The show is only effective if children watch it, so we want to understand what effect the encouragement had on the frequency of viewing after adjusting for other characteristics
+
+
+---
+
+### Response Variable
+
+.pull-left[ 
+
+&lt;font class="vocab"&gt;`viewcat`&lt;/font&gt;
+  + 1: rarely watched show
+  + 2: once or twice a week
+  + 3: three to five times a week
+  + 4: watched show on average more than five times a week
+]
+
+.pull-right[
+&lt;img src="img/21/sesame_street.jpg" style="display: block; margin: auto;" /&gt;
+]
+.small[[*In pictures: The early years of 'Sesame Street'*]( https://www.cnn.com/2019/11/10/entertainment/gallery/sesame-street-early-years/index.html)
+]
+---
+
+### Predictor Variables
+
+- &lt;font class="vocab"&gt;`age`:&lt;/font&gt; child's age in months
+- &lt;font class="vocab"&gt;`prenumb`: &lt;/font&gt;score on numbers pretest (0 to 54)
+- &lt;font class="vocab"&gt;`prelet`: &lt;/font&gt;score on letters pretest (0 to 58)
+- &lt;font class="vocab"&gt;`viewenc`:&lt;/font&gt; 1: encouraged to watch, 2: not encouraged
+- &lt;font class="vocab"&gt;`site:`&lt;/font&gt;
+  + 1: three to five year old from urban area
+  + 2: four year old from suburban area
+  + 3: from rural area with high socioeconomic status
+  + 4: from rural area with low socioeconomic status
+  + 5: from Spanish speaking home
+
+.footnote[[Full data description](http://www2.stat.duke.edu/~jerry/sta210/sesamelab.html)]
+
+---
+
+### Analysis 
+
+- Make a copy of the **Sesame Street** project in RStudio Cloud
+
+- Make sure your group's answers are recorded in one team member's RStudio Cloud project.
+  - At the top of the project, write the names of the members' who are working on the appex. 
+  - Submit the name of the team member recording the responses: https://forms.gle/pN6k1M8J3twXwThs6
+
+- Other team members can follow along in RStudio Cloud or using the [instructions](https://www2.stat.duke.edu/courses/Fall19/sta210.001/appex/21-multinomial-logistic.html).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

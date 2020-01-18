@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Lab 01</title>
+    <meta charset="utf-8" />
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lab 01
+## Review R
+### 01.16.19
+
+---
+
+
+
+
+
+
+class: middle, center
+
+## Meet Your TAs!
+
+---
+
+### Introduce Yourself!
+
+- Name
+
+- Major or intended major
+
+- Share a boring fact about yourself 
+
+---
+
+### Today's Agenda
+
+1. Questions about the syllabus 
+
+2. What to expect in lab
+
+3. Lab 01 intro and demos: Introduce the lab, and work through the first section as a class.
+
+4. On your own: Work on the rest of the lab "on your own", but feel free to check in with classmates as much as you like.
+
+---
+
+### Any questions about the syllabus?
+
+Course website: [http://bit.ly/sta210-sp20](http://bit.ly/sta210-sp20)
+
+---
+
+### What to expect in lab
+
+- Introduction to the lab assignment (~ 5 - 10 min, longer today)
+
+- Work on the lab assignment (individual today, but generally done in teams)
+
+- Lab slides and instructions posted in the schedule on the course website under &lt;i class="fa fa-file-code-o fa-lg"&gt;&lt;/i&gt;
+    + Go to the course website to find today's lab instructions.
+
+- All assignments will be completed using RStudio and GitHub
+    + You will submit your GitHub repo on Gradescopes
+---
+
+### Tips
+
+- You do not have to finish the lab in class, they will always be due the **following Tuesday at 11:59p**. One work strategy is to get through portions that you think will be most challenging (which initially might be the coding component) during lab when a TA can help you on the spot and leave the narrative writing until later.
+
+- Do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality lab report.
+
+---
+
+class: center, middle
+
+## Lab 01 intro and demos
+
+---
+
+### Goals
+
+&lt;small&gt;
+- **Introduce you to R and RStudio:**
+    + R is the name of the programming language itself 
+    + RStudio is a convenient interface
+    + Access RStudio through the Docker container on Duke VM Manage - UPDATE LINK!
+
+
+- **Introduce you to Git and GitHub:** collaboration and version control system that we will be using throughout the course
+    + Git is a version control system -- like "Track Changes" features from Microsoft Word on steroids
+    + GitHub is the home for your Git-based projects on the internet
+    
+- **Take small steps:**
+    + This a solo lab to make versioning (working with Git) simpler
+    + Next week you’ll learn about collaborating on GitHub and produce a single lab report for the team
+
+&lt;/small&gt;
+
+---
+
+### Getting started 
+
+You may watch or follow along: 
+
+- Find the GitHub repo with the prefix `lab-01-review-r`. 
+
+- On GitHub, click on the green **Clone or download button**, select **Use HTTPS** if it is not already selected. Click on the clipboard icon to copy the repo URL.
+
+- Go to https://vm-manage.oit.duke.edu/containers and login with your Duke NetId and Password.
+
+- Click to log into the Docker container **STA 210 - Regression Analysis**. You should now see the RStudio environment. 
+
+---
+
+### Getting started 
+
+- Go to *File* ➡️ *New Project* ➡️ *Version Control* ➡️ *Git*. 
+
+- Copy and paste the URL of your assignment repo into the dialog box *Repository URL*. You can leave the direct name empty. It will default to the name of the GitHub repo.
+
+
+- Click *Create Project*, and you should see the contents from your GitHub repo in the **Files** pane in RStudio. 
+
+&lt;br&gt;&lt;br&gt;
+
+Now it's your turn! When you're done with this part, you may continue if you like or wait until I demonstrate the next part. Please raise your hand if you have any questions.
+
+---
+
+### Configure git
+
+Next, we need to configure git so RStudio and GitHub can communicate with each other. You may watch or follow along: 
+
+- Type the following lines of code in the **console**: 
+
+&lt;small&gt;
+
+```r
+library(usethis)
+use_git_config(user.name="GitHub username", 
+               user.email="your email")
+```
+&lt;/small&gt;
+
+- If you get an error message, it may be because you need to install the `usethis` package. You can type the code below in the console to install the package
+
+
+```r
+install.packages("usethis")
+```
+
+---
+
+### Submitting Assignments
+
+- You will be submitting your final assignment in [Gradescope](http://www.gradescope.com)
+
+- We will be grading the **PDF** in your GitHub repo, so make sure it has all of your final code, output, graphs, and narrative. 
+
+- The assignment must be submitted &lt;u&gt;on Gradescope&lt;/u&gt; by Tuesday, 1/21 at 11:59p to be "on time". 
+
+- I recommend submitting it early in case something comes up at the last minute. 
+    - You can resubmit as much as you want before deadline, so you can resubmit your work if you change something.
+    
+- Detailed instructions on how to submit the lab are at the [end of the lab instructions](https://www2.stat.duke.edu/courses/Spring20/sta210.001/labs/lab-01-review-r.html#submitting-the-assignment).
+    
+
+---
+
+class: middle, center
+
+## You're now ready to complete the rest of lab!
+
+.instructions[
+Please raise your hand if you need help as you work on the lab.
+]
+
+---
+
+### Need more practice with R? 
+
+- [Chapter 2: Get Started](https://socviz.co/gettingstarted.html#work-in-plain-text-using-rmarkdown) *Data Visualization by Kieran Healy* 
+
+- [Chapter 3: Data visualization](https://r4ds.had.co.nz/data-visualisation.html) in *R for Data Science* by Hadley Wickham
+
+- RStudio Cloud Primers
+  - Visualization Basics: https://rstudio.cloud/learn/primers/1.1
+  - Work with Data: https://rstudio.cloud/learn/primers/2
+  - Visualize Data: https://rstudio.cloud/learn/primers/3
+
+- Visualization in R using ggplot2 workshop by the Center for Data and Visualization Sciences 
+  - Jan 30, 1p - 3p
+  - More info &amp; registration: https://duke.libcal.com/event/6085379
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

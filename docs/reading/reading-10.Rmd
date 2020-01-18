@@ -1,0 +1,21 @@
+---
+title: "Reading 10: Multinomial Regression, Part 1"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Due Mon, Nov 4
+
+### Required:
+
+- [Handbook of Regression Analysis](http://sakai.duke.edu) (Available for download on Sakai)
+    - Section 9.1: Introduction
+    - Section 9.2: Concepts and Background Material
+<br><br>
+
+[All STA 210 Readings](readings.html)    

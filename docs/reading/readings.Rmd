@@ -1,0 +1,37 @@
+---
+title: "Readings"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+- [Reading 01: Analysis of Variance](reading-01.html)
+
+- [Reading 02: Multiple Linear Regression](reading-02.html)
+
+- [Reading 03: Special Predictors](reading-03.html)
+
+- [Reading 04: Transformations](reading-04.html)
+
+- [Reading 05: Model Assessment & Selection](reading-05.html)
+
+- [Reading 06: Model Diagnostics](reading-06.html)
+
+- [Reading 07: Logistic Regression, Part 1](reading-07.html)
+
+
+- [Reading 08: Logistic Regression, Part 2](reading-08.html)
+
+
+- [Reading 09: Logistic Regression, Part 3](reading-09.html)
+
+- [Reading 10: Multinomial Regression, Part 1](reading-10.html)
+
+- [Reading 11: Multinomial Regression, Part 2](reading-11.html)
+
+- [Reading 12: Log-linear Regression](reading-12.html)
+
+
+
+
+*This list will be udpated as the semester progresses*

@@ -1,0 +1,552 @@
+---
+title: "Analysis of Variance"
+subtitle: "(ANOVA)"
+author: "Dr. Maria Tackett"
+date: "09.16.19"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210-sticker-icon.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3.5,
+	fig.width = 5.8333,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+class: middle, center
+
+### [Click for PDF of slides](06-anova.pdf)
+
+---
+
+### Announcements 
+
+- Lab 03 - **due Tuesday, 9/17 at 11:59p**
+
+- HW 01 - **due Wednesday, 9/18 at 11:59p**
+
+- Reading 02: Multiple Linear Regression - for Wednesday's class
+    
+   
+---
+
+### Check in
+
+- Any questions from last class?
+
+---
+
+
+### Today's Agenda
+
+- Analysis of Variance to compare group means
+
+- Accounting for multiple comparisons
+
+---
+
+
+
+### Packages
+
+```{r packages}
+library(tidyverse)
+library(broom)
+library(knitr)
+```
+
+---
+
+### Population densities in the Midwest
+
+- Today's data is from the `midwest` dataset in the ggplot2 package
+
+- The data contains demographic information for all counties in each of the states in the Midwest: 
+Illinois (IL), Indiana (IN), Michigan (MI), Ohio (OH), and Wisconsin (WI)
+    - We will focus on `state` and `popdensity` (population density)
+
+```{r}
+glimpse(midwest)
+```
+
+---
+
+### Exploratory Data Analysis 
+
+- **Question**: Is there a significant difference in the mean county population densities across states in the Midwest?
+
+```{r echo = F}
+ggplot(data = midwest, aes(x = state, y = popdensity)) +
+  geom_boxplot() + 
+  labs(title = "Population Density by State", 
+       subtitle = "in the Midwest", 
+       x = "State", 
+       y = "Population Density")
+```
+
+---
+
+The distributions are very skewed by outliers, so let's look at the log of population density (more on log transformations next week)
+
+```{r}
+midwest <- midwest %>% mutate(log_popdensity = log(popdensity))
+```
+
+```{r echo = F}
+ggplot(data = midwest, aes(x = state, y = log_popdensity)) +
+  geom_boxplot() + 
+  labs(title = "Log(Population Density) by State", 
+       subtitle = "in the Midwest", 
+       x = "State", 
+       y = "Logged Population Density")
+```
+
+---
+
+```{r}
+ggplot(data = midwest, aes(x = log_popdensity, fill = state)) +
+  geom_density(alpha = 0.5) + 
+  labs(title = "log(Population Density) by State", 
+       subtitle = "in the Midwest", 
+       x = "log(Population Density)", 
+       color = "State")
+```
+
+---
+
+### Exploratory Data Analysis
+
+```{r}
+midwest %>%
+  group_by(state) %>%
+  summarise(n_counties = n(), mean = mean(log_popdensity), 
+            var = var(log_popdensity))
+```
+
+---
+
+class: middle, center
+
+### Using ANOVA to compare group means
+
+---
+
+class: middle
+
+So far, we have used a <u>*quantitative*</u> predictor variable to understand the variation in a quantitative response variable.
+<br>
+
+
+Now, we will use a <u>*categorical (qualitative)*</u> predictor variable to understand the variation in a quantitative response variable.
+
+---
+
+### Notation
+
+- $K$ is number of mutually exclusive groups. We index the groups as $i = 1,\dots, K$.
+<br>
+
+--
+
+- $n_i$ is number of observations in group $i$
+<br>
+
+--
+
+- $n = n_1 + n_2 + \dots + n_K$ is the total number of observations in the data
+<br>
+
+--
+  
+- $y_{ij}$ is the $j^{th}$ observation in group $i$, for all $i,j$
+<br>
+
+--
+
+- $\mu_i$ is the population mean for group $i$, for $i = 1,\dots, K$
+
+---
+
+### Motivating ANOVA
+
+- <font class = "vocab">Question: </font> Is there a significant relationship between the predictor variable $x$ and the response variable $y$?
+
+- In other words, is the mean value of the response equal for all groups? 
+
+
+--
+.alert[ 
+**Model structure:**
+
+$$y_{ij} = \mu + \alpha_i + \epsilon_{ij}$$
+- $\mu$ is the overall mean, 
+- $\alpha_i$ is how much the mean for group $i$ deviates from $\mu$
+- $\epsilon_{ij}$ is the amount $y_{ij}$ deviates from the group mean
+]
+
+--
+
+- Note that the mean response for group $i$ is $\mu_i = \mu + \alpha_i$. 
+
+---
+
+### Motivating ANOVA
+
+.alert[
+$$y_{ij} = \mu + \alpha_i + \epsilon_{ij}$$
+]
+
+- <font class="vocab">Assumption: </font> $\epsilon_{ij}$ follows a Normal distribution with mean 0 and constant variance $\sigma^2$
+$$\epsilon_{ij} \sim N(0,\sigma^2)$$
+
+- This is the same as $$y_{ij} \sim N(\mu_i, \sigma^2)$$
+  
+---
+
+### Hypotheses
+
+- <font class="vocab">Question of interest </font> Is there a significant difference in the means across the $K$ groups?
+
+- To answer this question, we will test the following hypotheses:
+
+.alert[
+$$
+\begin{aligned}
+&H_0: \mu_1 = \mu_2 = \dots =  \mu_K\\
+&H_a: \text{At least one }\mu_i \text{ is not equal to the others}
+\end{aligned}
+$$
+]
+
+--
+
+- <font class = "vocab">How to think about it:</font>  If the sample means are "far apart", " there is evidence against $H_0$
+
+- We will calculate a test statistic to quantify "far apart" in the context of the data
+ 
+---
+
+### Analysis of Variance (ANOVA)
+
+- **Main Idea: ** Decompose the <font color="green">total variation</font> in the data into the variation <font color="blue">between groups</font> and the variation <font color="red">within each group</font>
+
+$$\color{green}{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}- \bar{y})^2}=\color{blue}{\sum_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2} + \color{red}{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y}_i)^2}$$
+<br>
+
+--
+
+- If the variation <font color="blue">between groups</font> is significantly greater than the variation <font color="red">within each group</font>, then there is evidence against the null hypothesis.
+
+---
+
+### ANOVA table for comparing means
+
+.small[
+|  | Sum of Squares | DF | Mean Square | F-Stat| p-value |
+|------------------|----------------|--------------------|-------------|-------------|--------------------|
+| Between (Model) | $\sum\limits_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2$ | $K-1$ | $SSB/(K-1)$ | $MSB/MSW$ | $P(F > \text{F-Stat})$ |
+| Within (Residual) | $\sum\limits_{i=1}^{K}\sum\limits_{j=1}^{n_i}(y_{ij}-\bar{y}_i)^2$ | $n-K$ | $SSW/(n-K)$ |  |  |
+| Total | $\sum\limits_{i=1}^{K}\sum\limits_{j=1}^{n_i}(y_{ij}-\bar{y})^2$ | $n-1$ | $SST/(n-1)$ |  |  |
+]
+
+---
+
+### F-Distribution 
+
+The ANOVA test statistic follows an $F$ distribution
+
+```{r, echo=F, fig.height = 4.2}
+x <- seq(from =0, to = 5, length = 100)
+
+# Evaluate the densities
+y_1 <- df(x, 1,2)
+y_2 <- df(x,2,2)
+y_3 <- df(x,10,2)
+y_4 <- df(x,10,10)
+
+# Plot the densities
+plot(x, y_1, col = 1, type = "l", ylab="",lwd=3)
+lines(x,y_2, col = 2,lwd=3)
+lines(x, y_3, col = 3,lwd=3)
+lines(x, y_4, col = 4,lwd=3)
+
+# Add the legend
+legend("topright", title = "F Distribution",
+       c("df = (1,2)", "df = (2,2)", "df = (10,2)", "df = (10,10)"), 
+       col = c(1, 2, 3, 4), lty = 1)
+```
+
+---
+
+### Total Variation
+
+- Total variation = variation between and within groups 
+
+$$SST =\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y})^2$$
+--
+
+- Degrees of freedom
+$$DFT = n-1$$
+--
+
+- Estimate of the variance across all observations: 
+$$\frac{SST}{DFT} = \frac{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y})^2}{n-1} = s_y^2$$
+
+---
+
+### Between Variation (Model)
+
+- Variation in the group means
+
+$$SSB = \sum_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2$$
+--
+
+- **Degrees of freedom**
+$$DFB = K-1$$
+--
+
+- **Mean Squares Between**
+$$MSB = \frac{SSB}{DFB} = \frac{\sum_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2}{K-1}$$
+--
+
+- MSB is an estimate of the variance of the $\mu_i$'s 
+  
+  
+---
+
+### Within Variation (Residual)
+
+- Variation within each group
+
+$$SSW=\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y}_k)^2$$
+--
+
+- **Degrees of freedom**
+
+$$DFW = n-K$$
+--
+
+- **Mean Squares Within**
+$$MSW = \frac{SSW}{DFW} = \frac{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y}_i)^2}{n-K}$$
+--
+
+- MSW is the estimate of $\sigma^2$, the variance within each group
+
+---
+
+### Population densities in the Midwest
+
+```{r}
+pop_anova <- aov(log_popdensity ~ state, data = midwest)
+tidy(pop_anova) %>% kable(format = "markdown", digits = 3)
+```
+
+.question[
+- How many observations (counties) are in the data? 
+
+- What is $\hat{\sigma}^2$, the estimated variance within each group? 
+
+- State the null and alternative hypothesis for this test. What is your conclusion?
+]
+
+
+---
+
+### Assumptions for ANOVA
+
+- <font class="vocab">Normality: </font> $y_{ij} \sim N(\mu_i, \sigma^2)$
+
+- <font class="vocab">Equal (Constant) Variance: </font> The population distribution for each group has a common variance, $\sigma^2$
+
+- <font class="vocab">Independence: </font> The observations are independent from one another
+    - This applies to observation within and between groups
+
+- We can typically check these assumptions in the exploratory data analysis
+
+.question[
+Are the assumptions satisfied in the Midwest analysis?
+]
+
+---
+
+### Robustness to Assumptions
+
+- <font class="vocab">Normality: </font> $y_{ij} \sim N(\mu_i, \sigma^2)$
+  + ANOVA relatively robust to departures from Normality. 
+  + Concern when there are strongly skewed distributions with different sample sizes (especially if sample sizes are small, < 10 in each group)
+  
+
+- <font class="vocab">Independence: </font> There is independence within and across groups
+  + If this doesn't hold, should use methods that account for correlated errors
+
+---
+
+### Robustness to Assumptions
+
+
+- <font class="vocab">Equal (Constant) Variance: </font> The population distribution for each group has a common variance, $\sigma^2$
+  + Critical assumption, since the pooled (combined) variance is important for ANOVA
+  + General rule: If the sample sizes within each group are approximately equal, the results of the F-test are valid if the largest variance is no more than 4 times the small variance (i.e. the largest standard deviation is no more than 2 times the smallest standard deviation)
+  
+---
+
+class: middle, center
+
+## Multiple Comparisons
+
+---
+
+### After ANOVA: Individual Group Means
+
+- Suppose you conduct an ANOVA and conclude that at least one group mean has a different mean response value. 
+
+- The next question you want to answer is **which group?**
+
+--
+
+- One way to answer this question is to compare the estimated means for each group, accounting for the random variability we'd naturally expect
+
+--
+
+- Since we've assumed the variance is the same for all groups, we can use a pooled standard error with $n-K$ degrees of freedom to calculate the confidence
+
+.alert[
+$$\bar{y}_i \pm t^* \times \frac{s_P}{\sqrt{n_i}}$$
+where $s_P$ is the pooled standard deviation
+]
+
+---
+
+ 
+### After ANOVA: Difference in Means
+
+- We can also estimate the difference in two means, $\mu_1-\mu_2$ for each pair of groups
+
+.alert[
+$$(\bar{y}_1-\bar{y}_2) \pm t^* \times s_P\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}$$
+where $s_P$ is the pooled standard deviation
+]
+
+- If we have $K$ groups, we will make ${K \choose 2} = K(K-1)/2$ such comparisons
+    - Ex: If we have 6 groups, we'll make ${6 \choose 2} = 6(6-1)/2 = 15$ comparisons
+
+---
+
+### Multiple Comparisons
+
+- When making multiple comparisons, there is a higher chance that a Type I error will occur, e.g. conclude that there is a significant difference between two groups even when there is not
+
+
+- **At a Minimum**: When calculating multiple confidence intervals or conducting multiple hypothesis tests to compare means, you should clearly state how many CIs and/or tests you computed.
+
+
+- **Good practice**: Account for the number of comparisons being made in the analysis 
+    - We will discuss one method: <font class = "vocab">Bonferroni correction</font>
+
+---
+
+### Confidence levels
+
+- <font class="vocab">Individual confidence level: </font> success rate of a procedure for calculating a <u>single</u> confidence interval
+
+
+--
+- <font class="vocab">Familywise confidence level: </font> success rate of a procedure for calculating a <u>family</u> of confidence intervals 
+  + "success": all intervals in the family capture their parameters
+
+
+--
+- <font class="vocab">Issue: </font>There is an increased chance of making at least one error when calculating multiple confidence intervals
+  + The same is true when conducting multiple hypothesis tests
+
+
+---
+
+### Bonferroni correction
+
+- <font class="vocab">Goal: </font> Achieve at least $100(1-\alpha)$% familywise confidence level for $\mathcal{C}$ confidence intervals 
+    - Where $\alpha$ is the significance level for the corresponding two-sided hypothesis test
+
+--
+
+- Calculate each of the $k$ confidence intervals at a $100(1-\frac{\alpha}{\mathcal{C}})$% confidence level
+    - When there are $K$ groups, there are $\mathcal{C}=\frac{K(K-1)}{2}$ pairs of means being compared
+--
+
+- **Notes**: 
+    + The exact familywise confidence level is not easily predictable. This partially depends on the level of dependence between the intervals. 
+    + Bonferroni correction is sometimes too conservative, i.e don't reject $H_0$ as much as you should
+
+---
+
+### Population Density in the Midwest
+
+- There are 5 groups (states) in the `midwest` data, so we will do ${5 \choose 2} = 10$ comparisons. 
+
+- If we want a familywise confidence level of 95%, then we should use a $(1 - 0.05/10)\times 100 = 99.5$% confidence level for each pairwise comparison
+
+---
+
+### Pairwise CI
+
+.small[
+```{r}
+library(pairwiseCI)
+pairwiseCI(log_popdensity ~ state, data = midwest, 
+           method = "Param.diff", conf.level = 0.995, var.equal = TRUE)
+```
+]
+
+---
+
+### Pairwise CI 
+
+.question[
+State 2 conclusions you can draw from the pairwise comparisons.
+]
+
+```{r echo = F}
+library(pairwiseCI)
+pairwiseCI(log_popdensity ~ state, data = midwest, 
+           method = "Param.diff", conf.level = 0.995, var.equal = TRUE) %>%
+  kable(format = "markdown", digits = 3)
+```
+
+---
+
+### For next class
+
+- [Reading 02: Multiple Linear Regression](https://www2.stat.duke.edu/courses/Fall19/sta210.001/reading/reading-02.html)
+

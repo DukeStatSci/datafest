@@ -1,0 +1,446 @@
+---
+title: "Simple Linear Regression"
+subtitle: "Inference & Prediction"
+author: "Dr. Maria Tackett"
+date: "09.11.19"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210-sticker-icon.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3.5,
+	fig.width = 5.8333,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+class: middle, center
+
+### [Click for PDF of slides](05-slr-inf-pt2.pdf)
+
+---
+
+###Announcements 
+
+- HW 01 - **due Wednesday, 9/18 at 11:59p**
+    
+- Reading 01: ANOVA
+    
+- Use Piazza for questions instead of email
+    - access it through Sakai
+    - feel free to reply if you know the answer to question
+    - let me know if you're not on Piazza
+    
+---
+
+###Check in
+
+- Any questions from last class?
+
+---
+
+
+### Today's Agenda
+
+- Inference for regression 
+
+- Prediction 
+
+- Cautions
+
+---
+
+
+
+###Packages and Data
+
+```{r packages}
+library(tidyverse)
+library(broom)
+library(knitr)
+library(MASS) #cats dataset
+```
+
+
+---
+
+### Cats!
+
+- When veterinarians prescribe heart medicine for cats, the dosage often needs to be calibrated to the weight of the heart.
+
+- It is very difficult to measure the heart's weight, so veterinarians need a way to estimate it. 
+
+- One way to estimate it is using a cat's body weight which is more feasible to obtain (though still difficult depending on the cat!). 
+
+- **Goal**: Fit a regression model that describes the relationship between a cat's heart weight and body weight. 
+
+
+---
+
+### The Data
+
+We will use the **cats** dataset from the MASS package. It contains the following characteristics for 144 cats: 
+- <font class = "vocab">`Sex`</font>: Male (M) or Female (F)
+- <font class = "vocab">`Bwt`</font>: Body weight in kilograms (kg)
+- <font class = "vocab">`Hwt`</font>: Heart weight in grams (g)
+
+```{r}
+cats %>% slice(1:10)
+```
+
+---
+
+### Exploratory Data Analysis
+
+```{r echo = F}
+p1 <- ggplot(data = cats, aes(x = Bwt)) + 
+  geom_histogram(binwidth = 0.1) +
+  labs(x = "Body Weight (kg)", 
+       title = "Distribution of Body Weight")
+
+p2 <- ggplot(data = cats, aes(x = Hwt)) + 
+  geom_histogram(binwidth = 0.5) +
+  labs(x = "Heart Weight (g)", 
+       title = "Distribution of Heart Weight")
+
+cowplot::plot_grid(p1, p2, ncol = 2)
+```
+
+---
+
+### Exploratory Data Analysis
+
+```{r echo = F}
+ggplot(data = cats, aes(x = Sex)) +
+  geom_bar() +
+  geom_text(stat = "count", aes(label =..count..), vjust = 3, color = "white")
+```
+
+
+---
+
+### Exploratory Data Analysis
+
+```{r echo = F}
+cats %>%
+  skimr::skim()
+```
+
+---
+
+### Exploratory Data Analysis
+
+```{r echo = F}
+ggplot(data = cats, aes(x = Bwt, y = Hwt)) +
+  geom_point() + 
+  labs(x = "Body Weight (kg)",
+       y = "Heart Weight (g)", 
+       title = "Heart Weight vs. Body Weight")
+```
+
+---
+
+### Applicaiton Exercise
+
+- Make a copy of the **cats** project on RStudio Cloud. 
+
+- Work with your lab groups to complete **Part 2: Fit the Model & Check Assumptions**
+
+- Put your name at the top of the document. You can put everyone's name on the same document if you're working off of one computer. 
+
+- We'll look at one group's Rmd file and discuss as a class after about 10 minutes.
+
+---
+
+class: middle, center
+
+### Is there truly a linear relationship between the response and predictor variables?
+
+---
+
+### Recall: Outline of Hypothesis Test
+
+1. State the hypotheses
+
+2. Calculate the test statistic 
+
+3. Calculate the p-value
+
+4. State the conclusion in the context of the problem
+
+---
+
+### 1. State the hypotheses
+
+- We are often interested in testing whether there is a significant linear relationship between the predictor and response variables
+
+- If there is truly no linear relationship between the two variables, the population regression slope, $\beta_1$, would equal 0 
+--
+
+- We can test the hypotheses: 
+
+.alert[
+$$\begin{aligned}& H_0: \beta_1 = 0\\& H_a: \beta_1 \neq 0\end{aligned}$$
+]
+
+- This is the test conducted by the `lm()` function in R
+
+---
+
+### 2. Calculate the test statistic
+
+$$\begin{aligned}& H_0: \beta_1 = 0\\& H_a: \beta_1 \neq 0\end{aligned}$$
+
+
+.alert[
+**Test Statistic:**
+$$\begin{aligned}\text{test statistic} &= \frac{\text{Estimate} - \text{Hypothesized}}{SE} \\[10pt]
+&= \frac{\hat{\beta}_1 - 0}{SE(\hat{\beta}_1)}\end{aligned}$$
+]
+
+---
+
+### 3. Calculate the p-value
+
+<font class="vocab">p-value</font> is calculated from a $t$ distribution with $n-2$ degrees of freedom
+
+.alert[
+$$\text{p-value} = P(t \geq |\text{test statistic}|)$$
+]
+
+```{r echo = F, fig.height = 3}
+ggplot(data.frame(x = c(-4, 4)), aes(x)) +
+  stat_function(fun = dt, args =list(df =144)) +
+  stat_function(fun = dt,   args =list(df =144),
+                xlim = c(-4, -1.5),
+                geom = "area", fill = "navy") + 
+    stat_function(fun = dt,   args =list(df =144),
+                xlim = c(1.5, 4),
+                geom = "area", fill = "navy")
+```
+
+---
+
+### 4. State the conclusion 
+
+|  Magnitude of p-value |             Interpretation            |
+|:---------------------:|:-------------------------------------:|
+| p-value < 0.01        | strong evidence against $H_0$         |
+| 0.01 < p-value < 0.05 | moderate evidence against $H_0$       |
+| 0.05 < p-value < 0.1  | weak evidence against $H_0$           |
+| p-value > 0.1         | effectively no evidence against $H_0$ |
+<br> 
+<br>
+
+**Note:** These are general guidelines. The strength of evidence depends on the context of the problem.
+
+
+---
+
+### Cats!: Hypothesis test for $\beta_1$ 
+
+- Refer back to the **`cats`** application exercise to answer the following questions: 
+
+.instructions[
+a. State the hypotheses in (1) words and (2) statistical notation.  
+
+b. What is the meaning of the test statistic in the context of the problem? 
+
+c. What is the meaning of the p-value in the context of the problem?
+
+d. State the conclusion in context of the problem.
+]
+
+---
+
+class: middle, center
+
+### Predictions 
+
+---
+
+class: regular
+
+### Predictions for New Observations 
+
+- We can use the regression model to predict for a response at $x_0$
+
+$$\hat{y} =  \hat{\beta}_0 + \hat{\beta}_1 x_0$$
+<br> 
+
+- Because the regression models produces the mean response for a given value of $x_0$, it will produce the same estimate whether we want to predict the mean response at $x_0$ or an individual response at $x_0$ 
+
+---
+
+class: regular 
+
+### Predicting Mindy's heart weight
+
+.pull-left[
+My cat Mindy weighs about 3.18 kg (7 lbs). 
+
+What is her predicted heart weight? 
+]
+
+.pull-right[
+```{r echo = F, out.height = '60%', out.width = '60%'}
+knitr::include_graphics("img/05/mindy.JPG")
+```
+]
+
+--
+
+
+.alert[
+$$
+\begin{align}
+\hat{hwt} &= -0.3567 + 4.0341 \times \color{red}{3.18} \\
+&= 12.472 \text{ grams}
+\end{align}
+$$
+]
+
+---
+
+class: regular 
+
+### Uncertainty in predictions
+
+- There is uncertainty in our predictions, so we need to calculate an a standard error (SE) to capture the uncertainty
+
+- The SE is different depending on whether you are predicting an average value or an individual value
+
+- SE is larger when predicting for an individual value than for an average value 
+
+---
+
+### Standard errors for predictions
+
+.alert[
+**Predicting the mean response**
+
+$$SE(\hat{\mu}) = \hat{\sigma}\sqrt{\frac{1}{n} + \frac{(x-\bar{x})^2}{\sum\limits_{i=1}^n(x_i - \bar{x})^2}}$$
+]
+<br><br>
+
+--
+
+.alert[
+**Predicting an individual response**
+
+$$SE(\hat{y}) = \hat{\sigma}\sqrt{1 + \frac{1}{n} + \frac{(x-\bar{x})^2}{\sum\limits_{i=1}^n(x_i - \bar{x})^2}}$$
+]
+
+---
+
+### CI for predicted heart weight
+
+- Calculate a 95% prediction interval for Mindy's predicted heart weight. 
+
+```{r echo = F}
+bwt_hwt_model <- lm(Hwt ~ Bwt, data = cats)
+```
+
+```{r}
+x0 <- data.frame(Bwt = c(3.18))
+predict.lm(bwt_hwt_model, x0, interval = "prediction", #<<
+           conf.level = 0.95) 
+```
+
+--
+
+
+- Calculate a 95% confidence interval for the predicted mean heart weight for the subset of cats who weigh 3.18 kg. 
+
+```{r}
+x0 <- data.frame(Bwt = c(3.18))
+predict.lm(bwt_hwt_model, x0, interval = "confidence", #<<
+           conf.level = 0.95) 
+```
+
+
+---
+
+class: middle, center
+
+## Cautions 
+
+---
+
+### Caution: Extrapolation 
+
+- The regression is only useful for predictions for the response variable $y$ in the range of the predictor variable $x$ that was used to fit the regression 
+
+- It is risky to predict far beyond that range of $x$, since you don't have data to tell whether or not the relationship continues to follow a straight line
+
+
+---
+
+### Caution: Extrapolation
+
+.pull-left[
+My cat Andy weighs about 8.60 kg (10 lbs). 
+
+Should we use this regression model to predict his heart weight? 
+]
+
+.pull-right[
+```{r echo = F, out.height = '50%', out.width = '50%'}
+knitr::include_graphics("img/05/andy.JPG")
+```
+]
+
+--
+
+```{r echo = F, fig.height = 2}
+cats %>% summarise(min = min(Bwt), q1 = quantile(Bwt, 0.25),  median = median(Bwt),
+                   q3 = quantile(Bwt, 0.75), max = max(Bwt)) %>%
+  kable(format = "markdown")
+```
+
+The heaviest cat in this dataset weighs 3.9 kg (8.6 lbs). We should **<u>not</u>** use this model to predict Andy's heart weight, since that would be a case of <font class = "vocab">extrapolation</font>.
+
+---
+
+### Caution: Correlation $\neq$ Causation
+
+- The regression model is **<u>not</u>** a statement of causality
+  + The regression model provides a description of the averages of $Y$ for different values of $X$
+
+
+- The regression model alone **<u>cannot</u>** prove causality. You need either
+  - Randomized experiment
+  - Observational study in which all relevant confounding variables are controlled for adequately
+
+

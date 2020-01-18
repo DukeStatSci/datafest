@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" href="./img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>DataFest</title>
+	<title>STA 210</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
@@ -36,7 +36,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="./">DataFest</a>
+        		<a class="navbar-brand" href="./">STA 210</a>
         	</div>
 
         	<div class="collapse navbar-collapse" id="navigation-example">
@@ -55,29 +55,9 @@
         
 
         <li class="nav-item">
-          <a href="./signup.html" data-target="/signup.html">
-            <i class='fas fa-user-plus fa-lg'></i>
-            <span>Sign up</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./workshops.html" data-target="/workshops.html">
-            <i class='fas fa-code fa-lg'></i>
-            <span>workshops</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
           <a href="./schedule.html" data-target="/schedule.html">
-            <i class="material-icons">date_range</i>
-            <span>Schedule</span>
+            <i class="material-icons">calendar_today</i>
+            <span>schedule</span>
           </a>
         </li>
         
@@ -85,9 +65,9 @@
         
 
         <li class="nav-item">
-          <a href="./sponsorship.html" data-target="/sponsorship.html">
-            <i class='fas fa-life-ring'></i>
-            <span>Sponsors</span>
+          <a href="./syllabus.html" data-target="/syllabus.html">
+            <i class='fa fa-check fa-lg'></i>
+            <span>Syllabus</span>
           </a>
         </li>
         
@@ -95,9 +75,9 @@
         
 
         <li class="nav-item">
-          <a href="./media.html" data-target="/media.html">
-            <i class='fas fa-newspaper'></i>
-            <span>Media</span>
+          <a href="https://vm-manage.oit.duke.edu/containers" data-target="https://vm-manage.oit.duke.edu/containers">
+            <i class="material-icons">cloud</i>
+            <span>RStudio</span>
           </a>
         </li>
         
@@ -105,9 +85,9 @@
         
 
         <li class="nav-item">
-          <a href="./coc.html" data-target="/coc.html">
-            <i class='fas fa-users'></i>
-            <span>COC</span>
+          <a href="https://github.com/sta210-sp20" data-target="https://github.com/sta210-sp20">
+            <i class='fab fa-github fa-lg'></i>
+            <span>GitHub</span>
           </a>
         </li>
         
@@ -115,9 +95,19 @@
         
 
         <li class="nav-item">
-          <a href="./faq.html" data-target="/faq.html">
+          <a href="http://sakai.duke.edu" data-target="http://sakai.duke.edu">
+            <i class="material-icons">school</i>
+            <span>Sakai</span>
+          </a>
+        </li>
+        
+      
+        
+
+        <li class="nav-item">
+          <a href="https://piazza.com" data-target="https://piazza.com">
             <i class="material-icons">help</i>
-            <span>FAQ</span>
+            <span>Piazza</span>
           </a>
         </li>
         
@@ -127,12 +117,12 @@
     	</div>
     </nav>
   <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('http://www2.stat.duke.edu/datafest/background.jpg');">
+    <div class="header header-filter" style="background-image: url('https://www2.stat.duke.edu/courses/Spring20/sta210.001/img/bikeshare-reg-plots.png');">
       <div class="container">
         <div class="row">
 					<div class="col-md-6">
-              <h1 class="title">Duke DataFest 2020</h1>
-              <h4>April 3-5, 2020 at Penn Pavillion</h4>
+              <h1 class="title">STA 210: Regression Analysis</h1>
+              <h4>Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory.</h4>
               <br />
 					</div>
         </div>
@@ -143,84 +133,130 @@
 		  	<div class="section text-left section-landing">
 		  	  <div class="row">
 		  	    <div class="col-md-6 col-md-offset-3">  
-	            <h2 id="asa-datafest-2020-at-duke">ASA DataFest 2020 at Duke</h2>
+	            <h3 id="course-info">Course info</h3>
 
-<p>ASA DataFest 2020 will take place at Duke over the April 3-5 weekend. More details on the event are below, and you can read about last year's challenge and  winners <a href="./df2018/">here</a>.</p>
+<h4 id="lectures">Lectures</h4>
 
-<h2 id="event-details">Event details</h2>
+<p><font color="#339898"><i class="fas fa-university"></i></font> &nbsp; Gross Hall 103 &nbsp;&nbsp; <font color="#339898"><i class="fas fa-calendar"></i></font> &nbsp; Mon and Wed 10:05a - 11:20a
+<br>
+<br></p>
 
-<p><strong>When:</strong> Friday, April 3 at 6pm - Sunday, April 7 at 5pm <br>
-<strong>Where:</strong> <a href="http://maps.duke.edu/map/?id=21#!s/key=penn pavillion?m/236261">Penn Pavillion</a>, Duke University</p>
+<h4 id="labs">Labs</h4>
 
-<p>On Friday we will start with a reception where your surprise client will give a brief introduction to the data you will be working with over the weekend and tell you a bit about what they would like to get out of it. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).</p>
+<p>Lab 01 &nbsp;&nbsp; <font color="#339898"><i class="fas fa-university"></i></font> &nbsp; Link Classroom #5 &nbsp;&nbsp;&nbsp; <font color="#339898"><i class="fas fa-calendar"></i></font> &nbsp; Thu 3:05p - 4:20p</p>
 
-<p>Presentations and judging will begin ~2pm on Sunday. Each team will give a brief (5 minute) presentation of their findings to a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.</p>
+<p>Lab 02  &nbsp;&nbsp; <font color="#339898"><i class="fas fa-university"></i></font> &nbsp; Link Classroom #5 &nbsp;&nbsp;&nbsp; <font color="#339898"><i class="fas fa-calendar"></i></font> &nbsp; Thu 4:40p - 5:55p</p>
 
-<h2 id="what-is-datafest">What is DataFest?</h2>
+<p>Lab 03  &nbsp;&nbsp; <font color="#339898"><i class="fas fa-university"></i></font> &nbsp; Link Classroom #1 &nbsp;&nbsp;&nbsp; <font color="#339898"><i class="fas fa-calendar"></i></font> &nbsp; Thu 4:40p - 5:55p
+<br>
+<br></p>
 
-<p>ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise dataset over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!</p>
+<h3 id="teaching-team-and-office-hours">Teaching team and office hours</h3>
 
-<p>ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.</p>
+<table class="table table-condensed table-striped table1 text-left">
+<thead>
+<tr>
+<th><span></span></th>
+<th><span></span></th>
+<th><span></span></th>
+<th><span></span></th>
+<th><span></span></th>
+</tr>
+</thead>
 
-<p>ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science at Duke University, and co-hosted by the Departments of Statistics and Operations Research at UNC and Statistics at NCSU.</p>
+<tbody>
+<tr>
+<td>Instructor</td>
+<td><a href="http://stat.duke.edu/~mt324/">Prof. Maria Tackett</a></td>
+<td><a href="mailto:maria.tackett@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/matackett" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Wed 3p - 5p</td>
+<td>Old Chem 118B</td>
+</tr>
 
-<h2 id="testimonials">Testimonials</h2>
+<tr>
+<td>TAs</td>
+<td><a href="https://stat.duke.edu/people/youngsoo-baek-0">Youngsoo Baek</a></td>
+<td><a href="mailto:youngsoo.baek@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/ybaek" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Mon 1p - 3p</td>
+<td>Old Chem 203B</td>
+</tr>
 
-<p>While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal of the event is to promote collaboration. Here are some testimonials from past participants:</p>
+<tr>
+<td></td>
+<td><a href="http://linkedin.com/in/cody-coombs-3b8034158">Cody Coombs</a></td>
+<td><a href="mailto:cody.coombs@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/coombscody" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Tue 1p - 3p</td>
+<td>Old Chem 203B</td>
+</tr>
 
-<blockquote>
-<p><em>It was a great experience, with a fun and interesting challenge. One of my favorite parts is how varied the presentations and projects from each team are. I love learning about ways in which others looked at and analyzed the same problem/ data.</em></p>
-</blockquote>
+<tr>
+<td></td>
+<td><a href="https://www.linkedin.com/in/sophie-dalldorf-598a16192/">Sophie Dalldorf</a></td>
+<td><a href="mailto:sophia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/sophiedalldorf" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Fri 1p - 3p</td>
+<td>Old Chem 203B</td>
+</tr>
 
-<p><br></p>
+<tr>
+<td></td>
+<td><a href="https://stat.duke.edu/people/jonathan-klus">Jonathan Klus</a></td>
+<td><a href="mailto:jonathan.klus@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/jonklus" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Mon 3p - 5p</td>
+<td>Old Chem 203B</td>
+</tr>
 
-<blockquote>
-<p><em>DataFest was an awesome experience. To me, the best part was working in a team of friends that I usually hung out with, but had not had a chance to work together intensively on a project. We enjoyed analyzing the situations and solving problems together for our client. At the end of the day, we just got to know each other better. It was also fun to interact with other teams to explore other approaches while keeping in mind that we were in competition. The fact that we were given a huge amount of data really challenges us to come up with creative and practical approaches. Another important part was the presentation. Every team had to explain well to the judges their objectives and solutions. Our team won the Best Visualization award which is really awesome. Lastly, the food was fantastic.</em></p>
-</blockquote>
+<tr>
+<td></td>
+<td><a href="https://www.linkedin.com/in/mattypahren">Matty Pahren</a></td>
+<td><a href="mailto:martha.pahren@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/mpahren" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Tue 3p - 5p</td>
+<td>Old Chem 203B</td>
+</tr>
 
-<h2 id="past-datafests-at-duke">Past DataFests at Duke</h2>
+<tr>
+<td></td>
+<td><a href="https://www.linkedin.com/in/ethan-shen-931010134/">Ethan Shen</a></td>
+<td><a href="mailto:ethan.shen@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/ethann-shen" title="GitHub"><i class="fa fa-github"></i></a></td>
+<td>Wed 5p - 7p</td>
+<td>Old Chem 203B</td>
+</tr>
+</tbody>
+</table>
 
-<h3 id="datafest-2018--data-source-indeed">DataFest 2018 - Data source: Indeed</h3>
+<h3 id="textbooks">Textbooks</h3>
 
-<p><strong>Goal:</strong> What advice would you give a new high school about what major to choose in college? How does Indeed's data compare to official government data on the labor market? Can it be used to provide good economic indicators?</p>
+<table class="table table-condensed table-striped table1 text-left">
+<thead>
+<tr>
+<th><span></span></th>
+<th><span></span></th>
+<th><span></span></th>
+<th><span></span></th>
+</tr>
+</thead>
 
-<p>Find out more about the challenge and the winners <a href="./df2018/">here</a>.</p>
+<tbody>
+<tr>
+<td><a href="http://sakai.duke.edu">Handbook of Regression Analsyis</a></td>
+<td>James, Witten, Hastie, Tibshirani</td>
+<td>Springer, 1st edition, 2013</td>
+<td></td>
+</tr>
 
-<h3 id="datafest-2017--data-source-expedia">DataFest 2017 - Data source: Expedia</h3>
+<tr>
+<td><a href="http://r4ds.had.co.nz/">R for Data Science</a></td>
+<td>Chatterjee, Simonoff</td>
+<td>Wiley, 1st edition, 2013</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
-<p><strong>Goal:</strong> How do visitors' searches relate to the choices of hotels booked or not booked? What role do external factors play in hotel choice?</p>
+<!--
+### Materials
 
-<p>Expedia provided DataFesters with data from search results from millions of visitors around the world who were interested in traveling to destinations all over the world. The data were in two files, one of which included data collected on search results from visitors' sessions, and another which contained detailed information about the destinations that visitors searched for.</p>
-
-<h3 id="datafest-2016--data-source-ticketmaster">DataFest 2016 - Data source: Ticketmaster</h3>
-
-<p><strong>Goal:</strong> How can site visits be converted to ticket sales, and how can TicketMaster identify &quot;true fans&quot; of an artist or band?</p>
-
-<p>Data consisted of three sets. One included events from the last 12 months that tracked customer travel through the website. Another provided information about advertising campaigns on Google, and the third included data on the events themselves.</p>
-
-<h3 id="datafest-2015--data-source-edmundscom">DataFest 2015 - Data source: Edmunds.com</h3>
-
-<p><strong>Goal:</strong> Detect insights into the process of car shopping that can help make the process easier for customers.</p>
-
-<p>Data consist of visitor 'pathways' through a website that helps customers configure car features and shop for cars. Five data files were linked by a customer key, and including data about the customer, about his or her visits to the webpage, and, when applicable, about the car purchased and the dealership where the car was purchased.</p>
-
-<h3 id="datafest-2014--data-source-gridpoint">DataFest 2014 - Data source: GridPoint</h3>
-
-<p><strong>Goal:</strong> Help understand how customers can best save money and energy.</p>
-
-<p>Data consisted of a random sample of customers, with five-minute aggregates over a year of energy consumption that was then aggregated across important features of the commercial properties, as well as supporting climate and location data.</p>
-
-<h3 id="datafest-2013--data-source-eharmony">DataFest 2013 - Data source: eHarmony</h3>
-
-<p><strong>Goal:</strong> Help understand what qualities people look for in prospective dates.</p>
-
-<p>The DataFest students worked with a large sample of prospective matches. For each customer, data were provided on his or her preferences, as well as four matches, their preferences, and information about whether parties contacted one another.</p>
-
-<h3 id="datafest-2012--data-source-kivacom">DataFest 2012 - Data source: Kiva.com</h3>
-
-<p><strong>Goal:</strong> Help understand what motivates people to lend money to developing-nation entrepreneurs and what factors are associated with paying these loans.</p>
-
-<p>Several data sets were provided, including characteristics of lenders and borrowers and loan pay-back data.</p>
+You should bring a fully-charged laptop or comparable device to every lecture and lab session.
+-->
 
 	          </div>
           </div>   
@@ -235,21 +271,21 @@
         
 
         <li>
-          <a href="http://stat.duke.edu/"><i class="button-icon fa fa fa-map-marker"></i> Duke StatSci</a>
+          <a href="http://stat.duke.edu/"><i class="button-icon fa fa-2x fa-map-marker"></i> Duke StatSci</a>
         </li>
         
       
         
 
         <li>
-          <a href="https://ww2.amstat.org/education/datafest/"><i class="button-icon fa fa fa-chart-bar"></i> ASA DataFest</a>
+          <a href="https://vm-manage.oit.duke.edu/containers"><i class="icon-rlogo" style="font-size:150%"></i> RStudio</a>
         </li>
         
       
         
 
         <li>
-          <a href="https://twitter.com/dukedatafest"><i class="button-icon fa fa fa-twitter"></i> Twitter</a>
+          <a href="https://github.com/sta210-sp20"><i class="button-icon fa fa-2x fa-github"></i> GitHub</a>
         </li>
         
       

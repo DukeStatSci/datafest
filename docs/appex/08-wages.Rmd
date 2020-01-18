@@ -1,0 +1,141 @@
+---
+title: "Wages"
+subtitle: "Starting salaries at a bank between 1965 and 1975"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r global-options, echo = FALSE}
+knitr::opts_chunk$set(warning=FALSE,
+                   message=FALSE)
+```
+
+```{r load-packages}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(Sleuth3) #case1202 data
+library(cowplot) #plot_grid function
+```
+
+```{r prepare-data}
+wages <- case1202 %>% 
+  mutate(Female = as.factor(ifelse(Sex=="Female",1,0))) %>%
+  select(-Sal77,-Sex)
+```
+
+```{r scatterplot}
+pairs(Bsal ~ Senior + Age + Educ + Exper, data = wages, 
+      lower.panel = NULL)
+```
+
+### Initial model
+
+```{r first_model}
+bsal_model <- lm(Bsal ~ Senior + Age + Educ + Exper + Female, 
+            data=wages)
+tidy(bsal_model,conf.int=TRUE)
+```
+
+### Checking Model Assumptions
+
+```{r calc-resid}
+wages <- wages %>% 
+  mutate(predicted = predict.lm(bsal_model), residuals = resid(bsal_model))
+```
+
+```{r resid-vs-pred}
+ggplot(data=wages,aes(x=predicted, y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(title="Residuals vs. Predicted Values") 
+```
+
+```{r resid-vs-x}
+p1 <- ggplot(data=wages,aes(x=Senior,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Seniority", y="Residuals")
+
+p2 <- ggplot(data=wages,aes(x=Age,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Age", y="Residuals")
+
+p3 <- ggplot(data=wages,aes(x=Educ,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Education", y="Residuals")
+
+p4 <- ggplot(data=wages,aes(x=Exper,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Experience", y="Residuals")
+
+plot_grid(p1,p2,p3,p4,nrow=2)
+```
+
+```{r resid-vs-x-categorical}
+ggplot(data=wages,aes(x=Female,y=residuals)) + 
+  geom_boxplot() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Female", 
+       y="Residuals")
+```
+
+```{r resid-hist}
+ggplot(data=wages,aes(x=residuals)) + geom_histogram(fill="steelblue2",color="black") + 
+  labs(title="Distribution of Residuals") + 
+    theme(plot.title=element_text(hjust=0.5,size=16))
+```
+
+```{r resid-qq}
+ggplot(data=wages,aes(sample=residuals)) + stat_qq() + stat_qq_line() +
+  labs(title="QQ-Plot of Residuals") + 
+    theme(plot.title=element_text(hjust=0.5,size=16))
+```
+
+
+### Model with mean-centered variables
+
+```{r}
+wages <- wages %>%
+  mutate(SeniorCent = Senior - mean(Senior), 
+         AgeCent = Age-mean(Age), 
+         EducCent = Educ - mean(Educ), 
+         ExperCent = Exper - mean(Exper))
+```
+
+- Fit the regression model using the mean-centered variables. 
+
+```{r}
+
+```
+
+- How did the model stay the same?
+- How did the model change?
+
+### Model with indicator variables
+
+- Use the code below to create a categorical variable for `Educ`.
+
+```{r}
+wages <- wages %>%
+  mutate(EducCat = as.factor(Educ))
+```
+
+- Fit the regression model using `EducCat` instead of `Educ`.
+
+```{r}
+
+```
+
+- What is the baseline for Education?
+
+- Interpret the coefficient for `EducCat16`.
+
+- What is your conclusion from the p-value of `EducCat16`?
+
+- Write the model equation for those with 8 years of education.
+
+- Write the model equation for those with 16 years of education. 

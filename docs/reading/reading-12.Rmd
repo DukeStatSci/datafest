@@ -1,0 +1,22 @@
+---
+title: "Reading 12: Log-linear Regression"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Due Wed, Nov 13
+
+### Required:
+
+- [Handbook of Regression Analysis](http://sakai.duke.edu) (Available for download on Sakai)
+    - Section 10.1: Introduction
+    - Section 10.2: Concepts and Background Material 
+    - Section 10.3: Methodology
+<br><br>
+
+[All STA 210 Readings](readings.html)    

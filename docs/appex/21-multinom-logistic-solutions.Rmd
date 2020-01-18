@@ -1,0 +1,230 @@
+---
+title: "Multinomial Logistic Regression - SOLUTIONS"
+subtitle: "*Sesame Street* Analysis"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 4,
+	fig.width = 7,
+	message = FALSE,
+	warning = FALSE,
+	echo= TRUE
+)
+```
+
+```{r,echo=F}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(cowplot)
+library(nnet) #multinomial regression models
+```
+
+The main objective of this analysis is to understand how encouragement affects the frequency that children watch *Sesame Street*. We will use the following variables: 
+
+**Response:**
+
+- <font class="vocab">`viewcat`</font>
+    + 1: rarely watched show
+    + 2: once or twice a week
+    + 3: three to five times a week
+    + 4: watched show on average more than five times a week
+
+**Predictors:**
+
+- <font class="vocab">`age`:</font> child's age in months
+- <font class="vocab">`prenumb`: </font>score on numbers pretest (0 to 54)
+- <font class="vocab">`prelet`: </font>score on letters pretest (0 to 58)
+- <font class="vocab">`viewenc`:</font> 1: encouraged to watch, 2: not encouraged
+- <font class="vocab">`site:`</font>
+  + 1: three to five year old from urban area
+  + 2: four year old from suburban area
+  + 3: from rural area with high socioeconomic status
+  + 4: from rural area with low socioeconomic status
+  + 5: from Spanish speaking home
+
+```{r}
+# read in dataset
+sesame <- read_csv("data/sesame.csv")
+```
+
+```{r}
+# mean-center relevant continuous variables, make categorical variables factors
+sesame <- sesame %>% 
+  mutate(viewcat = as.factor(viewcat), 
+         site = as.factor(site), 
+         prenumbCent = prenumb - mean(prenumb), 
+         preletCent = prelet - mean(prelet), 
+         ageCent = age - mean(age),
+         viewenc = ifelse(viewenc == 1, "Encouraged", "Not Encouraged"))
+```
+<br>
+
+### Questions
+
+
+**1. We'd like to fit a model to predict how often a child in this study watched *Sesame Street*. What type of model should we fit? Briefly explain your choice.** 
+
+Multinomial logsitic model because the response variable is categorical with 4 classes / category. 
+
+
+#### Exploratory data analysis
+
+**2. Describe how you would conduct exploratory data analysis. What plots and/or summary statistics would you include? What information would you learn from the exploratory data analysis?**
+
+Univariate: 
+
+- Histograms of the numeric predictors (ageCent, prenumCent, preletCent)
+- Bar graph of site and viewenc
+- Bar graph of the response - viewcat
+
+Bivariate: 
+
+- Side-by-side boxplot of the numeric predictors with the response and/or binned plots 
+- Segmented barplot of site vs. response
+- Segmented barplot of viewenc vs. response
+
+Explore potential interactions
+
+**3. Make a plot to examine the relationship between the response and `viewenc`, the primary variable of interest in this analysis. What do you learn from the plot?**
+
+```{r}
+ggplot(data = sesame, aes(x = viewenc, fill = viewcat)) +
+  geom_bar(position = "fill") +
+  labs(title = "Viewing Frequency vs. Encouragement", 
+       x = "", 
+       fill = "Viewing Frequency")
+```
+
+From this plot, it appears encouragement to watch the show may have a significant effect on the viewership frequency. Just looking at the extreme categories, those who were not encouraged to watch were more likley to watch the show rarely than those were were encouraged. Those who were encouraged to watch were more likely to watch the show at least three times a week.
+
+**4. Make a plot to examine the relationship between the response and a quantitative predictor variable. What do you learn from the plot?**
+
+```{r}
+ggplot(data = sesame, aes(x = viewcat, y = age)) +
+  geom_boxplot() + 
+  labs(title = "Viewing Frequency vs. Age", 
+       x = "Viewing Frequency", 
+       y = "Age")
+```
+
+From this plot, there does not seem to be a strong relationship between viewing frequency and age. 
+
+#### Model selection
+
+**5. The primary objective of the experiment was to understand the effect of encouragement, `viewenc`, on viewership. Explain the process you would use to select the final model. **
+
+  - Fit a workable model using any form of model selection using all predictor variables except `viewenc`. Include any sort of interactions that might be interesting using all predictors but viewenc.
+
+  - Select a model. 
+
+  - Then we'll add `viewenc` to the selected model.
+
+**6. Conduct model selection and display the final model.**
+
+We'll start with the full main effects model (excluding `viewenc`) and use backward selection to choose the variables for the model.
+
+```{r results = "hide"}
+full_model <- multinom(viewcat ~ ageCent + prenumbCent + preletCent + site, 
+                       data = sesame)
+```
+
+```{r results = "hide"}
+model_sel <- step(full_model, direction = "backward")
+tidy(model_sel, exponentiate = FALSE) %>% 
+  kable(format = "markdown" , digits = 3)
+```
+
+Now we'll add `viewenc` to the model selected by backward selection. 
+
+```{r results = "hide"}
+updated_model <- multinom(viewcat ~ prenumbCent + site + viewenc, data = sesame)
+```
+
+```{r}
+tidy(updated_model, exponentiate = FALSE, conf.int = TRUE) %>%
+  kable(format = "markdown", digits = 3)
+```
+
+
+**7. Interpret the intercept associated with the odds of a child being in the category `viewcat == 2` versus `viewcat == 1`.**
+
+For a child who is 3 - 5 years old, from an urban area, and has an average score on the numbers pre-test, the odds that they watch *Sesame Street* once or twice a week are exp(2.448) = `r round(exp(2.448),3)` times the odds they watch the show rarely.
+
+**8. Interpret the coefficient one numeric predictor in terms of the odds of a child being in the category `viewcat == 2` versus `viewcat == 1`. Based on the confidence interval for the coefficient, is the numeric predictor a statistically significant predictor of viewership?**
+
+For each additional point in the numbers pretest score,  the odds of a child watching the show once or twice a week are exp(0.023) = `r round(exp(0.023), 3)` times the odds the child watches the show rarely, holding all else constant.
+
+**9. The primary objective of the experiment was to understand the effect of encouragement `viewenc` on viewership. Does encouragement have a significant effect on viewership? If so, describe the effect. Otherwise, explain why not.**
+
+The variable for encouragement, `viewenc`, is significant for each equation in the multinomial logistic model. Therefore, it is significant in differnentiating children in viewing category 1 versus those in the other categories. If the child is not encouraged to watch the show, the odds that they are in the higher viewership categories decrease (as evidenced by the negative model coefficients). 
+
+**10. We want to test if there is a statistically significant interaction between `viewenc` and `site`. Use the appropriate test to determine if this interaction is significant and should be included in the model. **
+
+Define the beta's as the following: 
+
+- $\beta_1$: coefficient associated with `site2*viewenc`
+- $\beta_2$: coefficient associated with `site3*viewenc`
+- $\beta_3$: coefficient associated with `site4*viewenc`
+- $\beta_4$: coefficient associated with `site5*viewenc`
+
+
+We are testing the following hypotheses: 
+
+$$\begin{aligned}
+&H_0: \beta_1 = \beta_2 = \beta_3 = \beta_4 = 0 \\
+&H_a: \text{ At least one }\beta_j \text{ is not equal to }0\end{aligned}$$
+
+```{r}
+model_w_int <- multinom(viewcat ~ prenumbCent + site + viewenc + 
+                          site*viewenc, data = sesame)
+anova(updated_model, model_w_int, test = "Chisq") %>% 
+  kable(format = "markdown", digits = 3)
+```
+
+The p-value of 0.586 is very large, so we fail to reject the null hypothesis.There is not evidence of a significant interaction effect between `site` and `viewenc`.
+Therefore, we stick with the model with the main effects `viewenc`, `site` and `prenumCent`.
+
+#### Model Assessment
+
+**11. How would you assess the appropriateness of the model fit? Describe the plots, tables, and/or calculations you would create to assess model fit. **
+
+- Make binned plots of the residuals vs. predicted probabilities for each category of `viewcat`
+- Make binned plots of residuals vs. prenumCent for each category of `viewcat`
+- Calculate average residuals  for each category of `viewenc` across the categories of `viewcat`.
+- Calculate average residuals  for each category of `site` across the categories of `viewcat`.
+
+
+We conclude the model is an appropriate fit if there are not obvious patterns in the binned residual plots, and average residuals are all close to 0.
+
+**12. How would you assess the model's power in predicting the a child's viewership? Use the appropriate plot, table, and/or calculation to make a conclusion.**
+
+We will look at the predicted vs. actual categories of `viewcat`. 
+
+```{r}
+sesame_aug <- sesame %>%
+  mutate(pred_viewcat = predict(updated_model, type = "class"))
+```
+
+```{r}
+sesame_aug %>% 
+  count(viewcat, pred_viewcat, .drop = FALSE) %>%
+  pivot_wider(names_from = pred_viewcat, values_from = n)
+```
+
+The rows are the actual categories of `viewcat` and the columns are the predicted. 
+
+In general, the model does a farily good job of identifying the children who watch the show rarely. The model appears less effective at differentiating between different levels of viewership beyond that given the large amounts of misclassification betwee levels 2, 3, and 4.
+
+### References
+
+- Summary of the original study: [A Summary of the Major Findings in "The First Year of
+Sesame Street: An Evaluation"](https://files.eric.ed.gov/fulltext/ED122799.pdf)
+
+- Data from [http://www2.stat.duke.edu/~jerry/sta210/sesamelab.html](http://www2.stat.duke.edu/~jerry/sta210/sesamelab.html)
+

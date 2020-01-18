@@ -1,0 +1,64 @@
+---
+title: "Project Work Day"
+author: ""
+date: "11.14.19"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210-sticker-icon.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+# R options
+options(
+  htmltools.dir.version = FALSE, # for blogdown
+  show.signif.stars = FALSE,     # for regression output
+  warm = 1
+  )
+# Set dpi and height for images
+library(knitr)
+opts_chunk$set(fig.height = 2.65, dpi = 300) 
+# ggplot2 color palette with gray
+color_palette <- list(gray = "#999999", 
+                      salmon = "#E69F00", 
+                      lightblue = "#56B4E9", 
+                      green = "#009E73", 
+                      yellow = "#F0E442", 
+                      darkblue = "#0072B2", 
+                      red = "#D55E00", 
+                      purple = "#CC79A7")
+# For nonsese...
+library(emo)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(rvest)
+```
+
+### Collaborative Learning in STEM
+
+Please fill out the survey below. The data is for research conducted by the Collaborative Learning in STEM Bass Connections project.
+
+Participation is voluntary.
+
+https://duke.qualtrics.com/jfe/form/SV_8i6V0yoMDcpVWg5
+
+---
+
+
+### Project Work Day
+
+- Today's lab is all about working on the regression analysis for your project.
+
+- We will walk around throughout the lab section and talk with each group about their project. 
+
+- Fill out this short form at the end of lab: https://forms.gle/BNpE1B4JPzqtp3KT8 .
+

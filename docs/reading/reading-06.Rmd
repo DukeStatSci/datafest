@@ -1,0 +1,23 @@
+---
+title: "Reading 06: Model Diagnostics"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### due Wed, October 2
+
+### Required:
+
+- [Handbook of Regression Analysis](http://sakai.duke.edu) (Available for download on Sakai)
+    - Section 3.1: Introduction
+    - Section 3.2: Concepts and Background Material
+    - Section 3.3: Methodology (**not** required to know matrix notation)
+    - Section 3.4: Example - Estimating Home Prices
+<br><br>
+
+[All STA 210 Readings](readings.html)    

@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/schedule.html</loc>
+  </url>
+  
+  <url>
     <loc>/archives.html</loc>
     <priority>0</priority>
   </url>
@@ -13,39 +17,7 @@
   </url>
   
   <url>
-    <loc>/coc.html</loc>
-  </url>
-  
-  <url>
-    <loc>/df2018.html</loc>
-  </url>
-  
-  <url>
     <loc>/</loc>
-  </url>
-  
-  <url>
-    <loc>/faq.html</loc>
-  </url>
-  
-  <url>
-    <loc>/media.html</loc>
-  </url>
-  
-  <url>
-    <loc>/schedule.html</loc>
-  </url>
-  
-  <url>
-    <loc>/signup.html</loc>
-  </url>
-  
-  <url>
-    <loc>/sponsors.html</loc>
-  </url>
-  
-  <url>
-    <loc>/sponsorship.html</loc>
   </url>
   
   <url>
@@ -55,10 +27,6 @@
   <url>
     <loc>/tags.html</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/workshops.html</loc>
   </url>
   
 </urlset>

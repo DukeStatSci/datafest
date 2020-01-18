@@ -1,0 +1,496 @@
+---
+title: "Multiple Linear Regression"
+subtitle: "Assumptions & Special Predictors"
+author: "Dr. Maria Tackett"
+date: "09.23.19"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210-sticker-icon.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: "%current%"
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3.5,
+	message = FALSE,
+	warning = FALSE, 
+	dpi = 300
+)
+```
+
+class: middle, center
+
+### [Click for PDF of slides](08-mlr-special-predictors.pdf)
+
+---
+
+### Announcements
+
+- Lab 04 **due tomorrow at 11:59p**
+
+- HW 02 **due Wednesday, 9/25 at 11:59p**
+
+- Team Feedback #1 **due Wednesday, 9/25 at 11:59p**
+    - Please provide honest and constructive feedback. This team feedback will be graded for completion.
+    
+---
+
+### Today's agenda 
+
+- Math details of multiple linear regression
+
+- Assumptions for multiple linear regression 
+
+- Special predictors
+
+---
+ 
+### R packages
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(Sleuth3) # case 1202 dataset
+library(cowplot) # use plot_grid function
+```
+
+---
+
+### Starting wages data
+
+**Explanatory**
+- <font class="vocab">`Educ`: </font>years of Education
+- <font class="vocab">`Exper`: </font>months of previous work Experience (before hire at bank)
+- <font class="vocab">`Female`: </font>1 if female, 0 if male
+- <font class="vocab">`Senior`: </font>months worked at bank since hire
+- <font class="vocab">`Age`: </font>Age in months
+
+**Response**
+- <font class="vocab">`Bsal`: </font>annual salary at time of hire
+
+---
+
+### Starting wages 
+
+```{r echo = F}
+wages <- case1202 %>% 
+  mutate(Female = as.factor(ifelse(Sex=="Female",1,0))) %>%
+  select(-Sal77,-Sex)
+```
+
+```{r}
+glimpse(wages)
+```
+
+---
+
+
+### Regression model
+
+```{r}
+bsal_model <- lm(Bsal ~ Senior + Age + Educ + Exper + Female, 
+            data=wages)
+kable(tidy(bsal_model,conf.int=TRUE),format="html",digits=3)
+```
+
+---
+
+class: middle, center
+
+## Math Details 
+
+
+---
+
+### Regression Model 
+
+- The multiple linear regression model assumes 
+
+.alert[
+$$y|x_1, x_2,  \ldots, x_p \sim N(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p, \sigma^2)$$
+]
+
+--
+
+- For a given observation $(x_{i1}, x_{i2}, \ldots, x_{ip}, y_i)$, we can rewrite the previous statement as 
+
+.alert[
+$$y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \dots + \beta_p x_{ip} + \epsilon_{i} \hspace{10mm} \epsilon_i \sim N(0,\sigma^2)$$
+]
+---
+
+### Estimating $\sigma^2$
+
+- For a given observation $(x_{i1}, x_{i2}, \ldots,x_{ip}, y_i)$ the residual is 
+
+.alert[
+$$e_i = y_{i} - (\hat{\beta}_0 + \hat{\beta}_1 x_{i1} + \hat{\beta}_{2} x_{i2} + \dots + \hat{\beta}_p x_{ip})$$
+]
+
+--
+
+- The estimated value of the regression variance , $\sigma^2$, is 
+
+.alert[
+$$\hat{\sigma}^2  = \frac{RSS}{n-p-1} = \frac{\sum_{i=1}^ne_i^2}{n-p-1}$$
+]
+
+---
+
+### Estimating Coefficients 
+
+- One way to estimate the coefficients is by taking partial derivatives of the formula
+
+$$\sum_{i=1}^n e_i^2 = \sum_{i=1}^{n}[y_i - (\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} \dots + \beta_p x_{ip})]^2$$
+
+--
+
+- This produces messy formulas, so instead we can use matrix notation for multiple linear regression and estimate the coefficients using rules from linear algebra. 
+    - For more details, see Section 1.2 of the textbook and the supplemental notes [Matrix Notation for Multiple Linear Regression](https://github.com/sta210-fa19/supplemental-notes/blob/master/regression-basics-matrix.pdf)
+    - **Note:** You are **<u>not</u>** required to know matrix notation for MLR in this class
+
+---
+
+class: middle, center
+
+## Assumptions 
+
+---
+
+### Assumptions 
+
+Inference on the regression coefficients and predictions are reliable only when the regression assumptions are reasonably satisfied: 
+
+1. <font class="vocab">Linearity: </font> Response variable has a linear relationship with the predictor variables in the model
+
+2. <font class="vocab">Constant Variance: </font>The regression variance is the same for all set of predictor variables $(x_1, \ldots, x_p)$
+
+3. <font class="vocab">Normality: </font> For a given set of predictors $(x_1, \ldots, x_p)$, the response, $y$, follows a Normal distribution around its mean 
+
+4. <font class="vocab">Independence: </font>All observations are independent
+
+---
+
+### Scatterplots 
+
+- Look at a scatterplot of the response variable vs. each of the predictor variables in the exploratory data analysis before calculating the regression model 
+
+- This is a good way to check for obvious departures from linearity 
+    - Could be an indication that a higher order term or transformation is needed
+
+---
+
+### Residual Plots
+
+- **Plot the residuals vs. the predicted values**
+    - Can expose issues such at outliers or non-constant variance
+    - Should have no systematic pattern 
+    
+- **Plot the residuals vs. each of the predictors**
+    - Can expose issues between the response and a predictor variable that didn't show in the exploratory data analysis
+    - Use box plots to plot residuals versus categorical predictor variables
+    - Should have no systematic pattern
+
+- **Plot a histogram and QQ-plot of the residuals**
+    - Check normality 
+
+---
+
+### Scatterplots
+
+```{r}
+pairs(Bsal ~ Senior + Age + Educ + Exper, data = wages, 
+      lower.panel = NULL)
+```
+
+- Only include a 4 - 5 variables in a single pairs plot; otherwise, the scatterplots are too small to be readable
+---
+
+### Residuals vs. Predicted Values
+
+```{r}
+wages <- wages %>% 
+  mutate(predicted = predict.lm(bsal_model), residuals = resid(bsal_model))
+ggplot(data=wages,aes(x=predicted, y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(title="Residuals vs. Predicted Values") 
+```
+
+---
+
+### Residuals vs. Predictors
+
+```{r,echo=F}
+p1 <- ggplot(data=wages,aes(x=Senior,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Seniority", y="Residuals")
+
+p2 <- ggplot(data=wages,aes(x=Age,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Age", y="Residuals")
+
+p3 <- ggplot(data=wages,aes(x=Educ,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Education", y="Residuals")
+
+p4 <- ggplot(data=wages,aes(x=Exper,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Experience", y="Residuals")
+
+plot_grid(p1,p2,p3,p4,nrow=2)
+```
+
+---
+
+### Residuals vs. Predictors 
+
+```{r}
+ggplot(data=wages,aes(x=Female,y=residuals)) + 
+  geom_boxplot() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Female", 
+       y="Residuals")
+```
+
+---
+
+### Normality of Residuals
+
+.pull-left[
+```{r,echo=F}
+ggplot(data=wages,aes(x=residuals)) + geom_histogram(fill="steelblue2",color="black") + 
+  labs(title="Distribution of Residuals") + 
+    theme(plot.title=element_text(hjust=0.5,size=16))
+```
+]
+
+.pull-right[
+```{r,echo=F}
+ggplot(data=wages,aes(sample=residuals)) + stat_qq() + stat_qq_line() +
+  labs(title="QQ-Plot of Residuals") + 
+    theme(plot.title=element_text(hjust=0.5,size=16))
+```
+]
+
+
+---
+
+class: middle, center
+
+## Special Predictors
+
+---
+
+### Interpreting the Intercept 
+
+```{r echo=FALSE}
+kable(tidy(bsal_model),format="html",digits=3)
+```
+
+.question[
+- Interpret the intercept. 
+
+- Is this interpretation meaningful? Why or why not?
+]
+
+---
+
+
+### Mean-Centered Variables
+
+- To have a meaningful interpretation of the intercept, use **mean-centered** predictor variables in the model (quantitative predictors only)
+
+- A <font class = "vocab">mean-centered variable</font> is calculated by subtracting the mean from each value of the variable, i.e. $$x_{ip} - \bar{x}_{.p}$$
+
+- Now the intercept is interpreted as the expected value of the response at the mean value of all quantitative predictors
+
+---
+
+### Salary: Mean-Centered Variables
+
+```{r}
+wages <- wages %>%
+  mutate(SeniorCent = Senior - mean(Senior), 
+         AgeCent = Age-mean(Age), 
+         EducCent = Educ - mean(Educ), 
+         ExperCent = Exper - mean(Exper))
+```
+
+.pull-left[
+```{r,echo=F}
+ggplot(data=wages,aes(x=Senior)) + geom_histogram(fill="steelblue2",color="black") + 
+labs(title="Seniority",x="Seniority")
+```
+]
+.pull-right[
+```{r,echo=F}
+ggplot(data=wages,aes(x=SeniorCent)) + geom_histogram(fill="green",color="black") + 
+labs(title="Mean-Centered Seniority",xlab="Mean-Centered Seniority")
+```
+]
+
+
+---
+
+ 
+
+### Salary: Mean-Centered Variables
+
+```{r, include=FALSE}
+bsal_modelCent <- lm(Bsal ~ Female + SeniorCent + AgeCent + 
+                    EducCent + ExperCent, data=wages)
+kable(tidy(bsal_modelCent,conf.int=TRUE),format="html",digits=3)
+wages <- wages %>% mutate(residuals=resid(bsal_modelCent))
+```
+
+.question[
+**Application Exercise**: Fit the regression model using the mean-centered variables. 
+- How did the model stay the same? 
+- How did the model change?
+]
+
+---
+
+### Quadratic Terms
+
+ - Sometimes the response variable may have a quadratic relationship with one or more predictor variables
+    - You can see this in a plot of the residuals vs. a predictor variable 
+- Include quadratic terms in the model to capture the relationship 
+
+- <font class="vocab">Good Practice:</font> Also include all lower order terms even if they are not significant. 
+    - This helps with interpretation 
+  
+- You can show quadratic relationships by plotting the predicted mean response for different values of the predictors variable
+
+- Note: The same ideas apply for higher-order polynomial terms
+
+---
+
+Below are plots of the residuals versus each quantitative predictor variable. 
+
+```{r,echo=F}
+p1 <- ggplot(data=wages,aes(x=Senior,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Seniority", y="Residuals")
+
+p2 <- ggplot(data=wages,aes(x=Age,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Age", y="Residuals")
+
+p3 <- ggplot(data=wages,aes(x=Educ,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Education", y="Residuals")
+
+p4 <- ggplot(data=wages,aes(x=Exper,y=residuals)) + 
+  geom_point() + 
+  geom_hline(yintercept=0,color="red") +
+  labs(x = "Experience", y="Residuals")
+
+plot_grid(p1,p2,p3,p4,nrow=2)
+```
+
+.question[
+Which variables (if any) appear to have a quadratic relationship with `Bsal`?
+]
+
+---
+
+### Indicator (dummy) variables
+
+
+- Suppose there is a categorical variable with $k$ levels (categories)
+
+- Make $k$ indicator variables (also known as dummy variables)
+
+- Use $k-1$ of the indicator variables in the model
+    - Can't uniquely estimate all $k$ variables at once if the intercept is in the model
+    
+- Level that doesn't have a variable in the model is called the <font class="vocab3">baseline</font>
+
+- Coefficients interpreted as the change in the mean of the response over the baseline
+
+---
+
+### Indicator variables when $k=2$
+
+```{r echo=FALSE}
+kable(tidy(bsal_modelCent,conf.int=TRUE),format="html",digits=3)
+```
+
+.question[
+- Write the model equation used to predict the starting salary for males.
+
+- Write the model equation used to predict the starting salary for females.
+]
+
+---
+
+### Indicator variables when $k > 2$
+
+**Application Exercise**: Fit a regression model with Education treated as a categorical variable. 
+
+.question[
+- What is the baseline for Education?
+
+- Interpret the coefficient for `EducCat16`.
+
+- What is your conclusion from the p-value of `EducCat16`?
+
+- Write the model equation for those with 8 years of education. 
+
+- Write the model equation for those with 16 years of education. 
+]
+---
+
+### Interaction Terms
+
+- **Case**: Relationship of the predictor variable with the response depends on the value of another predictor variable
+  + This is an <font class="vocab3">interaction effect</font>
+  
+- Create a new interaction variable that is one predictor variable times the other in the interaction 
+
+- <font class="vocab">Good Practice:</font> When including an interaction term, also include the associated **main effects** (each predictor variable on its own) even if they are not statistically significant
+---
+
+### Interaction effects
+
+```{r,echo=F}
+ggplot(data=wages, aes(x=Senior,y=Bsal,color = Female)) +
+  geom_point() +
+  geom_smooth(method="lm", se=FALSE) + 
+  labs(title = "Starting Salary vs. Seniority",
+       subtitle = "Male vs. Female employees",
+       x = "Months at Company", 
+       y = "Starting Salary", 
+       color = "Female")
+```
+
+.question[
+Do you think there is a significant interaction effect between `Female` and `Senior`? Why or why not?
+]
+
+
+---
+
+### Before next class
+
+- Review [Reading 03](https://www2.stat.duke.edu/courses/Fall19/sta210.001/reading/reading-03.html) on special predictors
+- [Reading 04](https://www2.stat.duke.edu/courses/Fall19/sta210.001/reading/reading-04.html) on transformations

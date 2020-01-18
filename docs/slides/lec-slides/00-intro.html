@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Welcome to Regression Analysis!</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Welcome to Regression Analysis!
+### Prof. Maria Tackett
+### 01.08.20
+
+---
+
+
+
+
+
+
+class: middle, center 
+
+### [Click for PDF of slides](00-intro.pdf)
+
+---
+
+class: center, middle
+
+# Welcome!
+
+---
+
+### What is regression analysis?
+
+"In statistical modeling, regression analysis is a set of statistical processes for estimating the relationships among variables. It includes many techniques for modeling and analyzing several variables, when &lt;font class="vocab"&gt;**the focus is on the relationship between a dependent variable and one or more independent variables (or 'predictors')**&lt;/font&gt;. More specifically, regression analysis helps one understand how the typical value of the dependent variable (or 'criterion variable') changes when any one of the independent variables is varied, while the other independent variables are held fixed."
+
+.pull-right[
+- [Wikipedia](https://en.wikipedia.org/wiki/Regression_analysis)
+]
+
+---
+
+### Instructor: Prof. Maria Tackett
+
+**Email**: [maria.tackett@duke.edu](mailto:maria.tackett@duke.edu)&lt;br&gt;
+**Office**: Old Chem 118B &lt;br&gt;
+
+--
+
+.pull-left[
+&lt;img src="img/00/capital-one-logo.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/00/fbi-fingerprint.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+.pull-right[
+&lt;img src="img/00/education.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+### Teaching Assistants
+
+- Youngsoo Baek: Mon 1p - 3p
+
+
+- Cody Coombs: Tue 1p - 3p
+
+
+- Sophie Dalldorf: Fri 1p - 3p
+
+
+- Jonathan Klus: Mon 3p - 5p
+
+
+- Matty Pahren: Tue 3p - 5p
+
+
+- Ethan Shen: TBD
+
+---
+
+class: middle, center
+
+### Regression in the "real" world
+
+
+---
+
+### Is it the same as machine learning?
+
+&lt;img src="img/00/reg_v_ml.png" width="100%" style="display: block; margin: auto;" /&gt;
+[Image source](https://www.ncbi.nlm.nih.gov/pubmed/27436868)
+
+--
+
+"Many methods from statistics and machine learning (ML) may, in principle, be used for both prediction and inference. However, .vocab[statistical methods have a long-standing focus on inference]...By contrast, ML concentrates on prediction..." 
+-[*Statistics vs. machine learning*](https://www.nature.com/articles/nmeth.4642)
+
+---
+
+### Can I get a job that uses regression?
+
+&lt;img src="img/00/nyt_job.JPG" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+[NYT Staff Editor - Statistical Modeling](https://nytimes.wd5.myworkdayjobs.com/en-US/News/job/New-York-NY/Staff-Editor---Statistical-Modeling_REQ-006725)
+
+---
+
+&lt;img src="img/00/nyt_requirements.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;&lt;br&gt;
+[NYT Staff Editor - Statistical Modeling](https://nytimes.wd5.myworkdayjobs.com/en-US/News/job/New-York-NY/Staff-Editor---Statistical-Modeling_REQ-006725)
+
+---
+
+### Fingerprint Analysis
+
+.pull-left[
+&lt;img src="img/00/fingerprints.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+*We use &lt;font class="vocab"&gt;**Analysis of Variance (ANOVA) decomposition**&lt;/font&gt; to help determine whether the differences in fingerprints are circumstantial or because the prints were produced by different sources.* 
+]
+&lt;br&gt;&lt;br&gt;
+
+&lt;small&gt;Tackett, M., 2018. *Creating Fingerprint Databases and a Bayesian Approach to Quantify Dependencies in Evidence*. PhD dissertation, University of Virginia.&lt;/small&gt;
+
+---
+
+### Apartments in New York City
+
+.pull-left[
+*"We ran a &lt;font class = "vocab"&gt;regression&lt;/font&gt; to find the relationship between the rent of a one-bedroom home and the average of travel time from the station nearest to it to Midtown or downtown. It showed rent increasing by $56 per minute of decrease in average travel time."*
+]
+
+.pull-right[
+&lt;img src="img/00/nyt_apts.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+&lt;br&gt;&lt;br&gt;
+
+[*New Yorkers Will Pay $56 A Month To Trim A Minute Off Their Commute*](https://fivethirtyeight.com/features/new-yorkers-will-pay-56-a-month-to-trim-a-minute-off-their-commute/)
+
+
+---
+
+### Impact on Educational Achievement
+
+*"Our objectives were to ... determine whether there are differences in the impact of lead across the  EOG [End of Grade] distribution, and elucidate the impact of cumulative childhood social and environmental stress on educational outcomes. &lt;font class = "vocab"&gt;Multivariate and quantile regression techniques were employed.&lt;/font&gt;...The effects of environmental and social stressors (especially as they stretch out the lower tail of the EOG distribution) demonstrate the particular vulnerabilities of socioeconomically and environmentally disadvantaged children."*
+&lt;br&gt;&lt;br&gt;
+
+&lt;small&gt;Miranda, M., Dohyeong,K., Reiter, J., Galeano, M., &amp; Maxson, P. (2009). Environmental contributors to the achievement gap. *NeuroToxicology*, 30, 1019-1024.&lt;/small&gt;
+
+---
+
+### Analyzing Primary Polls
+*"...In fact, we can use a &lt;font class = "vocab"&gt;logistic regression&lt;/font&gt; to estimate a high- and low-name-recognition candidate’s chance of winning the nomination based on their polling average..."*
+
+&lt;img src="img/00/primary_logistic.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+
+["We Analyzed 40 Years Of Primary Polls. Even Early On, They’re Fairly Predictive."](https://fivethirtyeight.com/features/we-analyzed-40-years-of-primary-polls-even-early-on-theyre-fairly-predictive/)
+
+
+---
+
+### March Madness 🏀
+
+*"Live win probabilities are derived using &lt;font class="vocab"&gt;logistic regression analysis&lt;/font&gt;, which lets us plug the current state of a game into a model to produce the probability that either team will win the game.*" -["How Our March Madness Predictions Work"](https://fivethirtyeight.com/features/how-our-march-madness-predictions-work-2/)
+
+&lt;img src="img/00/win_prob.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+[2019 March Madness Live Predictions](https://projects.fivethirtyeight.com/2019-march-madness-predictions/)
+
+---
+
+class: middle, center
+
+### Your Turn!
+
+---
+
+### Movie Data Analysis
+
+.instructions[
+
+Read through the [Movie Data Analysis](https://www2.stat.duke.edu/courses/Spring20/sta210.001/appex/00-movies.html) 
+
+Answer the questions in the [online form](https://forms.gle/tj9j9u3VJJJc4j8R9). Use **NetId@duke.edu** for your email address.
+
+Discuss your answers with 1 - 2 people around you (don't forget to introduce yourself first!)
+]
+
+---
+
+### Movie Data Analysis
+
+Notice in the graph in Part 2 that `budget` and `gross` are log-transformed. Why are the log-transformed values of the variables displayed rather than the original values (in U.S. dollars)? 
+
+
+---
+
+class: middle, center
+
+### Course Info
+
+---
+
+### You will learn...
+
+- How to apply methods for analyzing multivariate datasets, with an emphasis on interpretation
+
+- How to check whether a proposed statistical model is appropriate for the given data 
+
+- How to address complex research questions using regression analysis
+
+- How to use R and Git to do statistical analysis in a reproducible way 
+
+- The process for conducting data-driven research by applying the methods from this course to a long-term project
+
+
+---
+
+### Where to find information
+
+- **Course website**: [http://bit.ly/sta210-sp20](http://bit.ly/sta210-sp20)
+  - Main hub for all information and course materials
+
+- **Sakai**: [https://sakai.duke.edu](https://sakai.duke.edu)
+  - Gradebook
+  - Textbook (in Resources folder)
+
+- **GitHub**: [https://github.com/sta210-sp20](https://github.com/sta210-sp20)
+  - Work on homework, labs, and final project
+  
+- **Gradescope**: [https://www.gradescope.com](https://www.gradescope.com)
+  - Turn in assignments and receive feedback
+
+---
+
+### Lectures 
+
+- Focus on .vocab[concepts]
+
+- .vocab[Think-Pair-Share] (individual ➡️ small group ➡️ full class)
+
+- Bring device to respond to .vocab[in-class questions]
+  - Use your Duke email (NetId@duke.edu) to log response
+  - Questions provide real-time feedback on understanding of the material
+  - Respond to at least 75% of in-class questions over the course of the semester
+
+- .vocab[Throwable Mic!]
+  - Use the mic so everyone can hear the class discussion 
+  - Please wait for the mic before reponding / asking a question
+  - You can throw it! 
+
+
+---
+
+### Labs
+
+- Focus on .vocab[computing] using RStudio and GitHub
+
+- Most labs done in groups of 3 - 4 students
+
+- Must attend lab and participate to receive credit for group's submission 
+
+- If you miss lab for any reason, you may complete the lab for partial credit
+
+---
+
+### Readings
+
+- Handbook of Regression Analysis
+    - [Free PDF](https://onlinelibrary-wiley-com.proxy.lib.duke.edu/doi/book/10.1002/9781118532843) available on Sakai
+    - Assigned readings about statistical concepts
+    - **NOT** used for coding
+  
+- [R for Data Science](http://r4ds.had.co.nz/)
+    - Free online version. Hard copy available for purchase.
+    - Some assigned readings and resource for R coding using `tidyverse` syntax.
+
+---
+
+### Grade Calculation
+
+| Component | Weight |
+|---------------|--------|
+| Homework (*lowest dropped*) | 25% |
+| Labs (*lowest dropped*) | 15% |
+| Exam 01 - Feb 26 | 20% |
+| Exam 02 - Apr 15 | 20% |
+| Final Project | 15% |
+| Teamwork &amp; Engagement | 5% |
+
+- If you have a cumulative numerical average of 90 - 100, you are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-. The exact ranges for letter grades will be determined at the end of the semester.
+- You are expected to attend lectures and labs. Excessive absences or tardiness can impact your final course grade.
+
+---
+
+### Where to find help
+
+- .vocab[Ask during lecture!] There are likely other students with the same question, so by asking you will create a learning opportunity for everyone. 
+
+--
+
+- .vocab[Office Hours]: A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
+
+--
+
+- .vocab[Piazza]: Outside of class and office hours, any general questions about course content or assignments should be posted on Piazza since there are likely other students with the same questions. 
+    - If you know the answer to a question posted on Piazza, I encourage you to respond!
+
+---
+
+### Academic Resource Center
+
+The [Academic Resource Center (ARC)](https://arc.duke.edu) offers free services to all students during their undergraduate careers at Duke  
+
+- Services include Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD Coaching, Outreach Workshops, and more
+
+- Contact &lt;a href="mailto:arc@duke.edu" title="email"&gt;ARC@duke.edu&lt;/a&gt; or 919-684-5917 to schedule an appointment
+
+---
+
+### Testing Center
+
+- This class will use the Testing Center to provide testing accommodations to students registered with and approved by the SDAO.
+
+- If you need testing accommodations, register with SDAO and make your testing center appointments for Exam 01 and Exam 02 **as soon as possible**. 
+
+- For instructions on how to register with SDAO, visit their website at https://access.duke.edu/requests. For instructions on how to make an appointment at the Testing Center, visit their website at https://testingcenter.duke.edu.
+
+
+---
+
+### Diversity &amp; Inclusion 
+
+I strive to create a  learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities. To help accomplish this:
+
+- If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. If you prefer to speak with someone outside of the course, your academic dean is an excellent resource.
+
+- I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.
+
+---
+
+class: center, middle
+
+### Questions? 
+
+---
+
+class: center, middle 
+
+**Please read the syllabus carefully and let me or the TAs know if you have questions.**
+
+https://www2.stat.duke.edu/courses/Spring20/sta210.001/syllabus.html
+
+---
+
+class: middle, center
+
+### Computing
+
+---
+
+### Reproducibility checklist
+
+.question[
+What does it mean for a data analysis to be "reproducible"?
+]
+
+--
+
+**Near-term goals:**
+
+- Are the tables and figures reproducible from the code and data?
+- Does the code actually do what you think it does?
+- In addition to what was done, is it clear **why** it was done? 
+(e.g., how were parameter settings chosen?)
+
+**Long-term goals:**
+
+- Can the code be used for other data?
+- Can you extend the code to do other things?
+---
+
+### Toolkit
+
+&lt;img src="img/00/toolkit.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+.instructions[
+Go to https://github.com/, and create an account (unless you already have one). After you create your account, click [here](https://forms.gle/n1mUdUpxGRn5CM8BA) and enter your GitHub username.
+]
+
+.small[
+Tips for creating a username from [Happy Git with R](http://happygitwithr.com/github-acct.html#username-advice).
+
+- Incorporate your actual name!
+- Reuse your username from other contexts if you can, e.g., Twitter or Slack.
+- Pick a username you will be comfortable revealing to your future boss.
+- Shorter is better than longer.
+- Be as unique as possible in as few characters as possible.
+- Make it timeless. Don’t highlight your current university, employer, or place of residence.
+- Avoid words laden with special meaning in programming, like `NA`.
+]
+
+---
+
+### Announcements
+
+- [Surveys and consent form](https://www2.stat.duke.edu/courses/Spring20/sta210.001/misc/jan8.html)
+
+- [Reading for Monday](https://www2.stat.duke.edu/courses/Spring20/sta210.001/reading/reading-01.html)
+
+- Office hours start next week 
+
+- NO LAB TOMORROW. Labs start on Jan 16
+
+- **New to R or need a refresher?**
+  - Attend an Intro to R workshop 
+  - Offered Jan 13 - 16, 6p - 7:30p, Gross Hall 270 (choose 1 night to attend)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

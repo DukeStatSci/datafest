@@ -1,0 +1,21 @@
+---
+title: "Reading 11: Multinomial Regression, Part 2"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Due Wed, Nov 6
+
+### Required:
+
+- [Handbook of Regression Analysis](http://sakai.duke.edu) (Available for download on Sakai)
+    - Section 9.3: Methodology
+    - Section 9.4: Example - City Bond Ratings
+<br><br>
+
+[All STA 210 Readings](readings.html)    

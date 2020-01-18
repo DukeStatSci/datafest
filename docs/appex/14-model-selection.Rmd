@@ -1,0 +1,134 @@
+---
+title: "Model Selection"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r global-options, include=FALSE}
+knitr::opts_chunk$set(warning=FALSE,
+                   message=FALSE)
+```
+
+```{r load-packages}
+library(tidyverse)
+library(knitr)
+library(broom)
+library(Sleuth3)
+library(leaps)
+```
+
+## Part 0: VIF Review
+
+```{r}
+diamonds <- diamonds %>%
+  mutate(color = as.character(color), 
+         clarity = as.character(clarity))
+```
+
+```{r}
+price_mod <- lm(log(price) ~ carat + color + clarity, data = diamonds)
+kable(tidy(price_mod), format = "html", digits = 3)
+```
+
+- Which variables are highly correlated?
+
+- How do you know?
+
+- Why are these variables highly correlated?
+
+---
+
+### VIF for diamonds model
+
+.pull-left[
+```{r}
+library(rms)
+tidy(vif(price_mod))
+```
+
+```{r load-data}
+sat_scores <- case1201 %>%
+  select(-State) #remove the state variable
+```
+
+## Part I: What's the primary objective?
+
+### Scenario I
+Suppose you are on a legislative watchdog committee, and you want to determine the impact of state expenditures on state SAT scores. You decide to build a regression model for this purpose. 
+
+- What is the primary modeling objective?
+  - One variable's effect
+  - Prediction
+  - Explanation
+
+- What strategy would you use to select variables for the model?
+
+### Scenario II
+
+Suppose you are on a committee tasked with improving the average SAT scores for your state. You have already determined that the number of test takers is an important variable, so you decide to include it in the regression model. Now you want to know what other variables significantly impact the average SAT score after accounting for the number of test takers.
+
+- What is the primary modeling objective?
+  - One variable's effect
+  - Prediction
+  - Explanation
+
+- What strategy would you use to select variables for the model?
+
+## Part II: Model Selection 
+
+### Backward selection "manually"
+
+- Manually perform backward selection using Adj. $R^2$ as the selection criteria. Show each step of the selection process. To help you get started, the full model and the code for the first set of models to test are below. You will need to find Adj. $R^2$ for each model.
+
+```{r}
+full_model <- lm(SAT ~ ., data = sat_scores)
+```
+
+```{r}
+m1 <- lm(SAT ~ Income + Years + Public + Expend + Rank, data = sat_scores)
+```
+
+```{r}
+m2 <- lm(SAT ~ Takers + Years + Public + Expend + Rank, data = sat_scores)
+```
+
+```{r}
+m3 <- lm(SAT ~ Takers + Income + Public + Expend + Rank, data = sat_scores)
+```
+
+```{r}
+m4 <- lm(SAT ~ Takers + Years + Income + Expend + Rank, data = sat_scores)
+```
+
+```{r}
+m5 <- lm(SAT ~ Takers + Years + Public + Income + Expend, data = sat_scores)
+```
+
+```{r}
+m6 <- lm(SAT ~ Takers + Years + Public + Income + Rank, data = sat_scores)
+```
+
+Continue the model selection until you have a final model. Show each step of the model selection process.
+
+
+### Backward selection using regsubsets
+
+- Use the `regsubsets` function to perform backward selection using Adj. $R^2$ as the selection criteria. Are the variables the same as the ones at you chose? Is the Adj. $R^2$ the same? 
+
+### Changing selection criteria
+
+- Use the `regsubsets` function to perform backward selection using BIC as the selection criteria. What variables were chosen for the follow model? How does this model compare to the one selected using Adj. $R^2$?
+
+- Use the `step` function to perform backward selection using AIC as the selection criteria. What variables were chosen for the follow model? How does this model compare to the models chosen from the other selection criteria? 
+
+
+### Different selection procedure
+
+- Use forward or stepwise selection to choose a model. Choose the criteria you will use to select the model.
+
+- How does this model compare to the previous selected models? 
+
+
+### Choosing a final model 
+
+- You likely have at least 2 different models chosen by the various model selection procedures. Which variables will you include in your final model? Why did you choose this to be your final model?

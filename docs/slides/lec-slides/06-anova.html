@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Analysis of Variance</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Analysis of Variance
+## (ANOVA)
+### Dr. Maria Tackett
+### 09.16.19
+
+---
+
+
+
+
+class: middle, center
+
+### [Click for PDF of slides](06-anova.pdf)
+
+---
+
+### Announcements 
+
+- Lab 03 - **due Tuesday, 9/17 at 11:59p**
+
+- HW 01 - **due Wednesday, 9/18 at 11:59p**
+
+- Reading 02: Multiple Linear Regression - for Wednesday's class
+    
+   
+---
+
+### Check in
+
+- Any questions from last class?
+
+---
+
+
+### Today's Agenda
+
+- Analysis of Variance to compare group means
+
+- Accounting for multiple comparisons
+
+---
+
+
+
+### Packages
+
+
+```r
+library(tidyverse)
+library(broom)
+library(knitr)
+```
+
+---
+
+### Population densities in the Midwest
+
+- Today's data is from the `midwest` dataset in the ggplot2 package
+
+- The data contains demographic information for all counties in each of the states in the Midwest: 
+Illinois (IL), Indiana (IN), Michigan (MI), Ohio (OH), and Wisconsin (WI)
+    - We will focus on `state` and `popdensity` (population density)
+
+
+```r
+glimpse(midwest)
+```
+
+```
+## Observations: 437
+## Variables: 28
+## $ PID                  &lt;int&gt; 561, 562, 563, 564, 565, 566, 567, 568, 569…
+## $ county               &lt;chr&gt; "ADAMS", "ALEXANDER", "BOND", "BOONE", "BRO…
+## $ state                &lt;chr&gt; "IL", "IL", "IL", "IL", "IL", "IL", "IL", "…
+## $ area                 &lt;dbl&gt; 0.052, 0.014, 0.022, 0.017, 0.018, 0.050, 0…
+## $ poptotal             &lt;int&gt; 66090, 10626, 14991, 30806, 5836, 35688, 53…
+## $ popdensity           &lt;dbl&gt; 1270.9615, 759.0000, 681.4091, 1812.1176, 3…
+## $ popwhite             &lt;int&gt; 63917, 7054, 14477, 29344, 5264, 35157, 529…
+## $ popblack             &lt;int&gt; 1702, 3496, 429, 127, 547, 50, 1, 111, 16, …
+## $ popamerindian        &lt;int&gt; 98, 19, 35, 46, 14, 65, 8, 30, 8, 331, 51, …
+## $ popasian             &lt;int&gt; 249, 48, 16, 150, 5, 195, 15, 61, 23, 8033,…
+## $ popother             &lt;int&gt; 124, 9, 34, 1139, 6, 221, 0, 84, 6, 1596, 2…
+## $ percwhite            &lt;dbl&gt; 96.71206, 66.38434, 96.57128, 95.25417, 90.…
+## $ percblack            &lt;dbl&gt; 2.57527614, 32.90043290, 2.86171703, 0.4122…
+## $ percamerindan        &lt;dbl&gt; 0.14828264, 0.17880670, 0.23347342, 0.14932…
+## $ percasian            &lt;dbl&gt; 0.37675897, 0.45172219, 0.10673071, 0.48691…
+## $ percother            &lt;dbl&gt; 0.18762294, 0.08469791, 0.22680275, 3.69733…
+## $ popadults            &lt;int&gt; 43298, 6724, 9669, 19272, 3979, 23444, 3583…
+## $ perchsd              &lt;dbl&gt; 75.10740, 59.72635, 69.33499, 75.47219, 68.…
+## $ percollege           &lt;dbl&gt; 19.63139, 11.24331, 17.03382, 17.27895, 14.…
+## $ percprof             &lt;dbl&gt; 4.355859, 2.870315, 4.488572, 4.197800, 3.3…
+## $ poppovertyknown      &lt;int&gt; 63628, 10529, 14235, 30337, 4815, 35107, 52…
+## $ percpovertyknown     &lt;dbl&gt; 96.27478, 99.08714, 94.95697, 98.47757, 82.…
+## $ percbelowpoverty     &lt;dbl&gt; 13.151443, 32.244278, 12.068844, 7.209019, …
+## $ percchildbelowpovert &lt;dbl&gt; 18.011717, 45.826514, 14.036061, 11.179536,…
+## $ percadultpoverty     &lt;dbl&gt; 11.009776, 27.385647, 10.852090, 5.536013, …
+## $ percelderlypoverty   &lt;dbl&gt; 12.443812, 25.228976, 12.697410, 6.217047, …
+## $ inmetro              &lt;int&gt; 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0…
+## $ category             &lt;chr&gt; "AAR", "LHR", "AAR", "ALU", "AAR", "AAR", "…
+```
+
+---
+
+### Exploratory Data Analysis 
+
+- **Question**: Is there a significant difference in the mean county population densities across states in the Midwest?
+
+&lt;img src="06-anova_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+The distributions are very skewed by outliers, so let's look at the log of population density (more on log transformations next week)
+
+
+```r
+midwest &lt;- midwest %&gt;% mutate(log_popdensity = log(popdensity))
+```
+
+&lt;img src="06-anova_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+ggplot(data = midwest, aes(x = log_popdensity, fill = state)) +
+  geom_density(alpha = 0.5) + 
+  labs(title = "log(Population Density) by State", 
+       subtitle = "in the Midwest", 
+       x = "log(Population Density)", 
+       color = "State")
+```
+
+&lt;img src="06-anova_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Exploratory Data Analysis
+
+
+```r
+midwest %&gt;%
+  group_by(state) %&gt;%
+  summarise(n_counties = n(), mean = mean(log_popdensity), 
+            var = var(log_popdensity))
+```
+
+```
+## # A tibble: 5 x 4
+##   state n_counties  mean   var
+##   &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 IL           102  6.97 1.07 
+## 2 IN            92  7.37 0.719
+## 3 MI            83  7.00 1.70 
+## 4 OH            88  7.79 0.982
+## 5 WI            72  6.77 1.38
+```
+
+---
+
+class: middle, center
+
+### Using ANOVA to compare group means
+
+---
+
+class: middle
+
+So far, we have used a &lt;u&gt;*quantitative*&lt;/u&gt; predictor variable to understand the variation in a quantitative response variable.
+&lt;br&gt;
+
+
+Now, we will use a &lt;u&gt;*categorical (qualitative)*&lt;/u&gt; predictor variable to understand the variation in a quantitative response variable.
+
+---
+
+### Notation
+
+- `\(K\)` is number of mutually exclusive groups. We index the groups as `\(i = 1,\dots, K\)`.
+&lt;br&gt;
+
+--
+
+- `\(n_i\)` is number of observations in group `\(i\)`
+&lt;br&gt;
+
+--
+
+- `\(n = n_1 + n_2 + \dots + n_K\)` is the total number of observations in the data
+&lt;br&gt;
+
+--
+  
+- `\(y_{ij}\)` is the `\(j^{th}\)` observation in group `\(i\)`, for all `\(i,j\)`
+&lt;br&gt;
+
+--
+
+- `\(\mu_i\)` is the population mean for group `\(i\)`, for `\(i = 1,\dots, K\)`
+
+---
+
+### Motivating ANOVA
+
+- &lt;font class = "vocab"&gt;Question: &lt;/font&gt; Is there a significant relationship between the predictor variable `\(x\)` and the response variable `\(y\)`?
+
+- In other words, is the mean value of the response equal for all groups? 
+
+
+--
+.alert[ 
+**Model structure:**
+
+`$$y_{ij} = \mu + \alpha_i + \epsilon_{ij}$$`
+- `\(\mu\)` is the overall mean, 
+- `\(\alpha_i\)` is how much the mean for group `\(i\)` deviates from `\(\mu\)`
+- `\(\epsilon_{ij}\)` is the amount `\(y_{ij}\)` deviates from the group mean
+]
+
+--
+
+- Note that the mean response for group `\(i\)` is `\(\mu_i = \mu + \alpha_i\)`. 
+
+---
+
+### Motivating ANOVA
+
+.alert[
+`$$y_{ij} = \mu + \alpha_i + \epsilon_{ij}$$`
+]
+
+- &lt;font class="vocab"&gt;Assumption: &lt;/font&gt; `\(\epsilon_{ij}\)` follows a Normal distribution with mean 0 and constant variance `\(\sigma^2\)`
+`$$\epsilon_{ij} \sim N(0,\sigma^2)$$`
+
+- This is the same as `$$y_{ij} \sim N(\mu_i, \sigma^2)$$`
+  
+---
+
+### Hypotheses
+
+- &lt;font class="vocab"&gt;Question of interest &lt;/font&gt; Is there a significant difference in the means across the `\(K\)` groups?
+
+- To answer this question, we will test the following hypotheses:
+
+.alert[
+$$
+`\begin{aligned}
+&amp;H_0: \mu_1 = \mu_2 = \dots =  \mu_K\\
+&amp;H_a: \text{At least one }\mu_i \text{ is not equal to the others}
+\end{aligned}`
+$$
+]
+
+--
+
+- &lt;font class = "vocab"&gt;How to think about it:&lt;/font&gt;  If the sample means are "far apart", " there is evidence against `\(H_0\)`
+
+- We will calculate a test statistic to quantify "far apart" in the context of the data
+ 
+---
+
+### Analysis of Variance (ANOVA)
+
+- **Main Idea: ** Decompose the &lt;font color="green"&gt;total variation&lt;/font&gt; in the data into the variation &lt;font color="blue"&gt;between groups&lt;/font&gt; and the variation &lt;font color="red"&gt;within each group&lt;/font&gt;
+
+`$$\color{green}{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}- \bar{y})^2}=\color{blue}{\sum_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2} + \color{red}{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y}_i)^2}$$`
+&lt;br&gt;
+
+--
+
+- If the variation &lt;font color="blue"&gt;between groups&lt;/font&gt; is significantly greater than the variation &lt;font color="red"&gt;within each group&lt;/font&gt;, then there is evidence against the null hypothesis.
+
+---
+
+### ANOVA table for comparing means
+
+.small[
+|  | Sum of Squares | DF | Mean Square | F-Stat| p-value |
+|------------------|----------------|--------------------|-------------|-------------|--------------------|
+| Between (Model) | `\(\sum\limits_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2\)` | `\(K-1\)` | `\(SSB/(K-1)\)` | `\(MSB/MSW\)` | `\(P(F &gt; \text{F-Stat})\)` |
+| Within (Residual) | `\(\sum\limits_{i=1}^{K}\sum\limits_{j=1}^{n_i}(y_{ij}-\bar{y}_i)^2\)` | `\(n-K\)` | `\(SSW/(n-K)\)` |  |  |
+| Total | `\(\sum\limits_{i=1}^{K}\sum\limits_{j=1}^{n_i}(y_{ij}-\bar{y})^2\)` | `\(n-1\)` | `\(SST/(n-1)\)` |  |  |
+]
+
+---
+
+### F-Distribution 
+
+The ANOVA test statistic follows an `\(F\)` distribution
+
+&lt;img src="06-anova_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Total Variation
+
+- Total variation = variation between and within groups 
+
+`$$SST =\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y})^2$$`
+--
+
+- Degrees of freedom
+`$$DFT = n-1$$`
+--
+
+- Estimate of the variance across all observations: 
+`$$\frac{SST}{DFT} = \frac{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y})^2}{n-1} = s_y^2$$`
+
+---
+
+### Between Variation (Model)
+
+- Variation in the group means
+
+`$$SSB = \sum_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2$$`
+--
+
+- **Degrees of freedom**
+`$$DFB = K-1$$`
+--
+
+- **Mean Squares Between**
+`$$MSB = \frac{SSB}{DFB} = \frac{\sum_{i=1}^{K}n_i(\bar{y}_i-\bar{y})^2}{K-1}$$`
+--
+
+- MSB is an estimate of the variance of the `\(\mu_i\)`'s 
+  
+  
+---
+
+### Within Variation (Residual)
+
+- Variation within each group
+
+`$$SSW=\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y}_k)^2$$`
+--
+
+- **Degrees of freedom**
+
+`$$DFW = n-K$$`
+--
+
+- **Mean Squares Within**
+`$$MSW = \frac{SSW}{DFW} = \frac{\sum_{i=1}^{K}\sum_{j=1}^{n_i}(y_{ij}-\bar{y}_i)^2}{n-K}$$`
+--
+
+- MSW is the estimate of `\(\sigma^2\)`, the variance within each group
+
+---
+
+### Population densities in the Midwest
+
+
+```r
+pop_anova &lt;- aov(log_popdensity ~ state, data = midwest)
+tidy(pop_anova) %&gt;% kable(format = "markdown", digits = 3)
+```
+
+
+
+|term      |  df|   sumsq| meansq| statistic| p.value|
+|:---------|---:|-------:|------:|---------:|-------:|
+|state     |   4|  55.682| 13.921|     12.13|       0|
+|Residuals | 432| 495.770|  1.148|        NA|      NA|
+
+.question[
+- How many observations (counties) are in the data? 
+
+- What is `\(\hat{\sigma}^2\)`, the estimated variance within each group? 
+
+- State the null and alternative hypothesis for this test. What is your conclusion?
+]
+
+
+---
+
+### Assumptions for ANOVA
+
+- &lt;font class="vocab"&gt;Normality: &lt;/font&gt; `\(y_{ij} \sim N(\mu_i, \sigma^2)\)`
+
+- &lt;font class="vocab"&gt;Equal (Constant) Variance: &lt;/font&gt; The population distribution for each group has a common variance, `\(\sigma^2\)`
+
+- &lt;font class="vocab"&gt;Independence: &lt;/font&gt; The observations are independent from one another
+    - This applies to observation within and between groups
+
+- We can typically check these assumptions in the exploratory data analysis
+
+.question[
+Are the assumptions satisfied in the Midwest analysis?
+]
+
+---
+
+### Robustness to Assumptions
+
+- &lt;font class="vocab"&gt;Normality: &lt;/font&gt; `\(y_{ij} \sim N(\mu_i, \sigma^2)\)`
+  + ANOVA relatively robust to departures from Normality. 
+  + Concern when there are strongly skewed distributions with different sample sizes (especially if sample sizes are small, &lt; 10 in each group)
+  
+
+- &lt;font class="vocab"&gt;Independence: &lt;/font&gt; There is independence within and across groups
+  + If this doesn't hold, should use methods that account for correlated errors
+
+---
+
+### Robustness to Assumptions
+
+
+- &lt;font class="vocab"&gt;Equal (Constant) Variance: &lt;/font&gt; The population distribution for each group has a common variance, `\(\sigma^2\)`
+  + Critical assumption, since the pooled (combined) variance is important for ANOVA
+  + General rule: If the sample sizes within each group are approximately equal, the results of the F-test are valid if the largest variance is no more than 4 times the small variance (i.e. the largest standard deviation is no more than 2 times the smallest standard deviation)
+  
+---
+
+class: middle, center
+
+## Multiple Comparisons
+
+---
+
+### After ANOVA: Individual Group Means
+
+- Suppose you conduct an ANOVA and conclude that at least one group mean has a different mean response value. 
+
+- The next question you want to answer is **which group?**
+
+--
+
+- One way to answer this question is to compare the estimated means for each group, accounting for the random variability we'd naturally expect
+
+--
+
+- Since we've assumed the variance is the same for all groups, we can use a pooled standard error with `\(n-K\)` degrees of freedom to calculate the confidence
+
+.alert[
+`$$\bar{y}_i \pm t^* \times \frac{s_P}{\sqrt{n_i}}$$`
+where `\(s_P\)` is the pooled standard deviation
+]
+
+---
+
+ 
+### After ANOVA: Difference in Means
+
+- We can also estimate the difference in two means, `\(\mu_1-\mu_2\)` for each pair of groups
+
+.alert[
+`$$(\bar{y}_1-\bar{y}_2) \pm t^* \times s_P\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}$$`
+where `\(s_P\)` is the pooled standard deviation
+]
+
+- If we have `\(K\)` groups, we will make `\({K \choose 2} = K(K-1)/2\)` such comparisons
+    - Ex: If we have 6 groups, we'll make `\({6 \choose 2} = 6(6-1)/2 = 15\)` comparisons
+
+---
+
+ 
+
+### Multiple Comparisons
+
+- When making multiple comparisons, there is a higher chance that a Type I error will occur, e.g. conclude that there is a significant difference between two groups even when there is not
+
+
+- **At a Minimum**: When calculating multiple confidence intervals or conducting multiple hypothesis tests to compare means, you should clearly state how many CIs and/or tests you computed.
+
+
+- **Good practice**: Account for the number of comparisons being made in the analysis 
+    - We will discuss one method: &lt;font class = "vocab"&gt;Bonferroni correction&lt;/font&gt;
+
+---
+
+### Confidence levels
+
+- &lt;font class="vocab"&gt;Individual confidence level: &lt;/font&gt; success rate of a procedure for calculating a &lt;u&gt;single&lt;/u&gt; confidence interval
+
+
+--
+- &lt;font class="vocab"&gt;Familywise confidence level: &lt;/font&gt; success rate of a procedure for calculating a &lt;u&gt;family&lt;/u&gt; of confidence intervals 
+  + "success": all intervals in the family capture their parameters
+
+
+--
+- &lt;font class="vocab"&gt;Issue: &lt;/font&gt;There is an increased chance of making at least one error when calculating multiple confidence intervals
+  + The same is true when conducting multiple hypothesis tests
+
+
+---
+
+### Bonferroni correction
+
+- &lt;font class="vocab"&gt;Goal: &lt;/font&gt; Achieve at least `\(100(1-\alpha)\)`% familywise confidence level for `\(\mathcal{C}\)` confidence intervals 
+    - Where `\(\alpha\)` is the significance level for the corresponding two-sided hypothesis test
+
+--
+
+- Calculate each of the `\(k\)` confidence intervals at a `\(100(1-\frac{\alpha}{\mathcal{C}})\)`% confidence level
+    - When there are `\(K\)` groups, there are `\(\mathcal{C}=\frac{K(K-1)}{2}\)` pairs of means being compared
+--
+
+- **Notes**: 
+    + The exact familywise confidence level is not easily predictable. This partially depends on the level of dependence between the intervals. 
+    + Bonferroni correction is sometimes too conservative, i.e don't reject `\(H_0\)` as much as you should
+
+---
+
+### Population Density in the Midwest
+
+- There are 5 groups (states) in the `midwest` data, so we will do `\({5 \choose 2} = 10\)` comparisons. 
+
+- If we want a familywise confidence level of 95%, then we should use a `\((1 - 0.05/10)\times 100 = 99.5\)`% confidence level for each pairwise comparison
+
+---
+
+### Pairwise CI
+
+.small[
+
+```r
+library(pairwiseCI)
+pairwiseCI(log_popdensity ~ state, data = midwest, 
+           method = "Param.diff", conf.level = 0.995, var.equal = TRUE)
+```
+
+```
+##   
+## 99.5 %-confidence intervals 
+##  Method:  Difference of means assuming Normal distribution and equal variances 
+##   
+##   
+##       estimate   lower   upper
+## IN-IL   0.4089  0.0213  0.7966
+## MI-IL   0.0315 -0.4564  0.5194
+## OH-IL   0.8237  0.4050  1.2424
+## WI-IL  -0.1959 -0.6745  0.2827
+## MI-IN  -0.3774 -0.8457  0.0909
+## OH-IN   0.4148  0.0246  0.8049
+## WI-IN  -0.6048 -1.0547 -0.1550
+## OH-MI   0.7922  0.2903  1.2940
+## WI-MI  -0.2274 -0.7987  0.3438
+## WI-OH  -1.0196 -1.5070 -0.5322
+##   
+## 
+```
+]
+
+---
+
+### Pairwise CI 
+
+.question[
+State 2 conclusions you can draw from the pairwise comparisons.
+]
+
+
+| estimate|  lower|  upper|comparison |
+|--------:|------:|------:|:----------|
+|    0.409|  0.021|  0.797|IN-IL      |
+|    0.032| -0.456|  0.519|MI-IL      |
+|    0.824|  0.405|  1.242|OH-IL      |
+|   -0.196| -0.674|  0.283|WI-IL      |
+|   -0.377| -0.846|  0.091|MI-IN      |
+|    0.415|  0.025|  0.805|OH-IN      |
+|   -0.605| -1.055| -0.155|WI-IN      |
+|    0.792|  0.290|  1.294|OH-MI      |
+|   -0.227| -0.799|  0.344|WI-MI      |
+|   -1.020| -1.507| -0.532|WI-OH      |
+
+---
+
+### For next class
+
+- [Reading 02: Multiple Linear Regression](https://www2.stat.duke.edu/courses/Fall19/sta210.001/reading/reading-02.html)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

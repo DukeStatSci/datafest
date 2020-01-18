@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Multiple Comparisons</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Multiple Comparisons
+### Dr. Maria Tackett
+### 09.18.19
+
+---
+
+
+
+
+class: middle, center
+
+### [Click for PDF of slides](06-mult-comparisons.pdf)
+
+---
+
+### Announcements
+
+- HW 01 **due TODAY at 11:59p**
+
+- Reading 03 for Monday
+
+- HW 02 due Wednesday, 9/25 at 11:59p
+
+---
+
+### Today's Agenda 
+
+- Multiple comparisions 
+
+- Introducing multiple linear regression 
+
+---
+
+## R Packages used in the notes
+
+
+```r
+library(tidyverse)
+library(knitr)
+library(broom)
+```
+
+---
+
+class: middle, center
+
+## Multiple Comparisons
+
+---
+
+### After ANOVA: Individual Group Means
+
+- Suppose you conduct an ANOVA and conclude that at least one group mean has a different mean response value. 
+
+- The next question you want to answer is **which group?**
+
+--
+
+- One way to answer this question is to compare the estimated means for each group, accounting for the random variability we'd naturally expect
+
+--
+
+- Since we've assumed the variance is the same for all groups, we can use a pooled standard error with `\(n-K\)` degrees of freedom to calculate the confidence
+
+.alert[
+`$$\bar{y}_i \pm t^* \times \frac{s_P}{\sqrt{n_i}}$$`
+where `\(s_P\)` is the pooled standard deviation
+]
+
+---
+
+ 
+### After ANOVA: Difference in Means
+
+- We can also estimate the difference in two means, `\(\mu_1-\mu_2\)` for each pair of groups
+
+.alert[
+`$$(\bar{y}_1-\bar{y}_2) \pm t^* \times s_P\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}$$`
+where `\(s_P\)` is the pooled standard deviation
+]
+
+- If we have `\(K\)` groups, we will make `\({K \choose 2} = K(K-1)/2\)` such comparisons
+    - Ex: If we have 6 groups, we'll make `\({6 \choose 2} = 6(6-1)/2 = 15\)` comparisons
+
+---
+
+### Multiple Comparisons
+
+- When making multiple comparisons, there is a higher chance that a Type I error will occur, e.g. conclude that there is a significant difference between two groups even when there is not
+
+
+- **At a Minimum**: When calculating multiple confidence intervals or conducting multiple hypothesis tests to compare means, you should clearly state how many CIs and/or tests you computed.
+
+
+- **Good practice**: Account for the number of comparisons being made in the analysis 
+    - We will discuss one method: &lt;font class = "vocab"&gt;Bonferroni correction&lt;/font&gt;
+
+---
+
+### Confidence levels
+
+- &lt;font class="vocab"&gt;Individual confidence level: &lt;/font&gt; success rate of a procedure for calculating a &lt;u&gt;single&lt;/u&gt; confidence interval
+
+
+--
+- &lt;font class="vocab"&gt;Familywise confidence level: &lt;/font&gt; success rate of a procedure for calculating a &lt;u&gt;family&lt;/u&gt; of confidence intervals 
+  + "success": all intervals in the family capture their parameters
+
+
+--
+- &lt;font class="vocab"&gt;Issue: &lt;/font&gt;There is an increased chance of making at least one error when calculating multiple confidence intervals
+  + The same is true when conducting multiple hypothesis tests
+
+
+---
+
+### Bonferroni correction
+
+- &lt;font class="vocab"&gt;Goal: &lt;/font&gt; Achieve at least `\(100(1-\alpha)\)`% familywise confidence level for `\(\mathcal{C}\)` confidence intervals 
+    - Where `\(\alpha\)` is the significance level for the corresponding two-sided hypothesis test
+
+--
+
+- Calculate each of the `\(k\)` confidence intervals at a `\(100(1-\frac{\alpha}{\mathcal{C}})\)`% confidence level
+    - When there are `\(K\)` groups, there are `\(\mathcal{C}=\frac{K(K-1)}{2}\)` pairs of means being compared
+--
+
+- **Notes**: 
+    + The exact familywise confidence level is not easily predictable. This partially depends on the level of dependence between the intervals. 
+    + Bonferroni correction is sometimes too conservative, i.e don't reject `\(H_0\)` as much as you should
+
+---
+
+### Population Density in the Midwest
+
+- There are 5 groups (states) in the `midwest` data, so we will do `\({5 \choose 2} = 10\)` comparisons. 
+
+- If we want a familywise confidence level of 95%, then we should use a `\((1 - 0.05/10)\times 100 = 99.5\)`% confidence level for each pairwise comparison
+
+---
+
+### Pairwise CI
+
+
+
+.small[
+
+```r
+library(pairwiseCI)
+pairwiseCI(log_popdensity ~ state, data = midwest, 
+           method = "Param.diff", conf.level = 0.995, var.equal = TRUE)
+```
+
+```
+##   
+## 99.5 %-confidence intervals 
+##  Method:  Difference of means assuming Normal distribution and equal variances 
+##   
+##   
+##       estimate   lower   upper
+## IN-IL   0.4089  0.0213  0.7966
+## MI-IL   0.0315 -0.4564  0.5194
+## OH-IL   0.8237  0.4050  1.2424
+## WI-IL  -0.1959 -0.6745  0.2827
+## MI-IN  -0.3774 -0.8457  0.0909
+## OH-IN   0.4148  0.0246  0.8049
+## WI-IN  -0.6048 -1.0547 -0.1550
+## OH-MI   0.7922  0.2903  1.2940
+## WI-MI  -0.2274 -0.7987  0.3438
+## WI-OH  -1.0196 -1.5070 -0.5322
+##   
+## 
+```
+]
+
+---
+
+### Pairwise CI 
+
+
+| estimate|  lower|  upper|comparison |
+|--------:|------:|------:|:----------|
+|    0.409|  0.021|  0.797|IN-IL      |
+|    0.032| -0.456|  0.519|MI-IL      |
+|    0.824|  0.405|  1.242|OH-IL      |
+|   -0.196| -0.674|  0.283|WI-IL      |
+|   -0.377| -0.846|  0.091|MI-IN      |
+|    0.415|  0.025|  0.805|OH-IN      |
+|   -0.605| -1.055| -0.155|WI-IN      |
+|    0.792|  0.290|  1.294|OH-MI      |
+|   -0.227| -0.799|  0.344|WI-MI      |
+|   -1.020| -1.507| -0.532|WI-OH      |
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

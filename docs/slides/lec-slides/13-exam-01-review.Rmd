@@ -1,0 +1,124 @@
+---
+title: "Exam 01 Review"
+author: "Dr. Maria Tackett"
+date: "10.09.19"
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    css: "sta210-slides.css"
+    logo: img/sta210-sticker-icon.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+	fig.align = "center",
+	fig.height = 3,
+	message = FALSE,
+	warning = FALSE, 
+	dpi = 300
+)
+```
+
+class: middle, center
+
+### [Click for PDF of slides](13-exam-01-review.pdf)
+
+---
+
+## Announcements
+
+- HW 04 **due Thursday at 11:59p**
+
+- Thursday's Lab: Exam help hours
+    
+---
+
+```{r,echo=F}
+library(knitr)
+library(broom)
+library(tidyverse)
+```
+
+---
+
+## Exam I Outline
+
+- Short answer questions
+
+- Permitted to bring one sheet of <u>handwritten notes</u> (front and back)
+  + Must turn in notes with exam. Put your name at the top of your notes.
+  + You will <u>not</u> be permitted to use your notes if they are not handwritten
+
+- Calculator **not** permitted on exam
+
+- Please use blue or black ink pen!
+
+---
+
+## Topics 
+
+- Regression Basics
+  + Interpreting coefficients
+  + Inference for regression
+  + Predicted values and the appropriate interval
+  + Regression assumptions
+
+- ANOVA to compare group means
+
+- ANOVA for regression
+
+
+---
+
+## Topics 
+
+- Transformations on the predictor or response variables
+  + Determining if transformation is required
+  + Interpreting coefficients on transformed and original scales
+  + Calculating predicted values on transformed and original scales
+
+- $R^2$ versus  Adjusted $R^2$
+
+- Special predictors: indicator variables and interaction terms
+
+---
+
+## Topics 
+
+- Interaction terms
+
+- Nested F Test
+
+- High leverage, outliers, and influential points
+  + Basic ideas - no calculations
+
+- Multicollinearity 
+  + Basic ideas - no calculations
+
+---
+
+class: middle, center 
+
+## Questions?
+
+---
+
+class: middle, center
+
+## Practice 
+
+---
+
+## Cars analysis 
+
+- Sit with your lab group. 
+
+- Copy the **Exam 01 Review** project on RStudio Cloud to type your responses in the R Markdown file.
+
+- You can also find the application exericse on the course schedule.

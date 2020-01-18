@@ -1,0 +1,824 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' />
+	<meta name='robots' content='noindex' />
+	<link rel="shortcut icon" href="https://c1-excel-15.cdn.office.net/x/_layouts/resources/FavIcon_Excel.ico" />
+	<title>STA 210 Fall 2019 Roster.xlsx</title>
+	<style>
+	  html { height:100%; }
+	  body { height:100%; }
+	</style>
+</head>
+<body style="margin: 0; padding: 0; overflow:hidden; -ms-content-zooming: none;">
+  <div id="WopiDocWACContainer" style="overflow:hidden;">
+  </div>
+  <script type="text/javascript">
+	function removeElement(elementId) {
+	  var element = document.getElementById(elementId);
+	  element.parentNode.removeChild(element);
+	}
+	function endUpsell() {
+	  removeElement("upsellBanner");
+	  removeElement("upsellOverlay");
+	}
+	function createUpsellOverlay() {
+	  var overlay = document.createElement("div");
+	  overlay.id = "upsellOverlay";
+	  overlay.style.width = "100%";
+	  overlay.style.height = "100%";
+	  overlay.style.position = "absolute";
+	  overlay.style.zIndex = "1999";
+	  overlay.addEventListener("click", endUpsell, false);
+	  document.body.insertBefore(overlay, document.getElementById("WopiDocWACContainer"));
+	}
+	function createPhoneUpsell(iframeSrc) {
+	  var banner = document.createElement("div");
+	  banner.id = "upsellBanner";
+	  banner.style.width = "100%";
+	  banner.style.position = "absolute";
+	  banner.style.bottom = "0px";
+	  banner.style.zIndex = "2000";
+	  banner.style.backgroundColor = "white";
+	  banner.style.paddingTop = "10px";
+	  banner.style.boxShadow = "0 0 5px 0 rgba(0, 0, 0, 0.4)";
+	  var button = document.createElement("button");
+	  button.style.minWidth = "1px";
+	  button.style.height = "32px";
+	  button.style.margin = "0px";
+	  button.style.marginLeft = "91vw";
+	  button.style.padding = "0px";
+	  button.style.color = "rgba(0,0,0,1)";
+	  button.style.border = "0";
+	  button.style.outline = "none";
+	  button.addEventListener("click", endUpsell, false);
+	  var p = document.createElement("p");
+	  p.style.margin = "0px";
+	  p.style.fontSize = "16px";
+	  p.innerHTML = "&#x2715;";
+	  button.appendChild(p);
+	  var iframe = document.createElement("iframe");
+	  iframe.src = iframeSrc;
+	  iframe.style.width = "calc(100vw - 56px)";
+	  iframe.style.height = "206px";
+	  iframe.style.margin = "0px";
+	  iframe.style.padding = "0px 28px 20px 28px";
+	  iframe.style.border = "0px";
+	  banner.appendChild(button);
+	  banner.appendChild(iframe);
+	  document.body.insertBefore(banner, document.getElementById("WopiDocWACContainer"));
+	}
+	function createTabletUpsell(iframeSrc) {
+	  var banner = document.createElement("div");
+	  banner.id = "upsellBanner";
+	  banner.style.width = "310px";
+	  banner.style.height = "254px";
+	  banner.style.position = "absolute";
+	  banner.style.left = "calc(50vw - 154px)";
+	  banner.style.top = "calc(50vh - 127px)";
+	  banner.style.zIndex = "2000";
+	  banner.style.backgroundColor = "white";
+	  banner.style.paddingTop = "10px";
+	  banner.style.boxShadow = "0 0 5px 0 rgba(0, 0, 0, 0.4)";
+	  var button = document.createElement("button");
+	  button.style.minWidth = "1px";
+	  button.style.height = "32px";
+	  button.style.margin = "0px";
+	  button.style.marginLeft = "90%";
+	  button.style.padding = "0px";
+	  button.style.color = "rgba(0,0,0,1)";
+	  button.style.border = "0";
+	  button.style.outline = "none";
+	  button.addEventListener("click", endUpsell, false);
+	  var p = document.createElement("p");
+	  p.style.margin = "0px";
+	  p.style.fontSize = "16px";
+	  p.innerHTML = "&#x2715;";
+	  button.appendChild(p);
+	  var iframe = document.createElement("iframe");
+	  iframe.src = iframeSrc;
+	  iframe.style.width = "252px";
+	  iframe.style.height = "192px";
+	  iframe.style.margin = "0px";
+	  iframe.style.padding = "0px 28px 20px 28px";
+	  iframe.style.border = "0px";
+	  banner.appendChild(button);
+	  banner.appendChild(iframe);
+	  document.body.insertBefore(banner, document.getElementById("WopiDocWACContainer"));
+	}
+	function isPhoneUA() {
+	  var regExp = /ipod|iphone|android.+mobile|windows phone|wpdesktop/;
+	  return regExp.exec(navigator.userAgent.toLowerCase());
+	}
+	function isTabletUA() {
+	  var regExp = /ipad|android/;
+	  return regExp.exec(navigator.userAgent.toLowerCase());
+	}
+	window.addEventListener('load', function() {
+	  if (!OffSwitch.IsActive("A4E507CF-BB55-43D1-9CA7-B486BF2A199D")) {
+		var iframeSrc = "";
+		if (iframeSrc) {
+		  if (isPhoneUA()) {
+			createUpsellOverlay();
+			createPhoneUpsell(iframeSrc);
+		  } else if (isTabletUA()) {
+			createUpsellOverlay();
+			createTabletUpsell(iframeSrc);
+		  }
+		}
+	  }
+	});
+  </script>
+  <script type="text/javascript">
+	var WOPIPerf_FirstPageFlush = new Date().getTime();
+	var scriptError = null;
+	var loadJsApiMsg = null;
+	var scriptWarning = "";
+	var g_WACDone = false;
+	var WOPIPerf_BootJsStartTime;
+	var WOPIPerf_BootJsEndTime;
+	var WOPIPerf_InitializeWac;
+	var WOPIPerf_UserClick = null;
+	var WOPIPerf_Origin = null;
+	var WOPIPerf_EditNew = 'False' === 'True' ? true : false;
+	var _slrid = null;
+	var _paramCT = "CT";
+	var _paramOR = "OR";
+	var _paramSlrid = "slrid";
+	var _paramOriginalPath = "originalPath"
+	var appName = 'Excel';
+	var isMySite = 'True' === 'True' ? true : false;
+	var perfLogger = null;
+	var scenarioId;
+	var startTime = 0;
+	var qosStart = false;
+	var qosSuccess = false;
+	var qosFailure = false;
+	var appDetailsRecord = null;
+	var wacErrorObject = null;
+	var g_serverStartTime = 0;
+	var g_serverFirstFlushTime = 0;
+	var g_serverCompleteTime = 0;
+	var g_DelayedResourcesDone = false;
+	var isReadyToUploadLogs = false;
+	var g_officeBundleGenerationTime = 0;
+	var g_ssrExpirationTime = 0;
+	var g_officeBundleLastUpdateTime = 0;
+	var g_officeBundleCacheMissInfo = null;
+	var g_officeBundleCacheHitInfo = null;
+	var g_DocAgeBucketAtViewTimeBasedOnLastModifiedTime = null;
+	var g_DocAgeBucketAtViewTimeBasedOnLastWrittenTime = null;
+	var g_DocCategoryBasedOnLastModifiedTime = null;
+	var g_DocCategoryBasedOnLastWrittenTime = null;
+	var g_SSRGenerationReason = null;
+	  window.addEventListener('load', function()
+	  {
+		if (!OffSwitch.IsActive("E6F3D302-D940-4088-A3D8-EE1F66447C64"))
+		{
+		  document.body.style.msContentZooming = "zoom";
+		}
+	  });
+	  function jsApiOnError()
+	  {
+	  scriptError = loadJsApiMsg = "https://c1-excel-15.cdn.office.net/x/s/_layouts/app_scripts/excel-boot.min.js load onError called."
+	  g_WACDone = true;
+	}
+	function getUserClickTime()
+	{
+	  try
+	  {
+		if (window.sessionStorage && !Boolean(WOPIPerf_UserClick))
+		{
+		  var queryStr = document.location.search;
+		  queryStr = unescape(queryStr);
+		  if (Boolean(queryStr))
+		  {
+			var idStart = queryStr.indexOf("sourcedoc=");
+			var idEnd = queryStr.substring(idStart).indexOf("&");
+			var srcId = (idEnd == -1) ? queryStr.substring(idStart) : queryStr.substring(idStart, idStart + idEnd);
+			var userClickKey = "WOPIPerf_UserClick_" + escape(srcId);
+			WOPIPerf_UserClick = window.sessionStorage.getItem(userClickKey);
+			if (Boolean(WOPIPerf_UserClick)) {
+			  WOPIPerf_Origin = "DocLib";
+			}
+			window.sessionStorage.removeItem(userClickKey);
+		  }
+		}
+	  } catch (err) {
+		scriptWarning = err && err.message ? err.message : "process UserClick queryString error. ";
+	  }
+	}
+	function executeAfterWAC(fnOperation)
+	{
+	  function executeAfterTimeout()
+	  {
+		executeAfterWAC(fnOperation);
+	  }
+	  if (g_WACDone)
+		fnOperation();
+	  else {
+		if (!OffSwitch.IsActive("D7E1EFDA-D0B0-4643-91FF-E77CC1A0003E"))
+		{
+		  window.setTimeout(executeAfterTimeout, 100);
+		}
+		else
+		{
+		  window.setTimeout(executeAfterTimeout, 10);
+		}
+	  }
+	}
+	function executeAfterReadyToUploadlogs(fnOperation)
+	{
+	  function executeAfterTimeout()
+	  {
+		executeAfterReadyToUploadlogs(fnOperation);
+	  }
+	  if (isReadyToUploadLogs)
+		fnOperation();
+	  else
+		if (!OffSwitch.IsActive("D7E1EFDA-D0B0-4643-91FF-E77CC1A0003E"))
+		{
+		  window.setTimeout(executeAfterTimeout, 100);
+		}
+		else
+		{
+		  window.setTimeout(executeAfterTimeout, 10);
+		}
+	}
+	function GetScenarioId()
+	{
+	  if (!Boolean(WOPIPerf_Origin))
+		WOPIPerf_Origin = "Other";
+	  var coreName;
+	  if (Boolean(WOPIPerf_EditNew)) {
+		coreName = 'UnifiedApp-CreateNew-';
+	  } else {
+		coreName = 'UnifiedApp-';
+	  }
+	  return coreName + appName + '-' + WOPIPerf_Origin;
+	}
+	function setWacDataCenterCookie()
+	{
+	  if (Boolean(appDetailsRecord))
+	  {
+		var shouldSetCookie = true;
+		if (OffSwitch.IsActive("C910C259-871F-4248-BF8A-E43FA3B75193"))
+		{
+		  shouldSetCookie = appName == "PowerPoint";
+		  if (!OffSwitch.IsActive("F9222486-93C7-4F4F-A091-D257CD3F4EF5"))
+		  {
+			shouldSetCookie = shouldSetCookie || appName == "Excel";
+		  }
+		}
+		if (shouldSetCookie && appDetailsRecord.hasOwnProperty('officeAppEndpoint'))
+		{
+		  var days = 180;
+		  var date = new Date();
+		  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		  var expires = "; expires=" + date.toGMTString();
+		  if (!OffSwitch.IsActive("6D86D63B-C37B-4161-A72A-D0A29380C97E"))
+		  {
+			  document.cookie = "WacDataCenter=" + appDetailsRecord.officeAppEndpoint + expires + "; path=/";
+		  }
+		  else
+		  {
+			  document.cookie = "WacDataCenter=" + appDetailsRecord.officeAppEndpoint + expires;
+		  }
+		}
+	  }
+	}
+	function getRefreshCount()
+	{
+		var regex = new RegExp('[\?&]refreshcount=([^&#]*)');
+		var rs = regex.exec(location.search);
+		return (rs == null || isNaN(rs[1])) ? 0 : Number(rs[1]);
+	}
+	function WopiPerfTelemetry()
+	{
+	  perfLogger = IsNullOrUndefined(PerformanceLogger) ? null : PerformanceLogger.GetLogger();
+	  if(!IsNullOrUndefined(perfLogger))
+	  {
+		perfLogger.CollectW3CPerfTimings();
+		perfLogger.CollectW3cResourceTimings();
+		scenarioId = GetScenarioId();
+		startTime = Boolean(WOPIPerf_UserClick) ? WOPIPerf_UserClick : 0;
+		if (typeof PerformanceLogger.ControlPerformanceData == "function")
+		{
+		  perfLogger.AddExpectedControl(scenarioId);
+		  perfLogger.AddEUPLBreakdown("EntryPoint", WOPIPerf_Origin);
+		  perfLogger.AddEUPLBreakdown("UserClick", WOPIPerf_UserClick);
+		  perfLogger.AddEUPLBreakdown("DocFirstFlushTime", WOPIPerf_FirstPageFlush);
+		  perfLogger.AddEUPLBreakdown("OfficeBootstrapperStartTime", WOPIPerf_BootJsStartTime);
+		  perfLogger.AddEUPLBreakdown("OfficeBootstrapperEndTime", WOPIPerf_BootJsEndTime);
+		  perfLogger.AddEUPLBreakdown("OfficeInitializationTime", WOPIPerf_InitializeWac);
+		  perfLogger.AddEUPLBreakdown("FileSize", Boolean(wopiContext) ? wopiContext.FileSize : 0);
+		  perfLogger.AddEUPLBreakdown("LastModified", Boolean(wopiContext) ? wopiContext.LastModified : 0);
+		  var doc2Redirect = (document.location.href.toLowerCase().indexOf("/doc2.aspx") != -1);
+		  perfLogger.AddEUPLBreakdown("Doc2Redirect", doc2Redirect);
+		  perfLogger.AddEUPLBreakdown("predictedOfficeAppEndPoint", Boolean(wopiContext) ? wopiContext.PredictedOfficeAppEndPoint : "");
+		  if(!OffSwitch.IsActive("7BE3E70D-61EE-4446-A63A-6BA6ADCD8996"))
+		  {
+			 perfLogger.AddEUPLBreakdown("UniqueClick", Boolean(wopiContext) ? wopiContext.UniqueClick : "");
+		  }
+		  if (Boolean(wopiContext) && wopiContext.RumOneUpdate)
+		  {
+				if (wopiContext.DocAspxSingleFlush)
+				{
+				  perfLogger.AddEUPLBreakdown("ServerStartTime", wopiContext.ServerStartTime);
+				  perfLogger.AddEUPLBreakdown("ServerCompleteTime", wopiContext.ServerCompleteTime);
+				}
+				else
+				{
+				  perfLogger.AddEUPLBreakdown("ServerStartTime", g_serverStartTime);
+				  perfLogger.AddEUPLBreakdown("ServerFirstFlushTime", g_serverFirstFlushTime);
+				  perfLogger.AddEUPLBreakdown("ServerCompleteTime", g_serverCompleteTime);
+				}
+				if (g_officeBundleLastUpdateTime !== 0) {
+				  perfLogger.AddEUPLBreakdown("OfficeBundleLastUpdateTime", g_officeBundleLastUpdateTime);
+				}
+				if (g_officeBundleGenerationTime !== 0) {
+				  perfLogger.AddEUPLBreakdown("OfficeBundleGenerationTime", g_officeBundleGenerationTime);
+				}
+				if (g_ssrExpirationTime !== 0) {
+				  perfLogger.AddEUPLBreakdown("SsrExpirationTime", g_ssrExpirationTime);
+				}
+				if (Boolean(g_officeBundleCacheMissInfo)) {
+				  perfLogger.AddEUPLBreakdown("OfficeBundleCacheMissInfo", g_officeBundleCacheMissInfo);
+				}
+				if (Boolean(g_officeBundleCacheHitInfo)) {
+				  perfLogger.AddEUPLBreakdown("OfficeBundleCacheHitInfo", g_officeBundleCacheHitInfo);
+				}
+				if (!Boolean(wopiContext.RecordAgeBucketsAndCategoryForRumOneUsingWopicontext))
+				{
+					if (Boolean(g_DocAgeBucketAtViewTimeBasedOnLastModifiedTime)) {
+					  perfLogger.AddEUPLBreakdown("DocAgeBucketAtViewTimeBasedOnLastModifiedTime", g_DocAgeBucketAtViewTimeBasedOnLastModifiedTime);
+					}
+					if (Boolean(g_DocAgeBucketAtViewTimeBasedOnLastWrittenTime)) {
+					  perfLogger.AddEUPLBreakdown("DocAgeBucketAtViewTimeBasedOnLastWrittenTime", g_DocAgeBucketAtViewTimeBasedOnLastWrittenTime);
+					}
+					if (Boolean(g_DocCategoryBasedOnLastModifiedTime)) {
+					  perfLogger.AddEUPLBreakdown("DocCategoryBasedOnLastModifiedTime", g_DocCategoryBasedOnLastModifiedTime);
+					}
+					if (Boolean(g_DocCategoryBasedOnLastWrittenTime)) {
+					  perfLogger.AddEUPLBreakdown("DocCategoryBasedOnLastWrittenTime", g_DocCategoryBasedOnLastWrittenTime);
+					}
+					if (Boolean(g_SSRGenerationReason)) {
+					  perfLogger.AddEUPLBreakdown("SSRGenerationReason", g_SSRGenerationReason);
+					}
+				}
+				else
+				{
+					if (Boolean(wopiContext.DocAgeBucketAtViewTimeBasedOnLastModifiedTime)) {
+					  perfLogger.AddEUPLBreakdown("DocAgeBucketAtViewTimeBasedOnLastModifiedTime", wopiContext.DocAgeBucketAtViewTimeBasedOnLastModifiedTime);
+					}
+					if (Boolean(wopiContext.DocAgeBucketAtViewTimeBasedOnLastWrittenTime)) {
+					  perfLogger.AddEUPLBreakdown("DocAgeBucketAtViewTimeBasedOnLastWrittenTime", wopiContext.DocAgeBucketAtViewTimeBasedOnLastWrittenTime);
+					}
+					if (Boolean(wopiContext.DocCategoryBasedOnLastModifiedTime)) {
+					  perfLogger.AddEUPLBreakdown("DocCategoryBasedOnLastModifiedTime", wopiContext.DocCategoryBasedOnLastModifiedTime);
+					}
+					if (Boolean(wopiContext.DocCategoryBasedOnLastWrittenTime)) {
+					  perfLogger.AddEUPLBreakdown("DocCategoryBasedOnLastWrittenTime", wopiContext.DocCategoryBasedOnLastWrittenTime);
+					}
+					if (Boolean(wopiContext.SSRGenerationReason)) {
+					  perfLogger.AddEUPLBreakdown("SSRGenerationReason", wopiContext.SSRGenerationReason);
+					}
+				}
+				perfLogger.AddEUPLBreakdown("DocUniqueId", wopiContext.DocUniqueId);
+				perfLogger.AddEUPLBreakdown("CTag", wopiContext.CTag);
+				perfLogger.AddEUPLBreakdown("ETag", wopiContext.ETag);
+				if (Boolean(_slrid)) {
+				  perfLogger.AddEUPLBreakdown(_paramSlrid, _slrid);
+				}
+				perfLogger.AddEUPLBreakdown("OpenWacInPlace", wopiContext.OpenWacInPlace);
+		  }
+		  if (Boolean(appDetailsRecord))
+		  {
+			perfLogger.AddEUPLBreakdown("WacDiagnostics", appDetailsRecord);
+		  }
+		  perfLogger.WriteScenarioId(scenarioId);
+		  perfLogger.WriteAppCache(false);
+		  perfLogger.WriteFolderNav(false);
+		  var controlPerformanceData = new PerformanceLogger.ControlPerformanceData(scenarioId, startTime, WOPIPerf_InitializeWac, perfLogger.ComputeControlRenderTime, perfLogger.CheckControlTimeRequiredDataAvailable);
+		  perfLogger.WriteControlPerformanceData(controlPerformanceData);
+		}
+	  }
+	}
+	function WopiPerfTelemetryOnSuccess()
+	{
+		executeAfterReadyToUploadlogs(WopiPerfTelemetry);
+	}
+	function fnOnSuccess(api, appDetails)
+	{
+	  g_WACDone = true;
+	  appDetailsRecord = appDetails;
+	  setWacDataCenterCookie();
+	  if (qosStart && typeof SP != "undefined" && SP != null && SP.QoS != null) {
+		WopiPerfTelemetryOnSuccess();
+		SP.QoS.WriteSuccess("UnifiedApp.Doc.Open.Success", {"Scenario": scenarioId});
+	  } else {
+		qosSuccess = true;
+	  }
+	}
+	function fnOnFailed(errObject)
+	{
+	  g_WACDone = true;
+	  if (qosStart && typeof SP != "undefined" && SP != null && SP.QoS != null) {
+		SP.QoS.WriteFailure("UnifiedApp.Doc.Open.Failure", {"Scenario": scenarioId, "ErrorCode": Boolean(errObject) ? errObject.toString() : "unknown"});
+	  } else {
+		qosFailure = true;
+		wacErrorObject = errObject;
+	  }
+	}
+	var _wopiContextJson ={"HostName":"SharePoint Online","SessionId":"E7B8FE9E-309B-9000-2AAF-5A86DAFFB262","UserId":"1003bffdac4b9130","WebAppUrl":"https://excel.officeapps.live.com/x/_layouts/xlviewerinternal.aspx?edit=1\u0026new=1\u0026ui=en%2DUS\u0026rs=en%2DUS\u0026WOPISrc=https%3A%2F%2Fprodduke%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fmt324%5Fduke%5Fedu%2F%5Fvti%5Fbin%2Fwopi%2Eashx%2Ffiles%2F643ee81b77cf4f3bbd90b9e3532364c8\u0026wdNewAndOpenCt=1567014645714\u0026wdPreviousSession=4bb01eaa%2D0e78%2D4dc0%2D8acd%2D243b3e8fa023\u0026wdOrigin=ohpAppStartPages\u0026wdEnableRoaming=1\u0026mscc=1\u0026wdODB=1\u0026hid=e7b8fe9e-309b-9000-2aaf-5a86daffb262","FileName":"STA 210 Fall 2019 Roster.xlsx","FileSize":11100,"FileGetUrl":"","BundleMajorVersion":1,"BundleUrl":null,"ReadOnly":false,"IrmEnabled":false,"LabelIrmed":false,"LastModified":1567015119000,"ServerStartTime":1567015150003.74,"ServerCompleteTime":1567015150121.7441,"DocUniqueId":"prodduke-my.sharepoint.com_d4c827f2-2754-4406-82ae-13dce4776310_643ee81b-77cf-4f3b-bd90-b9e3532364c8","CTag":"{643EE81B-77CF-4F3B-BD90-B9E3532364C8},17,16","ETag":"\"{643EE81B-77CF-4F3B-BD90-B9E3532364C8},17\"","RumOneUpdate":true,"OpenWacInPlace":false,"BundleStaleness":null,"IsAsyncBundleStale":true,"IsActivatedAsyncPreviewKillSwich":true,"ViewOnly":false,"IsUnifiedAppEnabled":false,"DelayLoadResources":true,"DocAspxSingleFlush":true,"Origin":"","Slrid":"","UnifiedAppExperiment":null,"UnifiedAppAAExperiment":false,"InteractiveReadonlyExperiment":"Control","ClickTime":0,"UniqueClick":"6116c0b0-4c35-4444-9f68-645fbf70aded","HostGeo":"US","PredictedOfficeAppEndPoint":"US6","PreseededSessionKey":"c25f7e73-74ab-7a77-b53e-3841a2157336","PreseededWacSessionId":"efe7b512-ce9a-4553-f7f1-3c40b2513b14","DocAgeBucketAtViewTimeBasedOnLastModifiedTime":"","DocAgeBucketAtViewTimeBasedOnLastWrittenTime":"","DocCategoryBasedOnLastModifiedTime":"","DocCategoryBasedOnLastWrittenTime":"","SSRGenerationReason":"Unknown","RecordAgeBucketsAndCategoryForRumOneUsingWopicontext":true,"ListItemId":-1,"ListId":"00000000-0000-0000-0000-000000000000","AllowedOrigins":null,"IsPragueDocument":false,"PragueSocketStorageDiscovery":null};
+	var wopiContext = _wopiContextJson;
+	var wopiPendingApp = null;
+	var wopiInitParam = null;
+	WOPIPerf_UserClick = wopiContext.ClickTime;
+	WOPIPerf_Origin = wopiContext.Origin;
+	_slrid = wopiContext.Slrid;
+	if (!Boolean(WOPIPerf_UserClick))
+	{
+	   getUserClickTime();
+	}
+	scenarioId = GetScenarioId();
+	function jsApiOnLoad()
+	{
+	  WOPIPerf_BootJsEndTime = new Date().getTime();
+	  loadJsApiMsg = "https://c1-excel-15.cdn.office.net/x/s/_layouts/app_scripts/excel-boot.min.js is loaded successfully."
+	  try
+	  {
+		var webUrl;
+		webUrl = wopiContext.WebAppUrl.replace(/([&?])WOPISrc=&/, '$1');
+		wopiInitParam = {
+		  BootstrapperUrl: 'https://c1-excel-15.cdn.office.net/x/s/_layouts/app_scripts/excel-boot.min.js',
+		  Container: document.getElementById("WopiDocWACContainer"),
+		  SessionInformation: {
+			HostName: wopiContext.HostName,
+			HostSessionId: wopiContext.SessionId,
+			UserId: wopiContext.UserId,
+			DocumentClickTime: WOPIPerf_UserClick,
+			EntryPoint: WOPIPerf_Origin
+		  },
+		  ApplicationUrl: webUrl,
+		  WopiPrecheckInfo: {
+			FileName: wopiContext.FileName,
+			FileGetUrl: wopiContext.FileGetUrl,
+			FileSize: wopiContext.FileSize,
+			ReadOnly:wopiContext.ReadOnly,
+			IrmEnabled: wopiContext.IrmEnabled,
+			DocUniqueId: wopiContext.DocUniqueId,
+			CTag: wopiContext.CTag,
+			ETag: wopiContext.ETag,
+			ViewOnly: wopiContext.ViewOnly,
+			HostGeo: wopiContext.HostGeo,
+			PreseededSessionKey: wopiContext.PreseededSessionKey,
+			PreseededWacSessionId: wopiContext.PreseededWacSessionId,
+			SupportsDecryptedContentDownload: wopiContext.LabelIrmed
+		  },
+		  Diagnostics: {
+			entryPoint: WOPIPerf_Origin,
+			userClickTime: WOPIPerf_UserClick,
+			hostPageFirstFlushTime: WOPIPerf_FirstPageFlush,
+			officeBootstrapperStartTime: WOPIPerf_BootJsStartTime,
+			officeBootstrapperEndTime: WOPIPerf_BootJsEndTime
+		  },
+		  FnOnInitializeSuccess: fnOnSuccess,
+		  FnOnInitializeFailure: fnOnFailed
+		};
+		if ("True" === "True") {
+			wopiInitParam.ApplicationCustomSettings = {
+				ForceAccessibilityMode: false,
+				InteractiveReadOnlyFlight: wopiContext.InteractiveReadonlyExperiment
+			};
+		} else {
+		  wopiInitParam.ApplicationCustomSettings = {
+			ForceAccessibilityMode: false,
+			UnifiedAppEnabled: wopiContext.IsUnifiedAppEnabled,
+			UnifiedAppAAExperiment: wopiContext.UnifiedAppAAExperiment,
+			UnifiedAppExperiment: wopiContext.UnifiedAppExperiment,
+			InteractiveReadOnlyFlight: wopiContext.InteractiveReadonlyExperiment
+		  }
+		}
+		if ("False" === "True") {
+			wopiInitParam.ApplicationCustomSettings.pragueSocketStorageDiscovery = {
+				deltaStreamSocketUrl: '',
+				socketToken: '',
+				deltaStorageUrl: '',
+				snapshotStorageUrl: '',
+				storageToken: '',
+				tenantId: '',
+				id: ''
+			};
+		}
+		if (wopiContext.BundleUrl && wopiContext.BundleUrl.length > 0) {
+		   if (wopiContext.IsActivatedAsyncPreviewKillSwich) {
+			  wopiInitParam.WopiPrecheckInfo.BundleInfo = {
+			   MajorVersion: 1,
+			   Url: wopiContext.BundleUrl
+			  };
+		   }
+		   else {
+			  if (appName === "Excel" && !wopiContext.IsAsyncBundleStale)
+			  {
+				 wopiInitParam.WopiPrecheckInfo.BundleInfo = {
+				   MajorVersion: 1,
+				   Url: wopiContext.BundleUrl,
+				   BundleStaleness: wopiContext.BundleStaleness
+				 };
+			  }
+			  else {
+				 wopiInitParam.WopiPrecheckInfo.BundleInfo = {
+				   MajorVersion: 1,
+				   Url: wopiContext.BundleUrl
+				 };
+			  }
+		   }
+		}
+		if (!Boolean(WOPIPerf_EditNew) && wopiContext && wopiContext.DocAspxSingleFlush)
+		{
+			wopiInitParam.WopiInfo = {
+			  WopiSrc: 'https://prodduke-my.sharepoint.com/personal/mt324_duke_edu/_vti_bin/wopi.ashx/files/643ee81b77cf4f3bbd90b9e3532364c8',
+			  AccessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InhYbFQwSUp4MlZCVEJFeVFMdGtFOFY2ZkhwZyJ9.eyJhdWQiOiJ3b3BpL3Byb2RkdWtlLW15LnNoYXJlcG9pbnQuY29tQGNiNzJjNTRlLTRhMzEtNGQ5ZS1iMTRhLTFlYTM2ZGZhYzk0YyIsImlzcyI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMEA5MDE0MDEyMi04NTE2LTExZTEtOGVmZi00OTMwNDkyNDAxOWIiLCJuYmYiOiIxNTY3MDE1MTUwIiwiZXhwIjoiMTU2NzA1MTE1MCIsIm5hbWVpZCI6IjAjLmZ8bWVtYmVyc2hpcHxtdDMyNEBkdWtlLmVkdSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDNiZmZkYWM0YjkxMzBAbGl2ZS5jb20iLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsImFwcGN0eCI6IjY0M2VlODFiNzdjZjRmM2JiZDkwYjllMzUzMjM2NGM4O3ZYam1GZUVqbHNqeE0xWnkzMU9mRVZpSkFFMD07RGVmYXVsdDs7N0ZGRkZGRkZGRkZGRkZGRjtUcnVlOzs7MCJ9.apo3UaQFkXsefTXaKADDxoLwG3SYyvNZ8Q3Usd7xMrTT-sCy9TwdS28jc4NmvuTVgiJbh0bp9A2eKtQyHCYjCbdq9xTHgNgt-6lyIq6kUxC66iheVxSvVfMlLv0T6iiy7fkigsW1zFk4NCZKFi6yqceiNVKtme5ofq0F5FQYPjuMV5e15t0YG9m6U5hhSakm95FEcyAFQcaXR_CEvK-YUPcyuAeUh3c1QWlzudPQL3KyQVO4xv9RDfjwb-jEYL1UE2OYaCdFNcbeLuYKDRd3TBmJYsfdpZsPBqkmrQBoehJp5_uKbtu-uBCrASjVVOFvZsyjHSFTX-6zJgORObRuaQ',
+			  AccessTokenExpiry: new Date(1567051150107)
+			};
+			if ("True" === "True") {
+				var refreshUri = "https:\u002f\u002fprodduke-my.sharepoint.com\u002fpersonal\u002fmt324_duke_edu\u002f_layouts\u002f15\u002fDoc.aspx?sourcedoc={643EE81B-77CF-4F3B-BD90-B9E3532364C8}\u0026file=Book\u002b1.xlsx\u0026action=editnew\u0026mobileredirect=true\u0026wdNewAndOpenCt=1567014645714\u0026wdPreviousSession=4bb01eaa-0e78-4dc0-8acd-243b3e8fa023\u0026wdOrigin=ohpAppStartPages\u0026cid=6116c0b0-4c35-4444-9f68-645fbf70aded\u0026OR=Refresh";
+				if (new Date() > new Date(1567051150107 - 300000) && Boolean(refreshUri)) {
+					window.location.replace(refreshUri + "&refreshcount=" + (getRefreshCount() + 1));
+				}
+			}
+		}
+		WOPIPerf_InitializeWac = new Date().getTime();
+		wopiInitParam.Diagnostics.officeInitializationTime = WOPIPerf_InitializeWac;
+		wopiPendingApp = Microsoft.Office[appName].Application.InitializeWopiPending(wopiInitParam);
+		if (!Boolean(WOPIPerf_EditNew) && wopiContext && wopiContext.DocAspxSingleFlush && wopiPendingApp)
+		{
+		  wopiPendingApp.Complete(wopiInitParam.WopiInfo);
+		}
+	  } catch (err) {
+		scriptError = (err && err.message ? err.message : "process param to JsApi error.") + ", CDN Path: " + loadJsApiMsg;
+	  }
+	}
+	WOPIPerf_BootJsStartTime = new Date().getTime();
+  </script>
+  <script type="text/javascript" onload="jsApiOnLoad()" onerror="jsApiOnError()" src="https://c1-excel-15.cdn.office.net/x/s/_layouts/app_scripts/excel-boot.min.js"></script>
+  <script type="text/javascript">// <![CDATA[ 
+
+var _initGlobalSnapShot = {};try {    if (Object.keys(_initGlobalSnapShot).length == 0) {       for (var memberIndex in window) {          if (Boolean(memberIndex)) {              _initGlobalSnapShot[memberIndex] = 1;         }      }   }} catch (ex) {};
+// ]]>
+</script>
+<script type="text/javascript">// <![CDATA[ 
+
+var g_SPOffSwitches={"9509A9B8-562D-4E3E-B932-EBBD5F35EE14":1,"4BCD8F2C-B63C-4E7B-8FBF-579092567170":1,"F859E75E-75AA-4D32-87F6-8196A04E572C":1,"2E0CD78E-663F-4803-A340-F24D2BFEFA8E":1,"A7918383-CFAE-42CB-B660-E7717CBD7DA6":1,"28355EC3-489C-4027-A688-8964A459A928":1,"D2DD2136-80DD-49A4-85F4-DE2261B48AB0":1,"C0362452-45AD-40CF-A72A-42CBD93A4B31":1,"E4539B00-99CE-40BD-85E6-96DDA4AF26AF":1,"87348353-FCA7-4C0A-85C9-F909460902FC":1,"E8F7CA3B-A8C2-429F-AFB4-4B67B041907D":1,"656B5752-0F47-457A-A2BF-4E2433A35C28":1,"81734368-238E-45D4-A8D6-531736BA6D75":1,"401AB955-7AEB-46EB-8638-228227B7C195":1,"65EC67DB-7D6E-42BC-B60F-6B4B0792FBBB":1,"D2637EBC-1910-4639-866D-0B9179764C82":1,"33E9E494-1556-4AED-851C-17CE21A3D7FC":1,"6AAFF384-F587-446A-B0D0-1455A72BDBF3":1,"36559E03-1A60-444C-A65C-28A1D423F747":1,"417FEC0B-432F-4F7A-9829-D66046E036E5":1,"84BC89EB-DBDE-4EE6-893E-05AF7A762030":1,"644C9F8F-2415-4F43-8F91-8711E58242CC":1,"2CD60382-31DA-4149-A033-4B7BE2933091":1,"0F47E8C7-A135-4E4F-AEDC-9995A42BFE92":1,"9AF572B4-E00D-42E4-9B40-CBF24957B86C":1,"5C2B8B78-3A40-4619-B502-7605451DDD35":1,"7FD847A2-C4D8-4D00-9BB6-649520C9A8B9":1,"C729DF09-AC16-43B8-9B89-A975EAD1C8EA":1,"7D741401-1860-4C07-891F-DF924E69A628":1,"703E63BB-48BD-4891-B88B-EC71C64B997E":1,"96C5488B-0019-471F-A88B-9174A6B501B0":1,"C9B07F85-CA87-4B1B-AB3E-9DDB5BD35738":1,"5808FA48-201A-446A-82F1-C9A662E42F1B":1,"CB1858D4-9D30-414A-B12E-F66476B90BC7":1,"AB32A824-22BF-4C18-9013-21D85F548157":1,"29CCDD08-305A-4DF5-A285-DE295DF979D8":1,"7EAE0ACA-6D4A-4DC4-892B-758C5AD9A2FC":1,"E0C4BEEF-6B90-445E-B5D4-6F72B7B9DD5A":1,"CF1699FD-C9E0-4B1B-AFEB-76EF4730CFFA":1,"FCA58864-3303-4AE8-A441-F0BC1A390284":1,"901CD3E1-D85E-4EF8-83FE-28CC4CF15DD4":1,"767AAB93-5F71-4FF5-A6C3-A7E76F43664B":1,"CF7FDE8C-E861-4154-B123-7710617CF597":1,"3B0DA4ED-FAD5-41D9-92F2-94CD16626E86":1,"FEC7772C-A565-4893-8CD0-2BD593468273":1,"C3BC95E8-CA8A-4BE2-A9E1-B379461B7368":1,"16E9ADED-8E23-4740-95CC-9B68FC7F2E49":1,"FD006AC1-BF87-47B2-B31C-A678F01D7745":1,"92CE82BC-BA2E-4D44-AAA6-A30EF36653C7":1,"9E4109B7-74A1-4E6D-8EDF-29C13B0224E9":1,"A3FC13AA-5DE2-4A0E-ACD8-A81E23EBA917":1,"AF028DCB-151E-4A1C-89FF-2EF94513F776":1,"DB08C77B-C4F6-4EB3-93D6-5B4CCB39A73A":1,"2024F8EA-86A4-4BB6-901F-A3900026303B":1,"70711F0E-688C-4BA9-A843-C3B84DB630DF":1,"197381A1-43D8-407D-8871-907D3FA7922B":1,"0F4A2E32-1046-4E63-AD1A-F2460180E8BB":1,"2165ADA6-22D9-4119-A3C8-4AEEB27AE407":1,"0BD6A981-7F6B-48E8-B58F-5FD4A7070B2C":1,"1391A96B-7AEB-4878-8581-E6DF5CC644CF":1,"8DAEFF70-CBAE-4FAF-B84C-044CF1670FAE":1,"C145066B-F4D9-4A3A-ACB3-15729DA0DE9F":1,"B783FBE2-5F13-4257-8040-353A43B47C23":1,"CB790147-BA70-434F-A84C-EB077193DF7F":1,"83FB0325-2AC8-4EBE-9687-619306F6A6C0":1,"2E68FF7D-C010-444B-9286-1945C4B44E04":1,"395055AC-8599-4D74-A936-34D686333D03":1,"D6DC04B3-0E76-4AE8-8349-22578F5F57E8":1,"93697E03-FF00-4380-89B7-774481A1E742":1,"E9789901-37C3-4134-83D8-AA76385710B5":1,"D0A111CB-9D18-4761-8B7B-486D1CA1E36F":1,"03C3F8BF-1C2C-4490-BB63-E443CAF66F8A":1,"42EEC8B1-BC76-4ABD-B4FF-0A2556F3E0B1":1,"FC42FBFC-A8E9-4D0D-BBEE-863A7C439F47":1,"8022E12C-A634-4343-BD51-96716B3E09C1":1,"E3A95ED9-A209-41E1-851B-CFDFA531CC72":1,"2C30B5CC-9A6D-4162-857A-4F78988124D5":1,"25652E85-1113-4786-AD61-568E75D5F224":1,"9321CB67-2886-4D29-9B10-4608B08D3847":1,"C5BBD93E-E020-4C77-B166-BE5697EA03AC":1,"D6F32D6D-92DE-42B0-A77B-4087E73FF4C2":1,"74603B69-77AB-4483-B9EC-8BDEAF556F64":1,"13496475-06A6-4864-9560-86FC014B37AD":1,"337CCE8C-E6F7-427C-B02B-871A6C66AD71":1,"0CC90ECA-4E9D-4FBD-8E8F-F420DC9F954C":1,"2B9BD1FE-C17A-4AE1-B95B-DD74F6E1961D":1,"226E40C5-4389-47CD-AD55-67D2ED24DD0E":1,"D4148610-2C97-4768-BBEA-66C7342EEDB2":1,"20A02119-EE30-4A87-8FDB-A31DE27A4E52":1,"575A7F2D-C91C-4035-94E6-FDBBA82E3DE1":1,"81D149E2-0FEB-41E9-ADCC-DF83C2356D06":1,"38F53D82-6DFE-4903-BE53-53F0FCA2F221":1,"BDC72D09-57F8-4E42-8A36-4E7AD0771AC7":1,"B8F22B41-F1A5-4E5E-9651-DB9B1BAA5CA7":1,"369E10F7-E2CE-4310-9AF5-DFB3E1D7BD95":1,"E4E7591E-4D26-4788-A4FA-B143E69521BE":1,"69D4C5F7-7862-47C8-B626-136CDA75C3FA":1,"20824CB4-7C5A-4D88-B76D-D526E2D653D5":1,"DC298C09-EC34-4D48-A696-E3D94D58D870":1,"7F4CDC97-EE59-44E5-9911-B0024B33A45B":1,"C98F7BB4-96F8-4C05-AE1D-2809FCA197BD":1,"033A2586-60C0-46D9-8D3B-7CD0A562889B":1,"A64D0704-9D96-4653-90B4-8659451897D1":1,"E2FBFE47-5466-4203-A8ED-EF9BCFA04FF3":1,"4FE0344A-6F84-494B-AB80-CDA687905D53":1,"22D739B5-10A6-4B26-BB43-48D851E2D1E2":1,"3487BA96-793D-453F-AA6E-5252E0D81ED6":1,"3B1533C8-DE05-45E0-9EB0-92131C3986C6":1,"4EC338B0-94BA-4A44-A3C2-7376F9779C52":1,"BF5EFEAA-73DD-487C-A7AC-56221DEF3688":1,"00DF68DF-E386-4220-9719-C4247403ACC0":1,"632FABC4-3BF7-49D3-B971-CF7E4A5B1A06":1,"761DAE33-801E-4D39-951B-973104D4D75F":1,"C2F3C612-9A07-441D-AB4E-F06D2B5268AF":1,"94ED1ABD-A22F-4C79-8795-23CD961E8969":1,"E5E97AB3-F6D0-4C30-9338-DC8E47D43BFA":1,"2D03FE67-B750-42A7-B5F9-D0F9EEF5F6CA":1,"EDF1DC15-00A5-4328-BF30-A248DB93C94B":1,"1C9E56CA-5B88-416D-90D7-D3846AB685EB":1,"2A1C5882-EDF2-4B3D-A2F1-13B1CC18085C":1,"ADDB3EA5-93A4-48A2-ACBE-B1B3F8A9F529":1,"41286CA4-5BE8-4F24-87D7-7CFE8B1FF397":1,"81A43936-0FEF-436A-9370-85E31091AACF":1,"CEE5D117-D348-4775-A7C9-6A3382B83D14":1,"4F21995E-BFE8-4A12-9847-4B2C6B1C9DC9":1,"861F4C31-886E-4054-8CFF-B1F3FC327425":1,"0D0B25C7-7C61-4660-AA3C-5A087AF68CFF":1,"1127B4CC-8445-4C58-B364-3228CC590E39":1,"9058F4D5-FA5A-44FD-BA2E-84A10987E2FD":1,"69E23215-1C6B-45AE-B498-915B2900A28E":1,"996690F5-E602-4AF5-80C5-7464B097080E":1,"C03839F0-1E28-4FC2-84C8-5BCB3A989C9A":1,"22361D0C-3EF0-47CD-B721-DA2DC4778538":1,"78346C81-8DEB-4490-A2F4-054BB9EF599D":1};
+// ]]>
+</script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19214.12039/1033/initstrings.js"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19214.12039/init.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=Zb67MfbjIOLTmUNXFiJcP2wz9AHL-VvQ_qBcEkEtFNiJlWqzIhc-H474-u1sr2B6yFoUx7X7F9-Ww6CWWmP0A_j9oa8AGjpseSSJVg9SVNotzfZZ_wERgoIVNDc88RSFzjnH3GLzhWIM39uAFOxsXW7VfVj5bbqtrhC052kfyP6rAKzilWeGIVRerQ0zG3IN0&amp;t=ffffffffa580202a"></script>
+<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19214.12039/blank.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=Wbvj891cYvigDYaf0w2-qupAvp96lfJjv-wyGrj6ohGP3sI_GB-wo2EU6LinQGK_15Jp_SVc4_UzE6HLYCkBJHJuFK3WtwGtcz9uzs845WT3yfvAecPGdMlNUxC0I9-ZK3Va-JxPq9VtWeahWmecSxMEBcB3inqpWm9FngHJtIIrw3jRjL38Pk5dIA4AUE8u0&amp;t=ffffffffa580202a"></script>
+<script type="text/javascript">RegisterSod("require.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002frequire.js");</script>
+<script type="text/javascript">RegisterSod("strings.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002f1033\u002fstrings.js");</script>
+<script type="text/javascript">RegisterSod("ariasdk.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fariasdk.js");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002f1033\u002fsp.res.js");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsp.runtime.js");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsp.init.js");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsp.ui.dialog.js");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsp.js");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.wopimessagehandler.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsp.wopimessagehandler.js");RegisterSodDep("sp.wopimessagehandler.js", "sp.js");RegisterSodDep("sp.wopimessagehandler.js", "sp.init.js");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fmquery.js");</script>
+<script type="text/javascript">RegisterSod("core.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fcore.js");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsp.core.js");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "sp.init.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.strings.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002f1033\u002fsharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsharedhovercard.js");RegisterSodDep("sharedhovercard.js", "sharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fclienttemplates.js");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsharing.js");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sharingmodern.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsharingmodern.js");RegisterSodDep("sharingmodern.js", "strings.js");RegisterSodDep("sharingmodern.js", "mQuery.js");RegisterSodDep("sharingmodern.js", "clienttemplates.js");RegisterSodDep("sharingmodern.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("singlesignon.js", "https:\u002f\u002fstatic.sharepointonline.com\u002fbld\u002f_layouts\u002f15\u002f16.0.19214.12039\u002fsinglesignon.js");</script>
+
+  
+  
+  
+  
+  
+  
+  <script type="text/javascript">
+	function postLogging()
+	{
+	  EnsureScriptFunc("sp.core.js", "SP.SlapiInternal", function() {
+		qosStart = true;
+		SP.QoS.WriteStart("UnifiedApp.PageScript.Start", {"Scenario": scenarioId, "StartTime": WOPIPerf_FirstPageFlush});
+		if (!Boolean(scriptError))
+		{
+		  SP.QoS.WriteStart("UnifiedApp.Doc.Open.Start", {"Scenario": scenarioId, "StartTime": WOPIPerf_FirstPageFlush});
+		  if (qosSuccess) {
+			WopiPerfTelemetryOnSuccess();
+			SP.QoS.WriteSuccess("UnifiedApp.Doc.Open.Success", {"Scenario": scenarioId});
+		  } else if (qosFailure) {
+			SP.QoS.WriteFailure("UnifiedApp.Doc.Open.Failure", {"Scenario": scenarioId, "ErrorCode": Boolean(wacErrorObject) ? wacErrorObject.toString() : "unknown"});
+		  }
+		  SP.QoS.WriteSuccess("UnifiedApp.PageScript.Success", {"Scenario": scenarioId, "Warning": scriptWarning, "EndTime": WOPIPerf_InitializeWac});
+		}
+		else
+		{
+			SP.QoS.WriteFailure("UnifiedApp.PageScript.Failure", {"Scenario": scenarioId, "ErrorCode": scriptError});
+		}
+	  });
+	}
+	function Base64UrlDecode(base64Url)
+	{
+		let encodedString = base64Url;
+		if (encodedString)
+		{
+			encodedString = encodedString.replace(/-/g, '+');
+			encodedString = encodedString.replace(/_/g, '/');
+			switch ((encodedString.length % 4)) {
+				case 0:
+					break;
+				case 2:
+					 encodedString += "==";
+					 break;
+				case 3:
+					 encodedString += "=";
+					 break;
+	            default:
+		            return null;
+			}
+			return atob(encodedString);
+		}
+	}
+	function ResetUrl()
+	{
+		var extension = 'x';
+		if (extension && history && history.replaceState)
+		{
+		  try
+		  {
+			var curUrl = ajaxNavigate.get_href();
+			var curUri = new URI(curUrl, {disableEncodingDecodingForLegacyCode: true, queryCaseInsensitive: true});
+			const encodedOriginalPath = curUri.getQueryParameter(_paramOriginalPath);
+			const originalPath = Base64UrlDecode(encodedOriginalPath);
+			if (originalPath)
+			{
+				history.replaceState({reason: "SPRedirect"}, "SPRedirect", originalPath);
+			}
+			else
+			{
+				if(OffSwitch.IsActive("36D2ABA3-59DA-4703-A3CE-FDB8154E0FA2")) {
+					if (curUrl.substring(0, 2) !== '/:')
+					{
+						curUri.setPath("/:" + extension + ":/r" + curUri.getPath());
+						curUri.removeQueryParameter(_paramCT);
+						curUri.removeQueryParameter(_paramOR);
+						curUri.removeQueryParameter(_paramSlrid);
+						history.replaceState({reason: "SPRedirect"}, "SPRedirect", curUri.getString());
+					}
+				} else {
+					var path = curUri.getPath();
+					if (path.substring(0, 2) !== '/:')
+					{
+						curUri.setPath("/:" + extension + ":/r" + path);
+					}
+					curUri.removeQueryParameter(_paramCT);
+					curUri.removeQueryParameter(_paramOR);
+					curUri.removeQueryParameter(_paramSlrid);
+					history.replaceState({reason: "SPRedirect"}, "SPRedirect", curUri.getString());
+				}
+			}
+		  }
+		  catch (e) {}
+		}
+	}
+	if (wopiContext && !wopiContext.DelayLoadResources)
+	{
+	  postLogging();
+	}
+	ResetUrl();
+  </script>
+  <form method="post" action="./Doc.aspx?sourcedoc=%7b643EE81B-77CF-4F3B-BD90-B9E3532364C8%7d&amp;file=Book+1.xlsx&amp;action=editnew&amp;mobileredirect=true&amp;wdNewAndOpenCt=1567014645714&amp;wdPreviousSession=4bb01eaa-0e78-4dc0-8acd-243b3e8fa023&amp;wdOrigin=ohpAppStartPages&amp;cid=6116c0b0-4c35-4444-9f68-645fbf70aded" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="SideBySideToken" id="SideBySideToken" value="16.0.19214.12039" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNTcxMDM0NjZkZHQohdD6F6sy7MkpMkZOAb6vbFyhHAlpXdana8QlknlT" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=kXY8DMYeRa5BrUplmEWXaOaN0sL9rlPF8pvSZJK-3H12j5s8tzjZ76MvnVKvXGAw17xjVyd1M9iSNwEC7WRhry4HqDDtmZorZJdYEMNS43c1&amp;t=636939701749177621" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var g_presenceEnabled = true;
+var g_wsaEnabled = true;
+var g_correlationId = 'e7b8fe9e-309b-9000-2aaf-5a86daffb262';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = false;
+var g_wsaLCID = 1033;
+var g_wsaListTemplateId = 700;
+var g_wsaSiteTemplateId = 'SPSPERS#9';
+var _spPageContextInfo={"webServerRelativeUrl":"/personal/mt324_duke_edu","webAbsoluteUrl":"https://prodduke-my.sharepoint.com/personal/mt324_duke_edu","viewId":"","webPropertyFlags2":0,"listId":"{b20e3412-4e82-45d1-9186-8f1ca6d9b231}","uniqueId":null,"listPermsMask":{"High":2147483647,"Low":4294967295},"listUrl":"/personal/mt324_duke_edu/Documents","listTitle":"Documents","itemTitle":null,"listBaseTemplate":700,"listBaseType":1,"driveInfo":{},"multiGeoInfo":[],"viewOnlyExperienceEnabled":false,"blockDownloadsExperienceEnabled":false,"idleSessionSignOutEnabled":false,"isUnauthorizedTenant":false,"cdnPrefix":"static.sharepointonline.com/bld","siteAbsoluteUrl":"https://prodduke-my.sharepoint.com/personal/mt324_duke_edu","siteId":"{d4c827f2-2754-4406-82ae-13dce4776310}","showNGSCDialogForSyncOnTS":false,"supportPoundStorePath":true,"supportPercentStorePath":true,"siteSubscriptionId":"ecfae68c-7221-4e1e-bea6-ada8d2320291","tenantDisplayName":null,"isMultiGeoTenant":false,"isMultiGeoODBMode":false,"webDomain":"sharepoint.com","IsIEDisabledForItemsScope":false,"isSPO":true,"farmLabel":"US_62_Content","contentDBName":"DedicatedContent_608806","serverRequestPath":"/_layouts/15/Doc.aspx","layoutsUrl":"_layouts/15","webId":"{9a7035ac-7de3-42f5-b1fd-2d9d411ed128}","webTitle":"Maria Tackett, Ph.D.","webTemplate":"21","webTemplateConfiguration":"SPSPERS#9","webDescription":"This is the personal space of Maria Tackett. You can use this space to create lists, document libraries to store, organize, and share information with others.","tenantAppVersion":"903050338","isAppWeb":false,"webLogoUrl":"_layouts/15/images/siteicon.png","webLanguage":1033,"currentLanguage":1033,"currentUICultureName":"en-US","currentCultureName":"en-US","currentCultureLCID":1033,"env":"prod","env2":"prod","nid":10362,"fid":19230,"serverTime":"2019-08-28T17:59:10.1387414Z","siteClientTag":"0$$16.0.19214.12039","crossDomainPhotosEnabled":true,"openInClient":false,"webUIVersion":15,"webPermMasks":{"High":2147483647,"Low":4294967295},"pageListId":"{b20e3412-4e82-45d1-9186-8f1ca6d9b231}","pageItemId":-1,"pagePermsMask":null,"pagePersonalizationScope":1,"userEmail":"maria.tackett@duke.edu","userId":4,"userLoginName":"mt324@duke.edu","userDisplayName":"Maria Tackett, Ph.D.","isAnonymousGuestUser":false,"isEmailAuthenticationGuestUser":false,"isExternalGuestUser":false,"systemUserKey":"i:0h.f|membership|1003bffdac4b9130@live.com","alertsEnabled":true,"siteServerRelativeUrl":"/personal/mt324_duke_edu","allowSilverlightPrompt":"True","themeCacheToken":"/personal/mt324_duke_edu::1:16.0.19214.12039","themedCssFolderUrl":null,"themedImageFileNames":null,"modernThemingEnabled":true,"isSiteAdmin":true,"isSiteOwner":false,"ExpFeatures":[-828392428,1893006153,621927125,1207906335,867936057,-1796973904,1288360502,-2091635425,273224742,-720240640,87445392,-2071797607,67484360,545980736,2159525,1879736340,1443120626,838474944,24531463,32,0,1212153856,-1347060041,-2080757274,-1772734965,-533232124,-48658374,-670033575,-998241167,1055457357,1236484368,128,268435456,1250556341,1553999463,2083277469,-1474525102,83645704,-722894142,665666352,560504580,551216569,272713798,-972421056,1208549388,1113608708,-1734342619,-1073726616,184570368,139264512,1342177696,0,64,0,0],"experimentData":"EAIBJmBgAAAIYA","experimentDataLookup":[],"killSwitches":{"9509A9B8-562D-4E3E-B932-EBBD5F35EE14":true,"4BCD8F2C-B63C-4E7B-8FBF-579092567170":true,"F859E75E-75AA-4D32-87F6-8196A04E572C":true,"2E0CD78E-663F-4803-A340-F24D2BFEFA8E":true,"A7918383-CFAE-42CB-B660-E7717CBD7DA6":true,"28355EC3-489C-4027-A688-8964A459A928":true,"D2DD2136-80DD-49A4-85F4-DE2261B48AB0":true,"C0362452-45AD-40CF-A72A-42CBD93A4B31":true,"E4539B00-99CE-40BD-85E6-96DDA4AF26AF":true,"87348353-FCA7-4C0A-85C9-F909460902FC":true,"E8F7CA3B-A8C2-429F-AFB4-4B67B041907D":true,"656B5752-0F47-457A-A2BF-4E2433A35C28":true,"81734368-238E-45D4-A8D6-531736BA6D75":true,"401AB955-7AEB-46EB-8638-228227B7C195":true,"65EC67DB-7D6E-42BC-B60F-6B4B0792FBBB":true,"D2637EBC-1910-4639-866D-0B9179764C82":true,"33E9E494-1556-4AED-851C-17CE21A3D7FC":true,"6AAFF384-F587-446A-B0D0-1455A72BDBF3":true,"36559E03-1A60-444C-A65C-28A1D423F747":true,"417FEC0B-432F-4F7A-9829-D66046E036E5":true,"84BC89EB-DBDE-4EE6-893E-05AF7A762030":true,"644C9F8F-2415-4F43-8F91-8711E58242CC":true,"2CD60382-31DA-4149-A033-4B7BE2933091":true,"0F47E8C7-A135-4E4F-AEDC-9995A42BFE92":true,"9AF572B4-E00D-42E4-9B40-CBF24957B86C":true,"5C2B8B78-3A40-4619-B502-7605451DDD35":true,"7FD847A2-C4D8-4D00-9BB6-649520C9A8B9":true,"C729DF09-AC16-43B8-9B89-A975EAD1C8EA":true,"7D741401-1860-4C07-891F-DF924E69A628":true,"703E63BB-48BD-4891-B88B-EC71C64B997E":true,"96C5488B-0019-471F-A88B-9174A6B501B0":true,"C9B07F85-CA87-4B1B-AB3E-9DDB5BD35738":true,"5808FA48-201A-446A-82F1-C9A662E42F1B":true,"CB1858D4-9D30-414A-B12E-F66476B90BC7":true,"AB32A824-22BF-4C18-9013-21D85F548157":true,"29CCDD08-305A-4DF5-A285-DE295DF979D8":true,"7EAE0ACA-6D4A-4DC4-892B-758C5AD9A2FC":true,"E0C4BEEF-6B90-445E-B5D4-6F72B7B9DD5A":true,"CF1699FD-C9E0-4B1B-AFEB-76EF4730CFFA":true,"FCA58864-3303-4AE8-A441-F0BC1A390284":true,"901CD3E1-D85E-4EF8-83FE-28CC4CF15DD4":true,"767AAB93-5F71-4FF5-A6C3-A7E76F43664B":true,"CF7FDE8C-E861-4154-B123-7710617CF597":true,"3B0DA4ED-FAD5-41D9-92F2-94CD16626E86":true,"FEC7772C-A565-4893-8CD0-2BD593468273":true,"C3BC95E8-CA8A-4BE2-A9E1-B379461B7368":true,"16E9ADED-8E23-4740-95CC-9B68FC7F2E49":true,"FD006AC1-BF87-47B2-B31C-A678F01D7745":true,"92CE82BC-BA2E-4D44-AAA6-A30EF36653C7":true,"9E4109B7-74A1-4E6D-8EDF-29C13B0224E9":true,"A3FC13AA-5DE2-4A0E-ACD8-A81E23EBA917":true,"AF028DCB-151E-4A1C-89FF-2EF94513F776":true,"DB08C77B-C4F6-4EB3-93D6-5B4CCB39A73A":true,"2024F8EA-86A4-4BB6-901F-A3900026303B":true,"70711F0E-688C-4BA9-A843-C3B84DB630DF":true,"197381A1-43D8-407D-8871-907D3FA7922B":true,"0F4A2E32-1046-4E63-AD1A-F2460180E8BB":true,"2165ADA6-22D9-4119-A3C8-4AEEB27AE407":true,"0BD6A981-7F6B-48E8-B58F-5FD4A7070B2C":true,"1391A96B-7AEB-4878-8581-E6DF5CC644CF":true,"8DAEFF70-CBAE-4FAF-B84C-044CF1670FAE":true,"C145066B-F4D9-4A3A-ACB3-15729DA0DE9F":true,"B783FBE2-5F13-4257-8040-353A43B47C23":true,"CB790147-BA70-434F-A84C-EB077193DF7F":true,"83FB0325-2AC8-4EBE-9687-619306F6A6C0":true,"2E68FF7D-C010-444B-9286-1945C4B44E04":true,"395055AC-8599-4D74-A936-34D686333D03":true,"D6DC04B3-0E76-4AE8-8349-22578F5F57E8":true,"93697E03-FF00-4380-89B7-774481A1E742":true,"E9789901-37C3-4134-83D8-AA76385710B5":true,"D0A111CB-9D18-4761-8B7B-486D1CA1E36F":true,"03C3F8BF-1C2C-4490-BB63-E443CAF66F8A":true,"42EEC8B1-BC76-4ABD-B4FF-0A2556F3E0B1":true,"FC42FBFC-A8E9-4D0D-BBEE-863A7C439F47":true,"8022E12C-A634-4343-BD51-96716B3E09C1":true,"E3A95ED9-A209-41E1-851B-CFDFA531CC72":true,"2C30B5CC-9A6D-4162-857A-4F78988124D5":true,"25652E85-1113-4786-AD61-568E75D5F224":true,"9321CB67-2886-4D29-9B10-4608B08D3847":true,"C5BBD93E-E020-4C77-B166-BE5697EA03AC":true,"D6F32D6D-92DE-42B0-A77B-4087E73FF4C2":true,"74603B69-77AB-4483-B9EC-8BDEAF556F64":true,"13496475-06A6-4864-9560-86FC014B37AD":true,"337CCE8C-E6F7-427C-B02B-871A6C66AD71":true,"0CC90ECA-4E9D-4FBD-8E8F-F420DC9F954C":true,"2B9BD1FE-C17A-4AE1-B95B-DD74F6E1961D":true,"226E40C5-4389-47CD-AD55-67D2ED24DD0E":true,"D4148610-2C97-4768-BBEA-66C7342EEDB2":true,"20A02119-EE30-4A87-8FDB-A31DE27A4E52":true,"575A7F2D-C91C-4035-94E6-FDBBA82E3DE1":true,"81D149E2-0FEB-41E9-ADCC-DF83C2356D06":true,"38F53D82-6DFE-4903-BE53-53F0FCA2F221":true,"BDC72D09-57F8-4E42-8A36-4E7AD0771AC7":true,"B8F22B41-F1A5-4E5E-9651-DB9B1BAA5CA7":true,"369E10F7-E2CE-4310-9AF5-DFB3E1D7BD95":true,"E4E7591E-4D26-4788-A4FA-B143E69521BE":true,"69D4C5F7-7862-47C8-B626-136CDA75C3FA":true,"20824CB4-7C5A-4D88-B76D-D526E2D653D5":true,"DC298C09-EC34-4D48-A696-E3D94D58D870":true,"7F4CDC97-EE59-44E5-9911-B0024B33A45B":true,"C98F7BB4-96F8-4C05-AE1D-2809FCA197BD":true,"033A2586-60C0-46D9-8D3B-7CD0A562889B":true,"A64D0704-9D96-4653-90B4-8659451897D1":true,"E2FBFE47-5466-4203-A8ED-EF9BCFA04FF3":true,"4FE0344A-6F84-494B-AB80-CDA687905D53":true,"22D739B5-10A6-4B26-BB43-48D851E2D1E2":true,"3487BA96-793D-453F-AA6E-5252E0D81ED6":true,"3B1533C8-DE05-45E0-9EB0-92131C3986C6":true,"4EC338B0-94BA-4A44-A3C2-7376F9779C52":true,"BF5EFEAA-73DD-487C-A7AC-56221DEF3688":true,"00DF68DF-E386-4220-9719-C4247403ACC0":true,"632FABC4-3BF7-49D3-B971-CF7E4A5B1A06":true,"761DAE33-801E-4D39-951B-973104D4D75F":true,"C2F3C612-9A07-441D-AB4E-F06D2B5268AF":true,"94ED1ABD-A22F-4C79-8795-23CD961E8969":true,"E5E97AB3-F6D0-4C30-9338-DC8E47D43BFA":true,"2D03FE67-B750-42A7-B5F9-D0F9EEF5F6CA":true,"EDF1DC15-00A5-4328-BF30-A248DB93C94B":true,"1C9E56CA-5B88-416D-90D7-D3846AB685EB":true,"2A1C5882-EDF2-4B3D-A2F1-13B1CC18085C":true,"ADDB3EA5-93A4-48A2-ACBE-B1B3F8A9F529":true,"41286CA4-5BE8-4F24-87D7-7CFE8B1FF397":true,"81A43936-0FEF-436A-9370-85E31091AACF":true,"CEE5D117-D348-4775-A7C9-6A3382B83D14":true,"4F21995E-BFE8-4A12-9847-4B2C6B1C9DC9":true,"861F4C31-886E-4054-8CFF-B1F3FC327425":true,"0D0B25C7-7C61-4660-AA3C-5A087AF68CFF":true,"1127B4CC-8445-4C58-B364-3228CC590E39":true,"9058F4D5-FA5A-44FD-BA2E-84A10987E2FD":true,"69E23215-1C6B-45AE-B498-915B2900A28E":true,"996690F5-E602-4AF5-80C5-7464B097080E":true,"C03839F0-1E28-4FC2-84C8-5BCB3A989C9A":true,"22361D0C-3EF0-47CD-B721-DA2DC4778538":true,"78346C81-8DEB-4490-A2F4-054BB9EF599D":true},"CorrelationId":"e7b8fe9e-309b-9000-2aaf-5a86daffb262","hasManageWebPermissions":true,"isNoScriptEnabled":true,"groupId":null,"groupHasHomepage":true,"groupHasQuickLaunchConversationsLink":false,"departmentId":null,"hubSiteId":null,"sensitivityLabel":null,"restrictedToRegion":null,"hasPendingWebTemplateExtension":false,"disableRecommendedItems":false,"isGroupRelatedSite":false,"isArchived":false,"hasAutogeneratedWebLogo":true,"isHubSite":false,"isWebWelcomePage":false,"siteClassification":"","hideSyncButtonOnODB":false,"showNGSCDialogForSyncOnODB":false,"sitePagesEnabled":false,"sitePagesFeatureVersion":0,"featureInfo":{"SitePages":{"Version":0,"Enabled":false},"SitePagesResources":{"Version":0,"Enabled":false},"MixedReality":{"Version":0,"Enabled":false},"MixedRealityResources":{"Version":0,"Enabled":false},"RecommendedItems":{"Version":0,"Enabled":false},"MultilingualPages":{"Version":0,"Enabled":false},"MultilingualResources":{"Version":0,"Enabled":false}},"DesignPackageId":"00000000-0000-0000-0000-000000000000","groupType":null,"groupColor":"#881798","siteColor":"#881798","headerEmphasis":0,"headerLayout":0,"searchScope":0,"navigationInfo":null,"clientPersistedCacheKey":{"CurrentKey":{"Key":"MTc3TEdSQldNRTVaU1RZd2VqS01IZEQwWkpsMEswV0FNbnpPait3cGNkST0","Date":"2019-07-29"},"PreviousKey":{"Key":"VE5UclRUQU10K3dNa0VMZ09IQlFYN01jVnhMSXR3SEZQUUY4STJPaVAvND0","Date":"2019-06-29"}},"guestsEnabled":true,"MenuData":{"SettingsData":[{"Id":"SuiteMenu_zz5_MenuItemCreate","Text":"Add an app","Url":"/personal/mt324_duke_edu/_layouts/15/addanapp.aspx"},{"Id":"SuiteMenu_zz6_MenuItem_ViewAllSiteContents","Text":"Site contents","Url":"/personal/mt324_duke_edu/_layouts/15/viewlsts.aspx"},null,{"Id":"SuiteMenu_zz7_MenuItem_Settings","Text":"Site settings","Url":"/personal/mt324_duke_edu/_layouts/15/settings.aspx"}],"SignOutUrl":"https://prodduke-my.sharepoint.com/personal/mt324_duke_edu/_layouts/15/SignOut.aspx"},"RecycleBinItemCount":-1,"PublishingFeatureOn":false,"PreviewFeaturesEnabled":true,"disableAppViews":false,"disableFlows":false,"serverRedirectedUrl":null,"formDigestValue":"0x83CC4627A86F2A2D89B14DCD45ABF0D2D95F21C549F64A922194558E03D4A6D801EB0D43E010C3E01892EF04D9C08AAE58DDEF98F3234856F5E3EECB0E4C290D,28 Aug 2019 17:59:10 -0000","IsHomepageModernized":false,"maximumFileSize":15360,"formDigestTimeoutSeconds":1800,"canUserCreateMicrosoftForm":true,"canUserCreateVisioDrawing":true,"readOnlyState":null,"isTenantDevSite":false,"preferUserTimeZone":false,"userTimeZoneData":null,"userTime24":false,"userFirstDayOfWeek":null,"webTimeZoneData":{"Description":"(UTC-08:00) Pacific Time (US and Canada)","Bias":480,"Id":13,"DaylightBias":-60,"DaylightDate":{"Year":0,"Month":3,"DayOfWeek":0,"Day":2,"Hour":2,"Minute":0,"Second":0,"Milliseconds":0},"StandardBias":0,"StandardDate":{"Year":0,"Month":11,"DayOfWeek":0,"Day":1,"Hour":2,"Minute":0,"Second":0,"Milliseconds":0}},"webTime24":false,"webFirstDayOfWeek":0,"aadTenantId":"cb72c54e-4a31-4d9e-b14a-1ea36dfac94c","aadUserId":"6faf341c-28db-4c25-b3d9-524f5ffedacc","aadInstanceUrl":"https://login.windows.net","msGraphEndpointUrl":"https://graph.microsoft.com","msMruEndpointUrl":"https://ocws.officeapps.live.com","allowInfectedDownload":true,"orgNewsSiteDetails":null,"organizationNewsSiteReference":[],"companyPortalReference":null,"spfx3rdPartyServicePrincipalId":"00000000-0000-0000-0000-000000000000","completenessUrls":["https://northcentralus0-completenessp.svc.ms","https://southcentralus0-completenessp.svc.ms"],"socialBarEnabled":true,"substrateOneDriveDisabled":false,"isGroupifyDisabled":false,"Has2019Era":true,"userVoiceForFeedbackEnabled":true,"substrateOneDriveMigrated":true,"userPrincipalName":"mt324@duke.edu","spfxOBOFlowEnabled":false,"publicCdnBaseUrl":"https://publiccdn.sharepointonline.com","farmSettings":{"ExternalService_powerappswebhostname":"web.powerapps.com","ExternalService_powerappscreatehostname":"create.powerapps.com","ExternalService_flowhostname":"flow.microsoft.com","ExternalService_flowservicehostname":"service.flow.microsoft.com","ExternalService_popularplatformsenable":"1"}};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}var MSOWebPartPageFormName = 'aspnetForm';Flighting.ExpFeatures = [-828392428,1893006153,621927125,1207906335,867936057,-1796973904,1288360502,-2091635425,273224742,-720240640,87445392,-2071797607,67484360,545980736,2159525,1879736340,1443120626,838474944,24531463,32,0,1212153856,-1347060041,-2080757274,-1772734965,-533232124,-48658374,-670033575,-998241167,1055457357,1236484368,128,268435456,1250556341,1553999463,2083277469,-1474525102,83645704,-722894142,665666352,560504580,551216569,272713798,-972421056,1208549388,1113608708,-1734342619,-1073726616,184570368,139264512,1342177696,0,64,0,0];//]]>
+</script>
+
+<script src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19214.12039/blank.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DC1ED078" />
+</div>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', [], [], [], 90, '');
+//]]>
+</script>
+
+  
+
+<script type="text/javascript">
+//<![CDATA[
+var _fV4UI = true;var g_MinimalDownload = true;var g_WebServerRelativeUrl = "/personal/mt324_duke_edu";var _spFullDownloadList = ['closeconnection', 'download', 'signout', 'xlviewer', 'wordviewer', 'wordeditor', 'powerpoint', 'powerpointframe', 'onenote', 'visiowebaccess', 'storefront', 'wopiembedframe', 'wopihiddenframe', 'doc', 'wopiframe', 'appredirect', 'wfstart', 'developertools'];
+//]]>
+</script>
+</form>
+  <script type="text/javascript">
+                        var webUrl = 'https:\u002f\u002fprodduke-my.sharepoint.com\u002fpersonal\u002fmt324_duke_edu';
+                        var wopiServerUrl = 'https:\u002f\u002fexcel.officeapps.live.com';
+                        var listGuid = 'b20e3412-4e82-45d1-9186-8f1ca6d9b231';
+                        var listItemID = 31;
+                        var wopiAction = 'EditNew';
+                        var isShareByLinkGuestUser = false;
+                        var wopiAllowedOrigins = null;
+                        if(!OffSwitch.IsActive('6544AD56-647C-49D6-9033-E4AF2CC47CD5'))
+                        {
+                          wopiAllowedOrigins = 'https:\u002f\u002fexcel.officeapps.live.com';
+                        }
+
+                        function LoadCoreCSS()
+                        {
+                            var head = document.getElementsByTagName('head')[0];
+                            var cssLink = '/_layouts/15/1033/styles/corev15.css?rev=qeIM5stC%2FS1ZPt78zDMzew%3D%3DTAG1118';
+                            var aLink = document.createElement('link');
+                            aLink.rel = 'stylesheet';
+                            aLink.type = 'text/css';
+                            aLink.href = cssLink;
+                            head.appendChild(aLink);
+                        }
+
+                        function DelayLoadResources() 
+                        {
+                            EnsureScriptFunc('SP.WOPIMessageHandler.js', 'SP.WOPIMessageHandler.WOPIMessageHandler', function () 
+                                {
+                                    SP.WOPIMessageHandler.WOPIMessageHandler.initialize(webUrl, wopiServerUrl, listGuid, listItemID, wopiAllowedOrigins, isShareByLinkGuestUser, wopiAction);
+                                    isReadyToUploadLogs = true;
+                                });
+
+                            LoadCoreCSS();
+                        }</script>
+  <script type="text/javascript">
+	if (wopiContext && wopiContext.DelayLoadResources)
+	{
+	  function postWAC()
+	  {
+		postLogging();
+		DelayLoadResources();
+	  }
+	  executeAfterWAC(postWAC);
+	}
+  </script>
+</body>
+
+
+</html>
+<script type="text/javascript" nonce="a526b8da-862f-4daf-bdbd-7295228a7f17">
+	var g_duration = 185;
+var g_iisLatency = 2;
+var g_cpuDuration = 111;
+var g_queryCount = 12;
+var g_queryDuration = 65;
+var g_requireJSDone = new Date().getTime();
+</script>

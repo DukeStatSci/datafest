@@ -1,0 +1,134 @@
+---
+title: "HW 02"
+subtitle: "due Wed, Feb 12 at 11:59p"
+author: ""
+date: ""
+output: 
+  html_document:
+    css: "./sta210-hw.css"
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE)
+```
+
+<br><br>
+
+*Instructions will be available when the homework is assigned.*
+
+
+<!--
+# Getting Started
+
+- Go to the sta210-fa19 organization on GitHub ([https://github.com/sta210-fa19](https://github.com/sta210-fa19)). Click on the repo with the prefix **hw-02**. It contains the starter documents you need to complete the lab.
+- Clone the repo in RStudio Cloud
+- Configure git using the `use_git_config()` function.
+
+## Tips
+
+Here are some tips as you complete HW 02:
+
+- Name your code chunks to make it easier to find them in your Markdown file. Make sure there are no spaces in the code chunk names and the names are not repeated. 
+- Periodically knit, commit, and push all the updated documents to GitHub (the more often the better, for example, once per each new task).
+- Once you push your changes back you do not need to do anything else to “submit” your work, and you can (and should) push your changes to GitHub multiple times. We will consider the state of your repo at the deadline as the final submission. Therefore, even if you make mistakes along the way, you won't be penalized for them as long as the final state of your work is correct.  
+
+## Packages 
+
+We will use the following packages in this assignment: 
+
+```{r}
+library(tidyverse)
+library(broom)
+library(knitr) 
+```
+
+# Questions
+
+## Part 1: Computations & Concepts
+
+The *Computations & Concepts* section of homework contains short answer questions about the concepts discussed in class. Some of these questions may also require short chunks of code to produce the output needed to answer the question. Answers should be written in complete sentences.
+
+1. Analysis of Variance is used to compare means across multiple groups. Some of the values from an ANOVA table are provided; however, many are missing.
+
+```{r}
+dfw <- 125 # degrees of freedom within (residuals)
+dft <- 130 # total degress of freedom
+ssw <- 6.486 # sum of squares within (residuals)
+sst <- 19.386 # total sum of squares
+```
+
+Fill in the missing values from the ANOVA table, and use the code below to display the completed table. 
+
+```{r eval=FALSE}
+dfb <- _____ # degrees of freedom between (model)
+ssb <- _____ # sum of squares between (model)
+msb <- _____  # mean square between
+msw <- _____  # mean square within (residuals)
+f_stat <- _____  #F -statistic 
+p_val <- 1-pf(____, _____, _____)  # F-Statistic, DF1, DF2
+```
+
+Use the code below to combine all of the values and print an ANOVA table. You will use this table for the next few questions.
+
+```{r eval=FALSE}
+source <- c("Between Groups", "Within Groups", "Total")
+df <- c(dfb, dfw,dft)
+ss <- c(ssb, ssw, sst)
+ms <- c(msb, msw,NA)  
+f.statistic <- c(f_stat, NA, NA)
+p.value <- c(p_val,NA,NA)
+
+# combine the columns to make a table called "anova"
+anova <- bind_cols("Source"=source,"df"=df,"Sum of squares"=ss,
+            "Mean square"=ms,"F-statistic"=f.statistic,"p-value"=p.value)
+
+# print the table 
+kable(anova) 
+```
+
+2. How many observations are in the dataset? How many groups are being compared? 
+
+3. What is the estimate of $\sigma^2$? State the value and its definition, i.e what is quantified by $\sigma^2$. 
+
+4. State the hypotheses for the ANOVA test being shown in this table. You may use "mu" to represent $\mu$. 
+
+5. State your conclusion of the test stated in Question 4, including a brief explanation about how you came to that conclusion. 
+
+
+## Part 2: Data Analysis
+
+The *Data Analysis* section of homework contains open-ended data analysis questions. Your response should be neatly organized and read as a complete narrative. This means that in addition to addressing the question there should also be exploratory data analysis and an analysis of the model assumptions. In short, these questions should be treated as "mini-projects".
+
+6. In a 1991 study, Allen et. al sought to answer whether the presence of a close friend or pet affected women's stress levels as they completed difficult tasks. To test this, they conducted an experiment in which 45 women were tasked with counting backwards by 13s or 17s under one of three test conditions (`group`):
+    - `C`: Control group, Alone
+    - `F`: Close friend present
+    - `P`: Pet present 
+    
+To quantify stress level, they measured each woman's heart rate and blood pressure after she completed the task. For today's analysis, we will focus on the heart rate (`heart_rate`). 
+
+Conduct an ANOVA test to test whether there is an association between the presence of a friend or pet and stress level when completing difficult tasks. In your analysis, also include answers to the following: 
+
+- If there is evidence of an effect, use confidence intervals or hypothesis tests to describe which group(s) differ from the others. Be sure to properly account for the multiple comparisons. 
+- If there is evidence of an effect, can we conclude that certain conditions cause changes in stress levels of women when completing difficult tasks? Why or why not? 
+
+As usual, be sure to include exploratory data analysis and an analysis of the model assumptions.
+
+# Grading
+
+| **Total** | **60** |
+|-------------------------------------------------------------|:--:|
+| Questions 1 - 5 | 20 |
+| Question 6 | 30 |
+| Documents neatly organized (.Rmd and .md files) | 5 |
+| Narrative in full sentences and neatly organized| 3 |
+| Regular and informative commit messages | 2 |
+
+
+### References
+
+[Allen, K., Blascovich, J., Tomaka, J., and Kelsey, R., 1991, Presence of Human Friends and Pet Dogs as Moderators of Autonomic Responses to Stress in Women, *Journal of Personality and Social Psychology*, 61: 582-589.](https://search-ebscohost-com.proxy.lib.duke.edu/login.aspx?direct=true&db=pdh&AN=1992-04617-001&site=ehost-live&scope=site)
+-->

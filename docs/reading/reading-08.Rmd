@@ -1,0 +1,22 @@
+---
+title: "Reading 08: Logistic Regression, Part 2"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Due Mon, Oct 28
+
+### Required:
+
+- [Handbook of Regression Analysis](http://sakai.duke.edu) (Available for download on Sakai)
+    - Section 8.3.1: Maximum Likelihood Estimation
+    - Section 8.3.2: Inference, Model Comparison, and Model Selection 
+    - Section 8.3.3: Goodness-of-Fit
+<br><br>
+
+[All STA 210 Readings](readings.html)    

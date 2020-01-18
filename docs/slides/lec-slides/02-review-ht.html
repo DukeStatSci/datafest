@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Inference Review</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Inference Review
+## Hypothesis Testing
+### Prof. Maria Tackett
+### 01.15.20
+
+---
+
+
+
+
+
+
+class: middle, center
+
+### [Click for PDF of slides](02-review-ht.pdf)
+
+---
+
+### Announcements
+
+- Complete [surveys and consent form](https://www2.stat.duke.edu/courses/Spring20/sta210.001/misc/jan8.html) by TODAY at 11:59p
+
+- [Reading for next Wednesday](https://www2.stat.duke.edu/courses/Spring20/sta210.001/reading/reading-02.html)
+
+- Labs start tomorrow! 
+
+- No class Monday - Martin Luther King, Jr. Holiday
+
+- Find more info about statistics related events on [Sakai](https://sakai.duke.edu)
+    - Florida Blue visting Jan 22. [Submit resume](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTFvPd3eQtCxBtEvbtkDole1UQlROM1hHRVVVV0xDRlFTMjdMOUJLNDFXVC4u) by today to be considered for interview during their visit
+
+---
+
+### Today's Agenda
+
+- Calculating &amp; interpreting hypothesis tests
+
+- Drawing conclusions using hypothesis tests and confidence intervals
+---
+
+### *Sesame Street*
+
+- *Sesame Street* is a television series designed to teach children ages 3-5 basic education skills such as reading (e.g. the alphabet) and math (e.g. counting)
+
+- Today we are going to analyze data from an [study conducted by the Educational Testing Service](http://files.eric.ed.gov/fulltext/ED122799.pdf) in the early 1970s to test the  effectiveness of the program. 
+
+&lt;img src="img/01/sesame_street.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+---
+
+### *Sesame Street* study
+
+- Children from 6 locations around the United States (including Durham!) participated in the 26-week study. The children were split into two groups (`treatment`):
+      + **Group 1**: Those who were encouraged to watch the show (assume watched regularly)
+      + **Group 2**: Those who didn't get encouragement to watch the show (assume didn't watch regularly)
+
+- Each child was given a test before and after the study to measure their knowledge of basic math, reading, etc.
+
+- We will focus on the change in reading (identifying letters) scores (`change`)
+&lt;br&gt;&lt;br&gt;
+
+&lt;small&gt;
+[Sesame Street Data - Full Description](http://www2.stat.duke.edu/~jerry/sta210/sesamelab.html) 
+Original Study: *Ann Bogatz, Gerry &amp; Ball, Samuel. (1971). The Second Year of Sesame Street: A Continuing Evaluation. Volume 1. vols. 1 &amp; 2.*
+&lt;/small&gt;
+
+---
+
+### Let's look at the data
+
+`sesame_street.csv` is available in the datasets repo on GitHub.
+
+
+
+
+```r
+sesame_street %&gt;%
+  slice(1:10)
+```
+
+```
+## # A tibble: 10 x 4
+##    treatment      prelet postlet change
+##    &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+##  1 Encouraged         23      30      7
+##  2 Encouraged         26      37     11
+##  3 Not Encouraged     14      46     32
+##  4 Not Encouraged     11      14      3
+##  5 Not Encouraged     47      63     16
+##  6 Not Encouraged     26      36     10
+##  7 Not Encouraged     12      45     33
+##  8 Encouraged         48      47     -1
+##  9 Encouraged         44      50      6
+## 10 Encouraged         38      52     14
+```
+
+---
+
+### Exploratory Data Analysis - Univariate
+
+&lt;img src="02-review-ht_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Exploratory Data Analysis - Univariate
+
+- Calculate summary statistics for `change`
+&lt;small&gt;
+
+```r
+sesame_street %&gt;%
+  summarise(n = n(), min = min(change), median = median(change), max = max(change), 
+            IQR = IQR(change), 
+            mean = mean(change), std_dev = sd(change))
+```
+
+```
+## # A tibble: 1 x 7
+##       n   min median   max   IQR  mean std_dev
+##   &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1   240   -22      9    41    15  10.8    11.2
+```
+&lt;/small&gt;
+
+---
+
+### 95% CI for mean change in reading score
+
+The 95% confidence interval for the mean change in reading score is 
+
+`$$\mathbf{[9.384, 12.224]}$$`
+
+
+.question[
+
+- Interpret the interval at http://bit.ly/sta210-sp20-CI-2
+
+- Use **NetId@duke.edu** for your email address.
+
+- You are welcome (and encouraged!) to discuss these questions with 1 - 2 people around you, but **each person** must submit a response.
+]
+
+
+<div class="countdown blink-colon noupdate-5" id="timer_5e1f4d3f" style="right:0;bottom:0;" data-warnwhen="30">
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+### Confidence Interval Recap
+
+---
+
+class: middle, center
+
+### Hypothesis Tests
+
+---
+
+### Question we want to answer
+
+- Let's focus on the children who were encouraged to watch *Sesame Street*
+
+- In general, those children watched the show regularly, so let's see if the show impacted their reading skills
+
+.alert[
+The mean change in reading scores after 26 weeks for children ages 3 - 5 is 11.
+
+Is there evidence that mean change in reading scores for children encouraged to watch *Sesame Street* is "significantly" different from the mean change in reading score for all children?
+]
+
+---
+
+### Let's look at the data 
+
+&lt;img src="02-review-ht_files/figure-html/unnamed-chunk-8-1.png" style="display: block; margin: auto;" /&gt;
+
+```
+## # A tibble: 1 x 3
+##       n  mean std_dev
+##   &lt;int&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1   152  12.5    10.7
+```
+
+---
+
+### Outline of a Hypothesis Test
+
+- Identify the parameter of interest. 
+
+- Identify a null hypothesis, `\(H_0\)`, that represents the baseline
+
+- Set an alternative hypothesis, `\(H_a\)`, that represents the research question, i.e. what you're testing
+
+- Conduct a hypothesis test under the assumption that the null hypothesis is true and calculate a p-value
+    - The &lt;font class = "vocab"&gt;p-value&lt;/font&gt; is the probability of getting the observed outcome or a more extreme outcome given the null hypothesis is true
+
+---
+
+### Outline of a Hypothesis Test
+
+- Assess the p-value. A small p-value means...
+    
+    a. The assumed (null) hypothesis is incorrect
+    
+    b. The assumed (null) hypothesis is correct and a rare event has occurred
+    
+- State a conclusion about the hypothesis based on the assessment of the p-value
+--
+
+  - Since event (b) is by definition rare, we will conclude a &lt;font color = "red"&gt;"small" p-value&lt;/font&gt; indicates that there is &lt;font color = "red"&gt;sufficient evidence to claim that the assumed hypothesis is false&lt;/font&gt;.
+      - In other words, the data are not consistent with the assumed hypothesis 
+
+--
+
+  - When the p-value is &lt;font color = "blue"&gt; "not small"&lt;/font&gt;, we will conclude that there is &lt;font color = "blue"&gt;not sufficient evidence&lt;/font&gt; to claim the assumed hypothesis is false.
+
+
+---
+
+### Identify parameter &amp; hypotheses
+
+- &lt;font class="vocab"&gt;Null hypothesis, `\(H_0\)`&lt;/font&gt;: This is the baseline hypothesis, i.e. the "there is nothing going on" hypothesis. 
+    - The mean change in reading score for children encouraged to watch the show is 11 (same as the mean for all children)
+&lt;br&gt;&lt;br&gt;
+
+- &lt;font class = "vocab"&gt;Alternative hypothesis, `\(H_a\)`&lt;/font&gt;: This is typically what you want to show, i.e. the "there is something going on" hypothesis 
+    - The mean change in reading score for children encouraged to watch the show not 11 (different from the mean for all children)
+    
+`$$H_0: \mu = 11 \\
+H_a: \mu \neq 11$$`
+
+
+---
+
+### Distribution `\(\bar{x}\)` under `\(H_0\)`
+
+- We want to draw conclusions about `\(\mu\)`, so we'll use our best guess `\(\bar{x}\)`
+
+- Recall from the Central Limit Theorem, when certain conditions are met (they are!), we know that 
+
+`$$\bar{x} \sim N\Big(\mu, \frac{\sigma}{\sqrt{n}}\Big)$$`
+
+--
+
+- We conduct a hypothesis test under the assumption that `\(H_0\)` is true, so for this test
+
+`$$\bar{x} \sim N\Big(11, \frac{\sigma}{\sqrt{n}}\Big)$$`
+
+
+
+---
+
+### Distribution `\(\bar{x}\)` under `\(H_0\)`
+
+- We don't know `\(\sigma\)`, so we can use the standard error `\(s/\sqrt{n}\)` to approximate `\(\sigma/\sqrt{n}\)`.
+
+- Thus, putting it all together, we know 
+
+`$$\bar{x} \approx N\Big(11, \frac{10.7}{\sqrt{152}}\Big)$$`
+
+--
+
+.alert[
+Given `\(\bar{x} \approx N\Big(11, \frac{10.7}{\sqrt{152}}\Big)\)`, what is the probability of observing a mean change in score at least 1.5 points away from the center (11) in a random sample of 152 children ages 3 - 5?
+]
+
+---
+
+### Visualize
+
+
+&lt;img src="02-review-ht_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+
+
+The shaded area represents the (approximate) probability of obtaining a sample mean at least as far away from the center as the one we observed given the true mean change is 11. 
+
+---
+
+### Test Statistic
+
+- Let's quantify how "unusual" our observed sample mean is given `\(H_0: \mu = 11\)` is true
+
+- We'll begin by calculating how "far away" the observed mean is from the center of the distribution under `\(H_0\)`
+
+- The .vocab[test statistic] is the number of standard errors the observed value is from the hypothesized value. The general form of the test statistic is 
+$$ \frac{\text{observed value} - \text{hypothesized value}}{SE}$$
+
+--
+
+.alert[
+`$$t = \frac{\bar{x} - \mu_0}{\frac{s}{\sqrt{n}}} = \frac{12.5 - 11}{\frac{10.7}{\sqrt{152}}} \approx 1.728$$`
+where the test statistic follows the `\(t\)` distribution with `\(n-1\)` df
+]
+
+---
+
+### Motivating the p-value 
+
+- We got a test statistic of 1.728. In other words...
+
+--
+
+.alert[
+Given `\(\bar{x} \approx N\Big(11, \frac{10.7}{\sqrt{152}}\Big)\)`, what is the probability of observing a mean change in score at least 1.5 points away from the center (11) in a random sample of 152 children ages 3 - 5?
+]
+
+--
+
+`$$\Large{\Downarrow}$$`
+
+--
+
+.alert[
+Given the `\(t\)` distribution with 151 degrees of freedom, what is the probability of observing a test statistic with magnitude 1.728 or larger?
+]
+
+---
+
+### p-value
+
+Given the `\(t\)` distribution with 151 degrees of freedom, what is the probability of observing a test statistic with magnitude 1.728 or larger?
+
+&lt;img src="02-review-ht_files/figure-html/unnamed-chunk-11-1.png" style="display: block; margin: auto;" /&gt;
+
+
+```r
+(p_value &lt;- 2 * pt(-1.728, 151))
+```
+
+```
+## [1] 0.08603259
+```
+
+---
+
+### General guide for interpreting the p-value
+
+
+|  Magnitude of p-value |             Interpretation            |
+|:---------------------:|:-------------------------------------:|
+| p-value &lt; 0.01        | strong evidence against `\(H_0\)`         |
+| 0.01 &lt; p-value &lt; 0.05 | moderate evidence against `\(H_0\)`       |
+| 0.05 &lt; p-value &lt; 0.1  | weak evidence against `\(H_0\)`           |
+| p-value &gt; 0.1         | effectively no evidence against `\(H_0\)` |
+&lt;br&gt; 
+&lt;br&gt;
+
+**Note:** These are general guidelines. The strength of evidence depends on the context of the problem.
+
+---
+
+### Drawing the conclusion: Part 1
+
+- A threshold can be used to decide whether or not to reject `\(H_0\)` in favor of the alternative `\(H_a\)`
+
+- This threshold is called the .vocab[significance level] and is usually denoted by `\(\alpha\)`
+
+- If the p-value is less than `\(\alpha\)`, then we conclude there is sufficient evidence against `\(H_0\)` and we **&lt;u&gt;reject&lt;/u&gt; the null hypothesis**
+
+- Otherwise, we conclude that there isn't sufficient evidence against `\(H_0\)` and **&lt;u&gt;fail to reject&lt;/u&gt; the null hypothesis**
+
+---
+
+### Don't just rely on p-values
+
+- Do not rely strictly on the p-value and significance level to make a conclusion!
+--
+
+- Suppose the significance level is 0.05
+--
+
+  + If the p-value is 0.05001, we fail to reject `\(H_0\)`
+--
+
+  + If the p-value is 0.04999, we reject `\(H_0\)`
+--
+
+- 0.05001 and 0.04999 are practically the same, yet they led to different conclusions. 
+--
+
+.alert[
+Use confidence intervals and other statistical summaries to provide more context about the results.
+]
+
+---
+
+### t-test for *Sesame Street* data 
+
+
+```r
+enc &lt;- sesame_street %&gt;%
+  filter(treatment == "Encouraged")
+
+t.test(enc$change, mu = 11, conf.level = 0.9, 
+       direction = "two.sided")
+```
+
+```
+## 
+## 	One Sample t-test
+## 
+## data:  enc$change
+## t = 1.7226, df = 151, p-value = 0.08701
+## alternative hypothesis: true mean is not equal to 11
+## 90 percent confidence interval:
+##  11.05883 13.94117
+## sample estimates:
+## mean of x 
+##      12.5
+```
+
+---
+
+### In-class exercise 
+
+.question[
+
+- Answer the questions: http://bit.ly/sta210-sp20-ht
+
+- Use **NetId@duke.edu** for your email address.
+
+- You are welcome (and encouraged!) to discuss these questions with 1 - 2 people around you, but **each person** must submit a response.
+]
+
+<div class="countdown blink-colon noupdate-5" id="timer_5e1f4eca" style="right:0;bottom:0;" data-warnwhen="30">
+<code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+### Conclusion 
+
+&lt;center&gt;
+.alert[
+p-value: 0.087
+
+90% confidence interval: [11.059, 13.941]
+]
+&lt;/center&gt;
+
+- Using a significance level of 0.1, what is your conclusion from the test?
+    - **This is the "statistical" conclusion from our test based on the mechanics of hypothesis testing.** 
+    - In this case, we would reject `\(H_0\)` and conclude there is sufficient evidence that the mean change in reading scores is not equal to 11 for those encouraged to watch *Sesame Street*.
+
+---
+
+### Conclusion 
+
+&lt;center&gt;
+.alert[
+p-value: 0.087
+
+90% confidence interval: [11.059, 13.941]
+]
+&lt;/center&gt;
+
+- Suppose you are advising a group of educators about whether they should spend additional time and money to encourage children to watch *Sesame Street*. Based on these results, would you advise the educators to spend the resources? Why or why not?
+    - **This the "practical" conclusion from the test based on a combination of the results of the hypothesis test, the magnitude of the p-value, the confidence interval, business context, etc.**
+    - There is no single correct answer to this question, but this is an example of the type of question we ultimately are trying to answer when we do statistical inference, i.e. this is statistial inference in practice.
+    
+---
+
+### Inference for difference in means `\(\mu_1 - \mu_2\)`
+
+By the Central Limit Throem, when [the conditions](https://www2.stat.duke.edu/courses/Spring20/sta210.001/slides/lec-slides/01-review-ci.html#39) are met, 
+
+`$$(\bar{x}_1 - \bar{x}_2) \sim N\left(\mu_1 - \mu_2, \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} \right)$$`
+
+&lt;br&gt;&lt;br&gt;
+
+- We don't know `\(\sigma_1\)` and `\(\sigma_2\)` in practice, so we use the **standard error** in all calculations. 
+
+`$$SE (\bar{x}_1 - \bar{x}_2) = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$`
+
+---
+
+### Inference for difference in means `\(\mu_1 - \mu_2\)`
+
+**Confidence Interval** to estimate `\(\mu_1 - \mu_2\)`
+
+`$$(\bar{x}_1 - \bar{x}_2) \pm t_{df}^* \times \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$`
+
+`\(t^*\)` follows a `\(t\)` distribution with [degrees of freedom](https://www2.stat.duke.edu/courses/Spring20/sta210.001/slides/lec-slides/01-review-ci.html#54) computed in R. 
+
+---
+
+### Inference for difference in means `\(\mu_1 - \mu_2\)`
+
+**Hypothesis Test**: Is there a difference in the means between Group 1 and Group 2?
+
+- Null hypothesis: `\(H_0: \mu_1 - \mu_2 = 0\)`
+- Test statistic: 
+  
+  `$$\frac{(\bar{x}_1 - \bar{x}_2) - 0}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$`
+  
+- p-value: Calculated using the `\(t\)` distribution with [degrees of freedom](https://www2.stat.duke.edu/courses/Spring20/sta210.001/slides/lec-slides/01-review-ci.html#54) computed in R. 
+
+---
+
+### Muddiest point - Optional
+
+.question[
+
+What is one question you have about hypohtesis testing and confidence intervals? 
+
+Submit your question here: http://bit.ly/sta210-sp20-review
+
+- Use **NetId@duke.edu** for your email address.
+
+- Type "none" only if you really, really, really don't have a question
+]
+
+
+---
+
+### Additional Resources
+
+- Discussion in the scientific community about p-values: ["Scientists rise up against statistical significance" in *Nature*](https://www.nature.com/articles/d41586-019-00857-9)
+
+- Fun review of two-sample tests by [@allison_horst](https://twitter.com/allison_horst):  https://twitter.com/allison_horst/status/1216411185240690688
+
+&lt;img src="img/02/t_test_1.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### By Thursday at noon
+
+- Make sure you are a member of the [course organization on GitHub](http://www.github.com/sta210-sp20)
+
+- Make sure you have access to RStudio
+
+- If you are using RStudio on your local machine, make sure you have git configured and you can knit a PDF (need a Latex editor installed)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

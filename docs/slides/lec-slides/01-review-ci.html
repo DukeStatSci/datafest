@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Inference Review</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Maria Tackett" />
+    <link rel="stylesheet" href="sta210-slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Inference Review
+## Confidence Intervals
+### Prof. Maria Tackett
+### 01.13.20
+
+---
+
+
+
+
+
+
+class: middle, center
+
+### [Click for PDF of slides](01-review-ci.pdf)
+
+---
+
+## Announcements
+
+- Complete [surveys and consent form](https://www2.stat.duke.edu/courses/Spring20/sta210.001/misc/jan8.html) by Wed at 11:59p
+
+- [Reading for today &amp; Wednesday](https://www2.stat.duke.edu/courses/Spring20/sta210.001/reading/reading-01.html)
+
+- Office hours start today. See [course homepage](https://www2.stat.duke.edu/courses/Spring20/sta210.001/) for schedule
+
+- **New to R or need a refresher?**
+  - Attend an Intro to R workshop 
+  - Offered Jan 13 - 16, 6p - 7:30p, Gross Hall 270 (choose 1 night to attend)
+  - [Click here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTFvPd3eQtCxBtEvbtkDole1UNjYyVzVTSFdYMVJaWDBXUEhQS0tXWE81VC4u) to sign up
+  
+- Find more info about statistics related events on [Sakai](https://sakai.duke.edu)
+
+---
+
+class: middle, center
+
+### Any questions from last class?
+
+---
+
+### Today's Agenda
+
+- Sampling distributions &amp; the Central Limit Theorem
+
+- Calculating &amp; interpreting confidence intervals
+
+---
+
+### *Sesame Street*
+
+- *Sesame Street* is a television series designed to teach children ages 3-5 basic education skills such as reading (e.g. the alphabet) and math (e.g. counting)
+
+- Today we are going to analyze data from an [study conducted by the Educational Testing Service](http://files.eric.ed.gov/fulltext/ED122799.pdf) in the early 1970s to test the  effectiveness of the program. 
+
+&lt;img src="img/01/sesame_street.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+---
+
+### *Sesame Street* study
+
+- Children from 6 locations around the United States (including Durham!) participated in the 26-week study. The children were split into two groups (`treatment`):
+      + **Group 1**: Those who were encouraged to watch the show (assume watched regularly)
+      + **Group 2**: Those who didn't get encouragement to watch the show (assume didn't watch regularly)
+
+- Each child was given a test before and after the study to measure their knowledge of basic math, reading, etc.
+
+- We will focus on the change in reading (identifying letters) scores (`change`)
+&lt;br&gt;&lt;br&gt;
+
+&lt;small&gt;
+[Sesame Street Data - Full Description](http://www2.stat.duke.edu/~jerry/sta210/sesamelab.html) 
+Original Study: *Ann Bogatz, Gerry &amp; Ball, Samuel. (1971). The Second Year of Sesame Street: A Continuing Evaluation. Volume 1. vols. 1 &amp; 2.*
+&lt;/small&gt;
+
+---
+
+### Let's look at the data
+
+`sesame_street.csv` is available in the datasets repo on GitHub.
+
+
+
+
+```r
+sesame_street %&gt;%
+  slice(1:10)
+```
+
+```
+## # A tibble: 10 x 4
+##    treatment      prelet postlet change
+##    &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+##  1 Encouraged         23      30      7
+##  2 Encouraged         26      37     11
+##  3 Not Encouraged     14      46     32
+##  4 Not Encouraged     11      14      3
+##  5 Not Encouraged     47      63     16
+##  6 Not Encouraged     26      36     10
+##  7 Not Encouraged     12      45     33
+##  8 Encouraged         48      47     -1
+##  9 Encouraged         44      50      6
+## 10 Encouraged         38      52     14
+```
+
+---
+
+### Exploratory Data Analysis - Univariate
+
+&lt;small&gt;
+
+```r
+ggplot(data = sesame_street, mapping = aes(x = change)) +
+  geom_histogram(fill = "steelblue", color = "black") +
+  labs(x = "Change in Reading Score (Post - Pre)" , 
+       title = "Distribution of the Change in Reading Scores")
+```
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-5-1.png" style="display: block; margin: auto;" /&gt;
+&lt;/small&gt;
+
+---
+
+### Exploratory Data Analysis - Univariate
+
+- Calculate summary statistics for `change`
+&lt;small&gt;
+
+```r
+sesame_street %&gt;%
+  summarise(n = n(), min = min(change), median = median(change), max = max(change), 
+            IQR = IQR(change), 
+            mean = mean(change), std_dev = sd(change))
+```
+
+```
+## # A tibble: 1 x 7
+##       n   min median   max   IQR  mean std_dev
+##   &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1   240   -22      9    41    15  10.8    11.2
+```
+&lt;/small&gt;
+
+---
+
+### Exploratory Data Analysis - Bivariate
+
+&lt;small&gt;
+
+```r
+ggplot(data = sesame_street, 
+       mapping = aes(y = change, x = treatment)) +
+  geom_boxplot(fill = "steelblue") +
+  labs(y = "Change in Reading Score (Post - Pre)",
+         title = "Distribution of the Change in Reading Score", 
+       subtitle = "Encouraged vs. Not Encouraged.")
+```
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+&lt;/small&gt;
+
+---
+
+### Exploratory Data Analysis - Bivariate
+
+Calculate summary statistics for `change` for each group of `treatment`
+&lt;small&gt;
+
+```r
+sesame_street %&gt;%
+  group_by(treatment) %&gt;%
+  summarise(n = n(), min = min(change), median = median(change), 
+            max = max(change), IQR = IQR(change), 
+            mean = mean(change), std_dev = sd(change))
+```
+
+```
+## # A tibble: 2 x 8
+##   treatment          n   min median   max   IQR  mean std_dev
+##   &lt;chr&gt;          &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1 Encouraged       152   -17     10    38  15.5 12.5     10.7
+## 2 Not Encouraged    88   -22      5    41  12    7.88    11.4
+```
+
+---
+
+### What is statistical inference?
+
+.pull-left[
+
+&lt;img src="img/01/pop_samp.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-left[
+- &lt;font class = "vocab"&gt;Statistical inference&lt;/font&gt; is the process of using sample data to make conclusions about the underlying population from which the sample was taken
+
+- Types of inference:
+  - &lt;font class="vocab"&gt;Confidence Intervals: &lt;/font&gt; Estimate the parameter of interest
+  - &lt;font class="vocab"&gt;Hypothesis Tests: &lt;/font&gt; Test a specified claim or hypothesis
+]
+
+&lt;font size = "3"&gt;
+Image source: https://keydifferences.com/difference-between-population-and-sample.html
+&lt;/font&gt;
+---
+
+class: middle, center
+
+### Confidence Interval for a Population Mean
+
+---
+
+### Confidence Intervals
+
+- Developed by Jerzy Neyman (in the 1930s)
+
+- &lt;font class="vocab"&gt;**What**&lt;/font&gt;: Plausible range of values for a population parameter
+  + Assuming sample data is a random sample from the population
+  
+- &lt;font class="vocab"&gt;**Why**&lt;/font&gt;: Because the statistic is a random variable, its value is subject to chance error, i.e. random variability
+  + We want to take that variability into account by reporting a range of plausible values the parameter can take rather than solely relying on a single statistic
+
+---
+
+### Let's think about the *Sesame Street* data
+
+- We want to know the true mean change in reading scores for all children in the U.S. ages 3 - 5 after 26 weeks (the length of the study). This is the .vocab[population parameter].
+
+&lt;br&gt;&lt;br&gt;
+--
+
+- We aren't able to collect data on all children in the U.S. ages 3 - 5, but we do have data on 240 children who participated in the study and can calculate their mean change in reading scores. This is the .vocab[sample statistic] (also known as *point estimate*).
+
+---
+
+### Let's think about the *Sesame Street* data
+
+
+- Our best guess for the true mean change in reading scores is the mean change in reading scores from our sample: 10.8
+
+&lt;br&gt;&lt;br&gt;
+--
+
+- If we did the study again using 240 different children, we'd expect the mean change in reading score for that sample to differ from 10.8. This is .vocab[sampling variability]. 
+
+&lt;br&gt;&lt;br&gt;
+--
+
+- Our goal, then, is to account for that sampling variability and calculate a plausible range of values the true mean can take.
+
+
+---
+
+### Sampling distribution
+
+- A .vocab[sampling distribution] is the distribution of sample statistics from random samples of the same size taken with replacement from a population
+
+- In practice it is impossible to construct sampling distributions,  since it would 
+require having access to the entire population. However, we have theorems that tell us what the sampling distribution will look like (more on this shortly.)
+
+--
+
+- For now, let's do a couple of demonstrations to get an idea about some basic properties of sampling distributions. 
+    - For the demonstration, we will make the unrealistic assumption that we have access ot the population and will construct the sample distribution. 
+    
+---
+
+### The population
+
+
+```r
+set.seed(011320)
+norm_pop &lt;- tibble(x = rnorm(n = 100000, mean = 20, sd = 3))
+ggplot(data = norm_pop, aes(x = x)) +
+  geom_histogram(binwidth = 1) +
+  labs(title = "Population distribution")
+```
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Sampling from the population - 1
+
+
+```r
+samp_1 &lt;- norm_pop %&gt;%
+  sample_n(size = 50, replace = TRUE)
+```
+
+--
+
+
+```r
+samp_1 %&gt;%
+  summarise(x_bar = mean(x))
+```
+
+```
+## # A tibble: 1 x 1
+##   x_bar
+##   &lt;dbl&gt;
+## 1  20.1
+```
+
+---
+
+### Sampling from the population - 2
+
+
+```r
+samp_2 &lt;- norm_pop %&gt;%
+  sample_n(size = 50, replace = TRUE)
+```
+
+--
+
+
+```r
+samp_2 %&gt;%
+  summarise(x_bar = mean(x))
+```
+
+```
+## # A tibble: 1 x 1
+##   x_bar
+##   &lt;dbl&gt;
+## 1  19.7
+```
+
+
+---
+
+### Sampling from the population - 3
+
+
+```r
+samp_3 &lt;- norm_pop %&gt;%
+  sample_n(size = 50, replace = TRUE)
+```
+
+--
+
+
+```r
+samp_3 %&gt;%
+  summarise(x_bar = mean(x))
+```
+
+```
+## # A tibble: 1 x 1
+##   x_bar
+##   &lt;dbl&gt;
+## 1  19.5
+```
+
+
+--
+
+.vocab[keep repeating...]
+
+---
+
+### Population vs. sampling distributions
+
+
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-18-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Discussion 
+
+Take a minute to discuss the following with 1 - 2 people around you: 
+
+.question[
+How do the shapes, centers, and spreads of these distributions compare?
+]
+
+---
+
+### Let's simulate another distribution
+
+
+```r
+rs_pop &lt;- tibble(x = rbeta(100000, 1, 5) * 100)
+```
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-20-1.png" style="display: block; margin: auto;" /&gt;
+
+
+```
+## # A tibble: 1 x 2
+##      mu sigma
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1  16.6  14.1
+```
+
+---
+
+### Sampling distribution
+
+
+```r
+sampling &lt;- rs_pop %&gt;%
+  rep_sample_n(size = 50, replace = TRUE, reps = 1000) %&gt;%
+  group_by(replicate) %&gt;%
+  summarise(xbar = mean(x))
+```
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-23-1.png" style="display: block; margin: auto;" /&gt;
+
+
+```
+## # A tibble: 1 x 2
+##    mean    se
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1  16.7  2.08
+```
+
+---
+
+### Population vs. sampling distribution 
+
+&lt;img src="01-review-ci_files/figure-html/unnamed-chunk-25-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+### In-class exercise 
+
+.question[
+
+- Use the two examples we just discussed to answer the questions: http://bit.ly/sta210-sp20-samp 
+
+- Use **NetId@duke.edu** for your email address.
+
+- You are welcome (and encouraged!) to discuss these questions with 1 - 2 people around you, but **each person** must submit a response.
+]
+
+---
+
+### Central Limit Theorem
+
+- Using the .vocab[Central Limit Theorem (CLT)] we know the form of the sampling distribution for certain statistics such as the mean, proportion, difference in means, etc.
+    - CLT does not apply to all statistics (e.g. the median)
+
+- By the Central Limit Theorem, when the conditions are met, we know the sampling distribution of the sample statistic will...
+  - be approximately Normal
+  - have a mean equal to the unknown population parameter
+  - have a standard deviation proportional to the inverse of the square root of the sample size.
+
+- Get more details on the derivation of the CLT in STA 240 &amp; STA 250
+
+---
+
+### CLT for a population mean 
+
+.alert[
+Suppose we have a population with mean `\(\mu\)` and standard deviation `\(\sigma\)`. By the CLT, when conditions are met, the sampling distribution of the sample mean is 
+
+`$$\bar{x} \sim N\Big(\mu, \frac{\sigma}{\sqrt{n}}\Big)$$`
+]
+
+---
+
+### Conditions for CLT
+
+- **Independence**: The sampled observations must be independent. This is difficult to check, but the following are useful guidelines:
+    - the sample must be random
+    - if sampling without replacement, sample size must be less than 10% of the population size
+
+- **Sample Size**: Sample size is large. Usually `\(n &gt; 30\)` is considered large enough sample. Need larger sample size if population distribution is extremely skewed. 
+
+- **Independent Groups**: If comparing two populations, the groups must be independent of each other, and all conditions should be checked for both groups.
+
+---
+
+## Standard Error
+
+- By the CLT, the standard deviation of the sampling distribution of `\(\bar{x}\)` is `\(\sigma/ \sqrt{n}\)`. 
+
+- In practice, we don't know the population standard deviation `\(\sigma\)`, but we can estimate it using the sample standard deviation `\(s\)`. 
+
+- The &lt;font class="vocab"&gt;standard error (SE) &lt;/font&gt; is the *standard deviation* of the *sampling distribution*, calculated using sample statistics
+
+.alert[
+`$$SE(\bar{x}) = \frac{s}{\sqrt{n}}$$`
+]
+
+- We will use the standard error for calculations of confidence intervals and hypothesis tests
+
+---
+
+### Confidence interval for the mean
+
+The `\(C\)`% confidence interval to estimate the population mean, `\(\mu\)`,  is 
+
+.alert[
+`$$\bar{x} \pm t_{df}^* \times \frac{s}{\sqrt{n}}$$`
+where `\(t_{df}^*\)` is the critical value calculated from the `\(t\)` distribution with `\(n-1\)` degrees of freedom. 
+]
+
+---
+
+## t-distribution vs. Normal 
+
+- We need to account for the extra variability that comes from using `\(s/\sqrt{n}\)` (instead `\(\sigma/\sqrt{n}\)`). Therefore, we will use the `\(t\)` distribution for the shape of the sampling distribution of `\(\bar{x}\)` in our calculations.
+
+&lt;img src="img/02/tdistribution.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;font size="2"&gt;Picture from &lt;i&gt;The Basic Practice of Statistics (7th edition)&lt;/i&gt;&lt;/font&gt;
+
+---
+
+### 95% CI for mean change in reading scores
+
+Let's write the equation for the 95% confidence interval for the mean change in reading scores after 26 weeks for children ages 3 - 5.
+
+
+```
+## # A tibble: 1 x 3
+##       n  mean std_dev
+##   &lt;int&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1   240  10.8    11.2
+```
+
+
+```r
+(t_star &lt;- qt(0.975, 239))
+```
+
+```
+## [1] 1.969939
+```
+
+---
+
+### 95\% CI for mean change in reading scores
+
+We can also calculate the 95% confidence interval using the `t.test` function in R
+
+
+```r
+t.test(sesame_street$change, conf.level = 0.95)
+```
+
+```
+## 
+## 	One Sample t-test
+## 
+## data:  sesame_street$change
+## t = 14.987, df = 239, p-value &lt; 2.2e-16
+## alternative hypothesis: true mean is not equal to 0
+## 95 percent confidence interval:
+##   9.384038 12.224296
+## sample estimates:
+## mean of x 
+##  10.80417
+```
+
+
+---
+
+
+### What does "95% confidence" mean?
+
+&lt;div align="center"&gt;
+&lt;img src="img/02/confidence_intervals.png" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;/div&gt;
+
+.small[
+- Suppose we take a lot of samples and calculate a 95% confidence interval from each
+
+- We would expect about 95% of these intervals to contain the true population mean, i.e. the parameter of interest
+
+- Some sample means will be far away from the parameter and that's OK. The interval is only a plausible range of values. We may conclude that other values are not plausible based on our data, but that doesn't mean other values are impossible. 
+]
+
+---
+
+### In-class exercise
+
+.question[
+
+- Answer the questions at http://bit.ly/sta210-sp20-CI
+
+- Use **NetId@duke.edu** for your email address.
+
+- You are welcome (and encouraged!) to discuss these questions with 1 - 2 people around you, but **each person** must submit a response.
+]
+
+---
+
+class: middle, center
+
+### Confidence Interval for the Difference in Two Means
+
+
+---
+
+### Difference in mean reading score change
+
+Let Group 1 be the those encouraged to watch *Sesame Street* and Group 2 who got no encouragement to watch the show 
+
+
+```r
+sesame_street %&gt;%
+  group_by(treatment) %&gt;%
+  summarise(n = n(), mean = mean(change), sd = sd(change))
+```
+
+```
+## # A tibble: 2 x 4
+##   treatment          n  mean    sd
+##   &lt;chr&gt;          &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 Encouraged       152 12.5   10.7
+## 2 Not Encouraged    88  7.88  11.4
+```
+
+- **Parameter**: `\(\mu_{1} - \mu_{2}\)`
+- **Statistic**: `\(\bar{x}_{1} - \bar{x}_{2}\)`
+
+- We want to estimate the difference in the mean change in reading scores between the two groups,  i.e. estimate `\(\mu_{1} - \mu_{2}\)`. 
+
+
+---
+
+### Sample distribution of `\(\bar{x}_1 - \bar{x}2\)`
+
+- In the *Sesame Street* example, the parameter of interest is the difference in means, `\(\mu_{1} - \mu_{2}\)`. Let's look at the confidence interval for `\(\mu_{1} - \mu_{2}\)` based on the CLT
+
+- The statistic is the difference in sample means `\(\bar{x}_1 - \bar{x}_2\)`
+
+- Assuming the conditions for the CLT are met (independent observations, large `\(n\)`, independent groups), the sampling distribution for `\(\bar{x}_1 - \bar{x}_2\)` is 
+
+`$$\bar{x}_1 - \bar{x}_2 \sim N \Bigg(\mu_1 - \mu_2, \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\Bigg)$$`
+
+---
+
+### Confidence interval for the difference in means
+
+.alert[
+The `\(C%\)` confidence interval to estimate `\(\mu_1 - \mu_2\)` is 
+
+`$$(\bar{x}_1 - \bar{x}_2) \pm t_{df}^* \times \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$`
+where `\(t_{df}^*\)` is the critical value calculated from the *t* distribution with *df* degrees of freedom.
+]
+
+---
+
+### Standard Error of `\(\bar{x}_1 - \bar{x}_2\)`
+
+- In practice, we don't know the population standard deviations `\(\sigma_1\)` and `\(\sigma_2\)`
+
+--
+
+- We will use the sample standard deviations `\(s_1\)` and `\(s_2\)` to estimate `\(\sigma_1\)` and `\(\sigma_2\)`
+
+--
+
+- Thus, the &lt;font class="vocab"&gt;**standard error of `\(\mathbf{\bar{x}_1 - \bar{x}_2}\)`**&lt;/font&gt; is
+
+.alert[
+`$$SE(\bar{x}_1 - \bar{x}_2) = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$`
+]
+---
+
+## Calculating the critical value 
+
+The critical value, `\(t^*\)`, follows a `\(t\)` distribution with degrees of freedom given by the formula:
+&lt;br&gt;
+&lt;br&gt;
+
+`$$df = \frac{\Big(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\Big)^2}{\frac{1}{n_1-1}\Big(\frac{s_1^2}{n_1}\Big)^2 + \frac{1}{n_2-1}\Big(\frac{s_2^2}{n_2}\Big)^2} \approx min\{n_1-1,n_2-1\}$$`
+&lt;br&gt;
+&lt;br&gt;
+In practice, we can use R to calculate the degrees of freedom.
+
+---
+
+### 95% confidence interval for the difference in means
+
+
+```r
+sesame_street %&gt;%
+  group_by(treatment) %&gt;%
+  summarise(n = n(), mean = mean(change), std_dev = sd(change))
+```
+
+```
+## # A tibble: 2 x 4
+##   treatment          n  mean std_dev
+##   &lt;chr&gt;          &lt;int&gt; &lt;dbl&gt;   &lt;dbl&gt;
+## 1 Encouraged       152 12.5     10.7
+## 2 Not Encouraged    88  7.88    11.4
+```
+
+
+
+
+
+```r
+(df &lt;-  (var1/n1 + var2/n2)^2/((var1/n1)^2*(n1-1)^(-1) + (var2/n2)^2*(n2-1)^(-1)))
+```
+
+```
+## [1] 173.5923
+```
+
+```r
+(t_star &lt;- qt(0.975, df))
+```
+
+```
+## [1] 1.973724
+```
+
+---
+
+### 95% confidence interval for the difference in means
+
+We can also calculate the 95% confidence interval for the difference in means using the `t.test` function
+
+
+```r
+t.test(change ~ treatment, data = sesame_street, conf.level = 0.95)
+```
+
+```
+## 
+## 	Welch Two Sample t-test
+## 
+## data:  change by treatment
+## t = 3.102, df = 173.59, p-value = 0.002244
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  1.682256 7.567744
+## sample estimates:
+##     mean in group Encouraged mean in group Not Encouraged 
+##                       12.500                        7.875
+```
+
+---
+
+### 95% confidence interval for the difference in means
+
+The 95% confidence interval for the difference in mean reading score change is [1.682, 1.758]. 
+
+.question[
+Interpret this interval in the context of the data. 
+
+Using this interval, is there evidence of a statistically significant difference in the mean change in reading scores between those encouraged to watch *Sesame Street* and those who got no encouragement to watch the show?
+]
+
+---
+
+class: middle, center
+
+### Accessing RStudio &amp; GitHub
+
+---
+
+### Access RStudio &amp; GitHub
+
+.vocab[RStudio]
+
+- Go to https://vm-manage.oit.duke.edu/containers and login using your Net ID
+
+- Click to log in to the Docker container called **STA 210 - Regression Analysis**
+
+&lt;br&gt;
+
+.vocab[GitHub]
+
+- Go to https://github.com/sta210-sp20
+
+- Click to accept the invite at the top of the page. This will make you a member of the sta210-sp20 organization on GitHub
+
+- If you don't see the invite, click [here](https://docs.google.com/forms/d/e/1FAIpQLSfeTP2Li3xROLS_klixE6Ju8wZOqSWSdk_91PrKaqFPjoHEYw/viewform) to (re)submit your GitHub username.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

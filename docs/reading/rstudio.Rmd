@@ -1,0 +1,25 @@
+---
+title: "Using RStudio after STA 210"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+<br>
+Congratulations on completing STA 210: Regression Analysis! If you plan to continue using R and RStudio (and I hope you do!), here are some options about accessing RStudio going forward: 
+
+1. **Continue using** [RStudio Cloud](http://rstudio.cloud): I would recommend putting any future work in your personal workspace ("Your Workspace") in RStudio Cloud. At the end of the summer, I will delete the STA 210 course workspace. At that point, all of your RStudio Cloud projects you created for this class will be moved to your personal workspace.
+
+2. **Use RStudio through** [Duke OIT VM-Manage](https://vm-manage.oit.duke.edu/): As a Duke student, you have access to  RStudio through a Docker container managed by Duke OIT. You just need your NetID and password to log in. Similar to RStudio Cloud, the Docker container is set up so you can connect to GitHub.
+
+3. **Use RStudio on your local machine**: You can install RStudio on your local machine and configure it to work with Git/GitHub. The text [*Happy Git with R*](https://happygitwithr.com/) is a great resource to help you install RStudio and configure Git. Here is a basic outline of the steps:  
+    - [Install or Upgrade R and RStudio](https://happygitwithr.com/install-r-rstudio.html)
+    - [Install Git](https://happygitwithr.com/install-git.html)
+    - [Cache Credentials for HTTPS (optional)](https://happygitwithr.com/credential-caching.html)
+    - [Connect RStudio to Git and GitHub](https://happygitwithr.com/rstudio-git-github.html)
+    
+    
+    
+    
+
+
