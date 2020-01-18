@@ -25,6 +25,14 @@
   </url>
   
   <url>
+    <loc>/sponsors.html</loc>
+  </url>
+  
+  <url>
+    <loc>/sponsorship.html</loc>
+  </url>
+  
+  <url>
     <loc>/tags.html</loc>
     <priority>0</priority>
   </url>
