@@ -3,9 +3,10 @@ title: "Schedule"
 markup: "mmark"
 ---
 
-Full schedule coming soon! 
 
-Expect to block out Friday evening (April 3rd), all of Saturday (April 4th), and Sunday morning until late afternoon (April 5th).
+DataFest will begin on Friday, April 3 at 6pm and end on Sunday, April 5 at 5pm.
+
+Check back soon for a full schedule!
 
 <!--
 ### Friday, April 5, 2019
