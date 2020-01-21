@@ -1,6 +1,6 @@
 ---
 title: "DataFest 2020 @ Duke"
-description: "April 3-5, 2020 at Penn Pavillion"
+description: "April 3-5, 2020 at Penn Pavilion"
 markup: "mmark"
 ---
 
@@ -9,7 +9,7 @@ markup: "mmark"
 ## Event details
 
 **When:** Friday, April 3 at 6pm - Sunday, April 7 at 5pm <br>
-**Where:** [Penn Pavillion](http://maps.duke.edu/map/?id=21#!s/key=penn pavillion?m/236261), Duke University
+**Where:** [Penn Pavilion](http://maps.duke.edu/map/?id=21#!s/key=penn pavillion?m/236261), Duke University
 
 On Friday we will start with a reception where your surprise client will give a brief introduction to the data you will be working with over the weekend and tell you a bit about what they would like to get out of it. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
 
