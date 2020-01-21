@@ -1,12 +1,10 @@
 ---
-title: "Duke DataFest 2020"
+title: "DataFest 2020 @ Duke"
 description: "April 3-5, 2020 at Penn Pavillion"
 markup: "mmark"
 ---
 
-## ASA DataFest 2020 at Duke
-
-ASA DataFest 2020 will take place at Duke over the April 3-5 weekend. More details on the event are below, and you can read about last year's challenge and  winners [here](/df2018/).
+**ASA DataFest 2020 will take place at Duke over the April 3 - 5 weekend. More details on the event are below. Signups will open in February 2020.**
 
 ## Event details
 
@@ -15,7 +13,7 @@ ASA DataFest 2020 will take place at Duke over the April 3-5 weekend. More detai
 
 On Friday we will start with a reception where your surprise client will give a brief introduction to the data you will be working with over the weekend and tell you a bit about what they would like to get out of it. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
 
-Presentations and judging will begin ~2pm on Sunday. Each team will give a brief (5 minute) presentation of their findings to a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
+Presentations and judging will begin ~1pm on Sunday. Each team will give a brief (5 minute) presentation of their findings to a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
 
 ## What is DataFest?
 
@@ -38,11 +36,14 @@ While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal o
 
 ## Past DataFests at Duke
 
+### DataFest 2019 - Canadian National Women's Rugby Team
+
+**Goal:** How do we quantify the role of fatigue and workload in a team’s performance in Rugby 7s? How reliable are the subjective wellness Fata? Should the quality of the opponent or the outcome of the game be considered when examining fatigue during a game? Can widely used measurements of training load and fatigue be improved? How reliable are GPS data in quantifying fatigue?
+
 ### DataFest 2018 - Data source: Indeed
 
 **Goal:** What advice would you give a new high school about what major to choose in college? How does Indeed's data compare to official government data on the labor market? Can it be used to provide good economic indicators?
 
-Find out more about the challenge and the winners [here](/df2018/).
 
 ### DataFest 2017 - Data source: Expedia
 
