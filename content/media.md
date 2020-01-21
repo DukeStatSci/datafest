@@ -3,7 +3,7 @@ title: "Media"
 markup: "mmark"
 ---
 
-If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](/contact).
+If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:maria.tackett@duke.edu).
 
 - [DataFest Shows Spike in Growth, Provides Immersive Experience](http://magazine.amstat.org/blog/2017/09/01/datafest-2/) - AMSTAT News, September 1, 2017
 
