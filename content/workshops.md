@@ -5,7 +5,7 @@ markup: "mmark"
 
 
 
-The following workshops will be held at Duke, participants from all schools are welcome. See [here](http://parking.duke.edu/parking/visitor/index.php) for visitor parking information.
+The following workshops will be held at Duke, participants from all schools are welcome. See [here](https://parking.duke.edu/visitor) for visitor parking information.
 
 Dinner will be served at all workshops.
 
