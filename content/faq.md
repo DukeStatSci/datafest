@@ -61,5 +61,5 @@ ASA DataFest<sup><small>TM</small></sup> is growing fast! See <a href="http://ww
 Please don't hesitate to contact your local organizer with any questions:
 
   + Duke: [Maria Tackett](mailto:maria.tackett@duke.edu)
-  + NCSU: [Herle McGowan](herle_mcgowan@ncsu.edu)
-  + UNC: [Robin Cunningham](rjcunnin@email.unc.edu)
+  + NCSU: [Herle McGowan](mailto:herle_mcgowan@ncsu.edu)
+  + UNC: [Robin Cunningham](mailto:rjcunnin@email.unc.edu) + [Mario Giacomazzo](mailto:mgiacoma@email.unc.edu)
