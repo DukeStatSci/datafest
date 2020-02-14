@@ -52,7 +52,7 @@ Sponsors will be provided with various advertising and recruiting opportunities.
 
 #### Online
 
-You can make your donation online at https://www.gifts.duke.edu. Please enter the amount you would like to give, and choose Annual Funds. Then, choose "Trinity College of Arts & Sciences" for area you would like to support and "Trinity College Annual Fund - Hands-On Learning" for area in Trinity College you would like to support. In the next window choose "One time gift". In the Review section, please add a comment saying that the funds are allocated for *"Department of Statistical Science - DataFest, Fund code: 3991698"*. 
+You can make your donation online at https://www.gifts.duke.edu. Please enter the amount you would like to give, and click “Choose an Area”, then “Still can’t find your designation of choice?” In the text field asking which area of Duke you’d like to support, type "*DataFest: 3991698*". After clicking “Next”, choose “One Time Gift” on the following page. Complete the remaining prompts for your information and payment details.
 
 #### By mail
 
