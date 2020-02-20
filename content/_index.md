@@ -6,7 +6,7 @@ markup: "mmark"
 
 **ASA DataFest 2020 will take place at Duke over the April 3 - 5 weekend.**
 
-**Sign up by March 19, 2020 at 11:59p!**
+**Sign up by March 18, 2020 at 11:59p!**
 
 ## Event details
 
