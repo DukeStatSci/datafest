@@ -32,7 +32,9 @@ Considering sponsoring ASA DataFest<small><sup>TM</sup></small> at Duke? Click [
 <br><br><br>
 <img style="width:320px;float: left;padding-right:20px" src="/logos/bass.jpg">
 
+<!--
 [Bass Connections](https://bassconnections.duke.edu/) bridges the classroom and the real world, giving students a chance to roll up their sleeves and tackle complex societal problems alongside faculty from across Duke. Working in interdisciplinary teams, graduate and undergraduate students collaborate with faculty on cutting-edge research that spans subjects, demographic groups and borders. Bass Connections builds on Duke’s culture of collaboration and fosters knowledge in service to society.
+-->
 
 <br><br><br><br><br><br>
 
