@@ -45,7 +45,7 @@ by Angela Zoss
 | ------------------------------------|-------------|
 | <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/6055286) |
 | <i class="fas fa-calendar-alt"></i> | &nbsp; 03/24/2020  |
-| <i class="fas fa-clock"></i>        | &nbsp; 5:45pm - 7pm    |
+| <i class="fas fa-clock"></i>        | &nbsp; 5:45pm - 8pm    |
 | <i class="fas fa-map-marker"></i>   | &nbsp; Bostock 127 (The Edge Workshop Room) |
 
 Communicating with stakeholders is a core process in any data science project. For most projects, stakeholder communication happens regularly to ensure that the analysis and outputs are structured to meet stakeholder needs. For some groups of stakeholders, however, the only ability to interact will be in a final presentation. This presentation will focus on strategies for developing a short presentation that summarizes a data science project, including: identifying a compelling story in the analysis; leading with the key takeaways; and presenting results simply, effectively, and visually.
