@@ -49,30 +49,27 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 
 ## Lognormal Sponsors
 
-[The Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student
-organizations with financial resources to develop
-programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalism
-and diversity, university/community service, and/or
+[The Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
+programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalismand diversity, university/community service, and/or
 cross-cultural collaboration.
 
 <br>
 
 <img style="width:200px;float:left;padding-right:20px" src="/logos/rti_international.png">
 
-[RTI International](www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. 
-
-For more information, visit www.rti.org.
+[RTI International](http://www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. For more information, visit [www.rti.org](http://www.rti.org).
 
 <br><br>
 
-<!--
-<img style="width:320px;float:left;padding-right:20px" src="/logos/duketrinity.png">
+<img style="width:320px;float:left;padding-right:20px" src="/logos/duke-trinity.png">
 
 Trinity College of Arts & Sciences awards nearly 80 percent of undergraduate degrees at Duke, and nearly 40 percent of all graduate degrees in disciplines across the arts, humanities, natural sciences and social sciences. We offer bachelor of arts and bachelor science programs; master of arts, master of fine arts and master of science programs; doctoral programs; and specialized certificate programs for both undergraduate and graduate students.
 
 <br><br><br>
 
+<!--
 <img style="width:320px;float:left;padding-right:20px" src="/logos/jmp.png">
+
 
 JMP (pronounced "jump") is a business unit of SAS that produces interactive software for desktop statistical discovery. John Sall, SAS co-founder and Executive Vice President, created this dynamic software in 1989 and remains its chief architect and leader of the JMP division. Developed with scientists and engineers in mind, JMP has grown into a family of statistical discovery tools tailored to meet specific needs and used worldwide in almost every industry. By combining interactive data analysis with visualization, JMP accelerates the path to useful insights and meaningful discoveries. Find out more at [jmp.com](http://www.jmp.com).
 
