@@ -11,6 +11,10 @@ Considering sponsoring ASA DataFest<small><sup>TM</sup></small> at Duke? Click [
 
 ## Cauchy Sponsors
 
+<img style="width:320px;float: left;padding-right:20px" src="/logos/dss.png">
+
+[The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. The Department currently (mid-late 2015) has 18 faculty, ~45 PhD students, ~70 MS students, ~70 research-active undergraduate majors, numerous postdocs, visitors, and affiliated researchers listed under People. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
+
 
 ## Pareto Sponsors
 
@@ -74,9 +78,7 @@ JMP (pronounced "jump") is a business unit of SAS that produces interactive soft
 
 <br><br><br>
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/dss.png">
 
-[The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. The Department currently (mid-late 2015) has 18 faculty, ~45 PhD students, ~70 MS students, ~70 research-active undergraduate majors, numerous postdocs, visitors, and affiliated researchers listed under People. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
 
 <br><br>
 
@@ -113,15 +115,7 @@ The technology to amass data exceeds our abilities to make use of it. People all
 <br><br>
 -->
 ## Acknowledgements
-<!--
-<img style="width:320px;float: left;padding-right:20px" src="/logos/moonlight.jpeg">
 
-[Moonlight Developments](https://www.moonlightdevelopments.com/) is a web development company located in the beautiful and rapidly developing region of Northwest Arkansas.  The objective of the company is to utilize experiences and various development platforms to deliver a well-informed and comprehensive content experience to our customers and to the end user.
-
-
-
-<br><br><br>
--->
 <img style="width:200px;float: left;padding-right:20px" src="/logos/cdvs.png">
 
 The [Data and Visualization Services Department](https://library.duke.edu/data/data-visualization) of the Duke Libraries will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. See [here](/workshops) for more information.
@@ -134,11 +128,8 @@ The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s c
 
 <br><br>
 
-
-<!--
 <img style="width:320px;float: left;padding-right:20px" src="/logos/asa.png">
 
-The [American Statistical Association](http://amstat.org/) is a proud sponsor of ASA DataFest<small><sup>TM</sup></small> at Duke.
+The [American Statistical Association](http://amstat.org/) is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
 
 <br><br>
--->
