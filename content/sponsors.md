@@ -3,15 +3,15 @@ title: "Sponsors"
 markup: "mmark"
 ---
 
-A huge thanks to our 2020 sponsors, ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support!
+A huge thanks to our 2020 sponsors! ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support! 
 
-Considering sponsoring ASA DataFest<small><sup>TM</sup></small> at Duke? Click [here](/sponsorship) for more information.
+Click [here](/sponsorship) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:maria.tackett@duke.edu) if you have any questions. 
 
-<br>
+<br><br>
 
 ## Cauchy Sponsors
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/dss.png">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-statsci.png">
 
 [The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. The Department currently (mid-late 2015) has 18 faculty, ~45 PhD students, ~70 MS students, ~70 research-active undergraduate majors, numerous postdocs, visitors, and affiliated researchers listed under People. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
 
@@ -20,7 +20,7 @@ Considering sponsoring ASA DataFest<small><sup>TM</sup></small> at Duke? Click [
 
 <img style="width:200px;float: left;padding-right:20px" src="/logos/iid.png">
 
-[iiD](http://bigdata.duke.edu/) is all about Making Data Matter.
+[Rhodes Information Initiative at Duke (iiD)](http://bigdata.duke.edu/)  is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field. Started in 2013, the program is led by Robert Calderbank. Launched as an initiative of Duke University, Rhodes iiD is partnered with the Duke University Quantitative Initiative, which promote cross-pollination of ideas throughout Duke’s programs and research projects, and works to increase the number of quantitative faculty in all disciplines on Duke campus.
 
 <br><br><br><br><br><br><br><br>
 
@@ -128,7 +128,7 @@ The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s c
 
 <br><br>
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/asa.png">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/asa.jpg">
 
 The [American Statistical Association](http://amstat.org/) is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
 
