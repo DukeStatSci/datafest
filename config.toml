@@ -64,7 +64,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   identifier = "sponsors"
   name = "Sponsors"
   pre = "<i class='fas fa-life-ring'></i>"
-  url = "/sponsorship.html"
+  url = "/sponsors.html"
   
 [[menu.main]]
   weight = 6
