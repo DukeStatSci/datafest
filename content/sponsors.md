@@ -28,6 +28,13 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 ## Pareto Sponsors
 
 
+<img style="width:320px;float: left;padding-right:20px" src="/logos/pratt-small.png">
+
+[Duke Pratt School of Engineering](https://pratt.duke.edu/) is a vibrant teaching and research institution dedicated to educating the next generation of engineering leaders and pursuing research in high-impact fields to address the world's grand challenges.
+
+<br><br><br><br>
+
+
 <img style="width:320px;float: left;padding-right:20px" src="/logos/iid-long.png">
 
 
@@ -39,14 +46,8 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 
 [SSRI](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. We promote multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
-
 <br><br><br><br>
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/pratt-small.png">
-
-[Duke Pratt School of Engineering](https://pratt.duke.edu/) is a vibrant teaching and research institution dedicated to educating the next generation of engineering leaders and pursuing research in high-impact fields to address the world's grand challenges.
-
-<br><br><br><br>
 
 <!--
 <img style="width:320px;float:left;padding-right:20px" src="/logos/secondorder.png">
@@ -125,19 +126,19 @@ The technology to amass data exceeds our abilities to make use of it. People all
 -->
 ## Acknowledgements
 
-<img style="width:175px;float: left;padding-right:20px" src="/logos/cdvs.png">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-libraries.png">
 
-The [Data and Visualization Services Department](https://library.duke.edu/data/data-visualization) of the Duke Libraries will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. See [here](/workshops) for more information.
+The [Data and Visualization Services Department](https://library.duke.edu/data/data-visualization) of the Duke Libraries has a mission to "partner with faculty, researchers, and students through consultation, instruction, co-curricular programming, and research assistance at various stages of the research data lifecycle." They will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. Click [here](/workshops) for more information.
 
 <br><br><br><br><br><br><br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/duke-oit.png">
 
-The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. 
+The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. They are providing Wifi and other computing resources and support for the event.
 
 <br><br>
 
-<img style="width:250px;float: left;padding-right:20px" src="/logos/asa.jpg">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/asa.jpg">
 
 The [American Statistical Association](http://amstat.org/) is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
 
