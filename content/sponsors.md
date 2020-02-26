@@ -11,12 +11,13 @@ img {
 
 **<i>A huge thanks to our 2020 sponsors! ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support!</i>**
 
-Click [here](/sponsorship) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:maria.tackett@duke.edu) if you have any questions. 
+Click [here](/sponsorship.html) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:maria.tackett@duke.edu) if you have any questions. 
 
 <br><br>
 
 ## Cauchy Sponsors
 
+<br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/stat-sci-updated.png">
 
@@ -27,22 +28,22 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 
 ## Pareto Sponsors
 
+<br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/pratt-small.png">
 
 [Duke Pratt School of Engineering](https://pratt.duke.edu/) is a vibrant teaching and research institution dedicated to educating the next generation of engineering leaders and pursuing research in high-impact fields to address the world's grand challenges.
 
-<br><br><br><br>
-
+<br><br><br><br><br><br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/iid-long.png">
 
 
 [Rhodes Information Initiative at Duke (iiD)](http://bigdata.duke.edu/)  is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field. Started in 2013, the program is led by Robert Calderbank. Launched as an initiative of Duke University, Rhodes iiD is partnered with the Duke University Quantitative Initiative, which promote cross-pollination of ideas throughout Duke’s programs and research projects, and works to increase the number of quantitative faculty in all disciplines on Duke campus.
 
-<br><br><br><br>
+<br><br><br>
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/ssri.png">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-ssri.png">
 
 [SSRI](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. We promote multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
@@ -63,28 +64,31 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 
 ## Lognormal Sponsors
 
+<br>
+
 [Duke Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
 programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalismand diversity, university/community service, and/or
 cross-cultural collaboration.
 
-<br>
+<br><br>
 
 <img style= float:left;padding-right:20px" src="/logos/rti_international.png">
 
 [RTI International](http://www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. For more information, visit [www.rti.org](http://www.rti.org).
 
-<br><br>
+<br><br><br><br>
 
-<img style= float:left;padding-right:20px" src="/logos/sas-logo-midnight.png">
+<img style="width:320px;float:left;padding-right:20px" src="/logos/sas-logo-midnight.png">
 
 [SAS](https://www.sas.com/) is statistical software suite originally developed at North Carolina State University in 1966. It is primarly used for data management, advanced analytics, multivariate analysis, and predictive analytics.
 
-<br><br>
+<br><br><br><br><br>
 
 <img style="width:320px;float:left;padding-right:20px" src="/logos/duke-trinity.png">
 
 [Trinity College of Arts & Sciences](https://trinity.duke.edu/) awards nearly 80 percent of undergraduate degrees at Duke, and nearly 40 percent of all graduate degrees in disciplines across the arts, humanities, natural sciences and social sciences. We offer bachelor of arts and bachelor science programs; master of arts, master of fine arts and master of science programs; doctoral programs; and specialized certificate programs for both undergraduate and graduate students.
-<br><br><br>
+
+<br><br><br><br>
 
 <!--
 <img style="width:320px;float:left;padding-right:20px" src="/logos/jmp.png">
@@ -130,13 +134,19 @@ The technology to amass data exceeds our abilities to make use of it. People all
 
 <br><br>
 -->
+
+
+<br><br>
+
 ## Acknowledgements
+
+<br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/duke-libraries.png">
 
-The [Data and Visualization Services Department](https://library.duke.edu/data/data-visualization) of the Duke Libraries has a mission to "partner with faculty, researchers, and students through consultation, instruction, co-curricular programming, and research assistance at various stages of the research data lifecycle." They will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. Click [here](/workshops) for more information.
+The [Center for Data and Visualization Sciences](https://library.duke.edu/data/data-visualization) of the Duke Libraries has a mission to "partner with faculty, researchers, and students through consultation, instruction, co-curricular programming, and research assistance at various stages of the research data lifecycle." They will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. Click [here](/workshops) for more information.
 
-<br><br><br><br><br><br><br>
+<br><br<br><br><br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/duke-oit.png">
 
