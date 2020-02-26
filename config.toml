@@ -73,7 +73,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   pre = "<i class='fas fa-newspaper'></i>"
   url = "/media.html"
   
-  
 [[menu.main]]
   weight = 7
   identifier = "coc"

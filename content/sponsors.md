@@ -3,7 +3,13 @@ title: "Sponsors"
 markup: "mmark"
 ---
 
-A huge thanks to our 2020 sponsors! ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support! 
+<style>
+img {
+  width: 320px;
+}
+</style>
+
+**<i>A huge thanks to our 2020 sponsors! ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support!</i>**
 
 Click [here](/sponsorship) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:maria.tackett@duke.edu) if you have any questions. 
 
@@ -11,30 +17,36 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 
 ## Cauchy Sponsors
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-statsci.png">
+
+<img style="width:320px;float: left;padding-right:20px" src="/logos/stat-sci-updated.png">
+
 
 [The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. The Department currently (mid-late 2015) has 18 faculty, ~45 PhD students, ~70 MS students, ~70 research-active undergraduate majors, numerous postdocs, visitors, and affiliated researchers listed under People. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
 
+<br><br><br> 
 
 ## Pareto Sponsors
 
-<img style="width:200px;float: left;padding-right:20px" src="/logos/iid.png">
+
+<img style="width:320px;float: left;padding-right:20px" src="/logos/iid-long.png">
+
 
 [Rhodes Information Initiative at Duke (iiD)](http://bigdata.duke.edu/)  is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field. Started in 2013, the program is led by Robert Calderbank. Launched as an initiative of Duke University, Rhodes iiD is partnered with the Duke University Quantitative Initiative, which promote cross-pollination of ideas throughout Duke’s programs and research projects, and works to increase the number of quantitative faculty in all disciplines on Duke campus.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 
-<img style="width:200px;float: left;padding-right:20px" src="/logos/ssri.png">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/ssri.png">
 
 [SSRI](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. We promote multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
-<br><br><br>
 
-<img style="width:200px;float: left;padding-right:20px" src="/logos/pratt.png">
+<br><br><br><br>
+
+<img style="width:320px;float: left;padding-right:20px" src="/logos/pratt-small.png">
 
 [Duke Pratt School of Engineering](https://pratt.duke.edu/) is a vibrant teaching and research institution dedicated to educating the next generation of engineering leaders and pursuing research in high-impact fields to address the world's grand challenges.
 
-<br><br><br>
+<br><br><br><br>
 
 <!--
 <img style="width:320px;float:left;padding-right:20px" src="/logos/secondorder.png">
@@ -47,6 +59,7 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 [Bass Connections](https://bassconnections.duke.edu/) bridges the classroom and the real world, giving students a chance to roll up their sleeves and tackle complex societal problems alongside faculty from across Duke. Working in interdisciplinary teams, graduate and undergraduate students collaborate with faculty on cutting-edge research that spans subjects, demographic groups and borders. Bass Connections builds on Duke’s culture of collaboration and fosters knowledge in service to society.
 -->
 
+
 ## Lognormal Sponsors
 
 [The Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
@@ -55,7 +68,7 @@ cross-cultural collaboration.
 
 <br>
 
-<img style="width:200px;float:left;padding-right:20px" src="/logos/rti_international.png">
+<img style= float:left;padding-right:20px" src="/logos/rti_international.png">
 
 [RTI International](http://www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. For more information, visit [www.rti.org](http://www.rti.org).
 
@@ -63,8 +76,7 @@ cross-cultural collaboration.
 
 <img style="width:320px;float:left;padding-right:20px" src="/logos/duke-trinity.png">
 
-Trinity College of Arts & Sciences awards nearly 80 percent of undergraduate degrees at Duke, and nearly 40 percent of all graduate degrees in disciplines across the arts, humanities, natural sciences and social sciences. We offer bachelor of arts and bachelor science programs; master of arts, master of fine arts and master of science programs; doctoral programs; and specialized certificate programs for both undergraduate and graduate students.
-
+[Trinity College of Arts & Sciences](https://trinity.duke.edu/) awards nearly 80 percent of undergraduate degrees at Duke, and nearly 40 percent of all graduate degrees in disciplines across the arts, humanities, natural sciences and social sciences. We offer bachelor of arts and bachelor science programs; master of arts, master of fine arts and master of science programs; doctoral programs; and specialized certificate programs for both undergraduate and graduate students.
 <br><br><br>
 
 <!--
@@ -113,19 +125,19 @@ The technology to amass data exceeds our abilities to make use of it. People all
 -->
 ## Acknowledgements
 
-<img style="width:200px;float: left;padding-right:20px" src="/logos/cdvs.png">
+<img style="width:175px;float: left;padding-right:20px" src="/logos/cdvs.png">
 
 The [Data and Visualization Services Department](https://library.duke.edu/data/data-visualization) of the Duke Libraries will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. See [here](/workshops) for more information.
 
 <br><br><br><br><br><br><br>
 
-<img style="width:200px;float: left;padding-right:20px" src="/logos/duke-oit.png">
+<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-oit.png">
 
 The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. 
 
 <br><br>
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/asa.jpg">
+<img style="width:250px;float: left;padding-right:20px" src="/logos/asa.jpg">
 
 The [American Statistical Association](http://amstat.org/) is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
 
