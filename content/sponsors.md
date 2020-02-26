@@ -63,7 +63,7 @@ Click [here](/sponsorship) for more information about how you can support DataFe
 
 ## Lognormal Sponsors
 
-[The Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
+[Duke Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
 programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalismand diversity, university/community service, and/or
 cross-cultural collaboration.
 
@@ -72,6 +72,12 @@ cross-cultural collaboration.
 <img style= float:left;padding-right:20px" src="/logos/rti_international.png">
 
 [RTI International](http://www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. For more information, visit [www.rti.org](http://www.rti.org).
+
+<br><br>
+
+<img style= float:left;padding-right:20px" src="/logos/sas-logo-midnight.png">
+
+[SAS](https://www.sas.com/) is statistical software suite originally developed at North Carolina State University in 1966. It is primarly used for data management, advanced analytics, multivariate analysis, and predictive analytics.
 
 <br><br>
 
