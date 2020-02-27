@@ -69,7 +69,7 @@ The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information
 
 <br><br>
 
-<img style= width: 320px; float:left;padding-right:20px" src="/logos/duke-cef.png">
+<img style= "width: 320px; float:left;padding-right:20px" src="/logos/duke-cef-small.png">
 
 [Duke Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
 programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalismand diversity, university/community service, and/or
@@ -77,7 +77,7 @@ cross-cultural collaboration.
 
 <br><br>
 
-<img style= width: 320px; float:left;padding-right:20px" src="/logos/rti_international.png">
+<img style= "width: 320px; float:left;padding-right:20px" src="/logos/rti_international.png">
 
 [RTI International](http://www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. For more information, visit [www.rti.org](http://www.rti.org).
 
