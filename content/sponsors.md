@@ -83,7 +83,7 @@ cross-cultural collaboration.
 
 <br><br><br><br>
 
-<img style="width:320px;float:left;padding-right:20px" src="/logos/sas-logo-midnight.png">
+<img style="width:320px;float:left;padding-right:20px" src="/logos/sas-logo-midnight-small.png">
 
 [SAS](https://www.sas.com/) is statistical software suite originally developed at North Carolina State University in 1966. It is primarly used for data management, advanced analytics, multivariate analysis, and predictive analytics.
 
