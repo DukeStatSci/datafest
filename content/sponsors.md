@@ -41,19 +41,16 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 [SSRI](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. We promote multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
-<br><br><br><br>
+<br><br><br>
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/ncstate.png">
 
 The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information/about.php) is among the nation's oldest and most prestigious, having been founded by renowned statistician Gertrude Cox in 1941. The Department provides a dynamic environment for teaching, core research, and collaborative research across disciplines, with formal programs in biostatistics, statistical genetics, and environmental, financial, and mathematical statistics. It also has emerging efforts in statistics education and statistical computing and big data.
 
-<br><br><br><br>
+<br><br><br><br><br>
 
 
 <!--
-<img style="width:320px;float:left;padding-right:20px" src="/logos/secondorder.png">
-
-[2nd Order Solutions](http://secondordersolutions.com) is a credit risk consultancy focused on creating value for financial services clients through ground-breaking analytic and modeling problem solving. We are committed to improving financial and risk results by partnering with clients to create winning strategies and sustainable competitive advantage.
 
 <br><br><br>
 <img style="width:320px;float: left;padding-right:20px" src="/logos/bass.jpg">
@@ -65,6 +62,12 @@ The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information
 ## Lognormal Sponsors
 
 <br>
+
+<img style="width:320px;float:left;padding-right:20px" src="/logos/secondorder.png">
+
+[2nd Order Solutions](http://secondordersolutions.com) is a credit risk consultancy focused on creating value for financial services clients through ground-breaking analytic and modeling problem solving. We are committed to improving financial and risk results by partnering with clients to create winning strategies and sustainable competitive advantage.
+
+<br><br>
 
 <img style= width: 320px; float:left;padding-right:20px" src="/logos/duke-cef.png">
 
