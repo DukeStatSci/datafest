@@ -10,7 +10,7 @@ markup: "mmark"
 
 ## Event details
 
-**When:** Friday, April 3 at 6pm - Sunday, April 7 at 5pm <br>
+**When:** Friday, April 3 at 6pm - Sunday, April 5 at 5pm <br>
 **Where:** [Penn Pavilion](http://maps.duke.edu/map/?id=21#!s/key=penn pavillion?m/236261), Duke University
 
 On Friday we will start with a reception where your surprise client will give a brief introduction to the data you will be working with over the weekend and tell you a bit about what they would like to get out of it. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
@@ -38,7 +38,7 @@ While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal o
 
 ## Past DataFests at Duke
 
-### DataFest 2019 - Canadian National Women's Rugby Team
+### DataFest 2019 - Data source: Canadian National Women's Rugby Team
 
 **Goal:** How do we quantify the role of fatigue and workload in a team’s performance in Rugby 7s? How reliable are the subjective wellness Fata? Should the quality of the opponent or the outcome of the game be considered when examining fatigue during a game? Can widely used measurements of training load and fatigue be improved? How reliable are GPS data in quantifying fatigue?
 

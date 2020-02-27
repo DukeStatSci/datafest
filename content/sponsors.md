@@ -3,12 +3,6 @@ title: "Sponsors"
 markup: "mmark"
 ---
 
-<style>
-img {
-  width: 320px;
-}
-</style>
-
 **<i>A huge thanks to our 2020 sponsors! ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support!</i>**
 
 Click [here](/sponsorship.html) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:maria.tackett@duke.edu) if you have any questions. 
@@ -49,6 +43,12 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 <br><br><br><br>
 
+<img style="width:320px;float: left;padding-right:20px" src="/logos/ncstate.png">
+
+The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information/about.php) is among the nation's oldest and most prestigious, having been founded by renowned statistician Gertrude Cox in 1941. The Department provides a dynamic environment for teaching, core research, and collaborative research across disciplines, with formal programs in biostatistics, statistical genetics, and environmental, financial, and mathematical statistics. It also has emerging efforts in statistics education and statistical computing and big data.
+
+<br><br><br><br>
+
 
 <!--
 <img style="width:320px;float:left;padding-right:20px" src="/logos/secondorder.png">
@@ -66,13 +66,15 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 <br>
 
+<img style= width: 320px; float:left;padding-right:20px" src="/logos/duke-cef.png">
+
 [Duke Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
 programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalismand diversity, university/community service, and/or
 cross-cultural collaboration.
 
 <br><br>
 
-<img style= float:left;padding-right:20px" src="/logos/rti_international.png">
+<img style= width: 320px; float:left;padding-right:20px" src="/logos/rti_international.png">
 
 [RTI International](http://www.rti.org) is an independent, nonprofit research institute dedicated to improving the human condition. Clients rely on us to answer questions that demand an objective and multidisciplinary approach—one that integrates expertise across the social and laboratory sciences, engineering, and international development. We believe in the promise of science, and we are inspired every day to deliver on that promise for the good of people, communities, and businesses around the world. For more information, visit [www.rti.org](http://www.rti.org).
 
@@ -102,9 +104,7 @@ JMP (pronounced "jump") is a business unit of SAS that produces interactive soft
 
 <br><br>
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/ncstate.png">
 
-The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information/about.php) is among the nation's oldest and most prestigious, having been founded by renowned statistician Gertrude Cox in 1941. The Department provides a dynamic environment for teaching, core research, and collaborative research across disciplines, with formal programs in biostatistics, statistical genetics, and environmental, financial, and mathematical statistics. It also has emerging efforts in statistics education and statistical computing and big data.
 
 <br><br>
 
