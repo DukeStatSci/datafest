@@ -3,49 +3,41 @@ title: "Schedule"
 markup: "mmark"
 ---
 
-
-DataFest will begin on Friday, April 3 at 6pm and end on Sunday, April 5 at 5pm.
-
-Check back soon for a full schedule!
-
-<!--
-### Friday, April 5, 2019
+### Friday, April 3, 2020
 
 **Welcome!**
 
-@ Penn Pavillion unless otherwise noted
+@ Penn Pavillion 
 
-- 4-6pm - Registration
+- 4-6pm - Registration (exact registration blocks will be emailed closer to event)
 - 6-7pm - Kickoff & Meet the data
 - 7pm - Dinner
 
-Consultants available for help until midnight, you can work as late as you like.
+Penn Pavilion open and consultants available for help until midnight! 
 
-### Saturday, April 6, 2019
+### Saturday, April 4, 2020
 
 **Carry on!**
 
 @ Penn Pavillion all day
 
 - 9am - Breakfast
-- 12:30pm - Lunch
+- 12:30pm - Lunch Mixer!
 - 5:30pm - Group photo
 - 6:00pm - Dinner
-- 11:50pm - Midnight snack
 
-Consultants available for help until midnight, you can work as late as you like.
+Penn Pavilion open and consultants available for help until midnight! 
 
-### Sunday, April 7, 2019
+### Sunday, April 5, 2020
 
 **Wrap up!**
 
-@ Penn Pavillion unless otherwise noted
+@ Penn Pavillion 
 
 - 9am - Breakfast
 - 12pm - Stop work & Lunch
 - 1pm-3pm - First round of presentations and judges' deliberations - Various locations TBA
-- 3-4:30pm - Final round of presentations & judges' deliberations - Penn Pavillion
-- 4:30-5pm - Award ceremony - Penn Pavillion
+- 3-4:30pm - Final round of presentations & judges' deliberations - Penn Pavilion
+- 4:30-5pm - Award ceremony - Penn Pavilion
 
-Consultants available for help until 1pm.
--->
+Consultants available for help until 12:30pm!
