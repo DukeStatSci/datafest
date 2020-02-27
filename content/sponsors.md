@@ -16,7 +16,7 @@ Click [here](/sponsorship.html) for more information about how you can support D
 <img style="width:320px;float: left;padding-right:20px" src="/logos/duke-ai-health.png">
 
 
-The [Duke AI Health Institute](https://forge.duke.edu/about) connects, strengthens, amplifies, and grows multiple streams of theoretical and applied research on artificial intelligence in order to answer the most urgent and difficult challenges in medicine and population health. A multidisciplinary, campus-spanning initiative, AI Health harnesses expertise and insights across multiple schools, centers, and institutes at Duke to bring to bear the power of machine learning and related quantitative fields on medicine, healthcare delivery, and the health of individuals and communities.
+The [Duke AI Health Institute](https://forge.duke.edu/news/duke-ai-health-launches-distinguished-lecture-series) connects, strengthens, amplifies, and grows multiple streams of theoretical and applied research on artificial intelligence in order to answer the most urgent and difficult challenges in medicine and population health. A multidisciplinary, campus-spanning initiative, AI Health harnesses expertise and insights across multiple schools, centers, and institutes at Duke to bring to bear the power of machine learning and related quantitative fields on medicine, healthcare delivery, and the health of individuals and communities.
 
 <br><br><br><br>
 
