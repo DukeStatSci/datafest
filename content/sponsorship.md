@@ -23,7 +23,7 @@ Sponsors will be provided with various advertising and recruiting opportunities.
 
 - Large logo prominently placed on ASA DataFest<small><sup>TM</sup></small> posters and flyers
 - Nomination of a judge for the final round of presentations
-- If requested, company/organization information session on Duke campus advertised to Duke StatSci students as well as all 2019 ASA DataFestTM participants (we will provide the space and advertise your event)
+- If requested, company/organization information session on Duke campus advertised to Duke StatSci students as well as all 2020 ASA DataFestTM participants (we will provide the space and advertise your event)
 - All benefits of Pareto Sponsor
 
 
