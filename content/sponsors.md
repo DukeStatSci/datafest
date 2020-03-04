@@ -54,7 +54,14 @@ The [Duke AI Health Institute](https://forge.duke.edu/news/duke-ai-health-launch
 
 The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information/about.php) is among the nation's oldest and most prestigious, having been founded by renowned statistician Gertrude Cox in 1941. The Department provides a dynamic environment for teaching, core research, and collaborative research across disciplines, with formal programs in biostatistics, statistical genetics, and environmental, financial, and mathematical statistics. It also has emerging efforts in statistics education and statistical computing and big data.
 
+<br><br><br>
+
+<img style="width:320px;float: left;padding-right:20px" src="/logos/wolfram.png">
+
+[Wolfram Research](https://www.wolfram.com/) is one of the world's most respected computer, web and cloud software companies—as well as a powerhouse of scientific and technical innovation. They have  pursued a long-term vision to develop the science, technology and tools to make computation an ever-more-potent force in today's and tomorrow's world.
+
 <br><br><br><br><br><br>
+
 
 
 <!--
@@ -81,6 +88,12 @@ The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information
 [Duke Cultural Engagement Fund](https://studentaffairs.duke.edu/cma/cultural-engagement-fund) provides student organizations with financial resources to develop
 programs that promote any of the following: arts, cocurricular education, health and safety, multiculturalismand diversity, university/community service, and/or
 cross-cultural collaboration.
+
+<br><br>
+
+<img style= "width: 320px; float:left;padding-right:20px" src="/logos/cs-logo.png">
+
+[The Department of Computer Science at Duke](https://www.cs.duke.edu/) encourages innovative collaborations among the sciences, engineering, environmental studies, and medicine. The eminence of their research and teaching faculty is the biggest strength of the department. Many faculty members have been recognized both at university and national levels for their excellence in research, education, and service. There are also many opportunities for students at all levels, from undergraduate to graduate, to engage in exciting rearch experiences.
 
 <br><br>
 
