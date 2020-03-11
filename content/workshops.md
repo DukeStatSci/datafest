@@ -52,9 +52,9 @@ Communicating with stakeholders is a core process in any data science project. F
 
 Note: This is not a hands-on workshop. No computers are required.
 
-### <i class="fas fa-code" style="color:#0E3A53"></i> Tackling Data Competition Challenges: Strategies for Success
+### <i class="fas fa-code" style="color:#0E3A53"></i> CANCELED: Tackling Data Competition Challenges: Strategies for Success
 
-by Joel Herndon
+<!--
 
 |                                     |             |
 | ------------------------------------|-------------|
@@ -66,6 +66,7 @@ by Joel Herndon
 Getting a new big dataset with a short deadline for data exploration, analysis, and communication of results is a common challenge; doing so with a new team for a DataFest, Datathon, or other competition adds extra complexity.
 
 You'll be assigned a team at the start (or may bring your own). We will provide the large public dataset and challenge; you will get hands-on practice at deciding where to begin, how to break up tasks across a team, and how to manage your workflow to produce the deliverables. The assigned task will be modest; our goal is to improve your metacognitive strategies for successfully managing a data challenge.
+-->
 
 ### <i class="fas fa-code" style="color:#0E3A53"></i> Intro to Tableau: Easy Charts and Maps
 
