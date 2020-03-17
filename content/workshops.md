@@ -3,7 +3,14 @@ title: "Workshops"
 markup: "mmark"
 ---
 
+<p style="border:3px; border-style:solid; border-color: #D6001C; padding: 1em;">
+<b>March 17 update:</b>
+<br>
 
+Due to COVID-19, all workshops have been suspended for 2020. We look forward to seeing you at the workshops for our 2021 event!
+</p>
+
+<!--
 
 The following workshops will be held at Duke, participants from all schools are welcome. See [here](https://parking.duke.edu/visitor) for visitor parking information.
 
@@ -68,6 +75,7 @@ Getting a new big dataset with a short deadline for data exploration, analysis, 
 You'll be assigned a team at the start (or may bring your own). We will provide the large public dataset and challenge; you will get hands-on practice at deciding where to begin, how to break up tasks across a team, and how to manage your workflow to produce the deliverables. The assigned task will be modest; our goal is to improve your metacognitive strategies for successfully managing a data challenge.
 -->
 
+<!--
 ### <i class="fas fa-code" style="color:#0E3A53"></i> Intro to Tableau: Easy Charts and Maps
 
 by Eric Monson
@@ -80,3 +88,5 @@ by Eric Monson
 | <i class="fas fa-map-marker"></i>   | &nbsp; Bostock 127 (The Edge Workshop Room) |
 
 Tableau Public (available for both Windows and Mac) is free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students).
+
+-->
