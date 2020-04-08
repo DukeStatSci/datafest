@@ -5,13 +5,13 @@ markup: "mmark"
 ---
 
 <p style="border:3px; border-style:solid; border-color: #D6001C; padding: 1em;">
-<b>March 17 update:</b>
-<br>
+<b>April 7 update:</b>
 
-After much consideration, the national ASA DataFest committee has suspended all DataFest events (including virtual competitions) for 2020. We look forward to resuming DataFest next year. Please email Maria Tackett at <a href = "mailto:maria.tackett@duke.edu">maria.tackett@duke.edu</a> if you have any questions. 
+<br><br> 
+Though ASA DataFest @ Duke has been suspended until 2021, the Department of Statistical Science, along with Duke A.I. Health, is hosting the ASA DataFest: COVID-19 Virtual Data Challenge. This is a competition developed by the ASA DataFest committee where students will use data to explore an impact of the COVID-19 pandemic other than its direct health outcomes. You can read more about the competition at <a href="https://www2.stat.duke.edu/datafest-covid19/"> www.stat.duke.edu/datafest-covid19</a>.
 <br><br>
 
-We look forward to seeing you at DataFest 2021 @ Duke!
+We would like to thank everyone who provided support and helped in the planning of the 2020 event.  We look forward to seeing everyone at the next DataFest @ Duke in April 2021!
 </p>
 
 <!--

@@ -3,12 +3,7 @@ title: "Workshops"
 markup: "mmark"
 ---
 
-<p style="border:3px; border-style:solid; border-color: #D6001C; padding: 1em;">
-<b>March 17 update:</b>
-<br>
-
-Due to COVID-19, all workshops have been suspended for 2020. We look forward to seeing you at the workshops for our 2021 event!
-</p>
+Check back next year to see the workshops for DataFest 2021 @ Duke!
 
 <!--
 

@@ -3,16 +3,6 @@ title: "Sign up"
 markup: "mmark"
 ---
 
-<p style="border:3px; border-style:solid; border-color: #D6001C; padding: 1em;">
-<b>March 17 update:</b>
-<br>
-
-After much consideration, the national ASA DataFest committee has suspended all DataFest events (including virtual competitions) for 2020. We look forward to resuming DataFest next year. Please email Maria Tackett at <a href = "mailto:maria.tackett@duke.edu">maria.tackett@duke.edu</a> if you have any questions. 
-<br><br>
-
-We look forward to seeing you at DataFest 2021 @ Duke!
-</p>
-
 <!--
 Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
 
