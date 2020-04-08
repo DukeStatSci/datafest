@@ -15,7 +15,7 @@ push-img:
 	cp favicon.ico docs/
 	
 
-push: all
+push: 
 	rsync -azv --delete  --exclude='.DS_Store'  docs/ $(REMOTE)
 
 unbind:
