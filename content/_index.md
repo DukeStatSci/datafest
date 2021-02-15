@@ -1,37 +1,25 @@
 ---
-title: "DataFest 2020 @ Duke"
-description: "Canceled due to COVID-19"
+title: "DataFest 2021 @ Duke"
+description: "April 9 - 11 online"
 markup: "mmark"
 ---
 
-<p style="border:3px; border-style:solid; border-color: #D6001C; padding: 1em;">
-<b>April 7 update:</b>
+**ASA DataFest 2021 will take place virtually over the April 9 - 11 weekend.**
 
-<br><br> 
-Though ASA DataFest @ Duke has been suspended until 2021, the Department of Statistical Science, along with Duke A.I. Health, is hosting the ASA DataFest: COVID-19 Virtual Data Challenge. This is a competition developed by the ASA DataFest committee where students will use data to explore an impact of the COVID-19 pandemic other than its direct health outcomes. You can read more about the competition at <a href="https://www2.stat.duke.edu/datafest-covid19/"> www.stat.duke.edu/datafest-covid19</a>.
-<br><br>
-
-We would like to thank everyone who provided support and helped in the planning of the 2020 event.  We look forward to seeing everyone at the next DataFest @ Duke in April 2021!
-</p>
-
-<!--
-**ASA DataFest 2020 will take place at Duke over the April 3 - 5 weekend.**
-
-**Sign up by March 18, 2020 at 11:59p!**
+**Sign up by March 26, 2021 at 11:59p!**
 
 ## Event details
 
-**When:** Friday, April 3 at 6pm - Sunday, April 5 at 5pm <br>
-**Where:** [Penn Pavilion](http://maps.duke.edu/map/?id=21#!s/key=penn pavillion?m/236261), Duke University
+**When:** Friday, April 9 at 6p EST - Sunday, April 11 at 5p EST <br>
+**Where:** Online
 
-On Friday we will start with a reception where your surprise client will give a brief introduction to the data you will be working with over the weekend and tell you a bit about what they would like to get out of it. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
+On Friday we will start with a welcome event where you will be introduced to the surprise data set you'll be working with other the weekend. You'll learn more about the data provider and a bit about what they'd like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
 
-Presentations and judging will begin ~1pm on Sunday. Each team will give a brief (5 minute) presentation of their findings to a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
--->
+Projects will be due on Sunday afternoon. Each team will give a brief (5 minute) video presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
 
 ## What is DataFest?
 
-ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise dataset over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!
+ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!
 
 ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.
 
@@ -49,6 +37,10 @@ While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal o
 
 
 ## Past DataFests at Duke
+
+### DataFest 2020 - COVID-19 Virtual Data Challenge 
+
+**Goal:** Explore data to understand a society impact of the COVID-19 pandemic other than its direct health outcomes. What have been the effects on pollution levels, transportation levels, or working from home? Has there been a change in the number of posts on TikTok? What is the impact on online education? The focus is up to you! 
 
 ### DataFest 2019 - Data source: Canadian National Women's Rugby Team
 
