@@ -48,7 +48,7 @@ Is there a registration fee? No, there is no registration fee. However note that
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/schedule.html</guid>
-      <description>Check back next year to see the schedule for DataFest 2021 @ Duke!</description>
+      <description>Check out soon for the schedule for the 2021 event!</description>
     </item>
     
     <item>
@@ -91,8 +91,9 @@ Impact of Your Sponsorship Your sponsorship of ASA DataFestTM benefits the ASA D
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/workshops.html</guid>
-      <description>Check back next year to see the workshops for DataFest 2021 @ Duke!
- Introduction to R: Data Transformations, Data Structures, and the Tidyverse by John Little | | | | ------------------------------------|-------------| |  | &amp;nbsp; [Sign up](https://duke.libcal.com/event/6048372) | |  | &amp;nbsp; 03/17/2020 | |  | &amp;nbsp; 5:45pm - 8pm | |  | &amp;nbsp; Bostock 127 (The Edge Workshop Room) | An introduction to R and the Tidyverse, using RStudio.</description>
+      <description>All workshops will be online. Participants from all schools are welcome.
+ Introduction to R by John Little
+          &amp;nbsp; Sign up    &amp;nbsp; 03/16/2021    &amp;nbsp; 6:30p - 8:30p    R and the Tidyverse are a data-first coding language that enables reproducible workflows. Attendees will learn the fundamentals of R, the Tidyverse, how to wrangle data for analysis, and practice reporting Exploratory Data Analysis (EDA) with R Markdown.</description>
     </item>
     
   </channel>
