@@ -50,11 +50,13 @@ The [Duke AI Health Institute](https://forge.duke.edu/news/duke-ai-health-launch
 
 <br><br><br>
 
+<!--
 <img style="width:320px;float: left;padding-right:20px" src="/logos/ncstate.png">
 
 The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information/about.php) is among the nation's oldest and most prestigious, having been founded by renowned statistician Gertrude Cox in 1941. The Department provides a dynamic environment for teaching, core research, and collaborative research across disciplines, with formal programs in biostatistics, statistical genetics, and environmental, financial, and mathematical statistics. It also has emerging efforts in statistics education and statistical computing and big data.
 
 <br><br><br>
+-->
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/wolfram.png">
 

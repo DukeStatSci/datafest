@@ -43,10 +43,12 @@ The rules are very simple:
   + No fewer than 2 students per team.
   + Team members can come and go as they please but all work has to be done on-site. A steady supply of food, beverage, and candy make it more inviting to stay.
   + It's a competition, but a friendly one, so collaboration between teams is not only allowed but highly encouraged. Official ASA DataFest<sup><small>TM</small></sup> consultants (grad students, faculty, data professionals, etc.) will also be around throughout the weekend to help with any questions you might have. However you can't have outside help.
-  
-#### Do we have to stay the entire time?
+ 
 
+<!--
+#### Do we have to stay the entire time?
 No. You may come and go as you please. However, you are not allowed to work on the project except while you are on ASA DataFest<sup><small>TM</small></sup> grounds, and at least 3 members of your team must attend the introduction.
+-->
 
 #### What can I win?
 

@@ -3,7 +3,7 @@ title: "Schedule"
 markup: "mmark"
 ---
 
-Check back next year to see the schedule for DataFest 2021 @ Duke!
+Check out soon for the schedule for the 2021 event! 
 
 <!--
 ### Friday, April 3, 2020
