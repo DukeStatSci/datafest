@@ -122,6 +122,5 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
   dateFormat = "January 2, 2006"
-  background = "https://dukestatsci.github.io/datafest/duke-night.jpg"
- # background = "http://www2.stat.duke.edu/datafest/datafest-web-background.png"
+  background = "http://www2.stat.duke.edu/datafest/duke-night.jpg"
   #favicon = "https://www2.stat.duke.edu/courses/Spring20/sta210.001/img/sta210_sticker_small.png"
