@@ -3,13 +3,9 @@ title: "Sign up"
 markup: "mmark"
 ---
 
-<!--
 Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
 
-Registration deadline is **March 18, 2020 at 11:59p**.
-
-Seats are limited, sign up before it's too late!
--->
+Registration deadline is **March 26, 2021**.
 
 <!--
 As of April 1 we have over 350 students signed up for DataFest at Duke from eight area schools! We have reached capacity and registration is now closed.
@@ -31,25 +27,18 @@ Seats are limited, sign up before it's too late!
 -->
 ## Participants
 
-### Option 1: Team sign-up (4-5 students)
+### Option 1: Team sign-up (2-5 students)
 
-<!--
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUNzA2NVdHQlQyUEhZUk9QNFhENVBTUksxTS4u"><i class="fas fa-user-plus fa-2x" style="color:#03A9F4"></i></a> Click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUNzA2NVdHQlQyUEhZUk9QNFhENVBTUksxTS4u) to sign up as a team of 4 to 5 students. Students signing up in this category will be given priority.
--->
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxURFlETDQxWTlERUI1NE41T0dBRUdMWlFSSS4u"><i class="fas fa-user-plus fa-2x" style="color:#b0bd31"></i></a> Click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxURFlETDQxWTlERUI1NE41T0dBRUdMWlFSSS4u) to sign up as a team of 2 to 5 students. 
 
-### Option 2: Team sign-up (2-3 students)
+### Option 2: Looking for teammates
 
-<!--
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUMzBRTzk5SjhCUzVWVDBXV1BNWURKVFFPTS4u"><i class="fas fa-user-plus fa-2x" style="color:#b0bd31"></i></a> Click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUMzBRTzk5SjhCUzVWVDBXV1BNWURKVFFPTS4u) to sign up as a team of 2 to 3 students. Students signing up in this category will be added to the roster if there are seats open as of March 11, 2020. Students will be added in the order they registered. Students in this category may also be matched up with others looking to join an existing team.
--->
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUNkZZV0JZT0NRMUFURENOUDRVOURUM1kwWC4u"><i class="fas fa-user-plus fa-2x" style="color:#E91E63"></i></a> If you do not have a team in mind but you're looking for teammates, click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUNkZZV0JZT0NRMUFURENOUDRVOURUM1kwWC4u) to leave us your information so that you can be matched with others.
 
-### Option 3: Looking for teammates
-
-<!--
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxURDI4VUpYMTZBNVVTVUVJSFBOOE9GTTNFMi4u"><i class="fas fa-user-plus fa-2x" style="color:#E91E63"></i></a> If you do not have a team in mind but you're looking for teammates, click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxURDI4VUpYMTZBNVVTVUVJSFBOOE9GTTNFMi4u) to leave us your information so that you can be matched with others.
--->
 
 ## Consultants
+
+Check back soon for consultant registration!
 
 <!--
 
