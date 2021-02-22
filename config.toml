@@ -38,59 +38,69 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   url = "/"
   
 [[menu.main]]
-  weight = 4
-  identifier = "schedule"
-  name = "schedule"
-  pre = "<i class=\"material-icons\">date_range</i>"
-  url = "/schedule.html"
-  
-[[menu.main]]
   weight = 2
   identifier = "signup"
   name = "Sign Up"
   pre = "<i class='fas fa-user-plus fa-lg'></i>"
   url = "/signup.html"
-  
+
   
 [[menu.main]]
   weight = 3
+  identifier = "schedule"
+  name = "schedule"
+  pre = "<i class=\"material-icons\">date_range</i>"
+  url = "/schedule.html"
+  
+  
+  
+[[menu.main]]
+  weight = 4
   identifier = "workshops"
   name = "Workshops"
   pre = "<i class='fas fa-code fa-lg'></i>"
   url = "/workshops.html"
-
+  
 [[menu.main]]
   weight = 5
-  identifier = "sponsors"
-  name = "Sponsors"
-  pre = "<i class='fas fa-life-ring'></i>"
-  url = "/sponsors.html"
-  
-[[menu.main]]
-  weight = 6
-  identifier = "media"
-  name = "Media"
-  pre = "<i class='fas fa-newspaper'></i>"
-  url = "/media.html"
-  
-[[menu.main]]
-  weight = 7
-  identifier = "coc"
-  name = "COC"
-  pre = "<i class='fas fa-users'></i>"
-  url = "/coc.html"
-
-[[menu.main]]
-  weight = 8
   identifier = "faq"
   name = "FAQ"
   pre = "<i class=\"material-icons\">help</i>"
   url = "/faq.html"
 
 
+[[menu.main]]
+  weight = 6
+  identifier = "resources"
+  name = "Resources"
+  pre = "<i class='fas fa-laptop'></i>"
+  url = "/resources.html"
 
 
+
+[[menu.main]]
+  weight = 7
+  identifier = "sponsors"
+  name = "Sponsors"
+  pre = "<i class='fas fa-life-ring'></i>"
+  url = "/sponsors.html"
   
+[[menu.main]]
+  weight = 8
+  identifier = "coc"
+  name = "COC"
+  pre = "<i class='fas fa-users'></i>"
+  url = "/coc.html"
+
+
+[[menu.main]]
+  weight = 9
+  identifier = "media"
+  name = "Media"
+  pre = "<i class='fas fa-newspaper'></i>"
+  url = "/media.html"
+  
+
 [[menu.footer]]
   weight = 1
   identifier = "Duke"

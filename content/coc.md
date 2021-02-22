@@ -3,6 +3,8 @@ title: "Code of Conduct"
 markup: "mmark"
 ---
 
+<body style = "size: 18px">
+
 ASA DataFest<small><sup>TM</sup></small> at Duke is committed to providing a welcoming and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of event participants in any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, social activities, social media, and other online media. ASA DataFest<small><sup>TM</sup></small> participants violating these rules may be sanctioned or expelled from the event at the discretion of the conference organizers.
 
 This code of conduct applies to all participants, including organizers, mentors / VIP consultants, judges, and helpers and applies to all modes of interaction, both in-person and online, on ASA DataFest<small><sup>TM</sup></small> Community, and event specific Slack channels, and social media.

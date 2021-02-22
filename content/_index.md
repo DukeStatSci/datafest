@@ -4,6 +4,8 @@ description: "April 9 - 11 online"
 markup: "mmark"
 ---
 
+<body style = "size: 18px">
+
 **ASA DataFest 2021 will take place virtually over the April 9 - 11 weekend.**
 
 **Sign up by March 26, 2021 at 11:59p!**

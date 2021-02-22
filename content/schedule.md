@@ -3,45 +3,37 @@ title: "Schedule"
 markup: "mmark"
 ---
 
-Check out soon for the schedule for the 2021 event! 
+<body style = "size: 18px">
 
-<!--
-### Friday, April 3, 2020
+*All events will take place virtually. Participants will receive an email with the Zoom links and access to the Slack workspace.*
+
+### Friday, April 9, 2021
 
 **Welcome!**
 
-@ Penn Pavillion 
+- 6-7p - Kickoff & Meet the data
 
-- 4-6pm - Registration (exact registration blocks will be emailed closer to event)
-- 6-7pm - Kickoff & Meet the data
-- 7pm - Dinner
+Consultants available for help 7p onward. 
 
-Penn Pavilion open and consultants available for help until midnight! 
 
-### Saturday, April 4, 2020
+### Saturday, April 10, 2021
 
 **Carry on!**
 
-@ Penn Pavillion all day
+Lunch time speaker event. 
 
-- 9am - Breakfast
-- 12:30pm - Lunch Mixer!
-- 5:30pm - Group photo
-- 6:00pm - Dinner
+Consultants available for help throughout the day.
 
-Penn Pavilion open and consultants available for help until midnight! 
 
-### Sunday, April 5, 2020
+### Sunday, April 11, 2021
 
 **Wrap up!**
 
-@ Penn Pavillion 
+Consultants available for help throughout the day. 
 
-- 9am - Breakfast
-- 12pm - Stop work & Lunch
-- 1pm-3pm - First round of presentations and judges' deliberations - Various locations TBA
-- 3-4:30pm - Final round of presentations & judges' deliberations - Penn Pavilion
-- 4:30-5pm - Award ceremony - Penn Pavilion
+Submit projects by 5p EST.
 
-Consultants available for help until 12:30pm!
--->
+### TBD
+
+Awards ceremony
+

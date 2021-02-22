@@ -3,6 +3,8 @@ title: "Sign up"
 markup: "mmark"
 ---
 
+<body style = "size: 18px">
+
 Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
 
 Registration deadline is **March 26, 2021**.
@@ -31,10 +33,13 @@ Seats are limited, sign up before it's too late!
 
 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxURFlETDQxWTlERUI1NE41T0dBRUdMWlFSSS4u"><i class="fas fa-user-plus fa-2x" style="color:#b0bd31"></i></a> Click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxURFlETDQxWTlERUI1NE41T0dBRUdMWlFSSS4u) to sign up as a team of 2 to 5 students. 
 
+<br>
+
 ### Option 2: Looking for teammates
 
 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUNkZZV0JZT0NRMUFURENOUDRVOURUM1kwWC4u"><i class="fas fa-user-plus fa-2x" style="color:#E91E63"></i></a> If you do not have a team in mind but you're looking for teammates, click [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUNkZZV0JZT0NRMUFURENOUDRVOURUM1kwWC4u) to leave us your information so that you can be matched with others.
 
+<br>
 
 ## Consultants
 

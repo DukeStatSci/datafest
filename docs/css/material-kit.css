@@ -17,6 +17,12 @@
 /* ANIMATION */
 /* SHADOWS */
 /* Shadows (from mdl http://www.getmdl.io/) */
+
+body, p, li {
+  /*background-color: #F3F2F1;*/
+  font-size: 18px;
+}
+
 body {
   background-color: #F3F2F1;
 }
@@ -101,7 +107,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   position: relative;
   padding: 12px 30px;
   margin: 10px 1px;
-  font-size:12px;
+  font-size:13px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0;

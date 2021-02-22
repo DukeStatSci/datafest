@@ -26,6 +26,7 @@
       
       <guid>/faq.html</guid>
       <description>How do I sign up? You can click here to sign up. Registration will begin in February.
+
 Is there a registration fee? No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, let us know as soon as possible so we can make your spot available to someone else.</description>
     </item>
     
@@ -43,12 +44,33 @@ Is there a registration fee? No, there is no registration fee. However note that
     </item>
     
     <item>
+      <title>Resources</title>
+      <link>/resources.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resources.html</guid>
+      <description>Code repository, version control, and collaboration  GitLab: https://gitlab.oit.duke.edu/
+ GitHub: https://www.github.com
+ Happy Git with R: https://happygitwithr.com/
+  Interactive dashboard:  Shiny
+ Deploy Shiny app on shinyapps.io: https://docs.rstudio.com/shinyapps.io/getting-started.html Shiny tutorials: https://shiny.rstudio.com/tutorial/ Statistical Computing RShiny Notes: Part I and Part II   Tableau:
+ Tableau Public: https://public.tableau.com/en-us/s Tableau Desktop - free student license: https://www.tableau.com/academic   WarpWire You can host your videos or screen casts using WarpWire.</description>
+    </item>
+    
+    <item>
       <title>Schedule</title>
       <link>/schedule.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/schedule.html</guid>
-      <description>Check out soon for the schedule for the 2021 event!</description>
+      <description>All events will take place virtually. Participants will receive an email with the Zoom links and access to the Slack workspace.
+Friday, April 9, 2021 Welcome!
+ 6-7p - Kickoff &amp;amp; Meet the data  Consultants available for help 7p onward.
+Saturday, April 10, 2021 Carry on!
+Lunch time speaker event.
+Consultants available for help throughout the day.
+Sunday, April 11, 2021 Wrap up!
+Consultants available for help throughout the day.</description>
     </item>
     
     <item>
@@ -68,7 +90,7 @@ Registration deadline is March 26, 2021.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/sponsors.html</guid>
-      <description>A huge thanks to our 2020 sponsors! ASA DataFestTM at Duke cannot run without your support!
+      <description>A huge thanks to our 2020 - 2021 sponsors! ASA DataFestTM at Duke cannot run without your support!
 Click here for more information about how you can support DataFest at Duke. You can also contact us if you have any questions.
 
 Cauchy Sponsors 
