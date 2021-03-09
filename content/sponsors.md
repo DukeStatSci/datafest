@@ -27,7 +27,7 @@ The [Duke AI Health Institute](https://forge.duke.edu/news/duke-ai-health-launch
 
 [The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. The Department currently (mid-late 2015) has 18 faculty, ~45 PhD students, ~70 MS students, ~70 research-active undergraduate majors, numerous postdocs, visitors, and affiliated researchers listed under People. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
 
-<br><br><br><br><br><br>
+<br><br><br><br>
 
 ## Pareto Sponsors
 
@@ -50,32 +50,7 @@ The [Duke AI Health Institute](https://forge.duke.edu/news/duke-ai-health-launch
 
 [SSRI](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. We promote multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
-<br><br><br>
-
-<!--
-<img style="width:320px;float: left;padding-right:20px" src="/logos/ncstate.png">
-
-The [Department of Statistics at NC State](https://www.stat.ncsu.edu/information/about.php) is among the nation's oldest and most prestigious, having been founded by renowned statistician Gertrude Cox in 1941. The Department provides a dynamic environment for teaching, core research, and collaborative research across disciplines, with formal programs in biostatistics, statistical genetics, and environmental, financial, and mathematical statistics. It also has emerging efforts in statistics education and statistical computing and big data.
-
-<br><br><br>
--->
-
-<img style="width:320px;float: left;padding-right:20px" src="/logos/wolfram.png">
-
-[Wolfram Research](https://www.wolfram.com/) is one of the world's most respected computer, web and cloud software companies—as well as a powerhouse of scientific and technical innovation. They have  pursued a long-term vision to develop the science, technology and tools to make computation an ever-more-potent force in today's and tomorrow's world.
-
-<br><br><br><br><br><br>
-
-
-
-<!--
-
-<br><br><br>
-<img style="width:320px;float: left;padding-right:20px" src="/logos/bass.jpg">
-
-[Bass Connections](https://bassconnections.duke.edu/) bridges the classroom and the real world, giving students a chance to roll up their sleeves and tackle complex societal problems alongside faculty from across Duke. Working in interdisciplinary teams, graduate and undergraduate students collaborate with faculty on cutting-edge research that spans subjects, demographic groups and borders. Bass Connections builds on Duke’s culture of collaboration and fosters knowledge in service to society.
--->
-
+<br><br><br><br>
 
 ## Lognormal Sponsors
 

@@ -20,7 +20,7 @@ Consultants available for help 7p onward.
 
 **Carry on!**
 
-Lunch time speaker event. 
+- 1-2p - Lunch time speaker event: [Emily Hadley](https://www.rti.org/expert/emily-hadley) from RTI International 
 
 Consultants available for help throughout the day.
 
@@ -35,5 +35,5 @@ Submit projects by 5p EST.
 
 ### TBD
 
-Awards ceremony
+Winners announced
 

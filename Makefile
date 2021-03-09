@@ -1,5 +1,5 @@
 REMOTEUSER ?= mt324
-HOST ?= monster.stat.duke.edu
+HOST ?= rook.stat.duke.edu
 DIR ?= ~/.public_html/datafest
 REMOTE ?= $(REMOTEUSER)@$(HOST):$(DIR)
 
