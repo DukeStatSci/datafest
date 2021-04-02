@@ -153,10 +153,12 @@ The [Center for Data and Visualization Sciences](https://library.duke.edu/data/d
 
 The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. They are providing Wifi and other computing resources and support for the event.
 
-<br><br>
+<br><br><br>
+
+<img style="width:320px;float: left;padding-right:20px" src="/logos/rstudio.png"> [RStudio](https://rstudio.com/)’s mission is to create free and open-source software for data science, scientific research, and technical communication. We do this to enhance the production and consumption of knowledge by everyone, regardless of economic means, and to facilitate collaboration and reproducible research, both of which are critical to the integrity and efficacy of work in science, education, government, and industry. RStudio also produces RStudio Team, a modular platform of commercial software products that give organizations the confidence to adopt R, Python and other open-source data science software at scale - for the benefit of many people, to leverage large amounts of data, to integrate with existing enterprise systems, platforms, and processes, or be compliant with security practices and standards - along with online services to make it easier to learn and use them over the web.
+
+
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/asa.jpg">
 
 The [American Statistical Association](http://amstat.org/) is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
-
-<br><br>
