@@ -38,7 +38,7 @@ Consultants available for help 8a - 1p and 2p - midnight. *No consulting during 
 
 Consultants available for help 8a - 5p.
 
-### TBD
+### April 23, 2021
 
-Winners announced
+[Winners announced!](../winners.html)
 

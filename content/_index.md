@@ -4,12 +4,13 @@ description: "April 9 - 11 online"
 markup: "mmark"
 ---
 
-<body style = "size: 18px">
+<!--<body style = "font-size: 18px">-->
 
-**ASA DataFest 2021 will take place virtually over the April 9 - 11 weekend.**
+<p style = "font-size: 25px">
+ASA DataFest 2021 was held online April 9 - 11. <a href= "/winners.html">Click here</a> to see this year's winners.
+</p>
 
-**Sign up by March 26, 2021 at 11:59p!**
-
+<!--
 ## Event details
 
 **When:** Friday, April 9 at 6p EST - Sunday, April 11 at 5p EST <br>
@@ -18,6 +19,7 @@ markup: "mmark"
 On Friday we will start with a welcome event where you will be introduced to the surprise data set you'll be working with other the weekend. You'll learn more about the data provider and a bit about what they'd like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
 
 Projects will be due on Sunday afternoon. Each team will give a brief (5 minute) video presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
+-->
 
 ## What is DataFest?
 
