@@ -1,6 +1,6 @@
 ---
 title: "DataFest 2021 @ Duke"
-description: "April 9 - 11 online"
+description: ""
 markup: "mmark"
 ---
 
