@@ -30,7 +30,7 @@ Click on the option that applies to you. Regardless of the option you choose, yo
 Registration deadline is midnight on **Monday, March 25, 2019**.
 
 Seats are limited, sign up before it's too late!
--->
+
 ## Participants
 
 ### Option 1: Team sign-up (2-5 students)
@@ -53,3 +53,4 @@ Seats are limited, sign up before it's too late!
 <br><br>
 
 If you have any questions about registration, please contact [Maria Tackett](mailto:maria.tackett@duke.edu).
+-->

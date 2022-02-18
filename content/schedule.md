@@ -3,6 +3,10 @@ title: "Schedule"
 markup: "mmark"
 ---
 
+Check back for the 2022 schedule! 
+
+<!--
+
 <body style = "size: 18px">
 
 *All events will take place virtually. Participants will receive an email with Zoom links. All times in Eastern Daylight Time.*
@@ -41,4 +45,5 @@ Consultants available for help 8a - 5p.
 ### April 23, 2021
 
 [Winners announced!](../winners.html)
+-->
 
