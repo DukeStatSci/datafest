@@ -6,86 +6,74 @@ markup: "mmark"
 
 All workshops will be online. Participants from all schools are welcome. 
 
-### <i class="fas fa-code" style="color:#0E3A53"></i> Introduction to R
-
-by John Little
+### <i class="fas fa-code" style="color:#0E3A53"></i> Effective Data Visualization
 
 |                                     |             |
 | ------------------------------------|-------------|
-| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/7300155) |
-| <i class="fas fa-calendar-alt"></i> | &nbsp; 03/16/2021  |
-| <i class="fas fa-clock"></i>        | &nbsp; 6:30p - 8:30p    |
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8579920) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 01/24/22  |
+| <i class="fas fa-clock"></i>        | &nbsp;  5pm - 6:30pm    |
 
-R and the Tidyverse are a data-first coding language that enables reproducible workflows. Attendees will learn the fundamentals of R, the Tidyverse, how to wrangle data for analysis, and practice reporting Exploratory Data Analysis (EDA) with R Markdown.
+Visualization is a powerful way to reveal patterns in data, attract attention, and get your message across to an audience quickly and clearly. But, there are many steps in that journey from exploration to information to influence, and many choices to make when putting it all together to tell your story. I will cover some basic guidelines for effective visualization, point out a few common pitfalls to avoid, and run through a critique and iterations of an existing visualization to help you start seeing better choices beyond the program defaults.
 
-Part 1 has no prerequisites although you will want to download and install R and RStudio (details will be sent a week in advance.) By the end of the workshop you will import data, edit and save scripts, subset data, use projects to organize your work, and develop self-help techniques.  
-
-### <i class="fas fa-code" style="color:#0E3A53"></i> Visualization in R using ggplot2
-
-by Angela Zoss
+### <i class="fas fa-code" style="color:#0E3A53"></i> Geospatial Data in R: Mapping
 
 |                                     |             |
 | ------------------------------------|-------------|
-| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/7336057) |
-| <i class="fas fa-calendar-alt"></i> | &nbsp; 03/23/2021  |
-| <i class="fas fa-clock"></i>        | &nbsp; 6:30p - 8:30p    |
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8579950) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 01/31/22 |
+| <i class="fas fa-clock"></i>        | &nbsp; 1pm - 3pm   |
 
-In this workshop we will focus on ggplot2, a library for R that creates clear and well-designed visualizations and that plays well with other tidyverse packages. Attendees will get up and running quickly with ggplot2, going through a variety of examples to learn how to understand, modify, and create ggplot2 visualizations. Building basic skills with visualization will improve your ability to create quick, exploratory visualizations for data analysis as well as more formal, outward-facing visualizations for presentations or publications.
 
-While prior experience with ggplot2 and with other tidyverse packages is not required, some basic familiarity with R is expected.  Please consider attending an Introduction to R workshop (or reviewing online learning materials) before attending this workshop on ggplot2. In this workshop, we will use RStudio and RMarkdown files for all exercises.
+This workshop introduces the use of the R analysis language for producing maps. We will demonstrate the advantages of a code-driven approach to visualize geospatial data. Participants will gain the skills to create a variety of map types quickly and efficiently for a website, presentation, or publication. In addition to working on hands-on coding exercises, we will also focus on practical guidance for designing effective maps. This workshop is a companion to Geospatial Data in R: Processing and Analysis (Feb 7), which emphasizes data analysis more than visualization. Prerequisites: Attendees will need basic familiarity with R and RStudio to follow along with the exercises. Knowledge of tidyverse packages such as ggplot2 and dplyr is also helpful.
 
-### <i class="fas fa-code" style="color:#0E3A53"></i> Intro to Geospatial Data
-
-by Drew Keener
+### <i class="fas fa-code" style="color:#0E3A53"></i> Adobe Illustrator for Diagrams
 
 |                                     |             |
 | ------------------------------------|-------------|
-| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/7334214) |
-| <i class="fas fa-calendar-alt"></i> | &nbsp; 03/25/2021  |
-| <i class="fas fa-clock"></i>        | &nbsp; 6:30p - 8:30p   |
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8579972) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 02/11/22  |
+| <i class="fas fa-clock"></i>        | &nbsp; 10am - 12pm |
+
+Part of the DataFest workshop series. In this workshop, you will learn the basics of using Adobe Illustrator, the professional standard in vector graphics software for creating diagrams and infographics. Many people avoid using it because of its steep learning curve, but you will see that it is quite easy to combine simple shapes to create interesting and clear diagrams, and to give all your work that professional edge. There are no prerequisites.
+
+### <i class="fas fa-code" style="color:#0E3A53"></i> R for data science: getting started, EDA, data wrangling
+
+|                                     |             |
+| ------------------------------------|-------------|
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8580099) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 02/15/22 |
+| <i class="fas fa-clock"></i>        | &nbsp; 10am - 12pm   |
+
+R is a "data-first" coding language that enables reproducible workflows. In this workshop, you will learn the fundamentals of R and the Tidyverse in order to quickly get started. You will learn how to access and install RStudio, how to wrangle data for analysis, how to explore data (EDA), and a brief introduction to visualization.
 
 
-This workshop provides an introduction to the foundational concepts behind geospatial data—data that includes location information. We will focus on the special characteristics of geospatial data that differ from other types of data, and explore how these differences affect visualization, processing, and analysis. Participants will also learn about data types, methods for finding data, and commonly used tools for working with geospatial data.
+### <i class="fas fa-code" style="color:#0E3A53"></i> R for data science: visualization, pivot, join, regression
+
+|                                     |             |
+| ------------------------------------|-------------|
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8580100) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 02/16/22|
+| <i class="fas fa-clock"></i>        | &nbsp; 10am - 12pm |
+
+R and the Tidyverse are a data-first coding language that enables reproducible workflows. In this workshop which follows "R for data science: getting started, EDA, and data wrangling," you’ll learn about creating visualizations using ggplot2, making interactive charts for use in dashboards, and reshaping and merging data. This workshop will include a brief introduction to using models in R.
+
+### <i class="fas fa-code" style="color:#0E3A53"></i> Python for Data Science: Pandas 101
+
+|                                     |             |
+| ------------------------------------|-------------|
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8602783) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 03/15/22 |
+| <i class="fas fa-clock"></i>        | &nbsp; 10am - 12pm |
+
+Part of the DataFest workshop series. Python can be a great option for exploration, analysis and visualization of tabular data, such as spreadsheets and CSV files, if you know which tools to use and how to get started. This workshop will take you through some practical examples of using Python and specifically the Pandas module to load data from files, access that data, and start visualizing it with the Pandas built-in plotting functions. You will also gain experience working in JupyterLab, a flexible programming environment which provides Jupyter Notebooks, a file browser, and more. Note: Some experience with the Python programming language is recommended.
 
 ### <i class="fas fa-code" style="color:#0E3A53"></i> Intro to Tableau: Easy charts and maps
 
-by Eric Monson
-
 |                                     |             |
 | ------------------------------------|-------------|
-| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/7303023) |
-| <i class="fas fa-calendar-alt"></i> | &nbsp; 03/30/2021  |
-| <i class="fas fa-clock"></i>        | &nbsp; 6:30p - 8:30p   |
+| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/8579935) |
+| <i class="fas fa-calendar-alt"></i> | &nbsp; 03/29/22 |
+| <i class="fas fa-clock"></i>        | &nbsp; 6:30pm - 8:30pm |
 
-Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students).
-
-This workshop is designed for beginners who might be comfortable with data and spreadsheets, but have no experience with Tableau, are curious about what it can do, and want to get a quick introduction so they can start playing on their own.
-
-### <i class="fas fa-code" style="color:#0E3A53"></i> Presenting Data Science Results to Stakeholders
-
-by Angela Zoss
-
-|                                     |             |
-| ------------------------------------|-------------|
-| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/7303023) |
-| <i class="fas fa-calendar-alt"></i> | &nbsp; 04/01/2021  |
-| <i class="fas fa-clock"></i>        | &nbsp; 7p - 8p   |
-
-This presentation will focus on strategies for developing a short presentation that summarizes a data science project, including: identifying a compelling story in the analysis; leading with the key takeaways; and presenting results simply, effectively, and visually. Communicating with stakeholders is a core process in any data science project. Attendees will learn to construct a visually effective and time-efficient presentation for sharing data science results with your stakeholders to maximize the time you have with them.
-
-NOTE:  This is not a hands-on workshop. No special software is required, other than Zoom.
-
-
-### <i class="fas fa-code" style="color:#0E3A53"></i> Slides with R Markdown: Xaringan
-
-by John Little
-
-|                                     |             |
-| ------------------------------------|-------------|
-| <i class="fas fa-user-plus"></i>    | &nbsp; [Sign up](https://duke.libcal.com/event/7300231) |
-| <i class="fas fa-calendar-alt"></i> | &nbsp; 04/06/2021  |
-| <i class="fas fa-clock"></i>        | &nbsp; 6:30p - 8:30p |
-
- R markdown is a means of applying structure to the prose in your coding document.  Using R Markdown and the xaringan package, attendees will integrate code with natural language (i.e. prose) to render presentation slides as a reproducible report.  The method of integrating code with prose is known as literate coding.  Attendees will focus their energies on rendering slides as one type of report while being introduced to an array of report types that can be generated from the same code.
-
-
+Part of the DataFest workshop series. Tableau Public (available for both Windows and Mac) is an incredibly useful visualization tool that allows individuals to explore their data using a wide variety of visual representations. The software also can produce interactive, web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of Tableau's data assumptions, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which provides hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students).

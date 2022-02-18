@@ -16,23 +16,16 @@
     </item>
     
     <item>
-      <title>DataFest 2021 @ Duke Winners</title>
-      <link>/winners.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/winners.html</guid>
-      <description>Thank you to everyone who participated in DataFest 2021 @ Duke! Each project provided a unique and interesting insight into patterns of drug use and misuse based on survey data provided by the Rocky Mountain Poison and Drug Safety Center. The projects were judged by 22 professionals from academia and industry in statistics, data science, and related fields. They were scored based on the creativity and accuracy of the analysis, insights and ethical considerations in the conclusions, and presentation of results.</description>
-    </item>
-    
-    <item>
       <title>FAQ</title>
       <link>/faq.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/faq.html</guid>
-      <description>How do I sign up? You can click here to sign up. Registration will begin in February.
+      <description>How do I sign up? Registration details will be announced in late February.
 
-Is there a registration fee? No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, let us know as soon as possible so we can make your spot available to someone else.</description>
+Is there a registration fee? No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, let us know as soon as possible so we can make your spot available to someone else.
+
+Who is eligible to compete?</description>
     </item>
     
     <item>
@@ -42,10 +35,20 @@ Is there a registration fee? No, there is no registration fee. However note that
       
       <guid>/media.html</guid>
       <description>If you would like to write about or cover ASA DataFestTM in any way, please don&#39;t hesitate to contact us.
+ Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge - Duke Forge blog, May 8, 2020
  DataFest Shows Spike in Growth, Provides Immersive Experience - AMSTAT News, September 1, 2017
- Edmunds.com sponsors data set for fifth ASA DataFest at UCLA - Daily Bruin - April 27, 2015
- DataFest draws hundreds to solve stats challenges - The Chronicle - March 23, 2015
- A Festival of Data: Student Perspectives - AMSTAT News, September 1, 2014</description>
+ Edmunds.com sponsors data set for fifth ASA DataFest at UCLA - Daily Bruin - April 27, 2015</description>
+    </item>
+    
+    <item>
+      <title>Previous DataFest Winners</title>
+      <link>/winners.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/winners.html</guid>
+      <description>emoji_events 2021 Winners
+
+emoji_events 2020 Winners</description>
     </item>
     
     <item>
@@ -59,7 +62,7 @@ Is there a registration fee? No, there is no registration fee. However note that
  Happy Git with R: https://happygitwithr.com/
   Interactive dashboard:  Shiny
  Deploy Shiny app on shinyapps.io: https://docs.rstudio.com/shinyapps.io/getting-started.html Shiny tutorials: https://shiny.rstudio.com/tutorial/ Statistical Computing RShiny Notes: Part I and Part II   Tableau:
- Tableau Public: https://public.tableau.com/en-us/s Tableau Desktop - free student license: https://www.tableau.com/academic   WarpWire You can host your videos or screen casts using WarpWire.</description>
+ Tableau Public: https://public.tableau.com/en-us/s Tableau Desktop - free student license: https://www.tableau.com/academic   </description>
     </item>
     
     <item>
@@ -83,9 +86,8 @@ Saturday, April 10, 2021 Carry on!
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/signup.html</guid>
-      <description>Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFestTM mailing list to receive updates and announcements.
-Registration deadline is March 26, 2021.
- If you are interested in serving as a consultant during the event, please let us know your availability [here](https://goo.gl/forms/nTUIDUpb8OiXy7j63). Alternatively, even if you&#39;re not competing, you&#39;re welcomed to attend the final presentations at 3pm on Sunday, April 8, at Penn Pavilion.</description>
+      <description>Registration will open soon!
+TM mailing list to receive updates and announcements. Registration deadline is **March 26, 2021**. --  If you are interested in serving as a consultant during the event, please let us know your availability [here](https://goo.gl/forms/nTUIDUpb8OiXy7j63). Alternatively, even if you&#39;re not competing, you&#39;re welcomed to attend the final presentations at 3pm on Sunday, April 8, at Penn Pavilion. Thank you for your interest and see you at DataFest!</description>
     </item>
     
     <item>
@@ -120,8 +122,7 @@ Impact of Your Sponsorship Your sponsorship of ASA DataFestTM benefits the ASA D
       
       <guid>/workshops.html</guid>
       <description>All workshops will be online. Participants from all schools are welcome.
- Introduction to R by John Little
-          &amp;nbsp; Sign up    &amp;nbsp; 03/16/2021    &amp;nbsp; 6:30p - 8:30p    R and the Tidyverse are a data-first coding language that enables reproducible workflows. Attendees will learn the fundamentals of R, the Tidyverse, how to wrangle data for analysis, and practice reporting Exploratory Data Analysis (EDA) with R Markdown.</description>
+ Effective Data Visualization           &amp;nbsp; Sign up    &amp;nbsp; 01/24/22    &amp;nbsp; 5pm - 6:30pm    Visualization is a powerful way to reveal patterns in data, attract attention, and get your message across to an audience quickly and clearly. But, there are many steps in that journey from exploration to information to influence, and many choices to make when putting it all together to tell your story.</description>
     </item>
     
   </channel>

@@ -5,9 +5,13 @@ markup: "mmark"
 
 <body style = "size: 18px">
 
+Registration will open soon! 
+
+<!--
 Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
 
 Registration deadline is **March 26, 2021**.
+-->
 
 <!--
 As of April 1 we have over 350 students signed up for DataFest at Duke from eight area schools! We have reached capacity and registration is now closed.
