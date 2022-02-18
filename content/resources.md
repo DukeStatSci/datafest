@@ -24,6 +24,7 @@ markup: "mmark"
   - Tableau Public: https://public.tableau.com/en-us/s 
   - Tableau Desktop - free student license: https://www.tableau.com/academic
 
+<!--
 ### WarpWire
 
 You can host your videos or screen casts using [WarpWire](https://launch.warpwire.duke.edu/). 
@@ -39,4 +40,4 @@ You can host your videos or screen casts using [WarpWire](https://launch.warpwir
 - Kap for screen recording: https://getkap.co/
 - You can record presentation in Zoom. This is especially helpful for team presentations where all team members are available to join the Zoom meeting at the same time. 
     - Instructions for recording presentations in Zoom: https://kb.siue.edu/61721
-
+-->
