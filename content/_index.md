@@ -1,25 +1,25 @@
 ---
-title: "DataFest 2021 @ Duke"
+title: "DataFest 2022 @ Duke"
 description: ""
 markup: "mmark"
 ---
 
 <!--<body style = "font-size: 18px">-->
 
+<!--
 <p style = "font-size: 25px">
 ASA DataFest 2021 was held online April 9 - 11. <a href= "https://www2.stat.duke.edu/datafest/winners.html">Click here</a> to see this year's winners.
 </p>
+-->
 
-<!--
 ## Event details
 
-**When:** Friday, April 9 at 6p EST - Sunday, April 11 at 5p EST <br>
-**Where:** Online
+**When:** Friday, April 1 at 6pm - Sunday, April 3 at 5pm<br>
+**Where:** Penn Pavilion at Duke University 
 
 On Friday we will start with a welcome event where you will be introduced to the surprise data set you'll be working with other the weekend. You'll learn more about the data provider and a bit about what they'd like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
 
-Projects will be due on Sunday afternoon. Each team will give a brief (5 minute) video presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
--->
+Projects will be due on Sunday afternoon. Each team will give a brief presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
 
 ## What is DataFest?
 
@@ -41,6 +41,10 @@ While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal o
 
 
 ## Past DataFests at Duke
+
+### DataFest 2021 - Rocky Mountain Poison and Drug Safety 
+
+**Goal:** Use data from surveys conducted in the United States, Canada, Germany, and the United Kingdom to discover and identify patterns of drug use, with particular attention paid to identifying misuse. The analysis results could potentially be used to predict future drug misuse and to inform the development of a questionnaire physicians can use to predict drug misuse. 
 
 ### DataFest 2020 - COVID-19 Virtual Data Challenge 
 
