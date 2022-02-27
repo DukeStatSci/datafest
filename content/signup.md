@@ -5,30 +5,9 @@ markup: "mmark"
 
 <body style = "size: 18px">
 
-<!--
-
 Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
 
-Registration deadline is **March 26, 2021**.
--->
-
-<!--
-As of April 1 we have over 350 students signed up for DataFest at Duke from eight area schools! We have reached capacity and registration is now closed.
-
-<a href="https://goo.gl/forms/nTUIDUpb8OiXy7j63"><i class="fas fa-user-plus fa-2x" style="color:#4285F4"></i></a> If you are interested in serving as a consultant during the event, please let us know your availability [here](https://goo.gl/forms/nTUIDUpb8OiXy7j63).
-
-Alternatively, even if you're not competing, you're welcomed to attend the final presentations at 3pm on Sunday, April 8, at Penn Pavilion.
-
-Thank you for your interest and see you at DataFest!
--->
-
-
-<!--
-Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<small><sup>TM</sup></small> mailing list to receive updates and announcements.
-
-Registration deadline is midnight on **Monday, March 25, 2019**.
-
-Seats are limited, sign up before it's too late!
+**The registration deadline is March 25, 2022. Seats are limited, so sign up before it's too late!**
 
 ## Participants
 
@@ -46,10 +25,12 @@ Seats are limited, sign up before it's too late!
 
 ## Consultants
 
+<!--
 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUOVk2RDVLUjg0UDRPMVRJREIxVVdLOE40Uy4u"><i class="fas fa-user-plus fa-2x" style="color:#4285F4"></i></a> If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUOVk2RDVLUjg0UDRPMVRJREIxVVdLOE40Uy4u).
+-->
 
+Registration coming soon! 
 
 <br><br>
 
-If you have any questions about registration, please contact [Maria Tackett](mailto:maria.tackett@duke.edu).
--->
+If you have any questions about registration, please contact [Maria Tackett](mailto:maria.tackett@duke.edu) and [Mine Çetinkaya-Rundel](mailto:mc301@duke.edu).
