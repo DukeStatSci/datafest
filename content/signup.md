@@ -25,11 +25,8 @@ Click on the option that applies to you. Regardless of the option you choose, yo
 
 ## Consultants
 
-<!--
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUOVk2RDVLUjg0UDRPMVRJREIxVVdLOE40Uy4u"><i class="fas fa-user-plus fa-2x" style="color:#4285F4"></i></a> If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.office.com/Pages/ResponsePage.aspx?id=TsVyyzFKnk2xSh6jbfrJTBw0r2_bKCVMs9lST1_-2sxUOVk2RDVLUjg0UDRPMVRJREIxVVdLOE40Uy4u).
--->
-
-Registration coming soon! 
+<a href="https://forms.office.com/r/rgQsUER1rH"><i class="fas fa-user-plus fa-2x" style="color:#4285F4"></i></a> If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.office.com/r/rgQsUER1rH).
+ 
 
 <br><br>
 
