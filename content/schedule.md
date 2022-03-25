@@ -3,47 +3,42 @@ title: "Schedule"
 markup: "mmark"
 ---
 
-Check back for the 2022 schedule! 
-
-<!--
-
 <body style = "size: 18px">
 
-*All events will take place virtually. Participants will receive an email with Zoom links. All times in Eastern Daylight Time.*
+*All event will take place in Penn Pavilion.*
 
-### Friday, April 9, 2021
+### Friday, April 1, 2022
 
 **Welcome!**
 
-🔹 6 - 7p: Kickoff & Meet the data
+🔹 6pm: Kickoff & Meet the data
 
 Consultants available for help 7p - midnight.
 
-
-### Saturday, April 10, 2021
+### Saturday, April 2, 2022
 
 **Carry on!**
 
-🔹 1 - 2p: Lunch speaker event: [Emily Hadley](https://www.rti.org/expert/emily-hadley) from RTI International
+🔹 9am: Breakfast
 
-🔹 5 - 5:45p: Yoga with [Duke Recreation & Physical Education](https://recreation.duke.edu/)
+🔹 12pm: Lunch & Team activity 
 
-Consultants available for help 8a - 1p and 2p - midnight. *No consulting during the lunch speaker event.*
+🔹 6pm: Dinner 
+
+Consultants available for help throughout the day. 
 
 
-### Sunday, April 11, 2021
+### Sunday, April 3, 2022
 
 **Wrap up!**
 
-🔹 10 - 10:30a: Meditation with
-[DuWell](https://studentaffairs.duke.edu/duwell)
+🔹 9am: Breakfast
 
-🔹 5p: Projects due! 
+🔹 12pm: Lunch & projects due! 
 
-Consultants available for help 8a - 5p.
+🔹 1pm: Round 1 judging
 
-### April 23, 2021
+🔹 3pm: Final round & awards
 
-[Winners announced!](../winners.html)
--->
+Consultants available for help until 12pm. 
 
