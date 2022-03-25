@@ -13,7 +13,7 @@ markup: "mmark"
 
 🔹 6pm: Kickoff & Meet the data
 
-Consultants available for help 7p - midnight.
+Consultants available for help 7pm - midnight. 
 
 ### Saturday, April 2, 2022
 
