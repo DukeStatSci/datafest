@@ -13,6 +13,8 @@ markup: "mmark"
 
 🔹 6pm: Kickoff & Meet the data
 
+🔹 9pm: Trivia
+
 Consultants available for help 7pm - midnight. 
 
 ### Saturday, April 2, 2022
@@ -22,6 +24,8 @@ Consultants available for help 7pm - midnight.
 🔹 9am: Breakfast
 
 🔹 12pm: Lunch & Team activity 
+
+🔹 2pm: Wrist mobility
 
 🔹 6pm: Dinner 
 
@@ -34,7 +38,9 @@ Consultants available for help throughout the day.
 
 🔹 9am: Breakfast
 
-🔹 12pm: Lunch & projects due! 
+🔹 11am: Charades Plotting
+
+🔹 12pm: Lunch + wrist mobility & projects due! 
 
 🔹 1pm: Round 1 judging
 
