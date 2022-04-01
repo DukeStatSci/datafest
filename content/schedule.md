@@ -35,6 +35,8 @@ Consultants available for help 7pm - midnight.
 
 🔹 6pm: Dinner 
 
+🔹 8:50pm: Basketball!
+
 Consultants available for help throughout the day. 
 
 
