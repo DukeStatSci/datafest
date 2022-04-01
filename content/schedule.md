@@ -23,9 +23,15 @@ Consultants available for help 7pm - midnight.
 
 🔹 9am: Breakfast
 
-🔹 12pm: Lunch & Team activity 
+🔹 11am: Charades Plotting
+
+🔹 11:30am: Group photo
+
+🔹 12pm: Lunch
 
 🔹 2pm: Wrist mobility
+
+🔹 2-3pm: Interviews
 
 🔹 6pm: Dinner 
 
@@ -37,8 +43,6 @@ Consultants available for help throughout the day.
 **Wrap up!**
 
 🔹 9am: Breakfast
-
-🔹 11am: Charades Plotting
 
 🔹 12pm: Lunch + wrist mobility & projects due! 
 
