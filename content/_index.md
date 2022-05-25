@@ -6,11 +6,12 @@ markup: "mmark"
 
 <!--<body style = "font-size: 18px">-->
 
-<!--
 <p style = "font-size: 25px">
-ASA DataFest 2021 was held online April 9 - 11. <a href= "https://www2.stat.duke.edu/datafest/winners.html">Click here</a> to see this year's winners.
+<a href= "winners.html">Click here</a> to see the 2022 winners!
 </p>
--->
+
+<br> 
+
 
 ## Event details
 

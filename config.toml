@@ -92,13 +92,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   pre = "<i class='fas fa-users'></i>"
   url = "/coc.html"
 
-
-[[menu.main]]
+  
+  [[menu.main]]
   weight = 9
   identifier = "media"
   name = "Media"
   pre = "<i class='fas fa-newspaper'></i>"
   url = "/media.html"
+  
+  [[menu.main]]
+  weight = 10
+  identifier = "winners"
+  name = "Winners"
+  pre = "<span class='material-icons'>emoji_events</span>"
+  url = "/winners.html"
   
 
 [[menu.footer]]
