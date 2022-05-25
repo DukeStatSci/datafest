@@ -3,6 +3,9 @@ title: "Sign up"
 markup: "mmark"
 ---
 
+Sign ups are closed for the 2022 event. We hope to see you at the 2023 DataFest!
+
+<!--
 <body style = "size: 18px">
 
 Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
@@ -31,3 +34,5 @@ Click on the option that applies to you. Regardless of the option you choose, yo
 <br><br>
 
 If you have any questions about registration, please contact [Maria Tackett](mailto:maria.tackett@duke.edu) and [Mine Çetinkaya-Rundel](mailto:mc301@duke.edu).
+
+-->

@@ -5,6 +5,8 @@ markup: "mmark"
 
 If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:maria.tackett@duke.edu).
 
+- [ASA DataFest 2022 @ Duke University video](https://youtu.be/5oG0UAHRWOk)
+
 - [Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge](https://forge.duke.edu/blog/winners-announced-duke-asa-datafest-covid-19-virtual-data-challenge) - Duke Forge blog, May 8, 2020
 
 - [DataFest Shows Spike in Growth, Provides Immersive Experience](http://magazine.amstat.org/blog/2017/09/01/datafest-2/) - AMSTAT News, September 1, 2017
