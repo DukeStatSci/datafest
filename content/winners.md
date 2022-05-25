@@ -15,6 +15,10 @@ Jenna	Boguslavsky, Rebecca	Combs, Emily Du, Helene	Gu, Athena	Yao </p>
 
 *The judges were impressed by this team's effective use of the entire collection of visualizations to effectively communicate their results through multiple channels.*
 
+<a href="/winning-projects/FishSwish-Presentation.pdf" class="btn btn-primary" role="button">Slides</a>
+<a href="/winning-projects/FishSwish-Write-up.pdf" class="btn btn-primary" role="button">Write up</a>
+
+
 <br> 
 
 ### Best Insight
@@ -27,9 +31,12 @@ personalized Recommendation System</i>
 
 *The judges were impressed that this team recognized a real problem of people not finishing the game and created a recommender system to do something actionable to address it.*
 
+<a href="/winning-projects/team-chili-chill-presentation.pdf" class="btn btn-primary" role="button">Slides</a>
+<a href="/winning-projects/team-chili-chill-writeup.pdf" class="btn btn-primary" role="button">Write up</a>
+
 <br> 
 
-### Best Statistical Analysis
+### Best Use of Statistical Analysis
 
 <p style = "font-size: 25px;">
 <span class="material-icons" style = "color: #cfa00a; font-size: 35px;"> emoji_events</span> <i>Investigation into Elm City Stories’ MiniGame Design</i> 
@@ -37,6 +44,9 @@ personalized Recommendation System</i>
 </p>
 
 *The judges were impressed that this team carefully played the game in order to decide to focus on minigames. They did a great job with the data pre-processing, and the judges liked their careful analysis of the data.*
+
+<a href="/winning-projects/team-tie-presentation.pdf" class="btn btn-primary" role="button">Slides</a>
+<a href="/winning-projects/team-tie-writeup.pdf" class="btn btn-primary" role="button">Write up</a>
 
 <br> 
 
@@ -51,6 +61,10 @@ Differences in the Top and Bottom Performing Students with a Custom Score</i>
 
 *The judges were impressed by this team's great presentation and that they focused on the personality and psychology. The team outlined their objectives clearly, the real-world application, and discussion.*
 
+<a href="/winning-projects/lina-joseph-aryan-presentation.pdf" class="btn btn-primary" role="button">Slides</a>
+<a href="/winning-projects/lina-joseph-aryan-writeup.pdf" class="btn btn-primary" role="button">Write up</a>
+
+
 <br> 
 
 ### Honorable Mention
@@ -60,3 +74,6 @@ Differences in the Top and Bottom Performing Students with a Custom Score</i>
 </p>
 
 *The judges were impressed by the fact this was the only team who made an important distinction of the data in terms of users vs. the avatars of specific players playing multiple times under different identities.*
+
+<a href="/winning-projects/nihongokurasu-Presentation.pdf" class="btn btn-primary" role="button">Slides</a>
+<a href="/winning-projects/nihongokurasu-writeup.pdf" class="btn btn-primary" role="button">Write up</a>
