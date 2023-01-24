@@ -1,5 +1,5 @@
 # Website
-Course website for DataFest at Duke University
+Course website for DataFest at Duke University.
 
 Course website is at https://www2.stat.duke.edu/datafest
 
