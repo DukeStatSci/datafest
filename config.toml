@@ -24,7 +24,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   bio = ""
   job = ""
   location = "Duke University"
-  gravatarEmail = "maria.tackett@duke.edu"
+  gravatarEmail = "alexander.fisher@duke.edu"
   # Your profile picture
 #  picture = ""
   twitter = "dukedatafest"

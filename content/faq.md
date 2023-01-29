@@ -112,6 +112,6 @@ ASA DataFest<sup><small>TM</small></sup> is growing fast! See <a href="http://ww
 
 Please don't hesitate to contact your local organizer with any questions:
 
-  + Duke: [Mine Çetinkaya-Rundel](mailto:mc301@duke.edu) + [Maria Tackett](mailto:maria.tackett@duke.edu)
+  + Duke: [Mine Çetinkaya-Rundel](mailto:mc301@duke.edu) + [Alexander Fisher](mailto:alexander.fisher@duke.edu)
   + NCSU: [Herle McGowan](mailto:herle_mcgowan@ncsu.edu)
   + UNC: [Robin Cunningham](mailto:rjcunnin@email.unc.edu) + [Mario Giacomazzo](mailto:mgiacoma@email.unc.edu)

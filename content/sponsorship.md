@@ -7,7 +7,7 @@ ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support
 
 Please see below for Sponsorship opportunities. Note that your donations are tax-deductible.
 
-Please [contact us](mailto:maria.tackett@duke.edu) if you are interested in sponsorship and/or have any questions.
+Please [contact us](mailto:alexander.fisher@duke.edu) if you are interested in sponsorship and/or have any questions.
 
 ### Impact of Your Sponsorship
 
@@ -52,7 +52,7 @@ Sponsors will be provided with various advertising and recruiting opportunities.
 
 #### Online
 
-You can make your donation online at https://www.gifts.duke.edu. Please enter the amount you would like to give, and click “Choose an Area”, then “Still can’t find your designation of choice?” In the text field asking which area of Duke you’d like to support, type "*DataFest: 3991698*". After clicking “Next”, choose “One Time Gift” on the following page. Complete the remaining prompts for your information and payment details.
+You can make your donation online at https://www.gifts.duke.edu. Please enter the amount you would like to give, and click "Choose an Area", then "Still can’t find your designation of choice?" In the text field asking which area of Duke you'd like to support, type "*DataFest: 3991698*". After clicking "Next", choose "One Time Gift" on the following page. Complete the remaining prompts for your information and payment details.
 
 #### By mail
 
@@ -68,4 +68,4 @@ More information can be found on the [Duke Forward](https://giving.duke.edu/) pa
 
 ### Sponsorship questions?
 
-Please do not hesitate to contact [Maria Tackett](mailto:maria.tackett@duke.edu), ASA DataFest<small><sup>TM</sup></small> @ Duke coordinator, with any questions.
+Please do not hesitate to contact [Alexander Fisher](mailto:alexander.fisher@duke.edu), ASA DataFest<small><sup>TM</sup></small> @ Duke coordinator, with any questions.

@@ -7,7 +7,7 @@ markup: "mmark"
 
 **<i>A huge thanks to our 2022 sponsors! ASA DataFest<small><sup>TM</sup></small> at Duke cannot run without your support!</i>**
 
-Click [here](/sponsorship.html) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:maria.tackett@duke.edu) if you have any questions. 
+Click [here](/sponsorship.html) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:alexander.fisher@duke.edu) if you have any questions. 
 
 <br><br>
 

@@ -3,7 +3,7 @@ title: "Sign up"
 markup: "mmark"
 ---
 
-Sign ups are closed for the 2022 event. We hope to see you at the 2023 DataFest!
+Registration will open soon!
 
 <!--
 <body style = "size: 18px">

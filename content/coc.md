@@ -19,7 +19,7 @@ For more on the code of conduct, please see the [ASA Meeting Code of Conduct](ht
 
 ### Need Help?
 
-Please speak with Maria Tackett in person or by email, [maria.tackett@stat.duke.edu](mailto:maria.tackett@duke.edu).
+Please speak with Alexander Fisher in person or by email, [alexander.fisher@duke.edu](mailto:alexander.fisher@duke.edu).
 
 If any attendee engages in harassing behavior, the event organizers may take any lawful action we deem appropriate, including but not limited to warning the offender or asking the offender to leave the conference. (If you feel you have been unfairly accused of violating this code of conduct, you should contact the organizers with a concise description of your grievance.)
 

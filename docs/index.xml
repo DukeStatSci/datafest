@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DataFest 2022 @ Duke on DataFest</title>
+    <title>DataFest 2023 @ Duke on DataFest</title>
     <link>/</link>
-    <description>Recent content in DataFest 2022 @ Duke on DataFest</description>
+    <description>Recent content in DataFest 2023 @ Duke on DataFest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/coc.html</guid>
-      <description>ASA DataFestTM at Duke is committed to providing a welcoming and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of event participants in any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, social activities, social media, and other online media.</description>
+      <description>ASA DataFestTMat Duke is committed to providing a welcoming and harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of event participants in any form. Sexual language and imagery is not appropriate for any event venue, including talks, workshops, social activities, social media, and other online media.</description>
     </item>
     
     <item>
@@ -21,10 +21,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/winners.html</guid>
-      <description>Best Visualizations emoji_events A predictive tool to identity at risk adolescents by Jenna Boguslavsky, Rebecca Combs, Emily Du, Helene Gu, Athena Yao The judges were impressed by this team&#39;s effective use of the entire collection of visualizations to effectively communicate their results through multiple channels.
-Slides Write up
-
-Best Insight emoji_events Reordering minigames with personalized Recommendation System by Jianbo Bin, Yuge Jin, Chengkai Peng, Jingnan Wang, Yijie Wang The judges were impressed that this team recognized a real problem of people not finishing the game and created a recommender system to do something actionable to address it.</description>
+      <description>Best Visualizations The judges were impressed by this team&amp;rsquo;s effective use of the entire collection of visualizations to effectively communicate their results through multiple channels.
+SlidesWrite upBest Insight The judges were impressed that this team recognized a real problem of people not finishing the game and created a recommender system to do something actionable to address it.
+SlidesWrite upBest Use of Statistical Analysis The judges were impressed that this team carefully played the game in order to decide to focus on minigames.</description>
     </item>
     
     <item>
@@ -34,9 +33,7 @@ Best Insight emoji_events Reordering minigames with personalized Recommendation 
       
       <guid>/faq.html</guid>
       <description>How do I sign up? Registration details will be announced in late February.
-
 Is there a registration fee? No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, let us know as soon as possible so we can make your spot available to someone else.
-
 Who is eligible to compete?</description>
     </item>
     
@@ -46,11 +43,11 @@ Who is eligible to compete?</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/media.html</guid>
-      <description>If you would like to write about or cover ASA DataFestTM in any way, please don&#39;t hesitate to contact us.
- ASA DataFest 2022 @ Duke University video
- Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge - Duke Forge blog, May 8, 2020
- DataFest Shows Spike in Growth, Provides Immersive Experience - AMSTAT News, September 1, 2017
- Edmunds.com sponsors data set for fifth ASA DataFest at UCLA - Daily Bruin - April 27, 2015</description>
+      <description>If you would like to write about or cover ASA DataFestTMin any way, please don&amp;rsquo;t hesitate to contact us.
+  ASA DataFest 2022 @ Duke University video
+  Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge - Duke Forge blog, May 8, 2020
+  DataFest Shows Spike in Growth, Provides Immersive Experience - AMSTAT News, September 1, 2017
+  Edmunds.com sponsors data set for fifth ASA DataFest at UCLA - Daily Bruin - April 27, 2015</description>
     </item>
     
     <item>
@@ -59,12 +56,12 @@ Who is eligible to compete?</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resources.html</guid>
-      <description>Code repository, version control, and collaboration  GitLab: https://gitlab.oit.duke.edu/
- GitHub: https://www.github.com
- Happy Git with R: https://happygitwithr.com/
-  Interactive dashboard:  Shiny
- Deploy Shiny app on shinyapps.io: https://docs.rstudio.com/shinyapps.io/getting-started.html Shiny tutorials: https://shiny.rstudio.com/tutorial/ Statistical Computing RShiny Notes: Part I and Part II   Tableau:
- Tableau Public: https://public.tableau.com/en-us/s Tableau Desktop - free student license: https://www.tableau.com/academic   </description>
+      <description>Code repository, version control, and collaboration   GitLab: https://gitlab.oit.duke.edu/
+  GitHub: https://www.github.com
+  Happy Git with R: https://happygitwithr.com/
+  Interactive dashboard:   Shiny
+ Deploy Shiny app on shinyapps.io: https://docs.rstudio.com/shinyapps.io/getting-started.html Shiny tutorials: https://shiny.rstudio.com/tutorial/ Statistical Computing RShiny Notes: Part I and Part II    Tableau:
+ Tableau Public: https://public.tableau.com/en-us/s Tableau Desktop - free student license: https://www.tableau.com/academic    </description>
     </item>
     
     <item>
@@ -73,21 +70,7 @@ Who is eligible to compete?</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/schedule.html</guid>
-      <description>All event will take place in Penn Pavilion.
-Friday, April 1, 2022 Welcome!
-🔹 6pm: Kickoff &amp;amp; Meet the data
-🔹 9pm: Trivia
-Consultants available for help 7pm - midnight.
-Saturday, April 2, 2022 Carry on!
-🔹 9am: Breakfast
-🔹 11am: Charades Plotting
-🔹 11:30am: Group photo
-🔹 12pm: Lunch
-🔹 2pm: Wrist mobility
-🔹 2-3pm: Interviews
-🔹 6pm: Dinner
-🔹 8:50pm: Basketball!
-Consultants available for help throughout the day.</description>
+      <description>Check back for the 2023 schedule!</description>
     </item>
     
     <item>
@@ -96,8 +79,7 @@ Consultants available for help throughout the day.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/signup.html</guid>
-      <description>Sign ups are closed for the 2022 event. We hope to see you at the 2023 DataFest!
-Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFestTM mailing list to receive updates and announcements. **The registration deadline is March 25, 2022. Seats are limited, so sign up before it&#39;s too late!** ## Participants ### Option 1: Team sign-up (2-5 students)  Click [here](https://forms.</description>
+      <description>Registration will open soon!</description>
     </item>
     
     <item>
@@ -106,10 +88,9 @@ Click on the option that applies to you. Regardless of the option you choose, yo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/sponsors.html</guid>
-      <description>A huge thanks to our 2022 sponsors! ASA DataFestTM at Duke cannot run without your support!
+      <description>A huge thanks to our 2022 sponsors! ASA DataFestTMat Duke cannot run without your support!
 Click here for more information about how you can support DataFest at Duke. You can also contact us if you have any questions.
-
-Duke Cetner for Computational Thinking works with partner programs and organizations across Duke to deliver learning opportunities that align with our vision of preparing all Duke students -- regardless of field of study -- for the digital twenty-first century.</description>
+Duke Cetner for Computational Thinking works with partner programs and organizations across Duke to deliver learning opportunities that align with our vision of preparing all Duke students &amp;ndash; regardless of field of study &amp;ndash; for the digital twenty-first century.</description>
     </item>
     
     <item>
@@ -118,10 +99,10 @@ Duke Cetner for Computational Thinking works with partner programs and organizat
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/sponsorship.html</guid>
-      <description>ASA DataFestTM at Duke cannot run without your support!
+      <description>ASA DataFestTMat Duke cannot run without your support!
 Please see below for Sponsorship opportunities. Note that your donations are tax-deductible.
 Please contact us if you are interested in sponsorship and/or have any questions.
-Impact of Your Sponsorship Your sponsorship of ASA DataFestTM benefits the ASA DataFestTM @ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding of our environment, our social relationships, and our physical and virtual selves.</description>
+Impact of Your Sponsorship Your sponsorship of ASA DataFestTMbenefits the ASA DataFestTM@ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding of our environment, our social relationships, and our physical and virtual selves.</description>
     </item>
     
     <item>
@@ -130,8 +111,7 @@ Impact of Your Sponsorship Your sponsorship of ASA DataFestTM benefits the ASA D
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/workshops.html</guid>
-      <description>All workshops will be online. Participants from all schools are welcome.
- Effective Data Visualization           &amp;nbsp; Sign up    &amp;nbsp; 01/24/22    &amp;nbsp; 5pm - 6:30pm    Visualization is a powerful way to reveal patterns in data, attract attention, and get your message across to an audience quickly and clearly. But, there are many steps in that journey from exploration to information to influence, and many choices to make when putting it all together to tell your story.</description>
+      <description>Check back for info on workshops!</description>
     </item>
     
   </channel>

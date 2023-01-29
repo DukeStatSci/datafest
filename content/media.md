@@ -3,7 +3,7 @@ title: "Media"
 markup: "mmark"
 ---
 
-If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:maria.tackett@duke.edu).
+If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:alexander.fisher@duke.edu).
 
 - [ASA DataFest 2022 @ Duke University video](https://youtu.be/5oG0UAHRWOk)
 
