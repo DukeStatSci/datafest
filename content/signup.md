@@ -1,9 +1,30 @@
 ---
 title: "Sign up"
-markup: "mmark"
+markup: mmark
 ---
 
-Registration will open soon!
+
+Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
+
+**The registration deadline is 5PM March 10, 2023. Seats are limited, so sign up before it's too late!**
+
+### Participants
+
+**Option 1: Team sign-up (2-5 students)**
+
+Click [here](https://forms.gle/efjhGrtbcvu7Tnvz6) to sign up as a team of 2 to 5 students. 
+
+**Option 2: Looking for teammates**
+
+If you do not have a team in mind but you're looking for teammates, click [here](https://forms.gle/d1nhMBare9ewm8Ap8) to leave us your information so that you can be matched with others.
+
+### Consultants
+
+If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.gle/uqqJvR4VhM1YuKCR8).
+
+<br>
+
+If you have any questions about registration, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu) and [Prof. Mine Çetinkaya-Rundel](mailto:mc301@duke.edu).
 
 <!--
 <body style = "size: 18px">
