@@ -1,0 +1,83 @@
+---
+title: "FAQ"
+---
+
+### How do I sign up?
+
+
+Registration **is open**! [Click here](/signup.html) to sign up.
+
+ 
+
+### Is there a registration fee?
+
+No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, [let us know](mailto:aaf29@duke.edu) as soon as possible so we can make your spot available to someone else.
+
+ 
+
+### Who is eligible to compete?
+
+All undergraduate and MS students are eligible. 
+
+ 
+
+### What about PhD students?
+
+We would love to have Ph.D. students be involved as consultants during the event.
+
+ 
+
+### Can I participate as a consuntant if I'm an MS student?
+
+Sure!
+
+ 
+
+### How large are the teams?
+
+Teams can be made up of 2-5 students. 
+
+ 
+
+### Do I have to compete in a team?
+
+
+Yes, but if you don't have a team in mind, select the "Looking for team" registration under the [sign ups page](/signups.html) and we'll match you with others looking for teammates.
+
+
+### What do I need to compete?
+
+All you need is a laptop with tools for data analysis (there is no limitation on which software you use) and enthusiasm for data.
+
+ 
+
+### What are the rules of the competition?
+
+- All projects must be submitted by **Sunday, March 26** There is only one submission per team.
+- Any additional data used in the project must be publicly available or openly licensed.
+- All interactive dashboards must be deployed online.
+- All slide decks and write ups must be submitted as a PDF document.
+- It's a competition, but a friendly one, so collaboration between teams is not only allowed but highly encouraged.
+
+ 
+
+### How do I submit my analysis?
+
+Once the registration window closes, participants will receive an email with a link to the project submission form.
+
+ 
+
+### Where can I get help during the competition?
+
+Consultants will be available in-person throughout the weekend to answer questions. 
+
+ 
+
+### What can I win?
+
+ASA student memberships, medals, books, fame, glory, or some combination thereof... And you get a t-shirt!
+
+
+### Where else is ASA DataFest<sup><small>TM</small></sup> happening?
+
+ASA DataFest<sup><small>TM</small></sup> is growing fast! See [here](https://ww2.amstat.org/education/datafest/participants.cfm) for a list of all participating institutions. If you are interested in holding ASA DataFest<sup><small>TM</small></sup> at your institution, click [here](https://ww2.amstat.org/education/datafest/hosting.cfm) to get more information on the event.

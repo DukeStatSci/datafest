@@ -1,282 +1,332 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.92.0" />
-	<meta charset="utf-8" />
-	<link rel="icon" sizes="76x76" href="./img/favicon.png">
-	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-	<title>DataFest</title>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/gaborcsardi/r-font/master/rlogo.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/v4-shims.js"></script>
 
-	
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/material-kit.css" rel="stylesheet"/>
+<title>DataFest</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
-  
-<body class="landing-page">
-  	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-	    	<div class="container">
-        	
-        	<div class="navbar-header">
-        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-            		<span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-        		</button>
-        		<a class="navbar-brand" href="./">DataFest</a>
-        	</div>
+<body class="nav-fixed">
 
-        	<div class="collapse navbar-collapse" id="navigation-example">
-        		<ul class="nav navbar-nav navbar-right">
-      
-        
-
-        <li class="nav-item">
-          <a href="./" data-target="/">
-            <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-            <span>Home</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./signup.html" data-target="/signup.html">
-            <i class='fas fa-user-plus fa-lg'></i>
-            <span>Sign Up</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./schedule.html" data-target="/schedule.html">
-            <i class="material-icons">date_range</i>
-            <span>schedule</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./workshops.html" data-target="/workshops.html">
-            <i class='fas fa-code fa-lg'></i>
-            <span>Workshops</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./faq.html" data-target="/faq.html">
-            <i class="material-icons">help</i>
-            <span>FAQ</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./resources.html" data-target="/resources.html">
-            <i class='fas fa-laptop'></i>
-            <span>Resources</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./sponsors.html" data-target="/sponsors.html">
-            <i class='fas fa-life-ring'></i>
-            <span>Sponsors</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./coc.html" data-target="/coc.html">
-            <i class='fas fa-users'></i>
-            <span>COC</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./media.html" data-target="/media.html">
-            <i class='fas fa-newspaper'></i>
-            <span>Media</span>
-          </a>
-        </li>
-        
-      
-        
-
-        <li class="nav-item">
-          <a href="./winners.html" data-target="/winners.html">
-            <span class='material-icons'>emoji_events</span>
-            <span>Winners</span>
-          </a>
-        </li>
-        
-      
-        		</ul>
-        	</div>
-    	</div>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DataFest</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./signup.html">Sign Up</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html">Schedule</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workshops.html">Workshops</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./faq.html">FAQ</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html">Resources</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sponsors.html">Sponsors</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./coc.html">COC</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./media.html">Media</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./winners.html">Winners</a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
     </nav>
-  <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('https://www2.stat.duke.edu/datafest/duke-night.jpg');">
-      <div class="container">
-        <div class="row">
-					<div class="col-md-6">
-              <h1 class="title">DataFest 2023 @ Duke</h1>
-              <h4></h4>
-              <br />
-					</div>
-        </div>
-      </div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#event-details" id="toc-event-details" class="nav-link active" data-scroll-target="#event-details">Event details</a></li>
+  <li><a href="#what-is-datafest" id="toc-what-is-datafest" class="nav-link" data-scroll-target="#what-is-datafest">What is DataFest?</a></li>
+  <li><a href="#testimonials" id="toc-testimonials" class="nav-link" data-scroll-target="#testimonials">Testimonials</a></li>
+  <li><a href="#past-datafests-at-duke" id="toc-past-datafests-at-duke" class="nav-link" data-scroll-target="#past-datafests-at-duke">Past DataFests at Duke</a>
+  <ul class="collapse">
+  <li><a href="#datafest-2021---rocky-mountain-poison-and-drug-safety" id="toc-datafest-2021---rocky-mountain-poison-and-drug-safety" class="nav-link" data-scroll-target="#datafest-2021---rocky-mountain-poison-and-drug-safety">DataFest 2021 - Rocky Mountain Poison and Drug Safety</a></li>
+  <li><a href="#datafest-2020---covid-19-virtual-data-challenge" id="toc-datafest-2020---covid-19-virtual-data-challenge" class="nav-link" data-scroll-target="#datafest-2020---covid-19-virtual-data-challenge">DataFest 2020 - COVID-19 Virtual Data Challenge</a></li>
+  <li><a href="#datafest-2019---data-source-canadian-national-womens-rugby-team" id="toc-datafest-2019---data-source-canadian-national-womens-rugby-team" class="nav-link" data-scroll-target="#datafest-2019---data-source-canadian-national-womens-rugby-team">DataFest 2019 - Data source: Canadian National Women’s Rugby Team</a></li>
+  <li><a href="#datafest-2018---data-source-indeed" id="toc-datafest-2018---data-source-indeed" class="nav-link" data-scroll-target="#datafest-2018---data-source-indeed">DataFest 2018 - Data source: Indeed</a></li>
+  <li><a href="#datafest-2017---data-source-expedia" id="toc-datafest-2017---data-source-expedia" class="nav-link" data-scroll-target="#datafest-2017---data-source-expedia">DataFest 2017 - Data source: Expedia</a></li>
+  <li><a href="#datafest-2016---data-source-ticketmaster" id="toc-datafest-2016---data-source-ticketmaster" class="nav-link" data-scroll-target="#datafest-2016---data-source-ticketmaster">DataFest 2016 - Data source: Ticketmaster</a></li>
+  <li><a href="#datafest-2015---data-source-edmunds.com" id="toc-datafest-2015---data-source-edmunds.com" class="nav-link" data-scroll-target="#datafest-2015---data-source-edmunds.com">DataFest 2015 - Data source: Edmunds.com</a></li>
+  <li><a href="#datafest-2014---data-source-gridpoint" id="toc-datafest-2014---data-source-gridpoint" class="nav-link" data-scroll-target="#datafest-2014---data-source-gridpoint">DataFest 2014 - Data source: GridPoint</a></li>
+  <li><a href="#datafest-2013---data-source-eharmony" id="toc-datafest-2013---data-source-eharmony" class="nav-link" data-scroll-target="#datafest-2013---data-source-eharmony">DataFest 2013 - Data source: eHarmony</a></li>
+  <li><a href="#datafest-2012---data-source-kiva.com" id="toc-datafest-2012---data-source-kiva.com" class="nav-link" data-scroll-target="#datafest-2012---data-source-kiva.com">DataFest 2012 - Data source: Kiva.com</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
-		<div class="main main-raised">
-			<div class="container">
-		  	<div class="section text-left section-landing">
-		  	  <div class="row">
-		  	    <div class="col-md-6 col-md-offset-3">  
-	            <!-- raw HTML omitted -->
-<h2 id="event-details">Event details</h2>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">DataFest</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event details</h2>
 <p><strong>When:</strong> Friday, March 24 at 6pm - Sunday, March 26 at 5pm</p>
 <p><strong>Where:</strong> Duke University West Campus</p>
-<p>On Friday we will start with a welcome event where you will be introduced to the surprise data set you&rsquo;ll be working with other the weekend. You&rsquo;ll learn more about the data provider and a bit about what they&rsquo;d like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client&rsquo;s introduction when shaping your research question(s).</p>
+<p>On Friday we will start with a welcome event where you will be introduced to the surprise data set you’ll be working with other the weekend. You’ll learn more about the data provider and a bit about what they’d like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client’s introduction when shaping your research question(s).</p>
 <p>Projects will be due on Sunday afternoon. Each team will give a brief presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.</p>
-<h2 id="what-is-datafest">What is DataFest?</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>ASA DataFest<!-- raw HTML omitted --><!-- raw HTML omitted -->TM<!-- raw HTML omitted --><!-- raw HTML omitted --> is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!</p>
-<p>ASA DataFest<!-- raw HTML omitted --><!-- raw HTML omitted -->TM<!-- raw HTML omitted --><!-- raw HTML omitted --> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.</p>
-<p>ASA DataFest<!-- raw HTML omitted --><!-- raw HTML omitted -->TM<!-- raw HTML omitted --><!-- raw HTML omitted --> at Duke is organized by the Department of Statistical Science at Duke University, and co-hosted by the Departments of Statistics and Operations Research at UNC and Statistics at NCSU.</p>
-<h2 id="testimonials">Testimonials</h2>
-<p>While ASA DataFest<!-- raw HTML omitted --><!-- raw HTML omitted -->TM<!-- raw HTML omitted --><!-- raw HTML omitted --> is a competition, the main goal of the event is to promote collaboration. Here are some testimonials from past participants:</p>
-<blockquote>
+</section>
+<section id="what-is-datafest" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-datafest">What is DataFest?</h2>
+<div class="callout callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><a href="./winners.html">Click here</a> to see the 2022 winners!</p>
+</div>
+</div>
+</div>
+<p>&lt;iframe width=“560” height=“315” src=“https://www.youtube.com/embed/5oG0UAHRWOk” title=“YouTube video player” frameborder=“0” clipboard-write; encrypted-media; gyroscope; picture-in-picture” allowfullscreen&gt;</p>
+<p>ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!</p>
+<p>ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.</p>
+<p>ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science at Duke University, and co-hosted by the Departments of Statistics and Operations Research at UNC and Statistics at NCSU.</p>
+</section>
+<section id="testimonials" class="level2">
+<h2 class="anchored" data-anchor-id="testimonials">Testimonials</h2>
+<p>While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal of the event is to promote collaboration. Here are some testimonials from past participants:</p>
+<blockquote class="blockquote">
 <p><em>It was a great experience, with a fun and interesting challenge. One of my favorite parts is how varied the presentations and projects from each team are. I love learning about ways in which others looked at and analyzed the same problem/ data.</em></p>
 </blockquote>
-<!-- raw HTML omitted -->
-<blockquote>
+<blockquote class="blockquote">
 <p><em>DataFest was an awesome experience. To me, the best part was working in a team of friends that I usually hung out with, but had not had a chance to work together intensively on a project. We enjoyed analyzing the situations and solving problems together for our client. At the end of the day, we just got to know each other better. It was also fun to interact with other teams to explore other approaches while keeping in mind that we were in competition. The fact that we were given a huge amount of data really challenges us to come up with creative and practical approaches. Another important part was the presentation. Every team had to explain well to the judges their objectives and solutions. Our team won the Best Visualization award which is really awesome. Lastly, the food was fantastic.</em></p>
 </blockquote>
-<h2 id="past-datafests-at-duke">Past DataFests at Duke</h2>
-<h3 id="datafest-2021---rocky-mountain-poison-and-drug-safety">DataFest 2021 - Rocky Mountain Poison and Drug Safety</h3>
+</section>
+<section id="past-datafests-at-duke" class="level2">
+<h2 class="anchored" data-anchor-id="past-datafests-at-duke">Past DataFests at Duke</h2>
+<section id="datafest-2021---rocky-mountain-poison-and-drug-safety" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2021---rocky-mountain-poison-and-drug-safety">DataFest 2021 - Rocky Mountain Poison and Drug Safety</h3>
 <p><strong>Goal:</strong> Use data from surveys conducted in the United States, Canada, Germany, and the United Kingdom to discover and identify patterns of drug use, with particular attention paid to identifying misuse. The analysis results could potentially be used to predict future drug misuse and to inform the development of a questionnaire physicians can use to predict drug misuse.</p>
-<h3 id="datafest-2020---covid-19-virtual-data-challenge">DataFest 2020 - COVID-19 Virtual Data Challenge</h3>
+</section>
+<section id="datafest-2020---covid-19-virtual-data-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2020---covid-19-virtual-data-challenge">DataFest 2020 - COVID-19 Virtual Data Challenge</h3>
 <p><strong>Goal:</strong> Explore data to understand a society impact of the COVID-19 pandemic other than its direct health outcomes. What have been the effects on pollution levels, transportation levels, or working from home? Has there been a change in the number of posts on TikTok? What is the impact on online education? The focus is up to you!</p>
-<h3 id="datafest-2019---data-source-canadian-national-womens-rugby-team">DataFest 2019 - Data source: Canadian National Women&rsquo;s Rugby Team</h3>
-<p><strong>Goal:</strong> How do we quantify the role of fatigue and workload in a team&rsquo;s performance in Rugby 7s? How reliable are the subjective wellness Fata? Should the quality of the opponent or the outcome of the game be considered when examining fatigue during a game? Can widely used measurements of training load and fatigue be improved? How reliable are GPS data in quantifying fatigue?</p>
-<h3 id="datafest-2018---data-source-indeed">DataFest 2018 - Data source: Indeed</h3>
-<p><strong>Goal:</strong> What advice would you give a new high school about what major to choose in college? How does Indeed&rsquo;s data compare to official government data on the labor market? Can it be used to provide good economic indicators?</p>
-<h3 id="datafest-2017---data-source-expedia">DataFest 2017 - Data source: Expedia</h3>
-<p><strong>Goal:</strong> How do visitors' searches relate to the choices of hotels booked or not booked? What role do external factors play in hotel choice?</p>
-<p>Expedia provided DataFesters with data from search results from millions of visitors around the world who were interested in traveling to destinations all over the world. The data were in two files, one of which included data collected on search results from visitors' sessions, and another which contained detailed information about the destinations that visitors searched for.</p>
-<h3 id="datafest-2016---data-source-ticketmaster">DataFest 2016 - Data source: Ticketmaster</h3>
-<p><strong>Goal:</strong> How can site visits be converted to ticket sales, and how can TicketMaster identify &ldquo;true fans&rdquo; of an artist or band?</p>
+</section>
+<section id="datafest-2019---data-source-canadian-national-womens-rugby-team" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2019---data-source-canadian-national-womens-rugby-team">DataFest 2019 - Data source: Canadian National Women’s Rugby Team</h3>
+<p><strong>Goal:</strong> How do we quantify the role of fatigue and workload in a team’s performance in Rugby 7s? How reliable are the subjective wellness Fata? Should the quality of the opponent or the outcome of the game be considered when examining fatigue during a game? Can widely used measurements of training load and fatigue be improved? How reliable are GPS data in quantifying fatigue?</p>
+</section>
+<section id="datafest-2018---data-source-indeed" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2018---data-source-indeed">DataFest 2018 - Data source: Indeed</h3>
+<p><strong>Goal:</strong> What advice would you give a new high school about what major to choose in college? How does Indeed’s data compare to official government data on the labor market? Can it be used to provide good economic indicators?</p>
+</section>
+<section id="datafest-2017---data-source-expedia" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2017---data-source-expedia">DataFest 2017 - Data source: Expedia</h3>
+<p><strong>Goal:</strong> How do visitors’ searches relate to the choices of hotels booked or not booked? What role do external factors play in hotel choice?</p>
+<p>Expedia provided DataFesters with data from search results from millions of visitors around the world who were interested in traveling to destinations all over the world. The data were in two files, one of which included data collected on search results from visitors’ sessions, and another which contained detailed information about the destinations that visitors searched for.</p>
+</section>
+<section id="datafest-2016---data-source-ticketmaster" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2016---data-source-ticketmaster">DataFest 2016 - Data source: Ticketmaster</h3>
+<p><strong>Goal:</strong> How can site visits be converted to ticket sales, and how can TicketMaster identify “true fans” of an artist or band?</p>
 <p>Data consisted of three sets. One included events from the last 12 months that tracked customer travel through the website. Another provided information about advertising campaigns on Google, and the third included data on the events themselves.</p>
-<h3 id="datafest-2015---data-source-edmundscom">DataFest 2015 - Data source: Edmunds.com</h3>
+</section>
+<section id="datafest-2015---data-source-edmunds.com" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2015---data-source-edmunds.com">DataFest 2015 - Data source: Edmunds.com</h3>
 <p><strong>Goal:</strong> Detect insights into the process of car shopping that can help make the process easier for customers.</p>
-<p>Data consist of visitor &lsquo;pathways&rsquo; through a website that helps customers configure car features and shop for cars. Five data files were linked by a customer key, and including data about the customer, about his or her visits to the webpage, and, when applicable, about the car purchased and the dealership where the car was purchased.</p>
-<h3 id="datafest-2014---data-source-gridpoint">DataFest 2014 - Data source: GridPoint</h3>
+<p>Data consist of visitor ‘pathways’ through a website that helps customers configure car features and shop for cars. Five data files were linked by a customer key, and including data about the customer, about his or her visits to the webpage, and, when applicable, about the car purchased and the dealership where the car was purchased.</p>
+</section>
+<section id="datafest-2014---data-source-gridpoint" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2014---data-source-gridpoint">DataFest 2014 - Data source: GridPoint</h3>
 <p><strong>Goal:</strong> Help understand how customers can best save money and energy.</p>
 <p>Data consisted of a random sample of customers, with five-minute aggregates over a year of energy consumption that was then aggregated across important features of the commercial properties, as well as supporting climate and location data.</p>
-<h3 id="datafest-2013---data-source-eharmony">DataFest 2013 - Data source: eHarmony</h3>
+</section>
+<section id="datafest-2013---data-source-eharmony" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2013---data-source-eharmony">DataFest 2013 - Data source: eHarmony</h3>
 <p><strong>Goal:</strong> Help understand what qualities people look for in prospective dates.</p>
 <p>The DataFest students worked with a large sample of prospective matches. For each customer, data were provided on his or her preferences, as well as four matches, their preferences, and information about whether parties contacted one another.</p>
-<h3 id="datafest-2012---data-source-kivacom">DataFest 2012 - Data source: Kiva.com</h3>
+</section>
+<section id="datafest-2012---data-source-kiva.com" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2012---data-source-kiva.com">DataFest 2012 - Data source: Kiva.com</h3>
 <p><strong>Goal:</strong> Help understand what motivates people to lend money to developing-nation entrepreneurs and what factors are associated with paying these loans.</p>
 <p>Several data sets were provided, including characteristics of lenders and borrowers and loan pay-back data.</p>
 
-	          </div>
-          </div>   
-	      </div>
-      </div>
-		</div>
-    <footer class="footer">
-  <div class="container">
-	  <nav class="pull-left">
-	    <ul>
-	    
-        
 
-        <li>
-          <a href="http://stat.duke.edu/"><i class="button-icon fa fa fa-map-marker"></i> Duke StatSci</a>
-        </li>
-        
-      
-        
+</section>
+</section>
 
-        <li>
-          <a href="https://ww2.amstat.org/education/datafest/"><i class="button-icon fa fa fa-chart-bar"></i> ASA DataFest</a>
-        </li>
-        
-      
-        
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
 
-        <li>
-          <a href="https://twitter.com/dukedatafest"><i class="button-icon fa fa fa-twitter"></i> Twitter</a>
-        </li>
-        
-      
-        
 
-        <li>
-          <a href="./"> </a>
-        </li>
-        
-      
-      </ul>
-    </nav>
-	  <div class="copyright pull-right">
-	    <img src="./img/cc-by.svg"/>
-	  </div>
-  </div>
-</footer>
-	</div>
-</body>
 
-			
-
-	
-	<script src="./js/jquery.min.js" type="text/javascript"></script>
-	<script src="./js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="./js/material.min.js"></script>
-
-	
-	<script src="./js/nouislider.min.js" type="text/javascript"></script>
-
-	
-	<script src="./js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-	
-	<script src="./js/material-kit.js" type="text/javascript"></script>
-
-</html>
+</body></html>

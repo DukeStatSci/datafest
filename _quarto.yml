@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - data/
+  
+  
+website:
+  title: "DataFest"
+  search: false
+  navbar:
+    background: "#00539B" # Duke Blue
+    left:
+    - signup.qmd
+    - schedule.qmd
+    - workshops.qmd
+    - faq.qmd
+    - resources.qmd
+    - sponsors.qmd
+    - coc.qmd
+    - media.qmd
+    - winners.qmd
+      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

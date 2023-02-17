@@ -1,0 +1,35 @@
+---
+title: "Workshops"
+---
+
+Workshops are graciously hosted by Duke's Center for Data and Visualization Sciences and will take place March 1-10 and March 20-23. In addition, several previously recorded workshops are linked below.
+
+## Live workshops
+
+### March 20-23
+
+#### Regular expressions (with stringr!)
+
+The purpose of this workshop is to introduce text wrangling with regular expressions using the stringr package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.
+
+**time and location TBD**
+
+
+## Pre-recorded workshops
+
+### Data Visualization
+
+|                                                                                        |
+|------------------------------------------------------------------------|
+| [Effective Data Visualization](https://warpwire.duke.edu/w/MesGAA/)                    |
+| [Presenting Data Science Results to Stakeholders](https://warpwire.duke.edu/w/15oFAA/) |
+| [Intro to Tableau](https://warpwire.duke.edu/w/ye0GAA/)                                |
+| [Visualization in Python with Altair](https://warpwire.duke.edu/w/-doGAA/)             |
+
+### Data wrangling in Python  
+
+|     |
+|-----|
+| [Intro to Tablular Data in Python & JupyterLab](https://warpwire.duke.edu/w/4-MGAA/)     |
+|   [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)  |
+|   [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)  |

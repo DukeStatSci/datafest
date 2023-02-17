@@ -1,0 +1,22 @@
+---
+title: "Resources"
+---
+
+### Code repository, version control, and collaboration 
+
+- GitLab: https://gitlab.oit.duke.edu/
+
+- GitHub: https://www.github.com
+
+- *Happy Git with R*: https://happygitwithr.com/ 
+
+### Interactive dashboard:
+
+- Shiny 
+  - Deploy Shiny app on shinyapps.io: [https://docs.rstudio.com/shinyapps.io/getting-started.html](https://docs.rstudio.com/shinyapps.io/getting-started.html)
+  - Shiny tutorials: [https://shiny.rstudio.com/tutorial/](https://shiny.rstudio.com/tutorial/)
+  - [Statistical Computing RShiny Notes](https://sta323-sp22.github.io/slides/Lec18.html) 
+  
+- Tableau: 
+  - Tableau Public: [https://public.tableau.com/en-us/s](https://public.tableau.com/en-us/s)
+  - Tableau Desktop - free student license: [https://www.tableau.com/academic](https://www.tableau.com/academic)
