@@ -109,7 +109,7 @@
     "href": "workshops.html#live-workshops",
     "title": "Workshops",
     "section": "Live workshops",
-    "text": "Live workshops\n\nMarch 20-23\n\nRegular expressions (with stringr!)\nThe purpose of this workshop is to introduce text wrangling with regular expressions using the stringr package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.\ntime and location TBD"
+    "text": "Live workshops\n\nMarch 7\n\nRegular expressions (with stringr!)\nThe purpose of this workshop is to introduce text wrangling with regular expressions using the stringr package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.\n12-1pm location TBD"
   },
   {
     "objectID": "sponsors.html",

@@ -6,13 +6,13 @@ Workshops are graciously hosted by Duke's Center for Data and Visualization Scie
 
 ## Live workshops
 
-### March 20-23
+### March 7
 
 #### Regular expressions (with stringr!)
 
 The purpose of this workshop is to introduce text wrangling with regular expressions using the stringr package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.
 
-**time and location TBD**
+**12-1pm location TBD**
 
 
 ## Pre-recorded workshops
