@@ -6,13 +6,29 @@ Workshops are graciously hosted by Duke's Center for Data and Visualization Scie
 
 ## Live workshops
 
-### March 7
+### March 7  
 
 #### Regular expressions (with stringr!)
 
-The purpose of this workshop is to introduce text wrangling with regular expressions using the stringr package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.
+- **Location**: Bostock 127 (The Edge Workshop Room)
 
-**12-1pm location TBD**
+- **Time**: 12-1pm
+
+- **Description**: The purpose of this workshop is to introduce text wrangling with regular expressions using the `stringr` package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/10402626).
+
+### March 9
+
+#### An introduction to data analysis with R
+
+- **Location**: Bostock 127 (The Edge Workshop Room)
+
+- **Time**: 1-3pm
+
+- **Description**: A gentle introduction to R and the Tidyverse using RStudio. This two-hour, hands-on session introduces data wrangling, visualization, and exploratory data analysis (EDA). Our focus will be the the `dplyr` and `ggplot2` packages. Tidyverse, is an approachable set of consistent data science tools enabling the R statistical programming language.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/10401495)
 
 
 ## Pre-recorded workshops
@@ -26,10 +42,10 @@ The purpose of this workshop is to introduce text wrangling with regular express
 | [Intro to Tableau](https://warpwire.duke.edu/w/ye0GAA/)                                |
 | [Visualization in Python with Altair](https://warpwire.duke.edu/w/-doGAA/)             |
 
-### Data wrangling in Python  
+### Data wrangling in Python
 
-|     |
-|-----|
-| [Intro to Tablular Data in Python & JupyterLab](https://warpwire.duke.edu/w/4-MGAA/)     |
-|   [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)  |
-|   [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)  |
+|                                                                                      |
+|------------------------------------------------------------------------|
+| [Intro to Tablular Data in Python & JupyterLab](https://warpwire.duke.edu/w/4-MGAA/) |
+| [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)               |
+| [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)                        |
