@@ -23,7 +23,7 @@ ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where te
 
 ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.
 
-ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science at Duke University, and co-hosted by the Departments of Statistics and Operations Research at UNC and Statistics at NCSU.
+ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science and the Statistical Majors Union at Duke University.
 
 ## Testimonials
 
