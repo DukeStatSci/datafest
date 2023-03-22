@@ -9,9 +9,16 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 -----
 
+[2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world. 
+
+[Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
+
 [Duke Social Science Research Institute (SSRI)](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. SSRI promotes multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
 
+<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-cs.png">
+
+[The Department of Computer Science at Duke](https://www.cs.duke.edu/) is an internationally recognized leader in research and education. Undergraduates take classes with renowned faculty, engage in cutting-edge research, and build a strong foundation for future study or work in a wide variety of fields. One of the many hallmarks of Duke Computer Science's success has been fruitful collaborations among different groups within the department, with research groups in other departments at Duke, with other institutes, and with industry.
 <!-- [Duke Center for Computational Thinking](https://computationalthinking.duke.edu/) works with partner programs and organizations across Duke to deliver learning opportunities that align with our vision of preparing all Duke students -- regardless of field of study -- for the digital twenty-first century. -->
 
 <img style="width:320px;float: left;padding-right:20px" src="/logos/stat-sci-updated.png">
