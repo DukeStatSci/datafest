@@ -6,8 +6,7 @@ title: "Schedule"
 
 - 5:00pm: Early check-in option available at Perkins Link near the Help Desk (floor L1)
 - 6:00pm: Data kick-off at Levine Science Research Center (LSRC) B101.
-- 6:30pm: Welcome and meet the data!
-- 7:00pm: Perkins Link and Dinner - Check-in at Perkins Link near the Help Desk (floor L1)
+- 6:30pm: Transition to Perkins Link and Dinner - Check-in at Perkins Link near the Help Desk (floor L1)
 - 9:00pm: DataFest support and consulting runs until 9pm.
 
 **Saturday, March 25**
