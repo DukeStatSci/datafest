@@ -9,9 +9,15 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 -----
 
+<img style="width:320px;float: left;padding-right:20px" src="/logos/secondorder.png">
+
 [2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world. 
 
+<img style="width:100px;float: left;padding-right:20px" src="/logos/iid-cropped.png">
+
 [Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
+
+<img style="width:250px;float: left;padding-right:20px" src="/logos/ssri.png">
 
 [Duke Social Science Research Institute (SSRI)](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. SSRI promotes multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
