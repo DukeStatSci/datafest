@@ -24,7 +24,7 @@ title: "Schedule"
 *Consultants available for help until 12:00pm.*
 
 - 10:00am: DataFest continues at Perkins + breakfast + coffee + tea
-- 12:30pm: Lunch + projects due!
+- 12:00pm: Lunch + projects due!
 - 1:00pm-2:30pm: Round 1 judging
 - 3:00pm-5:00pm: Final round of judging & awards in Levine Science Research Center (LSRC) B101
 
