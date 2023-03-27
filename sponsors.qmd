@@ -13,6 +13,10 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 [2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world. 
 
+<img style="width:200px;float: left;padding-right:20px" src="/logos/sas-logo.png">
+
+[SAS](https://www.sas.com/) technology solutions help meet the needs of organizations in practically every industry, regardless of size. Experts have deep industry knowledge and understand unique challenges and can accelerate time to decisions.
+
 <img style="width:100px;float: left;padding-right:20px" src="/logos/iid-cropped.png">
 
 [Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
