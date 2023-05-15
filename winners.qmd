@@ -2,41 +2,45 @@
 title: "Winners"
 ---
 
-# 2022 Winners
+# 2023 Winners
 
 ### Best Visualizations
 
-[**A predictive tool to identity at risk adolescents**](https://fishswish.net)  by 
-Jenna	Boguslavsky, Rebecca	Combs, Emily Du, Helene	Gu, Athena	Yao </p>
+[**Services, questions and cases**](/presentations/team-5-presentation.pdf) by Stanley Borden & Venkat Ravi.
 
-*The judges were impressed by this team's effective use of the entire collection of visualizations to effectively communicate their results through multiple channels.*
+ </p>
+
+*The judges were impressed by this team's county level choropleth map of % of cases closed, particularly with annotating states to take note of.*
 
 
 ### Best Insight
 
-**Reordering minigames with personalized Recommendation System** by Jianbo	Bin,  Yuge	Jin, Chengkai	Peng, Jingnan	Wang, Yijie	Wang
+[**Factors contributing to unanswered and unresolved questions**](/presentations/team-1-presentation.pdf) by Micah McMinn, Emily Kuykendall, Laura Cai & Ayush Batra.
 
-*The judges were impressed that this team recognized a real problem of people not finishing the game and created a recommender system to do something actionable to address it.*
+*The judges were impressed by the recommendation to randomize the order in which attorneys see questions so that late-night questions can be answered.*
 
  
 
 ### Best Use of Statistical Analysis
 
-**Investigation into Elm City Stories' MiniGame Design** by Bridge Hu, Andy Liu, Jacqueline Ma, Andy Wulu, Cara Yang
+[**Analyzing response times and question sentiment in ABA free law answers**](/presentations/LiveGraphLove-presentation.pdf) by Joey Ilagan, Perrin Myerson & Aryan Mathur.
 
-*The judges were impressed that this team carefully played the game in order to decide to focus on minigames. They did a great job with the data pre-processing, and the judges liked their careful analysis of the data.*
+*The judges were impressed by their model of response time to questions and hypothesis test on sentiment analysis results.*
+
+### Best Use of Outside Data
+
+[**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo.
+
+*The judges were impressed by formal vs. informal language analysis grounded in literature.*
 
 ### Judges' Pick
 
 *Project recognized by the judges for outstanding achievement outside of the core award categories.*
 
-**Evaluating Character Differences in the Top and Bottom Performing Students with a Custom Score** by Joseph	Ilagan, Aryan	Mathur, Lina	Nayvelt</p>
+[**Defending the Defenders: where the bar is excelling and how they can improve **](/presentations/team6-presentation.pdf) by Mitch Harrison, Hamza Khan, Aaron Zhu & Amy Zhou </p>
 
-*The judges were impressed by this team's great presentation and that they focused on the personality and psychology. The team outlined their objectives clearly, the real-world application, and discussion.*
- 
+*The judges were impressed by this team's ability to bring together outside data, create impressive visualizations, and the team's overall creativity with metric development, and recommendations about outreach.*
 
-### Honorable Mention
+# Past winners
 
-**Exploring effectiveness of the game**  by Xiaoyin	Kang and Ziying	Ye
-
-*The judges were impressed by the fact this was the only team who made an important distinction of the data in terms of users vs. the avatars of specific players playing multiple times under different identities.*
+[Click here](/past-winners.html) to see past winners.
