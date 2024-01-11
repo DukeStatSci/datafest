@@ -53,7 +53,7 @@ All you need is a laptop with tools for data analysis (there is no limitation on
 
 ### What are the rules of the competition?
 
-- All projects must be submitted by **Sunday, March 26** There is only one submission per team.
+- All projects must be submitted by **Sunday, March 3** There is only one submission per team.
 - Any additional data used in the project must be publicly available or openly licensed.
 - All interactive dashboards must be deployed online.
 - All slide decks and write ups must be submitted as a PDF document.
@@ -75,7 +75,7 @@ Consultants will be available in-person throughout the weekend to answer questio
 
 ### What can I win?
 
-ASA student memberships, medals, books, fame, glory, or some combination thereof... And you get a t-shirt!
+ASA student memberships, medals, mugs, fame, glory, or some combination thereof... And you get a t-shirt!
 
 
 ### Where else is ASA DataFest<sup><small>TM</small></sup> happening?

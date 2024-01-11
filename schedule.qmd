@@ -2,36 +2,46 @@
 title: "Schedule"
 ---
 
-**Friday, March 24**
+**Friday, March 1**
 
-- 5:00pm: Check-in begins at Perkins Library Link near the Help Desk (floor L1)
-- 6:00pm: Data kick-off at Levine Science Research Center (LSRC) B101.
-- 6:30pm: DataFest moves to Perkins Link for Dinner, and check-in continues at Perkins Link near the Help Desk (floor L1); workspace assignments are released
-- 9:00pm: DataFest support and consulting runs until 9pm.
+TBD
 
-**Saturday, March 25**
+<!-- - 5:00pm: Check-in begins at Perkins Library Link near the Help Desk (floor L1) -->
+<!-- - 6:00pm: Data kick-off at Levine Science Research Center (LSRC) B101. -->
+<!-- - 6:30pm: DataFest moves to Perkins Link for Dinner, and check-in continues at Perkins Link near the Help Desk (floor L1); workspace assignments are released -->
+<!-- - 9:00pm: DataFest support and consulting runs until 9pm. -->
 
-- 10:00am: DataFest continues at Perkins Library: breakfast + coffee + tea
-- 12:30pm: Group photo
-- 1:00pm: Lunch
-- 2:00pm: Activity break
-- 4:00pm: Activity break
-- 6:00pm: Dinner & trivia
-- 9:00pm: DataFest support and consulting runs until 9pm.
+**Saturday, March 2**
 
-**Sunday, March 26**
+TBD
 
-*Consultants available for help until 12:00pm.*
+<!-- - 10:00am: DataFest continues at Perkins Library: breakfast + coffee + tea -->
+<!-- - 12:30pm: Group photo -->
+<!-- - 1:00pm: Lunch -->
+<!-- - 2:00pm: Activity break -->
+<!-- - 4:00pm: Activity break -->
+<!-- - 6:00pm: Dinner & trivia -->
+<!-- - 9:00pm: DataFest support and consulting runs until 9pm. -->
 
-- 10:00am: DataFest continues at Perkins + breakfast + coffee + tea
-- 12:00pm: Lunch + projects due!
-- 1:00pm-2:30pm: Round 1 judging
-- 3:00pm-5:00pm: Final round of judging & awards in Levine Science Research Center (LSRC) B101
+**Sunday, March 3**
+
+TBD
+
+<!-- *Consultants available for help until 12:00pm.* -->
+
+<!-- - 10:00am: DataFest continues at Perkins + breakfast + coffee + tea -->
+<!-- - 12:00pm: Lunch + projects due! -->
+<!-- - 1:00pm-2:30pm: Round 1 judging -->
+<!-- - 3:00pm-5:00pm: Final round of judging & awards in Levine Science Research Center (LSRC) B101 -->
 
 #### Google map addresses
 
-- Perkins library: [411 Chapel Drive
-Durham, NC 27708](https://goo.gl/maps/JGGawKRZBm2ygq4S8)
-- Levine Science Research Center (LSRC): [308 Research Dr, Durham, NC 27710](https://goo.gl/maps/ERowZZSPJwrp3i1MA)
+- Penn Pavilion: [107 Union Dr, Durham, NC 27710](https://maps.app.goo.gl/gXVJiMBw8x4jNiru9)
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.8243789566163!2d-78.945684149699!3d36.00015750176001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace6b0062c689b%3A0x418fe3d44783c11b!2sPenn%20Pavilion!5e0!3m2!1sen!2sus!4v1705005781165!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- - Perkins library: [411 Chapel Drive -->
+<!-- Durham, NC 27708](https://goo.gl/maps/JGGawKRZBm2ygq4S8) -->
+<!-- - Levine Science Research Center (LSRC): [308 Research Dr, Durham, NC 27710](https://goo.gl/maps/ERowZZSPJwrp3i1MA) -->
 
 Convenient parking in [Bryan Center Garage](https://goo.gl/maps/3Ed2a1NsQxjFsyci6)

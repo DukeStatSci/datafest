@@ -25,4 +25,4 @@ If any attendee engages in harassing behavior, the event organizers may take any
 
 We welcome your feedback on this and every other aspect of ASA DataFest<small><sup>TM</sup></small> events, and we thank you for working with us to make it a safe, enjoyable, and friendly experience for everyone who participates.
 
-Parts of above text is licensed CC BY-SA 4.0. Credit to rOpenSci and SRCCON. Also inspired by the Ada Initiative’s “how to design a code of conduct for your community.
+Parts of above text is licensed CC BY-SA 4.0. Credit to rOpenSci and SRCCON. Also inspired by the Ada Initiative’s "how to design a code of conduct for your community".

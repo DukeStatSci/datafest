@@ -6,29 +6,77 @@ Workshops are graciously hosted by Duke's [Center for Data and Visualization Sci
 
 ## Live workshops
 
-### March 7  
+### January 17 
 
-#### Regular expressions (with stringr!)
+#### How to import data and install RStudio/Tidyverse
 
-- **Location**: Bostock 127 (The Edge Workshop Room)
+- **Location**: Online
 
 - **Time**: 12-1pm
 
-- **Description**: The purpose of this workshop is to introduce text wrangling with regular expressions using the `stringr` package in R. Content will include general principles for constructing regular expressions for pattern matching as well as demos and practice exercises in R.
+- **Description**:  Learn how to import data following a brief tour of the RStudio IDE and an introduction to coding notebooks. This event is open to non-Duke participants.
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/10402626).
+- **Register**: [Click here to register](https://duke.libcal.com/event/11640712).
 
-### March 9
+### January 18
 
-#### An introduction to data analysis with R
+#### Data wrangling with dplyr
 
-- **Location**: Bostock 127 (The Edge Workshop Room)
+- **Location**: Online
 
-- **Time**: 1-3pm
+- **Time**: 12-1pm
 
-- **Description**: A gentle introduction to R and the Tidyverse using RStudio. This two-hour, hands-on session introduces data wrangling, visualization, and exploratory data analysis (EDA). Our focus will be the the `dplyr` and `ggplot2` packages. Tidyverse, is an approachable set of consistent data science tools enabling the R statistical programming language.
+- **Description**: We explore the five essential `dplyr` data wrangling verbs. We demonstrate and apply data pipes inside code-chunks within Quarto coding notebooks. Quarto Notebooks were discussed in the previous session. This event is open to non-Duke participants.
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/10401495)
+- **Register**: [Click here to register](https://duke.libcal.com/event/11640857)
+
+### January 25
+
+#### Visualize data with {ggplot2} - an introduction
+
+- **Location**: Online
+
+- **Time**: 12-1pm
+
+- **Description**: We explore the opportunities for visualizing data using ggplot2 in R. We will discuss how to format your data and then jump right into plotting. We will take a look at different graph types and how to add elements to an existing graph. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/11645062)
+
+### February 15
+
+#### Visualize data with {ggplot2} - effective visualization techniques
+
+- **Location**: Online
+
+- **Time**: 12-1pm
+
+- **Description**: We explore ways to customize visualizations in ggplot2 by adjusting colors, labels, axis and more. We will spend a little time exploring the grammar of graphics that ggplot2 relies on so that we can be equipped to make publication ready graphics. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/11645162)
+
+### February 20
+
+#### Intro to Tableau: Easy charts and maps
+
+- **Location**: Online
+
+- **Time**: 2-4pm
+
+- **Description**: Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students). This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/11646698)
+
+### February 22
+
+#### Streamlining reproducible workflows - from code to reports, slides & dashboards
+
+- **Location**: Online
+
+- **Time**: 12-1pm
+
+- **Description**: We explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.  This session leverages best practices that help you take control of your reports and can reduce dependencies on subscription hosts.  RStudio and Quarto were introduced and discussed in previous sessions. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/11641401)
 
 
 ## Pre-recorded workshops
