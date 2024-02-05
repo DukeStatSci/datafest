@@ -2,32 +2,34 @@
 title: "Sign Up"
 ---
 
-### Consultants
-
-If you are interested in serving as a consultant during the event, please let us know your availability [here]().
-
 <!-- https://forms.gle/uqqJvR4VhM1YuKCR8 -->
 
 ### Participants
 
-Registration to participate in DataFest 2024 @ Duke is not yet open. Please check back soon!
+<!-- Registration to participate in DataFest 2024 @ Duke is not yet open. Please check back soon! -->
 
 <!-- :::callout-important -->
 <!-- **Registration as a participant for DataFest 2023 has closed. The event is at capacity.** -->
 <!-- ::: -->
 
-<!-- Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements. -->
+Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
 
-<!-- **The registration deadline is 5PM March 10, 2023. Seats are limited, so sign up before it's too late!** -->
+:::callout-note
+**The registration deadline is 5PM February 23, 2024. Seats are limited, so sign up before it's too late!**
+:::
 
-<!-- ### Participants -->
+**Option 1: Team sign-up (2-5 students)**
 
-<!-- **Option 1: Team sign-up (2-5 students)** -->
+Click [here](https://forms.gle/vvnr33WDAx848p4K8) to sign up as a team of 2 to 5 students.
 
-<!-- Click [here](https://forms.gle/efjhGrtbcvu7Tnvz6) to sign up as a team of 2 to 5 students.  -->
+**Option 2: Looking for teammates**
 
-<!-- **Option 2: Looking for teammates** -->
+If you do not have a team in mind but you're looking for teammates, click [here](https://forms.gle/fKJhRC1rUgmsfvQp6) to leave us your information so that you can be matched with others.
 
-<!-- If you do not have a team in mind but you're looking for teammates, click [here](https://forms.gle/d1nhMBare9ewm8Ap8) to leave us your information so that you can be matched with others. -->
+### Consultants
 
-If you have any questions about your registration, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu) and [Prof. Mine Çetinkaya-Rundel](mailto:mc301@duke.edu).
+If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.gle/iMf1c3Nggna9mTJcA).
+
+### Questions
+
+If you have any questions about your registration, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu).
