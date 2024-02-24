@@ -8,23 +8,25 @@ title: "Sign Up"
 
 <!-- Registration to participate in DataFest 2024 @ Duke is not yet open. Please check back soon! -->
 
-<!-- :::callout-important -->
-<!-- **Registration as a participant for DataFest 2023 has closed. The event is at capacity.** -->
-<!-- ::: -->
-
-Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements.
-
-:::callout-note
-**The registration deadline is 5PM February 23, 2024. Seats are limited, so sign up before it's too late!**
+:::callout-important
+**Registration as a participant for DataFest 2024 has closed. The event is at capacity.**
 :::
 
-**Option 1: Team sign-up (2-5 students)**
+If you'd like to be placed on a waitlist in the event of no-shows, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu).
 
-Click [here](https://forms.gle/vvnr33WDAx848p4K8) to sign up as a team of 2 to 5 students.
+<!-- Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements. -->
 
-**Option 2: Looking for teammates**
+<!-- :::callout-note -->
+<!-- **The registration deadline is 5PM February 23, 2024. Seats are limited, so sign up before it's too late!** -->
+<!-- ::: -->
 
-If you do not have a team in mind but you're looking for teammates, click [here](https://forms.gle/fKJhRC1rUgmsfvQp6) to leave us your information so that you can be matched with others.
+<!-- **Option 1: Team sign-up (2-5 students)** -->
+
+<!-- Click [here](https://forms.gle/vvnr33WDAx848p4K8) to sign up as a team of 2 to 5 students. -->
+
+<!-- **Option 2: Looking for teammates** -->
+
+<!-- If you do not have a team in mind but you're looking for teammates, click [here](https://forms.gle/fKJhRC1rUgmsfvQp6) to leave us your information so that you can be matched with others. -->
 
 ### Consultants
 
