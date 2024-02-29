@@ -4,10 +4,13 @@ title: "FAQ"
 
 ### How do I sign up?
 
+Registration for DataFest 2024 has closed.
 
-Registration **is open**! [Click here](/signup.html) to sign up.
+<!-- Registration **is open**! [Click here](/signup.html) to sign up. -->
 
- 
+### What do I bring to DataFest?
+
+Please bring a laptop, charger and refillable water bottle.
 
 ### Is there a registration fee?
 
