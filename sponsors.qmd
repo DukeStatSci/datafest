@@ -10,7 +10,7 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 ## Pareto Sponsors (\$2,500 - \$4,999)
 
-![](/logos/iid-cropped.png){style="width:100px;float: left;padding-right:20px"}
+![](/logos/iid-cropped.png){style="float: left;padding-right:20px" width="150"}
 
 [Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
 
