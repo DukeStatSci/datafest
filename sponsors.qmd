@@ -2,54 +2,66 @@
 title: "Sponsors"
 ---
 
-
 ## Thank you 2024 Sponsors!
 
 Click [here](/sponsorship.html) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:alexander.fisher@duke.edu) if you have any questions.
 
------
+------------------------------------------------------------------------
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/secondorder.png">
+## Pareto Sponsors (\$2,500 - \$4,999)
 
-[2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world. 
-
-<img style="width:200px;float: left;padding-right:20px" src="/logos/sas-logo.png">
-
-[SAS](https://www.sas.com/) technology solutions help meet the needs of organizations in practically every industry, regardless of size. Experts have deep industry knowledge and understand unique challenges and can accelerate time to decisions.
-
-<img style="width:100px;float: left;padding-right:20px" src="/logos/iid-cropped.png">
+![](/logos/iid-cropped.png){style="width:100px;float: left;padding-right:20px"}
 
 [Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
 
-<img style="width:250px;float: left;padding-right:20px" src="/logos/ssri.png">
+### 
+
+![](/logos/duke-pratt-logo-2.png){style="width:200px;float: left;padding-right:20px"}
+
+[Duke Pratt School of Engineering](https://pratt.duke.edu/), founded in 1939, believes an engineer's purpose is to imagine solutions that make peoples' lives better and then to lead teams to design and build those solutions. The Pratt legacy includes discoveries with significant impact. From real-time 3D ultrasonic scanning, to history's first invisibility cloak. Pratt faculty, staff and students are inventing a better future by making fundamental discoveries, identifying human needs and designing effective solutions that are equitable and sustainable.
+
+<br>
+
+## Lognormal Sponsors (\$1,000 - \$2,499) 
+
+![](/logos/secondorder.png){style="float: left;padding-right:20px" width="320"}
+
+[2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world.
+
+![](logos/duke-bass-connections.png){style="float: left;padding-right:20px" width="320"}
+
+[Duke Bass Connections](https://bassconnections.duke.edu/about) brings together students and faculty in interdisicplinary teams to research complex questions and societal challenges. Students gain experience doing academic research, collaborating with peers and faculty, and applying their knowledge and skills to solve problems and work with community partners.
+
+![](/logos/sas-logo.png){style="float: left;padding-right:20px" width="200"}
+
+[SAS](https://www.sas.com/) technology solutions help meet the needs of organizations in practically every industry, regardless of size. Experts have deep industry knowledge and understand unique challenges and can accelerate time to decisions.
+
+![](/logos/ssri.png){style="float: left;padding-right:20px" width="250"}
 
 [Duke Social Science Research Institute (SSRI)](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. SSRI promotes multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
-
-<img style="width:200px;float: left;padding-right:20px" src="/logos/duke-pratt-logo-2.png">
-
-[Duke Pratt School of Engineering](https://pratt.duke.edu/), founded in 1939, believes an engineer's purpose is to imagine solutions that make peoples' lives better and then to lead teams to design and build those solutions. The Pratt legacy includes discoveries with significant impact. From real-time 3D ultrasonic scanning, to history's first invisibility cloak. Pratt faculty, staff and students are inventing a better future by making fundamental discoveries, identifying human needs and designing effective solutions that are equitable and sustainable. 
-
 
 <!-- <img style="width:320px;float: left;padding-right:20px" src="/logos/duke-cs.png"> -->
 
 <!-- [The Department of Computer Science at Duke](https://www.cs.duke.edu/) is an internationally recognized leader in research and education. Undergraduates take classes with renowned faculty, engage in cutting-edge research, and build a strong foundation for future study or work in a wide variety of fields. One of the many hallmarks of Duke Computer Science's success has been fruitful collaborations among different groups within the department, with research groups in other departments at Duke, with other institutes, and with industry. -->
+
 <!-- [Duke Center for Computational Thinking](https://computationalthinking.duke.edu/) works with partner programs and organizations across Duke to deliver learning opportunities that align with our vision of preparing all Duke students -- regardless of field of study -- for the digital twenty-first century. -->
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/stat-sci-updated.png">
-
-[The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
-
+<br>
 
 ## Acknowledgements
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-libraries.png">
+![](/logos/stat-sci-updated.png){style="width:320px;float: left;padding-right:20px"}
+
+[The Department of Statistical Science at Duke](http://stat.duke.edu/) is nationally ranked in the top 5 research departments and as a top 10 graduate program. Recognized as the world's leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.
+
+<img src="/logos/duke-libraries.png" style="width:320px;float: left;padding-right:20px"/>
 
 The [Center for Data and Visualization Sciences](https://library.duke.edu/data/data-visualization) of the Duke Libraries has a mission to "partner with faculty, researchers, and students through consultation, instruction, co-curricular programming, and research assistance at various stages of the research data lifecycle." They will be offering some of the ASA DataFest<small><sup>TM</sup></small> workshops. Click [here](/workshops) for more information.
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/duke-oit.png">
+<img src="/logos/duke-oit.png" style="width:320px;float: left;padding-right:20px"/>
 
 The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. They are providing computing resources and support for the event.
 
-<img style="width:320px;float: left;padding-right:20px" src="/logos/asa.jpg">
+<img src="/logos/asa.jpg" style="width:320px;float: left;padding-right:20px"/>
 
 The [American Statistical Association](http://amstat.org/) is the world's largest community of statisticians, the "Big Tent for Statistics." It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
