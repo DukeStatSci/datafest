@@ -6,6 +6,12 @@ format: revealjs
 
 ![](logos/df24-tshirt-2.png){fig-align="center"}
 
+
+##
+
+<iframe width="1313" height="739" src="https://www.youtube.com/embed/5oG0UAHRWOk" title="ASA DataFest 2022 @dukeuniversity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ## Stats
 
 -   245 participants
