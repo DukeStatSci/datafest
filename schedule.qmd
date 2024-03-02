@@ -11,7 +11,8 @@ This schedule page will be updated frequently with the most current event inform
 - 6:00pm: Data kick-off
 - 6:30pm: Dinner
 - 9:30pm: Trivia
-- 2:00am: DataFest closes for the evening. Support and consulting ends.
+- 12:00am: Consulting support ends
+- 2:00am: DataFest closes for the evening
 
 <!-- 2023 schedule -->
 <!-- - 5:00pm: Check-in begins at Perkins Library Link near the Help Desk (floor L1) -->
@@ -21,14 +22,15 @@ This schedule page will be updated frequently with the most current event inform
 
 **Saturday, March 2**
 
-- 9:00am DataFest continues at Penn Pavilion
-- 9:30am Breakfast
-- 12:00pm group photo
-- 1:00pm Lunch & trivia
-- 4:00pm wrist stretches
-- 6:30pm Dinner & trivia
-- 11:00pm Trivia
-- 2:00am DataFest closes for the evening. Support and consulting ends.
+- 9:00am: DataFest continues at Penn Pavilion
+- 9:30am: Breakfast
+- 12:00pm: group photo
+- 1:00pm: Lunch & trivia
+- 4:00pm: wrist stretches
+- 6:30pm: Dinner & trivia
+- 11:00pm: Trivia
+- 12:00am: Consulting support ends
+- 2:00am: DataFest closes for the evening
 
 
 
