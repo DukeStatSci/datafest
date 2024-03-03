@@ -1,0 +1,15 @@
+---
+title: ""
+logo: "logos/df24-tshirt-2.png"
+format: revealjs
+---
+
+![](logos/df24-tshirt-2.png){fig-align="center"}
+
+## Thank you, sponsors!
+
+![](logos/df24-sponsors.png){fig-align="center"}
+
+## 
+
+![](logos/TERC.png)
