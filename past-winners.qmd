@@ -2,6 +2,45 @@
 title: "Past winners"
 ---
 
+# 2023 Winners
+
+### Best Visualizations
+
+[**Services, questions and cases**](/presentations/team-5-presentation.pdf) by Stanley Borden & Venkat Ravi.
+
+ </p>
+
+*The judges were impressed by this team's county level choropleth map of % of cases closed, particularly with annotating states to take note of.*
+
+
+### Best Insight
+
+[**Factors contributing to unanswered and unresolved questions**](/presentations/team-1-presentation.pdf) by Micah McMinn, Emily Kuykendall, Laura Cai & Ayush Batra.
+
+*The judges were impressed by the recommendation to randomize the order in which attorneys see questions so that late-night questions can be answered.*
+
+ 
+
+### Best Use of Statistical Analysis
+
+[**Analyzing response times and question sentiment in ABA free law answers**](/presentations/LiveGraphLove-presentation.pdf) by Joey Ilagan, Perrin Myerson & Aryan Mathur.
+
+*The judges were impressed by their model of response time to questions and hypothesis test on sentiment analysis results.*
+
+### Best Use of Outside Data
+
+[**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo.
+
+*The judges were impressed by formal vs. informal language analysis grounded in literature.*
+
+### Judges' Pick
+
+*Project recognized by the judges for outstanding achievement outside of the core award categories.*
+
+[**Defending the Defenders: where the bar is excelling and how they can improve **](/presentations/team6-presentation.pdf) by Mitch Harrison, Hamza Khan, Aaron Zhu & Amy Zhou </p>
+
+*The judges were impressed by this team's ability to bring together outside data, create impressive visualizations, and the team's overall creativity with metric development, and recommendations about outreach.*
+
 # 2022 Winners
 
 ### Best Visualizations

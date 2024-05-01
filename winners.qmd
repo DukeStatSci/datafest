@@ -2,44 +2,53 @@
 title: "Winners"
 ---
 
-# 2023 Winners
+# 2024 Winners
 
-### Best Visualizations
+### Best Statistical Analysis
 
-[**Services, questions and cases**](/presentations/team-5-presentation.pdf) by Stanley Borden & Venkat Ravi.
+[Discrepancies in Chapter Difficulty and Outcome](/presentations/Team283Boys.pdf) by Eddy Ding, Daniel Henderson, Maxim Chadaev and Siddhant Borkar.
 
- </p>
-
-*The judges were impressed by this team's county level choropleth map of % of cases closed, particularly with annotating states to take note of.*
-
+*The judges were impressed by the creation of a statistic to evaluate the relative difficulty of chapters and subsequent recommendations to the data provider.*
 
 ### Best Insight
 
-[**Factors contributing to unanswered and unresolved questions**](/presentations/team-1-presentation.pdf) by Micah McMinn, Emily Kuykendall, Laura Cai & Ayush Batra.
+[Plagiarism on CourseKata](/presentations/TeamTomato.pdf) by Evan Glas, Henry Holbrook, Ben Perry, Addison Phelps and Roy Chen.
 
-*The judges were impressed by the recommendation to randomize the order in which attorneys see questions so that late-night questions can be answered.*
-
+*The judges were impressed by the unique topic analyzed and story told by this team regarding plagiarism in the online platform.*
  
 
-### Best Use of Statistical Analysis
+### Best Visualizations
 
-[**Analyzing response times and question sentiment in ABA free law answers**](/presentations/LiveGraphLove-presentation.pdf) by Joey Ilagan, Perrin Myerson & Aryan Mathur.
+[From "Hello World" to Beyond](/presentations/TeamJeltJian.pdf) by Eric Rios, Lisa Wang, Luopeiwen Yi and Jiayi Zhou.
 
-*The judges were impressed by their model of response time to questions and hypothesis test on sentiment analysis results.*
+*The judges were impressed by this team's ability to create clear, easy to understand visuals of how students spend their time.*
+
 
 ### Best Use of Outside Data
 
-[**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo.
+[Chapter Engagement](/presentations/TeamTKGA.pdf) by Anmol Sapru, Tate Staples, Gabriel Paley and Kevin Lee.
 
-*The judges were impressed by formal vs. informal language analysis grounded in literature.*
+*The judges were impressed by this team's ability to scrape data from the platform's web page such as number of pixels as a measure of "scroll length" to determine a relationship between chapter length and chapter engagement.*
+
+<!-- [**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo. -->
+
+<!-- *The judges were impressed by formal vs. informal language analysis grounded in literature.* -->
 
 ### Judges' Pick
 
 *Project recognized by the judges for outstanding achievement outside of the core award categories.*
 
-[**Defending the Defenders: where the bar is excelling and how they can improve **](/presentations/team6-presentation.pdf) by Mitch Harrison, Hamza Khan, Aaron Zhu & Amy Zhou </p>
+[Learning Style Segmentation for Personalized Education](/presentations/TeamJLAndTheJets.pdf) by Alex Katopodis, Miles King, Jonathan Levitan and Jackson Peurach.
 
-*The judges were impressed by this team's ability to bring together outside data, create impressive visualizations, and the team's overall creativity with metric development, and recommendations about outreach.*
+*The judges were impressed by this group's identification of nuanced user segments and the detailed recommendations to the data providers.* 
+
+### Honorable Mentions
+
+[Student Clusters](/presentations/TeamDataMIDS.pdf) by Gunel Aghakishiyeva, Daniela Jimenez and Shaila Guereca.
+ 
+[Beyond the Numbers: Unlocking Student Engagement in Statistics](/presentations/Team08.pdf) by Senam Adedze, Sonia Zhu, Wangley Soares Martins, Mia Lam and Sam Reid.
+
+
 
 # Past winners
 
