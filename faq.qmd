@@ -4,7 +4,9 @@ title: "FAQ"
 
 ### How do I sign up?
 
-Registration for DataFest 2024 has closed.
+Registration will open Spring 2025.
+
+<!-- Registration for DataFest 2024 has closed. -->
 
 <!-- Registration **is open**! [Click here](/signup.html) to sign up. -->
 
@@ -56,7 +58,7 @@ All you need is a laptop with tools for data analysis (there is no limitation on
 
 ### What are the rules of the competition?
 
-- All projects must be submitted by **Sunday, March 3** There is only one submission per team.
+- All projects must be submitted by **Sunday, April 6** There is only one submission per team.
 - Any additional data used in the project must be publicly available or openly licensed.
 - All interactive dashboards must be deployed online.
 - All slide decks and write ups must be submitted as a PDF document.

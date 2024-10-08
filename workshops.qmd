@@ -2,81 +2,86 @@
 title: "Workshops"
 ---
 
-Workshops are graciously hosted by Duke's [Center for Data and Visualization Sciences](https://library.duke.edu/data). Live workshops along with links to register are listed below. Additionally, links to several previously recorded workshops are provided.
+Workshops are graciously hosted by Duke's [Center for Data and Visualization Sciences](https://library.duke.edu/data).
+<!-- Live workshops along with links to register are listed below. -->
+Live workshops and information on registration will be listed here.
+Additionally, links to several previously recorded workshops are provided below.
 
 ## Live workshops
 
-### January 17 
+TBD 
 
-#### How to import data and install RStudio/Tidyverse
+<!-- ### January 17  -->
 
-- **Location**: Online
+<!-- #### How to import data and install RStudio/Tidyverse -->
 
-- **Time**: 12-1pm
+<!-- - **Location**: Online -->
 
-- **Description**:  Learn how to import data following a brief tour of the RStudio IDE and an introduction to coding notebooks. This event is open to non-Duke participants.
+<!-- - **Time**: 12-1pm -->
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/11640712).
+<!-- - **Description**:  Learn how to import data following a brief tour of the RStudio IDE and an introduction to coding notebooks. This event is open to non-Duke participants. -->
 
-### January 18
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11640712). -->
 
-#### Data wrangling with dplyr
+<!-- ### January 18 -->
 
-- **Location**: Online
+<!-- #### Data wrangling with dplyr -->
 
-- **Time**: 12-1pm
+<!-- - **Location**: Online -->
 
-- **Description**: We explore the five essential `dplyr` data wrangling verbs. We demonstrate and apply data pipes inside code-chunks within Quarto coding notebooks. Quarto Notebooks were discussed in the previous session. This event is open to non-Duke participants.
+<!-- - **Time**: 12-1pm -->
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/11640857)
+<!-- - **Description**: We explore the five essential `dplyr` data wrangling verbs. We demonstrate and apply data pipes inside code-chunks within Quarto coding notebooks. Quarto Notebooks were discussed in the previous session. This event is open to non-Duke participants. -->
 
-### January 25
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11640857) -->
 
-#### Visualize data with {ggplot2} - an introduction
+<!-- ### January 25 -->
 
-- **Location**: Online
+<!-- #### Visualize data with {ggplot2} - an introduction -->
 
-- **Time**: 12-1pm
+<!-- - **Location**: Online -->
 
-- **Description**: We explore the opportunities for visualizing data using ggplot2 in R. We will discuss how to format your data and then jump right into plotting. We will take a look at different graph types and how to add elements to an existing graph. This event is open to non-Duke participants.
+<!-- - **Time**: 12-1pm -->
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/11645062)
+<!-- - **Description**: We explore the opportunities for visualizing data using ggplot2 in R. We will discuss how to format your data and then jump right into plotting. We will take a look at different graph types and how to add elements to an existing graph. This event is open to non-Duke participants. -->
 
-### February 15
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11645062) -->
 
-#### Visualize data with {ggplot2} - effective visualization techniques
+<!-- ### February 15 -->
 
-- **Location**: Online
+<!-- #### Visualize data with {ggplot2} - effective visualization techniques -->
 
-- **Time**: 12-1pm
+<!-- - **Location**: Online -->
 
-- **Description**: We explore ways to customize visualizations in ggplot2 by adjusting colors, labels, axis and more. We will spend a little time exploring the grammar of graphics that ggplot2 relies on so that we can be equipped to make publication ready graphics. This event is open to non-Duke participants.
+<!-- - **Time**: 12-1pm -->
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/11645162)
+<!-- - **Description**: We explore ways to customize visualizations in ggplot2 by adjusting colors, labels, axis and more. We will spend a little time exploring the grammar of graphics that ggplot2 relies on so that we can be equipped to make publication ready graphics. This event is open to non-Duke participants. -->
 
-### February 20
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11645162) -->
 
-#### Intro to Tableau: Easy charts and maps
+<!-- ### February 20 -->
 
-- **Location**: Online
+<!-- #### Intro to Tableau: Easy charts and maps -->
 
-- **Time**: 2-4pm
+<!-- - **Location**: Online -->
 
-- **Description**: Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students). This event is open to non-Duke participants.
+<!-- - **Time**: 2-4pm -->
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/11646698)
+<!-- - **Description**: Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students). This event is open to non-Duke participants. -->
 
-### February 22
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11646698) -->
 
-#### Streamlining reproducible workflows - from code to reports, slides & dashboards
+<!-- ### February 22 -->
 
-- **Location**: Online
+<!-- #### Streamlining reproducible workflows - from code to reports, slides & dashboards -->
 
-- **Time**: 12-1pm
+<!-- - **Location**: Online -->
 
-- **Description**: We explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.  This session leverages best practices that help you take control of your reports and can reduce dependencies on subscription hosts.  RStudio and Quarto were introduced and discussed in previous sessions. This event is open to non-Duke participants.
+<!-- - **Time**: 12-1pm -->
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/11641401)
+<!-- - **Description**: We explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.  This session leverages best practices that help you take control of your reports and can reduce dependencies on subscription hosts.  RStudio and Quarto were introduced and discussed in previous sessions. This event is open to non-Duke participants. -->
+
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11641401) -->
 
 
 ## Pre-recorded workshops

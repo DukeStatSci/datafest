@@ -4,15 +4,17 @@ title: "Schedule"
 
 This schedule page will be updated frequently with the most current event information.
 
-**Friday, March 1**
+**Friday, April 4**
+
+TBD
 
 <!-- 2024 schedule -->
-- 5:00pm: Check-in at Penn Pavilion
-- 6:00pm: Data kick-off
-- 6:30pm: Dinner
-- 9:30pm: Trivia
-- 12:00am: Consulting support ends
-- 2:00am: DataFest closes for the evening
+<!-- - 5:00pm: Check-in at Penn Pavilion -->
+<!-- - 6:00pm: Data kick-off -->
+<!-- - 6:30pm: Dinner -->
+<!-- - 9:30pm: Trivia -->
+<!-- - 12:00am: Consulting support ends -->
+<!-- - 2:00am: DataFest closes for the evening -->
 
 <!-- 2023 schedule -->
 <!-- - 5:00pm: Check-in begins at Perkins Library Link near the Help Desk (floor L1) -->
@@ -20,17 +22,19 @@ This schedule page will be updated frequently with the most current event inform
 <!-- - 6:30pm: DataFest moves to Perkins Link for Dinner, and check-in continues at Perkins Link near the Help Desk (floor L1); workspace assignments are released -->
 <!-- - 9:00pm: DataFest support and consulting runs until 9pm. -->
 
-**Saturday, March 2**
+**Saturday, April 5**
 
-- 9:00am: DataFest continues at Penn Pavilion
-- 9:30am: Breakfast
-- 12:00pm: group photo
-- 1:00pm: Lunch & trivia
-- 4:00pm: wrist stretches
-- 6:30pm: Dinner & trivia
-- 11:00pm: Trivia
-- 12:00am: Consulting support ends
-- 2:00am: DataFest closes for the evening
+TBD
+
+<!-- - 9:00am: DataFest continues at Penn Pavilion -->
+<!-- - 9:30am: Breakfast -->
+<!-- - 12:00pm: group photo -->
+<!-- - 1:00pm: Lunch & trivia -->
+<!-- - 4:00pm: wrist stretches -->
+<!-- - 6:30pm: Dinner & trivia -->
+<!-- - 11:00pm: Trivia -->
+<!-- - 12:00am: Consulting support ends -->
+<!-- - 2:00am: DataFest closes for the evening -->
 
 
 
@@ -42,15 +46,17 @@ This schedule page will be updated frequently with the most current event inform
 <!-- - 6:00pm: Dinner & trivia -->
 <!-- - 9:00pm: DataFest support and consulting runs until 9pm. -->
 
-**Sunday, March 3**
+**Sunday, April 6**
 
-*Consultants available until 12:00pm*
+TBD
 
-- 9:00am DataFest continues at Penn Pavilion
-- 9:30am breakfast
-- 12:00pm: Lunch + projects due
-- 1:00pm: Round 1 judging
-- 3:00-5:00pm Final round of judging + awards
+<!-- *Consultants available until 12:00pm* -->
+
+<!-- - 9:00am DataFest continues at Penn Pavilion -->
+<!-- - 9:30am breakfast -->
+<!-- - 12:00pm: Lunch + projects due -->
+<!-- - 1:00pm: Round 1 judging -->
+<!-- - 3:00-5:00pm Final round of judging + awards -->
 
 <!-- *Consultants available for help until 12:00pm.* -->
 

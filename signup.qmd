@@ -6,13 +6,13 @@ title: "Sign Up"
 
 ### Participants
 
-<!-- Registration to participate in DataFest 2024 @ Duke is not yet open. Please check back soon! -->
+Registration to participate in DataFest 2025 @ Duke is not yet open. Please check back soon!
 
-:::callout-important
-**Registration as a participant for DataFest 2024 has closed. The event is at capacity.**
-:::
+<!-- :::callout-important -->
+<!-- **Registration as a participant for DataFest 2024 has closed. The event is at capacity.** -->
+<!-- ::: -->
 
-If you'd like to be placed on a waitlist in the event of no-shows, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu).
+<!-- If you'd like to be placed on a waitlist in the event of no-shows, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu). -->
 
 <!-- Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements. -->
 
@@ -30,7 +30,9 @@ If you'd like to be placed on a waitlist in the event of no-shows, please contac
 
 ### Consultants
 
-Consultant sign-ups have closed.
+Check back Spring 2025. 
+
+<!-- Consultant sign-ups have closed. -->
 
 <!-- If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.gle/iMf1c3Nggna9mTJcA). -->
 
