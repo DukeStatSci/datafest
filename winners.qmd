@@ -4,6 +4,10 @@ title: "Winners"
 
 # 2024 Winners
 
+::: callout
+[Click here](https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024) to read a news article published in Duke Daily about the 2024 winners!
+:::
+
 ### Best Statistical Analysis
 
 [Discrepancies in Chapter Difficulty and Outcome](/presentations/Team283Boys.pdf) by Eddy Ding, Daniel Henderson, Maxim Chadaev and Siddhant Borkar.

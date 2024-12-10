@@ -5,6 +5,8 @@ title: "Media"
 
 If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:alexander.fisher@duke.edu).
 
+- [Students Put Classroom Skills Into Practice at Duke DataFest 2024](https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024) - Duke Daily, June 5, 2024
+
 - [ASA DataFest 2022 @ Duke University video](https://youtu.be/5oG0UAHRWOk)
 
 - [Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge](https://forge.duke.edu/blog/winners-announced-duke-asa-datafest-covid-19-virtual-data-challenge) - Duke Forge blog, May 8, 2020

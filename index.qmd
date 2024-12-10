@@ -16,7 +16,7 @@ Projects will be due on Sunday afternoon. Each team will give a brief presentati
 ## What is DataFest?
 
 ::: callout
-[Click here](/winners.html) to see the 2023 winners! [Click here](https://www.youtube.com/watch?v=5oG0UAHRWOk) to watch highlights from a previous DataFest!
+[Click here](https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024) to read a news article published in Duke Daily about the 2024 winners! [Click here](https://www.youtube.com/watch?v=5oG0UAHRWOk) to watch a highlight video from a previous DataFest!
 :::
 
 ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!
