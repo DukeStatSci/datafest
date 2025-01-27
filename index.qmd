@@ -41,6 +41,10 @@ While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal o
 
 ## Past DataFests at Duke
 
+### DataFest 2024 – CourseKata
+
+Goal: Analyze computer logs that document students' interactions with online introductory statistics textbooks in order to help researchers improve the CourseKata experience for students.
+
 ### DataFest 2023 – American Bar Association
 
 **Goal:** Analyze data to provide advice to the American Bar Association on best to ensure the appropriate legal experts are available to support their pro bono legal advice site.
