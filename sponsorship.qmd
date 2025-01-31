@@ -10,7 +10,7 @@ Please [contact us](mailto:alexander.fisher@duke.edu) if you are interested in s
 
 ### Impact of Your Sponsorship
 
-Your sponsorship of ASA DataFest<small><sup>TM</sup></small> benefits the ASA DataFest<small><sup>TM</sup></small> @ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding of our environment, our social relationships, and our physical and virtual selves.
+Your sponsorship of ASA DataFest<small><sup>TM</sup></small> benefits the ASA DataFest<small><sup>TM</sup></small> \@ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding of our environment, our social relationships, and our physical and virtual selves.
 
 ### Benefits of Sponsorship
 
@@ -18,48 +18,45 @@ Sponsors will be provided with various advertising and recruiting opportunities.
 
 ### Sponsorship Levels
 
-#### Cauchy Sponsor - $5000 and above
+#### Cauchy Sponsor - \$5000 and above
 
-- Nomination of a judge for the final round of presentations
-- If requested, company/organization information session on Duke campus advertised to Duke StatSci students as well as all 2023 ASA DataFest<small><sup>TM</sup></small> participants (we will provide the space and advertise your event)
-- All benefits of Pareto Sponsor
+-   Nomination of a judge for the final round of presentations
+-   If requested, company/ organization information session on Duke campus advertised to Duke StatSci students as well as all 2025 ASA DataFest<small><sup>TM</sup></small> participants. The information session is not concurrent with the DataFest event, but booked at a separate time.
+-   All benefits of Pareto Sponsor
 
+#### Pareto Sponsor - \$2,500 - \$4,999
 
-#### Pareto Sponsor - $2,500 - $4,999
+-   Opportunity to have short video about company/ organization shown during Sunday lunch
+-   All benefits of Lognormal Sponsor
 
-- Table for HR/recruitment for four hours during DataFest
-- All benefits of Lognormal Sponsor
+#### Lognormal Sponsor - \$1,000 - \$2,499
 
+-   Opportunity to send information about company/ organization to email listserv
+-   All benefits of Weibull Sponsors
 
-#### Lognormal Sponsor - $1,000 - $2,499
+#### Weibull Sponsor - \<\$1000
 
-- Access to resume book of ASA DataFestTM participants
-- All benefits of Weibull Sponsors
-
-
-#### Weibull Sponsor -  <$1000
-
-- Logo and link on ASA DataFest<small><sup>TM</sup></small> website
-- Company/organization name on food table display
+-   Logo and link on ASA DataFest<small><sup>TM</sup></small> website
+-   Company/organization name on food table display
 
 ### Ways to give
 
 #### Online
 
-You can make your donation online at https://www.gifts.duke.edu. Please enter the amount you would like to give, and click "Choose an Area", then "Still can’t find your designation of choice?" In the text field asking which area of Duke you'd like to support, type "*DataFest: 3991698*". After clicking "Next", choose "One Time Gift" on the following page. Complete the remaining prompts for your information and payment details.
+You can make your donation online at <https://www.gifts.duke.edu>. Please enter the amount you would like to give, and click "Choose an Area", then "Still can’t find your designation of choice?" In the text field asking which area of Duke you'd like to support, type "*DataFest: 3991698*". After clicking "Next", choose "One Time Gift" on the following page. Complete the remaining prompts for your information and payment details.
 
 #### By mail
 
 You can also mail your donation to the following address:
-  
-  Alumni and Development Records  
-  Duke University, Box 90581  
-  Durham, NC 27708-0581  
-  
-Please make your check payable to Duke University, and note *"Department of Statistical Science - DataFest, Fund code: 3991698"* on your check. If you need to contact the Alumni and Development Records office directly, you can do so at (919) 684-2338. 
 
-More information can be found on the [Duke Forward](https://giving.duke.edu/) page.
+Alumni and Development Records\
+Duke University, Box 90581\
+Durham, NC 27708-0581
+
+Please make your check payable to Duke University, and note *"Department of Statistical Science - DataFest, Fund code: 3991698"* on your check. If you need to contact the Alumni and Development Records office directly, you can do so at (919) 684-2338.
+
+More information can be found at <https://giving.duke.edu/>.
 
 ### Sponsorship questions?
 
-Please do not hesitate to contact [Alexander Fisher](mailto:alexander.fisher@duke.edu), ASA DataFest<small><sup>TM</sup></small> @ Duke coordinator, with any questions.
+Please do not hesitate to contact [Alexander Fisher](mailto:alexander.fisher@duke.edu), ASA DataFest<small><sup>TM</sup></small> \@ Duke coordinator, with any questions. We will work with you to find the package that best meets your organization’s goals.
