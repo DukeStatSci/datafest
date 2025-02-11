@@ -95,7 +95,7 @@
     "href": "workshops.html#live-workshops",
     "title": "Workshops",
     "section": "Live workshops",
-    "text": "Live workshops\nTBD"
+    "text": "Live workshops\n\nFeb 13\n\nR for Lunch: Streamlining reproducible workflows - from code to reports, slides & dashboards\n\nLocation: Bostock 127 (The Edge Workshop Room)\nTime: 12-1pm\nDescription: Explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.\nRegister: Click here to register.\n\n\n\n\nFeb 27\n\nR for Lunch: Custom functions and ggplot2\n\nLocation: Bostock 127 (The Edge Workshop Room)\nTime: 12-1pm\nDescription: Learn how custom functions work in R and how they can be used to explore your data and to tell stories with the charts you create using ggplot2, particularly in a presentation setting.\nRegister: Click here to register"
   },
   {
     "objectID": "workshops.html#pre-recorded-workshops",
