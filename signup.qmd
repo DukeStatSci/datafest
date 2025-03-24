@@ -17,7 +17,7 @@ title: "Sign Up"
 <!-- Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements. -->
 
 :::callout-note
-**The registration deadline is 5PM March 26, 2025. Seats are limited, so sign up before it's too late!**
+**The registration deadline is 11:59PM March 26, 2025. Seats are limited, so sign up before it's too late!**
 :::
 
 **Option 1: Team sign-up (2-5 students)**
