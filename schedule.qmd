@@ -6,7 +6,12 @@ This schedule page will be updated frequently with the most current event inform
 
 **Friday, April 4**
 
-TBD
+- 5:00pm: Check-in at Penn Pavilion
+- 6:00pm: Data kick-off
+- 6:30pm: Dinner
+- 9:30pm: Trivia
+- 12:00am: Consulting support ends
+- 1:00am: DataFest closes for the evening
 
 <!-- 2024 schedule -->
 <!-- - 5:00pm: Check-in at Penn Pavilion -->
@@ -24,7 +29,14 @@ TBD
 
 **Saturday, April 5**
 
-TBD
+- 9:00am: DataFest continues at Penn Pavilion
+- 9:30am: Breakfast
+- 12:00pm: group photo
+- 1:00pm: Lunch
+- 4:00pm: [activity]
+- 6:30pm: Dinner & trivia
+- 11:00pm: Trivia
+- 12:00am: Consulting support ends; DataFest closes
 
 <!-- - 9:00am: DataFest continues at Penn Pavilion -->
 <!-- - 9:30am: Breakfast -->
@@ -48,7 +60,13 @@ TBD
 
 **Sunday, April 6**
 
-TBD
+*Consultants available until 12:00pm*
+
+- 9:00am DataFest continues at Penn Pavilion
+- 9:30am breakfast
+- 12:00pm: Lunch + projects due
+- 1:00pm: Round 1 judging
+- 3:00-5:00pm Final round of judging + awards
 
 <!-- *Consultants available until 12:00pm* -->
 
