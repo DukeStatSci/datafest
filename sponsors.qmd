@@ -62,6 +62,10 @@ The [Center for Data and Visualization Sciences](https://library.duke.edu/data/d
 
 The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. They are providing computing resources and support for the event.
 
+<img src="/logos/NCShare.png" style="width:160px;float: left;padding-right:20px"/>
+
+The [North Carolina Shared Research & Education collaborative infrastructure](https://ncshare.org/about/) (NCShare) is bringing a high-speed research network to North Carolina’s minority and higher education institutions.
+
 <img src="/logos/asa.jpg" style="width:320px;float: left;padding-right:20px"/>
 
 The [American Statistical Association](http://amstat.org/) is the world's largest community of statisticians, the "Big Tent for Statistics." It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
