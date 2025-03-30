@@ -9,31 +9,29 @@ Additionally, links to several previously recorded workshops are provided below.
 
 ## Live workshops
 
-TBD 
+### Feb 13
 
-<!-- ### January 17  -->
+#### R for Lunch: Streamlining reproducible workflows - from code to reports, slides & dashboards
 
-<!-- #### How to import data and install RStudio/Tidyverse -->
+- **Location**: Bostock 127 (The Edge Workshop Room)
 
-<!-- - **Location**: Online -->
+- **Time**: 12-1pm
 
-<!-- - **Time**: 12-1pm -->
+- **Description**:  Explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.
 
-<!-- - **Description**:  Learn how to import data following a brief tour of the RStudio IDE and an introduction to coding notebooks. This event is open to non-Duke participants. -->
+- **Register**: [Click here to register](https://duke.libcal.com/event/13664838).
 
-<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11640712). -->
+### Feb 27
 
-<!-- ### January 18 -->
+#### R for Lunch: Custom functions and ggplot2
 
-<!-- #### Data wrangling with dplyr -->
+- **Location**: Bostock 127 (The Edge Workshop Room)
 
-<!-- - **Location**: Online -->
+- **Time**: 12-1pm
 
-<!-- - **Time**: 12-1pm -->
+- **Description**: Learn how custom functions work in R and how they can be used to explore your data and to tell stories with the charts you create using ggplot2, particularly in a presentation setting.
 
-<!-- - **Description**: We explore the five essential `dplyr` data wrangling verbs. We demonstrate and apply data pipes inside code-chunks within Quarto coding notebooks. Quarto Notebooks were discussed in the previous session. This event is open to non-Duke participants. -->
-
-<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11640857) -->
+- **Register**: [Click here to register](https://duke.libcal.com/event/13668111)
 
 <!-- ### January 25 -->
 

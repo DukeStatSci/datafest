@@ -10,9 +10,9 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 ## Pareto Sponsors (\$2,500 - \$4,999)
 
-![](/logos/secondorder.png){style="float: left;padding-right:20px" width="320"}
+![](/logos/unc_stats_or.png){style="float: left;padding-right:20px" width="320"}
 
-[2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world.
+[UNC Department of Statistics and Operations Research ](https://stor.unc.edu/) focuses on developing the quantitative and computational skills practitioners need to to solve today's complex problems in statistics, probabilistic analysis, modeling, optimization, and evaluating systems. 
 
 
 
@@ -69,6 +69,10 @@ The [Center for Data and Visualization Sciences](https://library.duke.edu/data/d
 The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university's business functions. They are providing computing resources and support for the event.
 
 <br>
+
+<img src="/logos/NCShare.png" style="width:160px;float: left;padding-right:20px"/>
+
+The [North Carolina Shared Research & Education collaborative infrastructure](https://ncshare.org/about/) (NCShare) is bringing a high-speed research network to North Carolina’s minority and higher education institutions.
 
 <img src="/logos/asa.jpg" style="width:320px;float: left;padding-right:20px"/>
 

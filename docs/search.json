@@ -4,7 +4,7 @@
     "href": "signup.html",
     "title": "Sign Up",
     "section": "",
-    "text": "Participants\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe registration deadline is 5PM March 26, 2025. Seats are limited, so sign up before it’s too late!\n\n\nOption 1: Team sign-up (2-5 students)\nClick here to sign up as a team of 2 to 5 students.\nOption 2: Looking for teammates\n\nIf you do not have a team in mind but you’re looking for teammates, click here to leave us your information so that you can be matched with others.\n\n\nConsultants\n\n\nIf you are interested in serving as a consultant during the event, please let us know your availability here.\n\n\nQuestions\n\n\n\n\n\n\nImportant\n\n\n\nIf you would like to update your registration status, or have any questions about your registration, please send an email to Dr. Alexander Fisher."
+    "text": "Participants\n\n\n\n\n\n\n\nImportant\n\n\n\nRegistration for DataFest 2025 has closed. The event is at capacity.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsultants\n\nConsultant sign-ups have closed.\n\n\n\nQuestions\n\n\n\n\n\n\nImportant\n\n\n\nIf you would like to update your registration status, or have any questions about your registration, please send an email to Dr. Alexander Fisher."
   },
   {
     "objectID": "past-sponsors.html",
@@ -95,7 +95,7 @@
     "href": "workshops.html#live-workshops",
     "title": "Workshops",
     "section": "Live workshops",
-    "text": "Live workshops\nTBD"
+    "text": "Live workshops\n\nFeb 13\n\nR for Lunch: Streamlining reproducible workflows - from code to reports, slides & dashboards\n\nLocation: Bostock 127 (The Edge Workshop Room)\nTime: 12-1pm\nDescription: Explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.\nRegister: Click here to register.\n\n\n\n\nFeb 27\n\nR for Lunch: Custom functions and ggplot2\n\nLocation: Bostock 127 (The Edge Workshop Room)\nTime: 12-1pm\nDescription: Learn how custom functions work in R and how they can be used to explore your data and to tell stories with the charts you create using ggplot2, particularly in a presentation setting.\nRegister: Click here to register"
   },
   {
     "objectID": "workshops.html#pre-recorded-workshops",
@@ -221,7 +221,7 @@
     "href": "sponsors.html#pareto-sponsors-2500---4999",
     "title": "Sponsors",
     "section": "Pareto Sponsors ($2,500 - $4,999)",
-    "text": "Pareto Sponsors ($2,500 - $4,999)\n\n2nd Order Solutions (2OS) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world."
+    "text": "Pareto Sponsors ($2,500 - $4,999)\n\nUNC Department of Statistics and Operations Research focuses on developing the quantitative and computational skills practitioners need to to solve today’s complex problems in statistics, probabilistic analysis, modeling, optimization, and evaluating systems."
   },
   {
     "objectID": "sponsors.html#lognormal-sponsors-1000---2499",
@@ -235,7 +235,7 @@
     "href": "sponsors.html#acknowledgements",
     "title": "Sponsors",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\n\nThe Department of Statistical Science at Duke is nationally ranked in the top 5 research departments and as a top 10 graduate program. Recognized as the world’s leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.\n\n\nThe Center for Data and Visualization Sciences of the Duke Libraries has a mission to “partner with faculty, researchers, and students through consultation, instruction, co-curricular programming, and research assistance at various stages of the research data lifecycle.” They will be offering some of the ASA DataFestTM workshops. Click here for more information.\n\n\nThe Office of Information Technology manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university’s business functions. They are providing computing resources and support for the event.\n\n\nThe American Statistical Association is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy."
+    "text": "Acknowledgements\n\nThe Department of Statistical Science at Duke is nationally ranked in the top 5 research departments and as a top 10 graduate program. Recognized as the world’s leading center for Bayesian statistics and its interdisciplinary applications, the Department is a Duke campus hub for statistical and computational research.\n\n\nThe Center for Data and Visualization Sciences of the Duke Libraries has a mission to “partner with faculty, researchers, and students through consultation, instruction, co-curricular programming, and research assistance at various stages of the research data lifecycle.” They will be offering some of the ASA DataFestTM workshops. Click here for more information.\n\n\nThe Office of Information Technology manages Duke’s central technology infrastructure and provides services and applications to support the educational and research missions of the institution, as well as the university’s business functions. They are providing computing resources and support for the event.\n\n\nThe North Carolina Shared Research & Education collaborative infrastructure (NCShare) is bringing a high-speed research network to North Carolina’s minority and higher education institutions.\n\nThe American Statistical Association is the world’s largest community of statisticians, the “Big Tent for Statistics.” It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy."
   },
   {
     "objectID": "sponsorship.html",
@@ -270,6 +270,6 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This schedule page will be updated frequently with the most current event information.\nFriday, April 4\nTBD\n\n\n\n\n\n\n\n\n\n\n\n\nSaturday, April 5\nTBD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSunday, April 6\nTBD\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle map addresses\n\nPenn Pavilion: 107 Union Dr, Durham, NC 27710\n\n\n\n\n\n\nConvenient parking in Bryan Center Garage"
+    "text": "This schedule page will be updated frequently with the most current event information.\nFriday, April 4\n\n5:00pm: Check-in at Penn Pavilion\n6:00pm: Data kick-off\n6:30pm: Dinner\n9:30pm: Trivia\n12:00am: Consulting support ends\n1:00am: DataFest closes for the evening\n\n\n\n\n\n\n\n\n\n\n\n\n\nSaturday, April 5\n\n9:00am: DataFest continues at Penn Pavilion\n9:30am: Breakfast\n12:00pm: group photo\n1:00pm: Lunch\n4:00pm: [activity]\n6:30pm: Dinner & trivia\n11:00pm: Trivia\n12:00am: Consulting support ends; DataFest closes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSunday, April 6\nConsultants available until 12:00pm\n\n9:00am DataFest continues at Penn Pavilion\n9:30am breakfast\n12:00pm: Lunch + projects due\n1:00pm: Round 1 judging\n3:00-5:00pm Final round of judging + awards\n\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle map addresses\n\nPenn Pavilion: 107 Union Dr, Durham, NC 27710\n\n\n\n\n\n\nConvenient parking in Bryan Center Garage"
   }
 ]
