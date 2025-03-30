@@ -10,15 +10,17 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 ## Pareto Sponsors (\$2,500 - \$4,999)
 
+![](/logos/iid-cropped.png){style="float: left;padding-right:20px" width="150"}
+
+[Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
+
+<br>
+
 ![](/logos/unc_stats_or.png){style="float: left;padding-right:20px" width="320"}
 
 [UNC Department of Statistics and Operations Research ](https://stor.unc.edu/) focuses on developing the quantitative and computational skills practitioners need to to solve today's complex problems in statistics, probabilistic analysis, modeling, optimization, and evaluating systems. 
 
 
-
-<!-- ![](/logos/iid-cropped.png){style="float: left;padding-right:20px" width="150"} -->
-
-<!-- [Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field. -->
 
 <!-- ![](/logos/duke-pratt-logo-2.png){style="width:200px;float: left;padding-right:20px"} -->
 
