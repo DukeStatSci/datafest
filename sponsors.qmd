@@ -76,4 +76,4 @@ The [North Carolina Shared Research & Education collaborative infrastructure](ht
 
 <img src="/logos/asa.jpg" style="width:320px;float: left;padding-right:20px"/>
 
-The [American Statistical Association](http://amstat.org/) is the world's largest community of statisticians, the "Big Tent for Statistics." It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.
+The [American Statistical Association](http://amstat.org/) is the world's largest community of statisticians, the "Big Tent for Statistics." It is the second-oldest, continuously operating professional association in the country. Since it was founded in Boston in 1839, the ASA has supported excellence in the development, application, and dissemination of statistical science through meetings, publications, membership services, education, accreditation, and advocacy.  
