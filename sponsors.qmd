@@ -50,6 +50,11 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 [Duke Social Science Research Institute (SSRI)](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. SSRI promotes multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
 
+<br>
+![](/logos/duke-trinity.png){style="float: left;padding-right:20px" width="250"}
+
+[Duke Trinity College of Arts & Sciences](https://trinity.duke.edu/) has three divisions - the Arts & Humanities, Natural Sciences and Social Sciences - serves about 80% of the student population, in addition to graduate and professional students. Its mission is to provide "a world-class liberal arts education to undergraduate students", advance knowledge, and promote an "intellectual environment" and appreciate for "human difference and potential."
+
 
 ## Acknowledgements
 
