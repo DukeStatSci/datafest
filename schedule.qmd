@@ -9,9 +9,8 @@ This schedule page will be updated frequently with the most current event inform
 - 5:00pm: Check-in at Penn Pavilion
 - 6:00pm: Data kick-off
 - 6:30pm: Dinner
-- 9:30pm: Trivia
-- 12:00am: Consulting support ends
-- 1:00am: DataFest closes for the evening
+- 9:30pm: Activity
+- 12:00am: Consulting support ends; DataFest closes
 
 <!-- 2024 schedule -->
 <!-- - 5:00pm: Check-in at Penn Pavilion -->
@@ -34,8 +33,7 @@ This schedule page will be updated frequently with the most current event inform
 - 12:00pm: group photo
 - 1:00pm: Lunch
 - 4:00pm: [activity]
-- 6:30pm: Dinner & trivia
-- 11:00pm: Trivia
+- 6:30pm: Dinner & activity
 - 12:00am: Consulting support ends; DataFest closes
 
 <!-- - 9:00am: DataFest continues at Penn Pavilion -->
