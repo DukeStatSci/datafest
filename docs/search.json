@@ -107,70 +107,70 @@
   {
     "objectID": "df-slides.html#stats",
     "href": "df-slides.html#stats",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Stats",
-    "text": "Stats\n\n245 participants\n\n\n\n67 teams\n\n\n\n\n4 award categories\n\n\n\n\n1 surprise data set"
+    "text": "Stats\n\n220 participants\n\n\n\n58 teams\n\n\n\n\n4 award categories\n\n\n\n\n1 surprise data set"
   },
   {
     "objectID": "df-slides.html#presentations",
     "href": "df-slides.html#presentations",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Presentations",
     "text": "Presentations\n\nStop work at noon on Sunday\nBetween noon-12:30pm upload your presentation and write up\nCheck slack for room assignment\nFirst round presentations start at 1pm\nSecond (final) round presentations start at 3pm\n\nSame presentation as before\nAll are welcome!\n\n4 minutes (sharp!) + up to 5 minute Q&A\n3 content slides max (+ cover slide with team name if preferred) - PDF preferred, check with organizers for other formats\n1 page max write up (so the judges can refer back to it during deliberations) - PDF required"
   },
   {
     "objectID": "df-slides.html#winning-categories",
     "href": "df-slides.html#winning-categories",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Winning categories",
     "text": "Winning categories\nFour categories in no particular order!\n\nBest Insight\nBest Use of Outside Data or Best Statistical Analysis\nBest Visualization\nJudge’s Pick\n\n\n\n\n\n\n\nAdvice\n\n\nRun your ideas by the consultants to see which might be the best fit for your project, have a back up category in mind."
   },
   {
     "objectID": "df-slides.html#data-distribution",
     "href": "df-slides.html#data-distribution",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Data distribution",
     "text": "Data distribution\nTwo methods:\n\nIf using the RStudio/Jupyter containers, data will appear magically for you, find credentials to log-in at check-in counter!\nIf not, download from the link pinned in slack (link will only be available for a short time after kickoff)\n\n\nRead the proprietary statement!\nData can only be used for DataFest and should not be shared with anyone outside of DataFest or posted publicly\nAdvice: Working with large data can be tricky, if you don’t have your own tricks up your sleeves, ask/look for advice on working with large data"
   },
   {
     "objectID": "df-slides.html#rules-recommendations",
     "href": "df-slides.html#rules-recommendations",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Rules + recommendations",
     "text": "Rules + recommendations\n\nDo not post the data or the data source publicly\nWear your name badge at all times\nStick around the premises — that’s where help, food, raffle prizes, and each others’ company is!"
   },
   {
     "objectID": "df-slides.html#wifi",
     "href": "df-slides.html#wifi",
-    "title": "DataFest",
+    "title": "‎",
     "section": "wifi",
     "text": "wifi\n\nIf Duke, use what you usually use\nDukeVisitor works otherwise"
   },
   {
     "objectID": "df-slides.html#activities",
     "href": "df-slides.html#activities",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Activities",
     "text": "Activities\n\nTrivia prizes! (First round this evening!)\nWrist mobility exercises\nGroup photo\nAdvice: Stick around :)"
   },
   {
     "objectID": "df-slides.html#questions",
     "href": "df-slides.html#questions",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Questions?",
-    "text": "Questions?\nFind the organizers near the check-in area or flag down any consultant/staff (in the black shirts)"
+    "text": "Questions?\nFind the organizers near the check-in area or flag down any consultant/staff (in the yellow shirts)"
   },
   {
     "objectID": "df-slides.html#whats-next",
     "href": "df-slides.html#whats-next",
-    "title": "DataFest",
+    "title": "‎",
     "section": "What’s next?",
-    "text": "What’s next?\nTonight:\n\nCheck-in if you haven’t already\nEnjoy dinner!\nTrivia\n12:00a consulting ends\n2:00a DataFest closes\n\nSee the schedule for the most up-to-date info about the event: https://dukestatsci.github.io/datafest/schedule.html"
+    "text": "What’s next?\nTonight:\n\nCheck-in if you haven’t already\nEnjoy dinner!\nActivity\n12:00a consulting ends & DataFest closes\n\nSee the schedule for the most up-to-date info about the event: https://dukestatsci.github.io/datafest/schedule.html"
   },
   {
     "objectID": "df-slides.html#thank-you-sponsors",
     "href": "df-slides.html#thank-you-sponsors",
-    "title": "DataFest",
+    "title": "‎",
     "section": "Thank you, sponsors!",
     "text": "Thank you, sponsors!"
   },
@@ -271,5 +271,82 @@
     "title": "Schedule",
     "section": "",
     "text": "This schedule page will be updated frequently with the most current event information.\nFriday, April 4\n\n5:00pm: Check-in at Penn Pavilion\n6:00pm: Data kick-off\n6:30pm: Dinner\n9:30pm: Activity\n12:00am: Consulting support ends; DataFest closes\n\n\n\n\n\n\n\n\n\n\n\n\n\nSaturday, April 5\n\n9:00am: DataFest continues at Penn Pavilion\n9:30am: Breakfast\n12:00pm: group photo\n1:00pm: Lunch\n4:00pm: [activity]\n6:30pm: Dinner & activity\n12:00am: Consulting support ends; DataFest closes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSunday, April 6\nConsultants available until 12:00pm\n\n9:00am DataFest continues at Penn Pavilion\n9:30am breakfast\n12:00pm: Lunch + projects due\n1:00pm: Round 1 judging\n3:00-5:00pm Final round of judging + awards\n\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle map addresses\n\nPenn Pavilion: 107 Union Dr, Durham, NC 27710\n\n\n\n\n\n\nConvenient parking in Bryan Center Garage"
+  },
+  {
+    "objectID": "df-slides-2024.html#stats",
+    "href": "df-slides-2024.html#stats",
+    "title": "DataFest",
+    "section": "Stats",
+    "text": "Stats\n\n245 participants\n\n\n\n67 teams\n\n\n\n\n4 award categories\n\n\n\n\n1 surprise data set"
+  },
+  {
+    "objectID": "df-slides-2024.html#presentations",
+    "href": "df-slides-2024.html#presentations",
+    "title": "DataFest",
+    "section": "Presentations",
+    "text": "Presentations\n\nStop work at noon on Sunday\nBetween noon-12:30pm upload your presentation and write up\nCheck slack for room assignment\nFirst round presentations start at 1pm\nSecond (final) round presentations start at 3pm\n\nSame presentation as before\nAll are welcome!\n\n4 minutes (sharp!) + up to 5 minute Q&A\n3 content slides max (+ cover slide with team name if preferred) - PDF preferred, check with organizers for other formats\n1 page max write up (so the judges can refer back to it during deliberations) - PDF required"
+  },
+  {
+    "objectID": "df-slides-2024.html#winning-categories",
+    "href": "df-slides-2024.html#winning-categories",
+    "title": "DataFest",
+    "section": "Winning categories",
+    "text": "Winning categories\nFour categories in no particular order!\n\nBest Insight\nBest Use of Outside Data or Best Statistical Analysis\nBest Visualization\nJudge’s Pick\n\n\n\n\n\n\n\nAdvice\n\n\nRun your ideas by the consultants to see which might be the best fit for your project, have a back up category in mind."
+  },
+  {
+    "objectID": "df-slides-2024.html#data-distribution",
+    "href": "df-slides-2024.html#data-distribution",
+    "title": "DataFest",
+    "section": "Data distribution",
+    "text": "Data distribution\nTwo methods:\n\nIf using the RStudio/Jupyter containers, data will appear magically for you, find credentials to log-in at check-in counter!\nIf not, download from the link pinned in slack (link will only be available for a short time after kickoff)\n\n\nRead the proprietary statement!\nData can only be used for DataFest and should not be shared with anyone outside of DataFest or posted publicly\nAdvice: Working with large data can be tricky, if you don’t have your own tricks up your sleeves, ask/look for advice on working with large data"
+  },
+  {
+    "objectID": "df-slides-2024.html#rules-recommendations",
+    "href": "df-slides-2024.html#rules-recommendations",
+    "title": "DataFest",
+    "section": "Rules + recommendations",
+    "text": "Rules + recommendations\n\nDo not post the data or the data source publicly\nWear your name badge at all times\nStick around the premises — that’s where help, food, raffle prizes, and each others’ company is!"
+  },
+  {
+    "objectID": "df-slides-2024.html#wifi",
+    "href": "df-slides-2024.html#wifi",
+    "title": "DataFest",
+    "section": "wifi",
+    "text": "wifi\n\nIf Duke, use what you usually use\nDukeVisitor works otherwise"
+  },
+  {
+    "objectID": "df-slides-2024.html#activities",
+    "href": "df-slides-2024.html#activities",
+    "title": "DataFest",
+    "section": "Activities",
+    "text": "Activities\n\nTrivia prizes! (First round this evening!)\nWrist mobility exercises\nGroup photo\nAdvice: Stick around :)"
+  },
+  {
+    "objectID": "df-slides-2024.html#questions",
+    "href": "df-slides-2024.html#questions",
+    "title": "DataFest",
+    "section": "Questions?",
+    "text": "Questions?\nFind the organizers near the check-in area or flag down any consultant/staff (in the black shirts)"
+  },
+  {
+    "objectID": "df-slides-2024.html#whats-next",
+    "href": "df-slides-2024.html#whats-next",
+    "title": "DataFest",
+    "section": "What’s next?",
+    "text": "What’s next?\nTonight:\n\nCheck-in if you haven’t already\nEnjoy dinner!\nTrivia\n12:00a consulting ends\n2:00a DataFest closes\n\nSee the schedule for the most up-to-date info about the event: https://dukestatsci.github.io/datafest/schedule.html"
+  },
+  {
+    "objectID": "df-slides-2024.html#thank-you-sponsors",
+    "href": "df-slides-2024.html#thank-you-sponsors",
+    "title": "DataFest",
+    "section": "Thank you, sponsors!",
+    "text": "Thank you, sponsors!"
+  },
+  {
+    "objectID": "df-slides.html#schedule-of-events",
+    "href": "df-slides.html#schedule-of-events",
+    "title": "‎",
+    "section": "Schedule of events",
+    "text": "Schedule of events\n\nhttps://dukestatsci.github.io/datafest/schedule.html\nPeriodic activities; win prizes\nGroup photo\nAdvice: Stick around :)"
   }
 ]

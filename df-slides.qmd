@@ -1,24 +1,23 @@
 ---
-title: ""
-logo: "logos/df24-tshirt-2.png"
+title: "‎ "
 format: revealjs
+title-slide-attributes:
+    data-background-image: "/logos/df-25-04.png"
 ---
 
-![](logos/df24-tshirt-2.png){fig-align="center"}
+## 
 
+<iframe width="1313" height="739" src="https://www.youtube.com/embed/5oG0UAHRWOk" title="ASA DataFest 2022 @dukeuniversity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-##
-
-<iframe width="1313" height="739" src="https://www.youtube.com/embed/5oG0UAHRWOk" title="ASA DataFest 2022 @dukeuniversity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+</iframe>
 
 ## Stats
 
--   245 participants
+-   220 participants
 
 . . .
 
--   67 teams
+-   58 teams
 
 . . .
 
@@ -30,7 +29,7 @@ format: revealjs
 
 ## 
 
-![](logos/datafest-inst24.png){fig-align="center" width="750"}
+![](imgs/participating2025.png){fig-align="center" width="750"}
 
 # Rules {.center}
 
@@ -87,16 +86,16 @@ Two methods:
 -   If Duke, use what you usually use
 -   `DukeVisitor` works otherwise
 
-## Activities
+## Schedule of events
 
--   Trivia prizes! (First round this evening!)
--   Wrist mobility exercises
+- [https://dukestatsci.github.io/datafest/schedule.html](https://dukestatsci.github.io/datafest/schedule.html)
+-   Periodic activities; win prizes
 -   Group photo
 -   Advice: Stick around :)
 
 ## Questions?
 
-Find the organizers near the check-in area or flag down any consultant/staff (in the black shirts)
+Find the organizers near the check-in area or flag down any consultant/staff (in the yellow shirts)
 
 ## What's next?
 
@@ -104,9 +103,8 @@ Tonight:
 
 -   Check-in if you haven't already
 -   Enjoy dinner!
--   Trivia
--   12:00a consulting ends
--   2:00a DataFest closes
+-   Activity
+-   12:00a consulting ends & DataFest closes
 
 See the schedule for the most up-to-date info about the event: <https://dukestatsci.github.io/datafest/schedule.html>
 

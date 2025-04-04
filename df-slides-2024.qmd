@@ -1,0 +1,117 @@
+---
+title: ""
+logo: "logos/df24-tshirt-2.png"
+format: revealjs
+---
+
+![](logos/df24-tshirt-2.png){fig-align="center"}
+
+
+##
+
+<iframe width="1313" height="739" src="https://www.youtube.com/embed/5oG0UAHRWOk" title="ASA DataFest 2022 @dukeuniversity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+## Stats
+
+-   245 participants
+
+. . .
+
+-   67 teams
+
+. . .
+
+-   4 award categories
+
+. . .
+
+-   1 surprise data set
+
+## 
+
+![](logos/datafest-inst24.png){fig-align="center" width="750"}
+
+# Rules {.center}
+
+![](logos/golden-rule-crop.png){fig-align="center" width="800"}
+
+## Presentations {.smaller}
+
+-   Stop work at noon on Sunday
+-   Between noon-12:30pm upload your presentation and write up
+-   Check slack for room assignment
+-   First round presentations start at 1pm
+-   Second (final) round presentations start at 3pm
+    -   Same presentation as before
+    -   All are welcome!
+-   4 minutes (sharp!) + up to 5 minute Q&A
+-   3 content slides max (+ cover slide with team name if preferred) - PDF preferred, check with organizers for other formats
+-   1 page max write up (so the judges can refer back to it during deliberations) - PDF required
+
+## Winning categories
+
+**Four categories in no particular order!**
+
+-   Best Insight
+-   Best Use of Outside Data or Best Statistical Analysis
+-   Best Visualization
+-   Judge's Pick
+
+::: callout-note
+## Advice
+
+Run your ideas by the consultants to see which might be the best fit for your project, have a back up category in mind.
+:::
+
+## Data distribution {.smaller}
+
+Two methods:
+
+1.  If using the RStudio/Jupyter containers, data will appear magically for you, find credentials to log-in at check-in counter!
+
+2.  If not, download from the link pinned in slack (link will only be available for a short time after kickoff)
+
+-   **Read the proprietary statement!**
+-   Data can only be used for DataFest and should not be shared with anyone outside of DataFest or posted publicly
+-   Advice: Working with large data can be tricky, if you don't have your own tricks up your sleeves, ask/look for advice on working with large data
+
+## Rules + recommendations
+
+-   Do not post the data or the data source publicly
+-   Wear your name badge at all times
+-   Stick around the premises --- that's where help, food, raffle prizes, and each others' company is!
+
+## wifi
+
+-   If Duke, use what you usually use
+-   `DukeVisitor` works otherwise
+
+## Activities
+
+-   Trivia prizes! (First round this evening!)
+-   Wrist mobility exercises
+-   Group photo
+-   Advice: Stick around :)
+
+## Questions?
+
+Find the organizers near the check-in area or flag down any consultant/staff (in the black shirts)
+
+## What's next?
+
+Tonight:
+
+-   Check-in if you haven't already
+-   Enjoy dinner!
+-   Trivia
+-   12:00a consulting ends
+-   2:00a DataFest closes
+
+See the schedule for the most up-to-date info about the event: <https://dukestatsci.github.io/datafest/schedule.html>
+
+## Thank you, sponsors!
+
+![](logos/df24-sponsors.png){fig-align="center"}
+
+# Meet the data!
