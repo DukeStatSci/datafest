@@ -108,7 +108,7 @@ Tonight:
 
 See the schedule for the most up-to-date info about the event: <https://dukestatsci.github.io/datafest/schedule.html>
 
-## Thank you, sponsors!
+## Thank you, [sponsors](https://dukestatsci.github.io/datafest/sponsors.html)!
 
 ![](logos/df24-sponsors.png){fig-align="center"}
 
