@@ -1,38 +1,55 @@
 ---
 title: "Winners"
+format:
+  html:
+    toc: true
 ---
 
-# 2024 Winners
-
-::: callout
-[Click here](https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024) to read a news article published in Duke Daily about the 2024 winners!
-:::
+# 2025 Winners
 
 ### Best Statistical Analysis
 
-[Discrepancies in Chapter Difficulty and Outcome](/presentations/Team283Boys.pdf) by Eddy Ding, Daniel Henderson, Maxim Chadaev and Siddhant Borkar.
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_stat.jpeg) -->
+<!-- ::: -->
 
-*The judges were impressed by the creation of a statistic to evaluate the relative difficulty of chapters and subsequent recommendations to the data provider.*
+[Spatial and Structural Optimization of Commercial Real Estate in
+California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Amanda Guo, and Neha Jatla.
+
+*The judges were impressed by their use of fragmentation as a predictor as well as leveraging residential trends to predict commercial trends.*
+
 
 ### Best Insight
 
-[Plagiarism on CourseKata](/presentations/TeamTomato.pdf) by Evan Glas, Henry Holbrook, Ben Perry, Addison Phelps and Roy Chen.
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_insight.jpeg) -->
+<!-- ::: -->
 
-*The judges were impressed by the unique topic analyzed and story told by this team regarding plagiarism in the online platform.*
+[(High) Rise of Manhattan Finance](/presentations/heels_excel_2025.pdf) by Alyssa Albritton, Duaa Alzouby, Layla Gusa, Madelyn Pallotta-Barton, and Riham Mohammed.
+
+*The judges were impressed by their actionable and nuaced business insights.*
  
 
 ### Best Visualizations
 
-[From "Hello World" to Beyond](/presentations/TeamJeltJian.pdf) by Eric Rios, Lisa Wang, Luopeiwen Yi and Jiayi Zhou.
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_viz.jpeg) -->
+<!-- ::: -->
 
-*The judges were impressed by this team's ability to create clear, easy to understand visuals of how students spend their time.*
+["Where should I locate my new office?](/presentations/tldr_2025.pdf) by Jason Deng, Sophia Shen, Kevin Tao, Lucy Wang, and Thomas You.
+
+*The judges were impressed by this team's creation of visuals that were dynamic, consistent and infomative.*
 
 
 ### Best Use of Outside Data
 
-[Chapter Engagement](/presentations/TeamTKGA.pdf) by Anmol Sapru, Tate Staples, Gabriel Paley and Kevin Lee.
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_data.jpeg) -->
+<!-- ::: -->
 
-*The judges were impressed by this team's ability to scrape data from the platform's web page such as number of pixels as a measure of "scroll length" to determine a relationship between chapter length and chapter engagement.*
+[Predicting Leasing Activity with Economic Indicators](/presentations/apple_seers_2025.pdf) by Cooper Ruffing, Liane Ma, Amy Xu, Hyunjin Lee, and Phillip Lin.
+
+*The judges were impressed by this team's use of FRED data coupled with unemployment data.*
 
 <!-- [**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo. -->
 
@@ -40,18 +57,15 @@ title: "Winners"
 
 ### Judges' Pick
 
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/judge_pick.jpeg) -->
+<!-- ::: -->
+
 *Project recognized by the judges for outstanding achievement outside of the core award categories.*
 
-[Learning Style Segmentation for Personalized Education](/presentations/TeamJLAndTheJets.pdf) by Alex Katopodis, Miles King, Jonathan Levitan and Jackson Peurach.
+[Resilience in Commercial Real Estate: Post-COVID Comebacks & Strategic Opportunities](/presentations/datafesters_2025.pdf) by Eric Ge, Ezi Ilabor, Yae Young Kim, and Kaley Wong.
 
-*The judges were impressed by this group's identification of nuanced user segments and the detailed recommendations to the data providers.* 
-
-### Honorable Mentions
-
-[Student Clusters](/presentations/TeamDataMIDS.pdf) by Gunel Aghakishiyeva, Daniela Jimenez and Shaila Guereca.
- 
-[Beyond the Numbers: Unlocking Student Engagement in Statistics](/presentations/Team08.pdf) by Senam Adedze, Sonia Zhu, Wangley Soares Martins, Mia Lam and Sam Reid.
-
+*The judges were impressed by this group's use of resilience scores to provide framework from which to gain real world value.*
 
 
 # Past winners
