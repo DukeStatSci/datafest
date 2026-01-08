@@ -9,29 +9,174 @@ Additionally, links to several previously recorded workshops are provided below.
 
 ## Live workshops
 
+### Jan 16
+
+#### Learn R: Introduction to RStudio, Importing Data, and Running Code
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:00 pm
+
+- **Description**:  R is a data science and data visualization tool which, when combined with RStudio, the Tidyverse, and Quarto, provides a powerful and flexible environment for reproducible research. This workshop will introduce you to the RStudio IDE interface, coding notebooks, packages, importing data into R, and running basic code to manipulate data. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15865718).
+
+### Jan 20
+
+#### Intro to Tableau: Easy charts and maps
+
+- **Location**: Online
+
+- **Time**: 10:00 am - 12:00 pm
+
+- **Description**:  Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students). This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15871065).
+
+### Jan 23
+
+#### Learn R: Data Wrangling and Tidying
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:00 pm
+
+- **Description**:  R is a data science and data visualization tool which, when combined with RStudio, the Tidyverse, and Quarto, provides a powerful and flexible environment for reproducible research. This workshop will cover core data manipulation techniques including grouping, aggregating, and tidying. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15865777).
+
+### Jan 28
+
+#### Story Maps
+
+- **Location**: Online
+
+- **Time**: 01:00 pm - 02:30 pm
+
+- **Description**:  This workshop will help you get started telling stories with maps on the ArcGIS StoryMaps platform. This easy-to-use web application combines interactive maps with narrative text, images, and videos to provide a powerful communication tool for any project with a spatial component. We will explore the capabilities of the platform, share best practices for designing effective stories, and guide participants through the process of creating their own story maps. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15866017).
+
+### Jan 30
+
+#### Learn R: Visualizing Data using ggplot2
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:00 pm
+
+- **Description**:  Learn how to produce publication-quality plots using the ggplot2 R package. We will demystify key concepts such as aesthetics, geometries, facets and themes, and show how to use the grammar of ggplot2 to create customized plots. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15864265).
+
+### Feb 06
+
+#### Learn R: Mapping
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:00 pm
+
+- **Description**:  This workshop introduces the use of the R language for producing maps. We will demonstrate the advantages of a code-drive approach such as R for visualizing geospatial data. Participants will gain the skills to quickly and efficiently create a variety of map types for a website, presentation, or publication. In addition to working on hands-on coding exercises, we will also review practical guidance on designing effective maps. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15865903).
+
+### Feb 06
+
+#### Visualizing Data Responsibly: Communicating with accuracy, clarity, and transparency
+
+- **Location**: Online
+
+- **Time**: 03:00 pm - 04:30 pm
+
+- **Description**:  Even well-meaning researchers can unintentionally introduce bias when visualizing their findings. In this workshop, we’ll explore how human perception shapes what audiences see, and how that can sometimes differ from what you intend to show. Through examples and discussion, we’ll cover common pitfalls to avoid and practical principles for designing visualizations that are clear, accurate, and responsibly crafted. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15872745).
+
+### Feb 10
+
+#### Introduction to Address Geocoding
+
+- **Location**: Online
+
+- **Time**: 11:00 am - 12:00 pm
+
+- **Description**:  Projects involving location data often require geocoding: converting addresses into mappable points for visualization and analysis. This workshop will introduce the geocoding process, discuss the advantages and limitations of several geocoding tools, and review best practices for improving the quality of results. We’ll also cover approaches for more challenging cases, including historical data, international addresses, data with specific security needs, and high-volume processing. Participants will have time to practice during hands-on exercise. No prior experience with GIS software is required. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15876758).
+
 ### Feb 13
 
-#### R for Lunch: Streamlining reproducible workflows - from code to reports, slides & dashboards
+#### Learn R: Interactive plots with ggplot2 and ggiraph
 
-- **Location**: Bostock 127 (The Edge Workshop Room)
+- **Location**: Online
 
-- **Time**: 12-1pm
+- **Time**: 12:00 pm - 01:00 pm
 
-- **Description**:  Explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.
+- **Description**:  This workshop will cover how to easily add interactivity (i.e., hover features) to ggplot2 graphics using the ggiraph package. It is designed to give participants more opportunities to practice visualizing data using ggplot2 and to explore how interactivity can add more context to plots both in the exploratory and communication phases. This event is open to non-Duke participants.
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/13664838).
+- **Register**: [Click here to register](https://duke.libcal.com/event/15866001).
 
-### Feb 27
+### Feb 18
 
-#### R for Lunch: Custom functions and ggplot2
+#### Visualizing data with ChatGPT
 
-- **Location**: Bostock 127 (The Edge Workshop Room)
+- **Location**: Online
 
-- **Time**: 12-1pm
+- **Time**: 10:00 am - 11:00 am
 
-- **Description**: Learn how custom functions work in R and how they can be used to explore your data and to tell stories with the charts you create using ggplot2, particularly in a presentation setting.
+- **Description**:  AI has become a reasonable tool for producing data visualizations without coding or learning Excel, Tableau, or other software, but expertise is still required to guide it to an effective chart. In this introductory workshop we'll show you an example of uploading public data to ChatGPT, prompting past the initial (usually pretty bad) first draft, then finishing by downloading the script that produced the final chart as a record for reproducibility. We'll also discuss strategies for checking the results and things to watch out for so you can verify LLM's output. Finally, if you have access to a LLM (e.g., ChatGPT, DukeGPT, Claude.ai, MS Copilot) that lets you upload a CSV of PDF file, we'll give you some new data and a chance to try the process yourself. This event is open to non-Duke participants.
 
-- **Register**: [Click here to register](https://duke.libcal.com/event/13668111)
+- **Register**: [Click here to register](https://duke.libcal.com/event/15871007).
+
+### Feb 19
+
+#### Ethics of Data Management and Sharing
+
+- **Location**: Online
+
+- **Time**: 10:00 am - 12:00 pm
+
+- **Description**:  This workshop will explore strategies for dealing with the many different ethical issues that can arise with data management and sharing. Topics covered will include a framework for analyzing ethical cases, the use of secondary data in research, working with human participants, senstive ecosystems, AI, and the impact of laws on data sharing. We will also explore the application of diversity and equity principles to open science and data sharing. This workshop is eligible for 2 hours of Graduate School RCR Credit and 200-level faculty and staff RCR.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15862150).
+
+### Feb 20
+
+#### Learn R: Geospatial Data
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:00 pm
+
+- **Description**:  The R language has become a popular option for working with geospatial data. Compared to traditional GIS software, the code-driven approach of R can be more reproducible and efficient. This workshop gives participants the skills to perform geospatial workflows entirely within R. We will discuss how different types of geospatial data work in R, review useful data sources, and walk through common examples of data operations. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15865955).
+
+### Feb 24
+
+#### Intro to Power BI: Easy interactive reports
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:30 pm
+
+- **Description**:  Power BI is a dynamic data visualization tool from Microsoft that allows you to connect to data sources, structure data models, and create interactive reports. Many analysts choose Power BI for its user-friendly interface, integration with other Microsoft products, and relative affordability. This workshop will cover the basics of how to import data, use simple functions to establish a data model, and build a variety of interactive visuals (e.g., bars, lines, maps, tables, and cards). You'll also learn how to publish, export, and share your reports. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15866459).
+
+### Mar 05
+
+#### Data Storytelling: Designing Power Point Presentations
+
+- **Location**: Online
+
+- **Time**: 12:00 pm - 01:00 pm
+
+- **Description**:  In this session, we will explore ways to make PowerPoint slides clearer, more engaging, and easier for audiences to follow. We will cover visual design basics, how to organize information effectively, and techniques for guiding audience attention. We will also touch on simple approaches to presenting data clearly. Participants will pick up practical techniques they can use right away to strengthen their presentations. This event is open to non-Duke participants.
+
+- **Register**: [Click here to register](https://duke.libcal.com/event/15864588).
+
 
 <!-- ### January 25 -->
 

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DataFest 2025 – DataFest</title>
+<title>DataFest 2026 – DataFest</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,10 +31,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f098c2ecfdb5c9b97a269aa7d3eada92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">DataFest 2025</h1>
+<h1 class="title">DataFest 2026</h1>
 </div>
 
 
@@ -169,21 +169,12 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="event-details" class="level2">
 <h2 class="anchored" data-anchor-id="event-details">Event details</h2>
-<p><strong>When:</strong> Friday, April 4 at 5:00pm - Sunday, April 6 at 5:00pm</p>
-<p><strong>Where:</strong> Penn Pavilion, Duke University</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Sign up now
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="./signup.html">Click here</a> to sign-up for DataFest 2025!</p>
-</div>
-</div>
+<p><strong>When:</strong> Friday, March 20 at 5:00pm - Sunday, March 22 at 5:00pm</p>
+<p><strong>Where:</strong> Perkins Library, Duke University</p>
+<!-- :::callout-important -->
+<!-- ## Sign up now -->
+<!-- [Click here](/signup.html) to sign-up for DataFest 2026! -->
+<!-- ::: -->
 <p>On Friday we will start with a welcome event where you will be introduced to the surprise data set you’ll be working with other the weekend. You’ll learn more about the data provider and a bit about what they’d like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client’s introduction when shaping your research question(s).</p>
 <p>Projects will be due on Sunday afternoon. Each team will give a brief presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.</p>
 </section>
@@ -215,6 +206,8 @@ Sign up now
 </section>
 <section id="past-datafests-at-duke" class="level2">
 <h2 class="anchored" data-anchor-id="past-datafests-at-duke">Past DataFests at Duke</h2>
+<!-- ### DataFest 2025 –  -->
+<!-- Goal: -->
 <section id="datafest-2024-coursekata" class="level3">
 <h3 class="anchored" data-anchor-id="datafest-2024-coursekata">DataFest 2024 – CourseKata</h3>
 <p>Goal: Analyze computer logs that document students’ interactions with online introductory statistics textbooks in order to help researchers improve the CourseKata experience for students.</p>
@@ -360,8 +353,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -472,7 +463,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

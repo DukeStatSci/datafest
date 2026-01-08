@@ -1,19 +1,19 @@
 ---
-title: "DataFest 2025"
+title: "DataFest 2026"
 ---
 
 
 ## Event details
 
-**When:** Friday, April 4 at 5:00pm - Sunday, April 6 at 5:00pm
+**When:** Friday, March 20 at 5:00pm - Sunday, March 22 at 5:00pm
 
-**Where:** Penn Pavilion, Duke University
+**Where:** Perkins Library, Duke University
 
-:::callout-important
-## Sign up now
+<!-- :::callout-important -->
+<!-- ## Sign up now -->
 
-[Click here](/signup.html) to sign-up for DataFest 2025!
-:::
+<!-- [Click here](/signup.html) to sign-up for DataFest 2026! -->
+<!-- ::: -->
 
 On Friday we will start with a welcome event where you will be introduced to the surprise data set you'll be working with other the weekend. You'll learn more about the data provider and a bit about what they'd like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
 
@@ -40,6 +40,10 @@ While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal o
 > *DataFest was an awesome experience. To me, the best part was working in a team of friends that I usually hung out with, but had not had a chance to work together intensively on a project. We enjoyed analyzing the situations and solving problems together for our client. At the end of the day, we just got to know each other better. It was also fun to interact with other teams to explore other approaches while keeping in mind that we were in competition. The fact that we were given a huge amount of data really challenges us to come up with creative and practical approaches. Another important part was the presentation. Every team had to explain well to the judges their objectives and solutions. Our team won the Best Visualization award which is really awesome. Lastly, the food was fantastic.*
 
 ## Past DataFests at Duke
+
+<!-- ### DataFest 2025 –  -->
+
+<!-- Goal: -->
 
 ### DataFest 2024 – CourseKata
 

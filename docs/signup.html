@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,10 +31,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f098c2ecfdb5c9b97a269aa7d3eada92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -154,20 +154,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- https://forms.gle/uqqJvR4VhM1YuKCR8 -->
 <section id="participants" class="level3">
 <h3 class="anchored" data-anchor-id="participants">Participants</h3>
-<!-- Registration to participate in DataFest 2025 @ Duke is not yet open. Please check back soon! -->
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Registration for DataFest 2025 has closed. The event is at capacity.</strong></p>
-</div>
-</div>
+<p>Registration to participate in DataFest 2026 @ Duke is not yet open. Please check back soon!</p>
+<!-- :::callout-important -->
+<!-- **Registration for DataFest 2025 has closed. The event is at capacity.** -->
+<!-- ::: -->
 <!-- If you'd like to be placed on a waitlist in the event of no-shows, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu). -->
 <!-- Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements. -->
 <!-- :::callout-note -->
@@ -181,8 +171,8 @@ Important
 </section>
 <section id="consultants" class="level3">
 <h3 class="anchored" data-anchor-id="consultants">Consultants</h3>
-<!-- Check back Spring 2025.  -->
-<p>Consultant sign-ups have closed.</p>
+<p>Check back soon!</p>
+<!-- Consultant sign-ups have closed. -->
 <!-- If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.gle/RNB9ywSo4CBUTZNP6). -->
 </section>
 <section id="questions" class="level3">
@@ -287,8 +277,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -399,7 +387,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

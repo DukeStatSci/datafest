@@ -4,13 +4,48 @@ title: "Schedule"
 
 This schedule page will be updated frequently with the most current event information.
 
-**Friday, April 4**
+**Friday, March 20**
 
-- 5:00pm: Check-in at Penn Pavilion
-- 6:00pm: Data kick-off
-- 6:30pm: Dinner
-- 9:30pm: Activity
-- 12:00am: Consulting support ends; DataFest closes
+TBD
+
+**Saturday, March 21**
+
+TBD
+
+**Sunday, March 22** 
+
+TBD
+
+<!-- BEGIN 2025 ARCHIVED SCHEDULE -->
+<!-- **Friday, April 4** -->
+
+<!-- - 5:00pm: Check-in at Penn Pavilion -->
+<!-- - 6:00pm: Data kick-off -->
+<!-- - 6:30pm: Dinner -->
+<!-- - 9:30pm: Activity -->
+<!-- - 12:00am: Consulting support ends; DataFest closes -->
+
+<!-- **Saturday, April 5** -->
+
+<!-- - 9:00am: DataFest continues at Penn Pavilion -->
+<!-- - 9:30am: Breakfast -->
+<!-- - 12:00pm: group photo -->
+<!-- - 1:00pm: Lunch -->
+<!-- - 4:00pm: [activity] -->
+<!-- - 6:30pm: Dinner & activity -->
+<!-- - 12:00am: Consulting support ends; DataFest closes -->
+
+<!-- **Sunday, April 6** -->
+
+<!-- *Consultants available until 12:00pm* -->
+
+<!-- - 9:00am DataFest continues at Penn Pavilion -->
+<!-- - 9:30am breakfast -->
+<!-- - 12:00pm: Lunch + projects due -->
+<!-- - 1:00pm: Round 1 judging -->
+<!-- - 3:00-5:00pm Final round of judging + awards -->
+<!-- END 2025 ARCHIVED SCHEDULE -->
+
 
 <!-- 2024 schedule -->
 <!-- - 5:00pm: Check-in at Penn Pavilion -->
@@ -26,15 +61,7 @@ This schedule page will be updated frequently with the most current event inform
 <!-- - 6:30pm: DataFest moves to Perkins Link for Dinner, and check-in continues at Perkins Link near the Help Desk (floor L1); workspace assignments are released -->
 <!-- - 9:00pm: DataFest support and consulting runs until 9pm. -->
 
-**Saturday, April 5**
 
-- 9:00am: DataFest continues at Penn Pavilion
-- 9:30am: Breakfast
-- 12:00pm: group photo
-- 1:00pm: Lunch
-- 4:00pm: [activity]
-- 6:30pm: Dinner & activity
-- 12:00am: Consulting support ends; DataFest closes
 
 <!-- - 9:00am: DataFest continues at Penn Pavilion -->
 <!-- - 9:30am: Breakfast -->
@@ -56,15 +83,7 @@ This schedule page will be updated frequently with the most current event inform
 <!-- - 6:00pm: Dinner & trivia -->
 <!-- - 9:00pm: DataFest support and consulting runs until 9pm. -->
 
-**Sunday, April 6**
 
-*Consultants available until 12:00pm*
-
-- 9:00am DataFest continues at Penn Pavilion
-- 9:30am breakfast
-- 12:00pm: Lunch + projects due
-- 1:00pm: Round 1 judging
-- 3:00-5:00pm Final round of judging + awards
 
 <!-- *Consultants available until 12:00pm* -->
 
@@ -83,12 +102,14 @@ This schedule page will be updated frequently with the most current event inform
 
 #### Google map addresses
 
-- Penn Pavilion: [107 Union Dr, Durham, NC 27710](https://maps.app.goo.gl/gXVJiMBw8x4jNiru9)
+<!-- - Penn Pavilion: [107 Union Dr, Durham, NC 27710](https://maps.app.goo.gl/gXVJiMBw8x4jNiru9) -->
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.8243789566163!2d-78.945684149699!3d36.00015750176001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace6b0062c689b%3A0x418fe3d44783c11b!2sPenn%20Pavilion!5e0!3m2!1sen!2sus!4v1705005781165!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.8243789566163!2d-78.945684149699!3d36.00015750176001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace6b0062c689b%3A0x418fe3d44783c11b!2sPenn%20Pavilion!5e0!3m2!1sen!2sus!4v1705005781165!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
-<!-- - Perkins library: [411 Chapel Drive -->
-<!-- Durham, NC 27708](https://goo.gl/maps/JGGawKRZBm2ygq4S8) -->
-<!-- - Levine Science Research Center (LSRC): [308 Research Dr, Durham, NC 27710](https://goo.gl/maps/ERowZZSPJwrp3i1MA) -->
+- Perkins library: [411 Chapel Drive, Durham, NC 27708](https://goo.gl/maps/JGGawKRZBm2ygq4S8)
+
+- Fitzpatrick center: [101 Science Drive, Research Dr, Durham, NC 27708](https://maps.app.goo.gl/dKRcTRwFfAuKgtNM6)
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3227.7002367054847!2d-78.94062626049451!3d36.003190366067535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x89ace6ae4f2e0325%3A0x15d70725343a1cd4!2s411%20Chapel%20Dr%2C%20Durham%2C%20NC%2027708!3m2!1d36.0029782!2d-78.9383263!4m5!1s0x89ace6ae2705c505%3A0xebe4fa6e621cb48d!2sFitzpatrick%20Center%20for%20Interdisciplinary%20Engineering%2C%20Medicine%20and%20Applied%20Sciences%2C%20101%20Science%20Dr%2C%20Durham%2C%20NC%2027705!3m2!1d36.0031501!2d-78.9406158!5e0!3m2!1sen!2sus!4v1767896720948!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 Convenient parking in [Bryan Center Garage](https://goo.gl/maps/3Ed2a1NsQxjFsyci6)
