@@ -1,1 +1,682 @@
 /* css styles */
+
+
+/* ===== Global Dark Theme ===== */
+body,
+#quarto-content,
+main.content {
+  background-color: #01143E;  
+  color: #E6ECF5;             
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF;
+}
+
+/* Links */
+a {
+  color: #9DB8FF;
+}
+
+a:hover {
+  color: #C7D6FF;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #01143E;
+}
+
+/* Callouts / boxes */
+.callout {
+  background-color: #0A1F5E;
+  color: #E6ECF5;
+  border-color: #1F3C88;
+}
+
+/* Sidebar (TOC) */
+.sidebar,
+.margin-sidebar {
+  background-color: #01143E;
+  color: #E6ECF5;
+}
+
+.sidebar a {
+  color: #9DB8FF;
+}
+
+
+
+/* ---------- NAV & HERO helpers ---------- */
+:root { --nav-height: 56px; } 
+
+body.nav-fixed main.content,
+body.nav-fixed #quarto-document-content {
+  padding-top: calc(var(--nav-height) + 1rem); 
+}
+
+html { scroll-padding-top: calc(var(--nav-height) + 0.75rem); }
+
+.hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw); /* full-bleed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01143E;
+  box-sizing: border-box;
+
+  padding-top: calc(var(--nav-height) + 1rem);
+  padding-bottom: 2.25rem;
+  overflow: visible;
+}
+
+/* Hero image: always fully visible, centered, and scales responsively */
+.hero-img {
+  max-width: 100%;
+  max-height: calc(80vh - var(--nav-height)); 
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center; 
+  display: block;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+
+@media (max-width: 700px) {
+  .hero-img { max-height: calc(60vh - var(--nav-height)); }
+  .hero { padding-top: calc(var(--nav-height) + 0.5rem); padding-bottom: 1.5rem; }
+}
+
+header.quarto-title-block {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+#quarto-header, .headroom, .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  height: var(--nav-height);
+  min-height: var(--nav-height);
+  background-color: #01143E;
+}
+
+main.content { padding-top: 0; }
+
+
+/* ============================
+   HERO (centered, avoids navbar overlap)
+   ============================ */
+
+/* set this to your navbar height (adjust if your navbar is taller) */
+:root {
+  --nav-height: 56px;
+}
+
+/* full-bleed hero container */
+.hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw); /* full-bleed */
+  background-color: #01143E;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  /* reserve navbar space so hero content starts below fixed header */
+  padding-top: calc(var(--nav-height) + 1rem);
+  padding-bottom: 3rem; /* breathing room under image */
+
+  /* do not hide the image — let it scale to fit */
+  overflow: visible;
+}
+
+/* hero image: always fully visible and centered, avoids being clipped by nav */
+.hero-img {
+  max-width: 100%;
+  /* visible area limited by viewport height minus navbar */
+  max-height: calc(70vh - var(--nav-height));
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* slightly tighter on small screens */
+@media (max-width: 700px) {
+  .hero-img {
+    max-height: calc(60vh - var(--nav-height));
+  }
+
+  .hero {
+    padding-top: calc(var(--nav-height) + 0.5rem);
+    padding-bottom: 2rem;
+  }
+}
+
+
+/* Push page title below fixed navbar */
+header.quarto-title-block {
+  margin-top: 5rem; /* adjust to match navbar height */
+}
+
+
+/* Responsive: make hero shorter on smaller screens, keep image visible */
+@media (max-width: 1200px) {
+  .hero {
+    height: 62vh;
+    min-height: 300px;
+  }
+  .hero-img { max-height: 100%; }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: 52vh;
+    min-height: 260px;
+  }
+}
+@media (max-width: 420px) {
+  .hero { height: 44vh; }
+}
+
+/* making df image to the right */
+.event-img-right {
+  float: right;
+  width: 280px;
+  max-width: 40%;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 700px) {
+  .event-img-right {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 1rem;
+  }
+}
+
+
+/* ===== Fixed navbar with solid background ===== */
+#quarto-header,
+.headroom,
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+
+  background-color: #01143E;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+/* Prevent content from hiding under navbar (adjust if your navbar is taller) */
+main.content {
+  padding-top: 5rem;
+}
+
+/* navbar text color */
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .menu-text {
+  color: #E6ECF5 !important;
+}
+
+.navbar .nav-link.active {
+  color: #FFFFFF !important;
+  text-decoration: underline;
+}
+
+
+/* ===== FIX SPONSORS IMAGE ===== */
+.sponsors-full {
+  width: 100%;
+  margin-left: 0;
+  padding: 2.5rem 0 3rem;
+  text-align: center;
+}
+
+.sponsors-image-link {
+  display: block;
+}
+
+.sponsors-full-image {
+  display: block;
+  width: 100%;
+  max-width: 1200px;  /* ← key fix */
+  height: auto;
+  margin: 0 auto;     /* ← centers it */
+}
+
+
+
+
+/* ===== MAKE NAVBAR SIGN UP POP ===== */
+.navbar a.nav-link[href*="signup"],
+.navbar a.nav-link[href*="#signup"] {
+  background-color: #e6b85c;   /* gold */
+  color: #01143E !important;
+  font-weight: 900;
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  margin-left: 0.6rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background-color 0.15s ease;
+}
+
+/* Hover / focus */
+.navbar a.nav-link[href*="signup"]:hover,
+.navbar a.nav-link[href*="#signup"]:hover {
+  background-color: #f2cc77;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  text-decoration: none;
+}
+@keyframes glow {
+  0%   { box-shadow: 0 4px 14px rgba(0,0,0,0.3); }
+  50%  { box-shadow: 0 6px 20px rgba(230,184,92,0.9); }
+  100% { box-shadow: 0 4px 14px rgba(0,0,0,0.3); }
+}
+
+.navbar a.nav-link[href*="signup"],
+.navbar a.nav-link[href*="#signup"] {
+  animation: glow 2.5s ease-in-out infinite;
+}
+
+
+/* FAQ SECTION */
+/* FAQ - details/summary styling */
+.faq-list details {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 0.25rem 0.55rem;                  /* less padding */
+  margin: 0.45rem 0;                       /* tighter vertical spacing */
+  background: rgba(255,255,255,0.045);     /* MUCH subtler than white */
+  transition: background-color .14s ease,
+              box-shadow .14s ease,
+              transform .12s ease;
+  overflow: hidden;
+}
+
+
+.faq-list details[open] {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* summary layout */
+.faq-list summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.45rem 0.35rem;    /* tighter */
+  font-size: 1rem;             /* slightly smaller */
+  font-weight: 700;
+  color: #9DB8FF;              /* softer blue */
+}
+
+
+/* remove default triangle on webkit and use our chevron */
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::marker { font-size: 0; } /* fallback */
+
+/* add a chevron via pseudo element */
+.faq-list summary::after {
+  content: "▾";
+  font-size: 1rem;
+  line-height: 1;
+  transform: rotate(0deg);
+  transition: transform .18s ease;
+  color: rgba(255,255,255,0.55);
+}
+
+
+/* rotate chevron when open */
+.faq-list details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* answer body */
+.faq-list details > *:not(summary) {
+  padding: 0.5rem 0.35rem 0.7rem;  /* less padding */
+  color: rgba(230,236,245,0.92);   /* match dark theme */
+  line-height: 1.45;
+  font-size: 0.97rem;
+}
+
+
+/* ===== FAQ two-column layout ===== */
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem 0.9rem; /* row gap | column gap */
+}
+
+
+/* small screens: tighten spacing */
+@media (max-width: 700px) {
+  .faq-list summary { font-size: 1rem; }
+  .faq-list details > *:not(summary) { font-size: 0.96rem; }
+}
+@media (max-width: 900px) {
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Prevent grid items from stretching to the tallest item in the row */
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+
+  /* <-- important: stop vertical stretching */
+  align-items: start;
+}
+
+/* Make sure each details only grows to fit its content */
+.faq-list details {
+  height: auto;        /* avoid forced stretching */
+  align-self: start;   /* explicit: top-align each card */
+}
+
+/* Optional: consistent collapsed height so things look tidy */
+.faq-list details:not([open]) {
+  min-height: 64px;    /* tweak this to taste (64–80px works well) */
+  display: flex;
+  flex-direction: column; /* keep summary at top and body flows below */
+}
+
+
+
+/* ===== Logo animations ===== */
+.hero-img {
+  opacity: 0;
+  transform: translateY(20px) scale(0.995);
+
+  /* first animation: fade in */
+  animation:
+    fadeInUp 800ms cubic-bezier(.22,.9,.32,1) forwards,
+    idleBounce 5s ease-in-out infinite;
+
+  /* delay idle bounce until fade finishes */
+  animation-delay:
+    300ms,
+    1100ms; /* 300ms delay + 800ms fade */
+}
+
+/* Entrance */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Idle bounce */
+@keyframes idleBounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-img {
+  animation:
+    fadeInUp 800ms cubic-bezier(.22,.9,.32,1) forwards,
+    idleBounce 3.5s ease-in-out infinite;
+}
+
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .hero-img {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* ===== Windowed section boxes ===== */
+.section-box {
+  max-width: 1100px;
+  width: calc(100% - 4rem);
+  margin: 3.5rem auto;
+  padding: 3rem 3rem;
+
+  background: linear-gradient(
+    180deg,
+    #010E2C 0%,
+    #010A22 100%
+  );
+
+  border-radius: 12px;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+
+  color: #E6ECF5;
+}
+
+/* headings inside the box */
+.section-box h2,
+.section-box h3 {
+  margin-top: 0;
+  color: #F5C36A;
+}
+
+/* mobile spacing */
+@media (max-width: 700px) {
+  .section-box {
+    width: calc(100% - 2rem);
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ===== Separate windowed boxes so they don't visually merge ===== */
+
+/* make each card visually separate */
+.section-box,
+.section-box-light {
+  position: relative;     /* create a new stacking context */
+  isolation: isolate;     /* ensure box-shadow doesn't blend with neighbors */
+  z-index: 0;
+  border-radius: 12px;
+  overflow: visible;      /* let shadows show */
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* add vertical breathing room between cards */
+.section-box { margin: 3.5rem auto 2.25rem; }         /* smaller bottom gap */
+.section-box-light { margin: 2.25rem auto 3.5rem; }   /* separate from neighbors */
+
+/* soften heavy shadows so they look like distinct cards */
+.section-box {
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+/* lighter, higher card look for the light box so it "pops" */
+.section-box-light {
+  box-shadow:
+    0 26px 80px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* Optional small hover lift to emphasize separation on pointer devices */
+@media (hover: hover) and (pointer: fine) {
+  .section-box:hover,
+  .section-box-light:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 90px rgba(0,0,0,0.38);
+  }
+}
+
+/* If you still see a slight visual 'merge' at narrow widths, increase vertical gaps */
+@media (max-width: 900px) {
+  .section-box { margin-bottom: 2.75rem; }
+  .section-box-light { margin-bottom: 2.75rem; }
+}
+
+
+
+/* ===== Light windowed section (Sponsors) ===== */
+.section-box-light {
+  max-width: 1100px;
+  width: calc(100% - 4rem);
+  margin: 3.5rem auto;
+  padding: 3rem 3rem;
+
+  background: #ffffff;
+  color: #111;
+
+  border-radius: 14px;
+  box-shadow:
+    0 24px 60px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* headings inside the light box */
+.section-box-light h1,
+.section-box-light h2,
+.section-box-light h3 {
+  color: #01143E; /* Duke blue */
+}
+
+/* links inside the light box */
+.section-box-light a {
+  color: #00539B;
+}
+.section-box-light a:hover {
+  color: #003A6D;
+}
+
+/* mobile spacing */
+@media (max-width: 700px) {
+  .section-box-light {
+    width: calc(100% - 2rem);
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+
+
+/* ===== Scroll indicator ===== */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+/* arrow */
+.scroll-indicator .arrow {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid #E6B85C;
+  border-bottom: 2px solid #E6B85C;
+  transform: rotate(45deg);
+  animation: arrowBounce 2.2s ease-in-out infinite;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* hover / focus */
+.scroll-indicator:hover .arrow,
+.scroll-indicator:focus-visible .arrow {
+  opacity: 1;
+  transform: translateY(4px) rotate(45deg);
+}
+
+/* motion */
+@keyframes arrowBounce {
+  0%   { transform: translateY(0) rotate(45deg); opacity: 0.6; }
+  50%  { transform: translateY(10px) rotate(45deg); opacity: 1; }
+  100% { transform: translateY(0) rotate(45deg); opacity: 0.6; }
+}
+
+
+
+
+
+/* ===== Bubble Animations ===== */
+.bubble {
+  position: fixed;
+  bottom: -20vh;              
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 100;
+  animation-name: rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* left bubble */
+.bubble-left {
+  left: 20px;            
+  background-image: url("icons/bubble1.png");
+  animation-duration: 12s;     
+  animation-delay: 0s;           
+}
+
+/* right bubble */
+.bubble-right {
+  right: 20px;               
+  background-image: url("icons/bubble2.png");
+  animation-duration: 18s;  
+  animation-delay: 6s;           
+  width: 90px;                 
+  height: 90px;
+}
+
+/* vertical rise animation */
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-140vh); 
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bubble {
+    animation: none;
+    display: none;
+  }
+}
+

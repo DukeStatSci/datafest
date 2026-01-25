@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,55 +20,20 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f098c2ecfdb5c9b97a269aa7d3eada92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -106,19 +71,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./signup.html"> 
+    <a class="nav-link" href="./#home"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#signup"> 
 <span class="menu-text">Sign Up</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
-<span class="menu-text">Schedule</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./workshops.html"> 
-<span class="menu-text">Workshops</span></a>
+        <li>
+    <a class="dropdown-item" href="./schedule.html">
+ <span class="dropdown-text">Schedule</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./coc.html">
+ <span class="dropdown-text">COC</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html"> 
+    <a class="nav-link" href="./#faq"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item">
@@ -128,14 +108,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="./sponsors.html"> 
 <span class="menu-text">Sponsors</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./coc.html"> 
-<span class="menu-text">COC</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
-<span class="menu-text">Media</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./winners.html"> 
@@ -149,14 +121,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -165,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -177,15 +147,118 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="event-details" class="level2">
+<h2 class="anchored" data-anchor-id="event-details">Event details</h2>
+<p><strong>When:</strong> Friday, March 20 at 5:00pm - Sunday, March 22 at 5:00pm</p>
+<p><strong>Where:</strong> Perkins Library, Duke University</p>
+<!-- :::callout-important -->
+<!-- ## Sign up now -->
+<!-- [Click here](/signup.html) to sign-up for DataFest 2026! -->
+<!-- ::: -->
+<p>On Friday we will start with a welcome event where you will be introduced to the surprise data set you’ll be working with other the weekend. You’ll learn more about the data provider and a bit about what they’d like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client’s introduction when shaping your research question(s).</p>
+<p>Projects will be due on Sunday afternoon. Each team will give a brief presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.</p>
+</section>
+<section id="what-is-datafest" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-datafest">What is DataFest?</h2>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><a href="https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024">Click here</a> to read a news article published in Duke Daily about the 2024 winners! <a href="https://www.youtube.com/watch?v=5oG0UAHRWOk">Click here</a> to watch a highlight video from a previous DataFest!</p>
 </div>
 </div>
+</div>
+<p>ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!</p>
+<p>ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.</p>
+<p>ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science and the Statistical Majors Union at Duke University.</p>
+</section>
+<section id="testimonials" class="level2">
+<h2 class="anchored" data-anchor-id="testimonials">Testimonials</h2>
+<p>While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal of the event is to promote collaboration. Here are some testimonials from past participants:</p>
+<blockquote class="blockquote">
+<p><em>It was a great experience, with a fun and interesting challenge. One of my favorite parts is how varied the presentations and projects from each team are. I love learning about ways in which others looked at and analyzed the same problem/ data.</em></p>
+</blockquote>
+<blockquote class="blockquote">
+<p><em>DataFest was an awesome experience. To me, the best part was working in a team of friends that I usually hung out with, but had not had a chance to work together intensively on a project. We enjoyed analyzing the situations and solving problems together for our client. At the end of the day, we just got to know each other better. It was also fun to interact with other teams to explore other approaches while keeping in mind that we were in competition. The fact that we were given a huge amount of data really challenges us to come up with creative and practical approaches. Another important part was the presentation. Every team had to explain well to the judges their objectives and solutions. Our team won the Best Visualization award which is really awesome. Lastly, the food was fantastic.</em></p>
+</blockquote>
+</section>
+<section id="media" class="level2">
+<h2 class="anchored" data-anchor-id="media">Media</h2>
+<p>If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don’t hesitate to <a href="mailto:alexander.fisher@duke.edu">contact us</a>.</p>
+<ul>
+<li><p><a href="https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024">Students Put Classroom Skills Into Practice at Duke DataFest 2024</a> - Duke Daily, June 5, 2024</p></li>
+<li><p><a href="https://youtu.be/5oG0UAHRWOk">ASA DataFest 2022 @ Duke University video</a></p></li>
+<li><p><a href="https://forge.duke.edu/blog/winners-announced-duke-asa-datafest-covid-19-virtual-data-challenge">Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge</a> - Duke Forge blog, May 8, 2020</p></li>
+<li><p><a href="http://magazine.amstat.org/blog/2017/09/01/datafest-2/">DataFest Shows Spike in Growth, Provides Immersive Experience</a> - AMSTAT News, September 1, 2017</p></li>
+<li><p><a href="http://dailybruin.com/2015/04/27/edmunds-com-sponsors-data-set-for-fifth-asa-datafest-at-ucla/">Edmunds.com sponsors data set for fifth ASA DataFest at UCLA</a> - Daily Bruin - April 27, 2015</p></li>
+<li><p><a href="http://www.dukechronicle.com/article/2015/03/datafest-draws-hundreds-solve-stats-challenges">DataFest draws hundreds to solve stats challenges</a> - The Chronicle - March 23, 2015</p></li>
+<li><p><a href="http://magazine.amstat.org/blog/2014/09/01/sept2014-pres-column/">A Festival of Data: Student Perspectives</a> - AMSTAT News, September 1, 2014</p></li>
+<li><p><a href="http://datascience.la/data-science-goes-to-college-with-datafest/">Data Science Goes to College</a> - DataScienceLA blog - August 6, 2014</p></li>
+<li><p><a href="http://magazine.amstat.org/blog/2014/06/01/datafest/">Big Data Goes to College</a> - AMSTAT News - June 1, 2014</p></li>
+<li><p><a href="https://www.gridpoint.com/gridpoint-provides-dataset-for-national-college-tournament-datafest/">GridPoint Provides Dataset for National College Tournament “DataFest”</a> - GridPoint - May 15, 2014</p></li>
+<li><p><a href="http://fivethirtyeight.com/datalab/the-students-most-likely-to-take-our-jobs/">The Students Most Likely to Take Our Jobs</a> - FiveThirtyEight.com - May 2, 2014</p></li>
+<li><p><a href="http://www.dukechronicle.com/articles/2012/04/16/students-compete-first-annual-duke-datafest#.VNL0wFXF-SQ">Students compete in first annual Duke DataFest</a> - The Chronicle - April 16, 2012</p></li>
+</ul>
+</section>
+<section id="past-datafests-at-duke" class="level2">
+<h2 class="anchored" data-anchor-id="past-datafests-at-duke">Past DataFests at Duke</h2>
+<section id="datafest-2024-coursekata" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2024-coursekata">DataFest 2024 – CourseKata</h3>
+<p><strong>Goal:</strong> Analyze computer logs that document students’ interactions with online introductory statistics textbooks in order to help researchers improve the CourseKata experience for students.</p>
+</section>
+<section id="datafest-2023-american-bar-association" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2023-american-bar-association">DataFest 2023 – American Bar Association</h3>
+<p><strong>Goal:</strong> Analyze data to provide advice to the American Bar Association on best ways to ensure the appropriate legal experts are available to support their pro bono legal advice site.</p>
+</section>
+<section id="datafest-2022-play2prevent-lab-at-yale-school-of-medicine" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2022-play2prevent-lab-at-yale-school-of-medicine">DataFest 2022 – Play2Prevent Lab at Yale School of Medicine</h3>
+<p><strong>Goal:</strong> Analyze game logs of the Elm City game to determine if there are coherent styles of play that might be useful for characterizing middle school students’ attitudes towards risky behaviors.</p>
+</section>
+<section id="datafest-2021-rocky-mountain-poison-and-drug-safety" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2021-rocky-mountain-poison-and-drug-safety">DataFest 2021 – Rocky Mountain Poison and Drug Safety</h3>
+<p><strong>Goal:</strong> Use data from surveys conducted in the United States, Canada, Germany, and the United Kingdom to discover and identify patterns of drug use.</p>
+</section>
+<section id="datafest-2020-covid-19-virtual-data-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2020-covid-19-virtual-data-challenge">DataFest 2020 – COVID-19 Virtual Data Challenge</h3>
+<p><strong>Goal:</strong> Explore data to understand societal impacts of the COVID-19 pandemic beyond health outcomes.</p>
+</section>
+<section id="datafest-2019-canadian-national-womens-rugby-team" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2019-canadian-national-womens-rugby-team">DataFest 2019 – Canadian National Women’s Rugby Team</h3>
+<p><strong>Goal:</strong> Quantify fatigue and workload in Rugby 7s performance.</p>
+</section>
+<section id="datafest-2018-indeed" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2018-indeed">DataFest 2018 – Indeed</h3>
+<p><strong>Goal:</strong> Compare labor market insights from Indeed with government data.</p>
+</section>
+<section id="datafest-2017-expedia" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2017-expedia">DataFest 2017 – Expedia</h3>
+<p><strong>Goal:</strong> Understand hotel booking behavior from search data.</p>
+</section>
+<section id="datafest-2016-ticketmaster" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2016-ticketmaster">DataFest 2016 – Ticketmaster</h3>
+<p><strong>Goal:</strong> Convert site visits into ticket sales and identify true fans.</p>
+</section>
+<section id="datafest-2015-edmunds.com" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2015-edmunds.com">DataFest 2015 – Edmunds.com</h3>
+<p><strong>Goal:</strong> Improve the car-shopping process using visitor pathways.</p>
+</section>
+<section id="datafest-2014-gridpoint" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2014-gridpoint">DataFest 2014 – GridPoint</h3>
+<p><strong>Goal:</strong> Understand how customers can best save money and energy.</p>
+</section>
+<section id="datafest-2013-eharmony" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2013-eharmony">DataFest 2013 – eHarmony</h3>
+<p><strong>Goal:</strong> Analyze preferences in prospective dating matches.</p>
+</section>
+<section id="datafest-2012-kiva.com" class="level3">
+<h3 class="anchored" data-anchor-id="datafest-2012-kiva.com">DataFest 2012 – Kiva.com</h3>
+<p><strong>Goal:</strong> Understand motivations behind peer-to-peer lending.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -270,6 +343,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -380,6 +455,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

@@ -3,29 +3,42 @@ project:
   output-dir: docs
   resources:
     - data/
-  
-  
+    - logos/
+
 website:
   title: "DataFest"
   search: false
   navbar:
-    background: "#00539B" # Duke Blue
+    pinned: true
+    background: "#00539B" # match logo
     left:
-    - signup.qmd
-    - schedule.qmd
-    - workshops.qmd
-    - faq.qmd
-    - resources.qmd
-    - sponsors.qmd
-    - coc.qmd
-    - media.qmd
-    - winners.qmd
-      
+      - text: "Home"
+        href: "#home"
+      - text: "Sign Up"
+        href: "#signup"
+      - text: "About"
+        menu:
+          - text: "Overview"
+            href: "about.html"
+          - text: "Schedule"
+            href: "schedule.html"
+          - text: "COC"
+            href: "coc.html"
+      - text: "FAQ"
+        href: "#faq"
+      - text: "Resources"
+        href: "resources.html"
+      - text: "Sponsors"
+        href: "sponsors.html"
+      - text: "Winners"
+        href: "winners.html"
+ 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: full
 
 
 
