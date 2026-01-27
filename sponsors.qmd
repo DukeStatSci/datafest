@@ -12,7 +12,7 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 ![](/logos/iid-cropped.png){style="float: left;padding-right:20px" width="150"}
 
-[Rhodes Information Initiative](https://bigdata.duke.edu/) is an interdisciplinary program designed to increase "big data" computational research and expand opportunities for student engagement in this rapidly growing field.
+[Rhodes Information Initiative](https://iid.duke.edu/) at Duke brings disciplines together to unlock the potential of computation, machine learning, data science, and modeling in a world awash with data and computational resources.
 
 <br>
 
