@@ -1,81 +1,76 @@
----
-title: "FAQ"
----
+## FAQ
 
-### How do I sign up?
+<div class="faq-list">
 
-Registration will open for DataFest 2026 in late January.
+<details>
+<summary>How do I sign up?</summary>
+<p>Registration will open for DataFest 2026 in late January.</p>
+</details>
 
-<!-- Registration for DataFest 2024 has closed. -->
+<details>
+<summary>What do I bring to DataFest?</summary>
+<p>Please bring a laptop, charger and refillable water bottle.</p>
+</details>
 
-<!-- Registration **is open**! [Click here](/signup.html) to sign up. -->
+<details>
+<summary>Is there a registration fee?</summary>
+<p>No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, <a href="mailto:aaf29@duke.edu">let us know</a> as soon as possible so we can make your spot available to someone else.</p>
+</details>
 
-### What do I bring to DataFest?
+<details>
+<summary>Who is eligible to compete?</summary>
+<p>All undergraduate students are eligible.</p>
+</details>
 
-Please bring a laptop, charger and refillable water bottle.
+<details>
+<summary>What about graduate students?</summary>
+<p>We would love to have Master's and Ph.D. students be involved as consultants during the event.</p>
+</details>
 
-### Is there a registration fee?
+<details>
+<summary>How large are the teams?</summary>
+<p>Teams can be made up of 2-5 students.</p>
+</details>
 
-No, there is no registration fee. However note that the event takes significant resources to run. So, if you sign up, we expect that you will show up! If your plans change, [let us know](mailto:aaf29@duke.edu) as soon as possible so we can make your spot available to someone else.
+<details>
+<summary>Do I have to compete in a team?</summary>
+<p>Yes, but if you don't have a team in mind, select the "Looking for team" registration under the <a href="/signups.html">sign ups page</a> and we'll match you with others looking for teammates.</p>
+</details>
 
- 
+<details>
+<summary>What do I need to compete?</summary>
+<p>All you need is a laptop with tools for data analysis (there is no limitation on which software you use) and enthusiasm for data.</p>
+</details>
 
-### Who is eligible to compete?
+<details>
+<summary>What are the rules of the competition?</summary>
+<ul>
+<li>All projects must be submitted by <strong>Sunday, March 22</strong>. There is only one submission per team.</li>
+<li>Any additional data used in the project must be publicly available or openly licensed.</li>
+<li>All interactive dashboards must be deployed online.</li>
+<li>All slide decks and write ups must be submitted as a PDF document.</li>
+<li>It's a competition, but a friendly one, so collaboration between teams is not only allowed but highly encouraged.</li>
+</ul>
+</details>
 
-All undergraduate students are eligible. 
+<details>
+<summary>How do I submit my analysis?</summary>
+<p>Once the registration window closes, participants will receive an email with a link to the project submission form.</p>
+</details>
 
- 
+<details>
+<summary>Where can I get help during the competition?</summary>
+<p>Consultants will be available in-person throughout the weekend to answer questions.</p>
+</details>
 
-### What about graduate students students?
+<details>
+<summary>What can I win?</summary>
+<p>ASA student memberships, medals, mugs, fame, glory, or some combination thereof... And you get a t-shirt!</p>
+</details>
 
-We would love to have Master's and Ph.D. students be involved as consultants during the event.
+<details>
+<summary>Where else is ASA DataFest™ happening?</summary>
+<p>ASA DataFest™ is growing fast! See <a href="https://ww2.amstat.org/education/datafest/participants.cfm">this list of participating institutions</a>. If you are interested in hosting DataFest at your institution, see <a href="https://ww2.amstat.org/education/datafest/hosting.cfm">hosting information</a>.</p>
+</details>
 
-
-### How large are the teams?
-
-Teams can be made up of 2-5 students. 
-
- 
-
-### Do I have to compete in a team?
-
-
-Yes, but if you don't have a team in mind, select the "Looking for team" registration under the [sign ups page](/signups.html) and we'll match you with others looking for teammates.
-
-
-### What do I need to compete?
-
-All you need is a laptop with tools for data analysis (there is no limitation on which software you use) and enthusiasm for data.
-
- 
-
-### What are the rules of the competition?
-
-- All projects must be submitted by **Sunday, March 22** There is only one submission per team.
-- Any additional data used in the project must be publicly available or openly licensed.
-- All interactive dashboards must be deployed online.
-- All slide decks and write ups must be submitted as a PDF document.
-- It's a competition, but a friendly one, so collaboration between teams is not only allowed but highly encouraged.
-
- 
-
-### How do I submit my analysis?
-
-Once the registration window closes, participants will receive an email with a link to the project submission form.
-
- 
-
-### Where can I get help during the competition?
-
-Consultants will be available in-person throughout the weekend to answer questions. 
-
- 
-
-### What can I win?
-
-ASA student memberships, medals, mugs, fame, glory, or some combination thereof... And you get a t-shirt!
-
-
-### Where else is ASA DataFest<sup><small>TM</small></sup> happening?
-
-ASA DataFest<sup><small>TM</small></sup> is growing fast! See [here](https://ww2.amstat.org/education/datafest/participants.cfm) for a list of all participating institutions. If you are interested in holding ASA DataFest<sup><small>TM</small></sup> at your institution, click [here](https://ww2.amstat.org/education/datafest/hosting.cfm) to get more information on the event.
+</div>

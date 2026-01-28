@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -73,19 +72,34 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./signup.html"> 
+    <a class="nav-link" href="./#home"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#signup"> 
 <span class="menu-text">Sign Up</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./workshops.html"> 
-<span class="menu-text">Workshops</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./coc.html">
+ <span class="dropdown-text">COC</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html"> 
+    <a class="nav-link" href="./#faq"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item">
@@ -95,14 +109,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./sponsors.html"> 
 <span class="menu-text">Sponsors</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./coc.html"> 
-<span class="menu-text">COC</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
-<span class="menu-text">Media</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./winners.html"> 
@@ -116,44 +122,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#winners" id="toc-winners" class="nav-link active" data-scroll-target="#winners">2024 Winners</a>
-  <ul class="collapse">
-  <li><a href="#best-statistical-analysis" id="toc-best-statistical-analysis" class="nav-link" data-scroll-target="#best-statistical-analysis">Best Statistical Analysis</a></li>
-  <li><a href="#best-insight" id="toc-best-insight" class="nav-link" data-scroll-target="#best-insight">Best Insight</a></li>
-  <li><a href="#best-visualizations" id="toc-best-visualizations" class="nav-link" data-scroll-target="#best-visualizations">Best Visualizations</a></li>
-  <li><a href="#best-use-of-outside-data" id="toc-best-use-of-outside-data" class="nav-link" data-scroll-target="#best-use-of-outside-data">Best Use of Outside Data</a></li>
-  <li><a href="#judges-pick" id="toc-judges-pick" class="nav-link" data-scroll-target="#judges-pick">Judges’ Pick</a></li>
-  <li><a href="#honorable-mentions" id="toc-honorable-mentions" class="nav-link" data-scroll-target="#honorable-mentions">Honorable Mentions</a></li>
-  </ul></li>
-  <li><a href="#winners-1" id="toc-winners-1" class="nav-link" data-scroll-target="#winners-1">2023 Winners</a>
-  <ul class="collapse">
-  <li><a href="#best-visualizations-1" id="toc-best-visualizations-1" class="nav-link" data-scroll-target="#best-visualizations-1">Best Visualizations</a></li>
-  <li><a href="#best-insight-1" id="toc-best-insight-1" class="nav-link" data-scroll-target="#best-insight-1">Best Insight</a></li>
-  <li><a href="#best-use-of-statistical-analysis" id="toc-best-use-of-statistical-analysis" class="nav-link" data-scroll-target="#best-use-of-statistical-analysis">Best Use of Statistical Analysis</a></li>
-  <li><a href="#best-use-of-outside-data-1" id="toc-best-use-of-outside-data-1" class="nav-link" data-scroll-target="#best-use-of-outside-data-1">Best Use of Outside Data</a></li>
-  <li><a href="#judges-pick-1" id="toc-judges-pick-1" class="nav-link" data-scroll-target="#judges-pick-1">Judges’ Pick</a></li>
-  </ul></li>
-  <li><a href="#winners-2" id="toc-winners-2" class="nav-link" data-scroll-target="#winners-2">2022 Winners</a>
-  <ul class="collapse">
-  <li><a href="#best-visualizations-2" id="toc-best-visualizations-2" class="nav-link" data-scroll-target="#best-visualizations-2">Best Visualizations</a></li>
-  <li><a href="#best-insight-2" id="toc-best-insight-2" class="nav-link" data-scroll-target="#best-insight-2">Best Insight</a></li>
-  <li><a href="#best-use-of-statistical-analysis-1" id="toc-best-use-of-statistical-analysis-1" class="nav-link" data-scroll-target="#best-use-of-statistical-analysis-1">Best Use of Statistical Analysis</a></li>
-  <li><a href="#judges-pick-2" id="toc-judges-pick-2" class="nav-link" data-scroll-target="#judges-pick-2">Judges’ Pick</a></li>
-  <li><a href="#honorable-mention" id="toc-honorable-mention" class="nav-link" data-scroll-target="#honorable-mention">Honorable Mention</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -162,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   

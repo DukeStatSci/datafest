@@ -1,9 +1,110 @@
 ---
 title: "About"
+format: html
 ---
 
-About this site
+## Event details
 
-```{r}
-1 + 1
-```
+**When:** Friday, March 20 at 5:00pm - Sunday, March 22 at 5:00pm
+
+**Where:** Perkins Library, Duke University
+
+<!-- :::callout-important -->
+<!-- ## Sign up now -->
+
+<!-- [Click here](/signup.html) to sign-up for DataFest 2026! -->
+<!-- ::: -->
+
+On Friday we will start with a welcome event where you will be introduced to the surprise data set you'll be working with other the weekend. You'll learn more about the data provider and a bit about what they'd like to get out of the data. The data will likely be much more complex than what you are used to seeing in your classes, and you will be given free reign to analyze it however you like. In other words, you will come up with a research question that is of interest to you, and conduct the appropriate analysis to answer your question. But you are welcomed, and encouraged, to take cues from the client's introduction when shaping your research question(s).
+
+Projects will be due on Sunday afternoon. Each team will give a brief presentation of their findings that will be judged by a panel of judges comprised of faculty and professionals from a variety of fields. There will be prizes in many categories, such as best visualization, best use of external data, and best findings. A finalized list of categories will be announced at the beginning of the competition.
+
+## What is DataFest?
+
+::: callout
+[Click here](https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024) to read a news article published in Duke Daily about the 2024 winners! [Click here](https://www.youtube.com/watch?v=5oG0UAHRWOk) to watch a highlight video from a previous DataFest!
+:::
+
+ASA DataFest<sup><small>TM</small></sup> is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Your job is to represent your school by finding and communicating insights into these data. The teams that impress the judges will win prizes as well as glory for their school. Everyone will have a great experience, lots of food, and fun!
+
+ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain experience that employers are looking for. Having worked on a data analysis problem at this scale will certainly help make you a good candidate for any position that involves analysis and critical thinking, and it will provide a concrete example to demonstrate your experience during interviews.
+
+ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science and the Statistical Majors Union at Duke University.
+
+## Testimonials
+
+While ASA DataFest<sup><small>TM</small></sup> is a competition, the main goal of the event is to promote collaboration. Here are some testimonials from past participants:
+
+> *It was a great experience, with a fun and interesting challenge. One of my favorite parts is how varied the presentations and projects from each team are. I love learning about ways in which others looked at and analyzed the same problem/ data.*
+
+> *DataFest was an awesome experience. To me, the best part was working in a team of friends that I usually hung out with, but had not had a chance to work together intensively on a project. We enjoyed analyzing the situations and solving problems together for our client. At the end of the day, we just got to know each other better. It was also fun to interact with other teams to explore other approaches while keeping in mind that we were in competition. The fact that we were given a huge amount of data really challenges us to come up with creative and practical approaches. Another important part was the presentation. Every team had to explain well to the judges their objectives and solutions. Our team won the Best Visualization award which is really awesome. Lastly, the food was fantastic.*
+
+## Media
+
+If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:alexander.fisher@duke.edu).
+
+- [Students Put Classroom Skills Into Practice at Duke DataFest 2024](https://stat.duke.edu/news/students-put-classroom-skills-practice-duke-datafest-2024) - Duke Daily, June 5, 2024
+
+- [ASA DataFest 2022 @ Duke University video](https://youtu.be/5oG0UAHRWOk)
+
+- [Winners Announced for Duke ASA DataFest COVID-19 Virtual Data Challenge](https://forge.duke.edu/blog/winners-announced-duke-asa-datafest-covid-19-virtual-data-challenge) - Duke Forge blog, May 8, 2020
+
+- [DataFest Shows Spike in Growth, Provides Immersive Experience](http://magazine.amstat.org/blog/2017/09/01/datafest-2/) - AMSTAT News, September 1, 2017
+
+- [Edmunds.com sponsors data set for fifth ASA DataFest at UCLA](http://dailybruin.com/2015/04/27/edmunds-com-sponsors-data-set-for-fifth-asa-datafest-at-ucla/) - Daily Bruin - April 27, 2015
+
+- [DataFest draws hundreds to solve stats challenges](http://www.dukechronicle.com/article/2015/03/datafest-draws-hundreds-solve-stats-challenges) - The Chronicle - March 23, 2015
+
+- [A Festival of Data: Student Perspectives](http://magazine.amstat.org/blog/2014/09/01/sept2014-pres-column/) - AMSTAT News, September 1, 2014
+
+- [Data Science Goes to College](http://datascience.la/data-science-goes-to-college-with-datafest/) - DataScienceLA blog - August 6, 2014
+
+- [Big Data Goes to College](http://magazine.amstat.org/blog/2014/06/01/datafest/) - AMSTAT News - June 1, 2014
+
+- [GridPoint Provides Dataset for National College Tournament “DataFest”](https://www.gridpoint.com/gridpoint-provides-dataset-for-national-college-tournament-datafest/) - GridPoint - May 15, 2014
+
+- [The Students Most Likely to Take Our Jobs](http://fivethirtyeight.com/datalab/the-students-most-likely-to-take-our-jobs/) - FiveThirtyEight.com - May 2, 2014
+
+- [Students compete in first annual Duke DataFest](http://www.dukechronicle.com/articles/2012/04/16/students-compete-first-annual-duke-datafest#.VNL0wFXF-SQ) - The Chronicle - April 16, 2012
+
+
+## Past DataFests at Duke
+
+### DataFest 2024 – CourseKata
+**Goal:** Analyze computer logs that document students' interactions with online introductory statistics textbooks in order to help researchers improve the CourseKata experience for students.
+
+### DataFest 2023 – American Bar Association
+**Goal:** Analyze data to provide advice to the American Bar Association on best ways to ensure the appropriate legal experts are available to support their pro bono legal advice site.
+
+### DataFest 2022 – Play2Prevent Lab at Yale School of Medicine
+**Goal:** Analyze game logs of the Elm City game to determine if there are coherent styles of play that might be useful for characterizing middle school students' attitudes towards risky behaviors.
+
+### DataFest 2021 – Rocky Mountain Poison and Drug Safety
+**Goal:** Use data from surveys conducted in the United States, Canada, Germany, and the United Kingdom to discover and identify patterns of drug use.
+
+### DataFest 2020 – COVID-19 Virtual Data Challenge
+**Goal:** Explore data to understand societal impacts of the COVID-19 pandemic beyond health outcomes.
+
+### DataFest 2019 – Canadian National Women's Rugby Team
+**Goal:** Quantify fatigue and workload in Rugby 7s performance.
+
+### DataFest 2018 – Indeed
+**Goal:** Compare labor market insights from Indeed with government data.
+
+### DataFest 2017 – Expedia
+**Goal:** Understand hotel booking behavior from search data.
+
+### DataFest 2016 – Ticketmaster
+**Goal:** Convert site visits into ticket sales and identify true fans.
+
+### DataFest 2015 – Edmunds.com
+**Goal:** Improve the car-shopping process using visitor pathways.
+
+### DataFest 2014 – GridPoint
+**Goal:** Understand how customers can best save money and energy.
+
+### DataFest 2013 – eHarmony
+**Goal:** Analyze preferences in prospective dating matches.
+
+### DataFest 2012 – Kiva.com
+**Goal:** Understand motivations behind peer-to-peer lending.

@@ -1,6 +1,4 @@
----
-title: "Sign Up"
----
+## Sign Up
 
 <!-- https://forms.gle/uqqJvR4VhM1YuKCR8 -->
 

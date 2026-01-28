@@ -1,7 +1,4 @@
----
-title: "Media"
----
-
+## Media
 
 If you would like to write about or cover ASA DataFest<sup><small>TM</small></sup> in any way, please don't hesitate to [contact us](mailto:alexander.fisher@duke.edu).
 

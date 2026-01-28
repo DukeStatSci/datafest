@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Resources – DataFest</title>
+<title>Workshops – DataFest</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -54,6 +53,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles2.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -73,19 +73,34 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./signup.html"> 
+    <a class="nav-link" href="./#home"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#signup"> 
 <span class="menu-text">Sign Up</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./workshops.html"> 
-<span class="menu-text">Workshops</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./coc.html">
+ <span class="dropdown-text">COC</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html"> 
+    <a class="nav-link" href="./#faq"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item">
@@ -95,14 +110,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./sponsors.html"> 
 <span class="menu-text">Sponsors</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./coc.html"> 
-<span class="menu-text">COC</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
-<span class="menu-text">Media</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./winners.html"> 
@@ -116,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -124,22 +131,42 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#code-repository-version-control-and-collaboration" id="toc-code-repository-version-control-and-collaboration" class="nav-link active" data-scroll-target="#code-repository-version-control-and-collaboration">Code repository, version control, and collaboration</a></li>
-  <li><a href="#interactive-dashboard" id="toc-interactive-dashboard" class="nav-link" data-scroll-target="#interactive-dashboard">Interactive dashboard:</a></li>
+  <li><a href="#live-workshops" id="toc-live-workshops" class="nav-link active" data-scroll-target="#live-workshops">Live workshops</a>
+  <ul class="collapse">
+  <li><a href="#jan-16" id="toc-jan-16" class="nav-link" data-scroll-target="#jan-16">Jan 16</a></li>
+  <li><a href="#jan-20" id="toc-jan-20" class="nav-link" data-scroll-target="#jan-20">Jan 20</a></li>
+  <li><a href="#jan-23" id="toc-jan-23" class="nav-link" data-scroll-target="#jan-23">Jan 23</a></li>
+  <li><a href="#jan-28" id="toc-jan-28" class="nav-link" data-scroll-target="#jan-28">Jan 28</a></li>
+  <li><a href="#jan-30" id="toc-jan-30" class="nav-link" data-scroll-target="#jan-30">Jan 30</a></li>
+  <li><a href="#feb-06" id="toc-feb-06" class="nav-link" data-scroll-target="#feb-06">Feb 06</a></li>
+  <li><a href="#feb-06-1" id="toc-feb-06-1" class="nav-link" data-scroll-target="#feb-06-1">Feb 06</a></li>
+  <li><a href="#feb-10" id="toc-feb-10" class="nav-link" data-scroll-target="#feb-10">Feb 10</a></li>
+  <li><a href="#feb-13" id="toc-feb-13" class="nav-link" data-scroll-target="#feb-13">Feb 13</a></li>
+  <li><a href="#feb-18" id="toc-feb-18" class="nav-link" data-scroll-target="#feb-18">Feb 18</a></li>
+  <li><a href="#feb-19" id="toc-feb-19" class="nav-link" data-scroll-target="#feb-19">Feb 19</a></li>
+  <li><a href="#feb-20" id="toc-feb-20" class="nav-link" data-scroll-target="#feb-20">Feb 20</a></li>
+  <li><a href="#feb-24" id="toc-feb-24" class="nav-link" data-scroll-target="#feb-24">Feb 24</a></li>
+  <li><a href="#mar-05" id="toc-mar-05" class="nav-link" data-scroll-target="#mar-05">Mar 05</a></li>
+  </ul></li>
+  <li><a href="#pre-recorded-workshops" id="toc-pre-recorded-workshops" class="nav-link" data-scroll-target="#pre-recorded-workshops">Pre-recorded workshops</a>
+  <ul class="collapse">
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  <li><a href="#data-wrangling-in-python" id="toc-data-wrangling-in-python" class="nav-link" data-scroll-target="#data-wrangling-in-python">Data wrangling in Python</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources</h1>
+<h1 class="title">Workshops</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -151,32 +178,255 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="code-repository-version-control-and-collaboration" class="level3">
-<h3 class="anchored" data-anchor-id="code-repository-version-control-and-collaboration">Code repository, version control, and collaboration</h3>
+<p>Workshops are graciously hosted by Duke’s <a href="https://library.duke.edu/data">Center for Data and Visualization Sciences</a>. <!-- Live workshops along with links to register are listed below. --></p>
+<section id="live-workshops" class="level2">
+<h2 class="anchored" data-anchor-id="live-workshops">Live workshops</h2>
+<section id="jan-16" class="level3">
+<h3 class="anchored" data-anchor-id="jan-16">Jan 16</h3>
+<section id="learn-r-introduction-to-rstudio-importing-data-and-running-code" class="level4">
+<h4 class="anchored" data-anchor-id="learn-r-introduction-to-rstudio-importing-data-and-running-code">Learn R: Introduction to RStudio, Importing Data, and Running Code</h4>
 <ul>
-<li><p>GitLab: https://gitlab.oit.duke.edu/</p></li>
-<li><p>GitHub: https://www.github.com</p></li>
-<li><p><em>Happy Git with R</em>: https://happygitwithr.com/</p></li>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: R is a data science and data visualization tool which, when combined with RStudio, the Tidyverse, and Quarto, provides a powerful and flexible environment for reproducible research. This workshop will introduce you to the RStudio IDE interface, coding notebooks, packages, importing data into R, and running basic code to manipulate data. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15865718">Click here to register</a>.</p></li>
 </ul>
 </section>
-<section id="interactive-dashboard" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-dashboard">Interactive dashboard:</h3>
-<ul>
-<li>Shiny
-<ul>
-<li>Deploy Shiny app on shinyapps.io: <a href="https://docs.rstudio.com/shinyapps.io/getting-started.html">https://docs.rstudio.com/shinyapps.io/getting-started.html</a></li>
-<li>Shiny tutorials: <a href="https://shiny.rstudio.com/tutorial/">https://shiny.rstudio.com/tutorial/</a></li>
-<li><a href="https://sta323-sp22.github.io/slides/Lec18.html">Statistical Computing RShiny Notes</a></li>
-</ul></li>
-<li>Tableau:
-<ul>
-<li>Tableau Public: <a href="https://public.tableau.com/en-us/s">https://public.tableau.com/en-us/s</a></li>
-<li>Tableau Desktop - free student license: <a href="https://www.tableau.com/academic">https://www.tableau.com/academic</a></li>
-</ul></li>
-</ul>
-
-
 </section>
+<section id="jan-20" class="level3">
+<h3 class="anchored" data-anchor-id="jan-20">Jan 20</h3>
+<section id="intro-to-tableau-easy-charts-and-maps" class="level4">
+<h4 class="anchored" data-anchor-id="intro-to-tableau-easy-charts-and-maps">Intro to Tableau: Easy charts and maps</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 10:00 am - 12:00 pm</p></li>
+<li><p><strong>Description</strong>: Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students). This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15871065">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="jan-23" class="level3">
+<h3 class="anchored" data-anchor-id="jan-23">Jan 23</h3>
+<section id="learn-r-data-wrangling-and-tidying" class="level4">
+<h4 class="anchored" data-anchor-id="learn-r-data-wrangling-and-tidying">Learn R: Data Wrangling and Tidying</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: R is a data science and data visualization tool which, when combined with RStudio, the Tidyverse, and Quarto, provides a powerful and flexible environment for reproducible research. This workshop will cover core data manipulation techniques including grouping, aggregating, and tidying. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15865777">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="jan-28" class="level3">
+<h3 class="anchored" data-anchor-id="jan-28">Jan 28</h3>
+<section id="story-maps" class="level4">
+<h4 class="anchored" data-anchor-id="story-maps">Story Maps</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 01:00 pm - 02:30 pm</p></li>
+<li><p><strong>Description</strong>: This workshop will help you get started telling stories with maps on the ArcGIS StoryMaps platform. This easy-to-use web application combines interactive maps with narrative text, images, and videos to provide a powerful communication tool for any project with a spatial component. We will explore the capabilities of the platform, share best practices for designing effective stories, and guide participants through the process of creating their own story maps. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15866017">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="jan-30" class="level3">
+<h3 class="anchored" data-anchor-id="jan-30">Jan 30</h3>
+<section id="learn-r-visualizing-data-using-ggplot2" class="level4">
+<h4 class="anchored" data-anchor-id="learn-r-visualizing-data-using-ggplot2">Learn R: Visualizing Data using ggplot2</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: Learn how to produce publication-quality plots using the ggplot2 R package. We will demystify key concepts such as aesthetics, geometries, facets and themes, and show how to use the grammar of ggplot2 to create customized plots. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15864265">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-06" class="level3">
+<h3 class="anchored" data-anchor-id="feb-06">Feb 06</h3>
+<section id="learn-r-mapping" class="level4">
+<h4 class="anchored" data-anchor-id="learn-r-mapping">Learn R: Mapping</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: This workshop introduces the use of the R language for producing maps. We will demonstrate the advantages of a code-drive approach such as R for visualizing geospatial data. Participants will gain the skills to quickly and efficiently create a variety of map types for a website, presentation, or publication. In addition to working on hands-on coding exercises, we will also review practical guidance on designing effective maps. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15865903">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-06-1" class="level3">
+<h3 class="anchored" data-anchor-id="feb-06-1">Feb 06</h3>
+<section id="visualizing-data-responsibly-communicating-with-accuracy-clarity-and-transparency" class="level4">
+<h4 class="anchored" data-anchor-id="visualizing-data-responsibly-communicating-with-accuracy-clarity-and-transparency">Visualizing Data Responsibly: Communicating with accuracy, clarity, and transparency</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 03:00 pm - 04:30 pm</p></li>
+<li><p><strong>Description</strong>: Even well-meaning researchers can unintentionally introduce bias when visualizing their findings. In this workshop, we’ll explore how human perception shapes what audiences see, and how that can sometimes differ from what you intend to show. Through examples and discussion, we’ll cover common pitfalls to avoid and practical principles for designing visualizations that are clear, accurate, and responsibly crafted. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15872745">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-10" class="level3">
+<h3 class="anchored" data-anchor-id="feb-10">Feb 10</h3>
+<section id="introduction-to-address-geocoding" class="level4">
+<h4 class="anchored" data-anchor-id="introduction-to-address-geocoding">Introduction to Address Geocoding</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 11:00 am - 12:00 pm</p></li>
+<li><p><strong>Description</strong>: Projects involving location data often require geocoding: converting addresses into mappable points for visualization and analysis. This workshop will introduce the geocoding process, discuss the advantages and limitations of several geocoding tools, and review best practices for improving the quality of results. We’ll also cover approaches for more challenging cases, including historical data, international addresses, data with specific security needs, and high-volume processing. Participants will have time to practice during hands-on exercise. No prior experience with GIS software is required. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15876758">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-13" class="level3">
+<h3 class="anchored" data-anchor-id="feb-13">Feb 13</h3>
+<section id="learn-r-interactive-plots-with-ggplot2-and-ggiraph" class="level4">
+<h4 class="anchored" data-anchor-id="learn-r-interactive-plots-with-ggplot2-and-ggiraph">Learn R: Interactive plots with ggplot2 and ggiraph</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: This workshop will cover how to easily add interactivity (i.e., hover features) to ggplot2 graphics using the ggiraph package. It is designed to give participants more opportunities to practice visualizing data using ggplot2 and to explore how interactivity can add more context to plots both in the exploratory and communication phases. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15866001">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-18" class="level3">
+<h3 class="anchored" data-anchor-id="feb-18">Feb 18</h3>
+<section id="visualizing-data-with-chatgpt" class="level4">
+<h4 class="anchored" data-anchor-id="visualizing-data-with-chatgpt">Visualizing data with ChatGPT</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 10:00 am - 11:00 am</p></li>
+<li><p><strong>Description</strong>: AI has become a reasonable tool for producing data visualizations without coding or learning Excel, Tableau, or other software, but expertise is still required to guide it to an effective chart. In this introductory workshop we’ll show you an example of uploading public data to ChatGPT, prompting past the initial (usually pretty bad) first draft, then finishing by downloading the script that produced the final chart as a record for reproducibility. We’ll also discuss strategies for checking the results and things to watch out for so you can verify LLM’s output. Finally, if you have access to a LLM (e.g., ChatGPT, DukeGPT, Claude.ai, MS Copilot) that lets you upload a CSV of PDF file, we’ll give you some new data and a chance to try the process yourself. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15871007">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-19" class="level3">
+<h3 class="anchored" data-anchor-id="feb-19">Feb 19</h3>
+<section id="ethics-of-data-management-and-sharing" class="level4">
+<h4 class="anchored" data-anchor-id="ethics-of-data-management-and-sharing">Ethics of Data Management and Sharing</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 10:00 am - 12:00 pm</p></li>
+<li><p><strong>Description</strong>: This workshop will explore strategies for dealing with the many different ethical issues that can arise with data management and sharing. Topics covered will include a framework for analyzing ethical cases, the use of secondary data in research, working with human participants, senstive ecosystems, AI, and the impact of laws on data sharing. We will also explore the application of diversity and equity principles to open science and data sharing. This workshop is eligible for 2 hours of Graduate School RCR Credit and 200-level faculty and staff RCR.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15862150">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-20" class="level3">
+<h3 class="anchored" data-anchor-id="feb-20">Feb 20</h3>
+<section id="learn-r-geospatial-data" class="level4">
+<h4 class="anchored" data-anchor-id="learn-r-geospatial-data">Learn R: Geospatial Data</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: The R language has become a popular option for working with geospatial data. Compared to traditional GIS software, the code-driven approach of R can be more reproducible and efficient. This workshop gives participants the skills to perform geospatial workflows entirely within R. We will discuss how different types of geospatial data work in R, review useful data sources, and walk through common examples of data operations. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15865955">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="feb-24" class="level3">
+<h3 class="anchored" data-anchor-id="feb-24">Feb 24</h3>
+<section id="intro-to-power-bi-easy-interactive-reports" class="level4">
+<h4 class="anchored" data-anchor-id="intro-to-power-bi-easy-interactive-reports">Intro to Power BI: Easy interactive reports</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:30 pm</p></li>
+<li><p><strong>Description</strong>: Power BI is a dynamic data visualization tool from Microsoft that allows you to connect to data sources, structure data models, and create interactive reports. Many analysts choose Power BI for its user-friendly interface, integration with other Microsoft products, and relative affordability. This workshop will cover the basics of how to import data, use simple functions to establish a data model, and build a variety of interactive visuals (e.g., bars, lines, maps, tables, and cards). You’ll also learn how to publish, export, and share your reports. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15866459">Click here to register</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="mar-05" class="level3">
+<h3 class="anchored" data-anchor-id="mar-05">Mar 05</h3>
+<section id="data-storytelling-designing-power-point-presentations" class="level4">
+<h4 class="anchored" data-anchor-id="data-storytelling-designing-power-point-presentations">Data Storytelling: Designing Power Point Presentations</h4>
+<ul>
+<li><p><strong>Location</strong>: Online</p></li>
+<li><p><strong>Time</strong>: 12:00 pm - 01:00 pm</p></li>
+<li><p><strong>Description</strong>: In this session, we will explore ways to make PowerPoint slides clearer, more engaging, and easier for audiences to follow. We will cover visual design basics, how to organize information effectively, and techniques for guiding audience attention. We will also touch on simple approaches to presenting data clearly. Participants will pick up practical techniques they can use right away to strengthen their presentations. This event is open to non-Duke participants.</p></li>
+<li><p><strong>Register</strong>: <a href="https://duke.libcal.com/event/15864588">Click here to register</a>.</p></li>
+</ul>
+<!-- ### January 25 -->
+<!-- #### Visualize data with {ggplot2} - an introduction -->
+<!-- - **Location**: Online -->
+<!-- - **Time**: 12-1pm -->
+<!-- - **Description**: We explore the opportunities for visualizing data using ggplot2 in R. We will discuss how to format your data and then jump right into plotting. We will take a look at different graph types and how to add elements to an existing graph. This event is open to non-Duke participants. -->
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11645062) -->
+<!-- ### February 15 -->
+<!-- #### Visualize data with {ggplot2} - effective visualization techniques -->
+<!-- - **Location**: Online -->
+<!-- - **Time**: 12-1pm -->
+<!-- - **Description**: We explore ways to customize visualizations in ggplot2 by adjusting colors, labels, axis and more. We will spend a little time exploring the grammar of graphics that ggplot2 relies on so that we can be equipped to make publication ready graphics. This event is open to non-Duke participants. -->
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11645162) -->
+<!-- ### February 20 -->
+<!-- #### Intro to Tableau: Easy charts and maps -->
+<!-- - **Location**: Online -->
+<!-- - **Time**: 2-4pm -->
+<!-- - **Description**: Tableau Public (available for both Windows and Mac) is incredibly useful free software that allows individuals to quickly and easily explore their data with a wide variety of visual representations, as well as create interactive web-based visualization dashboards. This workshop will focus on using Tableau Public to create data visualizations, starting with an overview of how the program thinks about data, common data manipulation and loading, and the terminology used. Activities will include a sample data visualization and mapping project, which will give people hands-on experience using Tableau’s basic chart types and dashboard creation tools. We will also discuss publishing to the Tableau Public web server and related services and tools, like the full Tableau Desktop application (free for full-time students). This event is open to non-Duke participants. -->
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11646698) -->
+<!-- ### February 22 -->
+<!-- #### Streamlining reproducible workflows - from code to reports, slides & dashboards -->
+<!-- - **Location**: Online -->
+<!-- - **Time**: 12-1pm -->
+<!-- - **Description**: We explore RStudio configurations that enable reproducible workflows and simplify generating reports from code.  This session leverages best practices that help you take control of your reports and can reduce dependencies on subscription hosts.  RStudio and Quarto were introduced and discussed in previous sessions. This event is open to non-Duke participants. -->
+<!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11641401) -->
+</section>
+</section>
+</section>
+<section id="pre-recorded-workshops" class="level2 section-box-light">
+<h2 class="anchored" data-anchor-id="pre-recorded-workshops">Pre-recorded workshops</h2>
+<section id="data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><a href="https://warpwire.duke.edu/w/MesGAA/">Effective Data Visualization</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://warpwire.duke.edu/w/15oFAA/">Presenting Data Science Results to Stakeholders</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://warpwire.duke.edu/w/ye0GAA/">Intro to Tableau</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://warpwire.duke.edu/w/-doGAA/">Visualization in Python with Altair</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-wrangling-in-python" class="level3">
+<h3 class="anchored" data-anchor-id="data-wrangling-in-python">Data wrangling in Python</h3>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><a href="https://warpwire.duke.edu/w/4-MGAA/">Intro to Tablular Data in Python &amp; JupyterLab</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://warpwire.duke.edu/w/DYMHAA/">Tidy data (melt) &amp; JOIN (merge)</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://warpwire.duke.edu/w/cd4EAA/">GroupBy &amp; Pivot Tables</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<!-- # Additional Resources -->
+<!-- ### Code repository, version control, and collaboration  -->
+<!-- - GitLab: https://gitlab.oit.duke.edu/ -->
+<!-- - GitHub: https://www.github.com -->
+<!-- - *Happy Git with R*: https://happygitwithr.com/  -->
+<!-- ### Interactive dashboard: -->
+<!-- - Shiny  -->
+<!--   - Deploy Shiny app on shinyapps.io: [https://docs.rstudio.com/shinyapps.io/getting-started.html](https://docs.rstudio.com/shinyapps.io/getting-started.html) -->
+<!--   - Shiny tutorials: [https://shiny.rstudio.com/tutorial/](https://shiny.rstudio.com/tutorial/) -->
+<!--   - [Statistical Computing RShiny Notes](https://sta323-sp22.github.io/slides/Lec18.html)  -->
+<!-- - Tableau:  -->
+<!--   - Tableau Public: [https://public.tableau.com/en-us/s](https://public.tableau.com/en-us/s) -->
+<!--   - Tableau Desktop - free student license: [https://www.tableau.com/academic](https://www.tableau.com/academic) -->
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
