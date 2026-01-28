@@ -20,13 +20,19 @@
 
 **Option 1: Team Registration**
 
-Click [here](https://forms.gle/6dztmxV71zoCC8zH6) to sign up as a team of 2 to 5 students.
+<a href="https://forms.gle/6dztmxV71zoCC8zH6" class="btn btn-primary">
+  Click here to sign up as a team of 2 to 5 students.
+</a>
 
 **Option 2: Individual Registration**
 
 <!-- This registration option will open soon. -->
 
-If you do not have a team, click [here](https://forms.gle/ubJx47rN5wwz998m9) to leave us your information so that you can be matched with others.
+If you do not have a team, 
+
+<a href="https://forms.gle/ubJx47rN5wwz998m9" class="btn btn-primary">
+  Click here  to leave us your information so that you can be matched with others.
+</a>
 
 ### Consultants
 
@@ -34,9 +40,9 @@ If you do not have a team, click [here](https://forms.gle/ubJx47rN5wwz998m9) to 
 
 <!-- Consultant sign-ups have closed. -->
 
-Click [here](https://forms.gle/CWgToPWv3Hah8Y5J9) to let us know your availability if you would like to serve as a consultant during the event.
-
-### Questions
+<a href="https://forms.gle/CWgToPWv3Hah8Y5J9" class="btn btn-primary">
+Click here to let us know your availability if you would like to serve as a consultant during the event.
+</a>
 
 ::: callout-important
 
@@ -44,4 +50,6 @@ The registration **deadline is 11:59PM March 9, 2026.**
 
 :::
 
-If you would like to update your registration status, or have any questions about your registration, please send an email to [Dr. Alexander Fisher](mailto:aaf29@duke.edu).
+### Questions?
+
+Send an email to [Dr. Alexander Fisher](mailto:aaf29@duke.edu) if you would like to update your registration status, or have any questions about your registration.

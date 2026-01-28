@@ -53,9 +53,9 @@ ASA DataFest<sup><small>TM</small></sup> is also a great opportunity to gain exp
 
 ASA DataFest<sup><small>TM</small></sup> at Duke is organized by the Department of Statistical Science and the Statistical Science Majors Union (SSMU) at Duke University.
 
-<a href="about.html" class="btn btn-primary">
-  Click here for more details about DataFest! 
-</a>
+<!-- <a href="about.html" class="btn btn-primary"> -->
+<!--   Click here for more details about DataFest!  -->
+<!-- </a> -->
 </div>
 
 <div id="signup" class="section-box">

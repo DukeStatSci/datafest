@@ -4,7 +4,8 @@
 
 <details>
 <summary>How do I sign up?</summary>
-<p>Registration will open for DataFest 2026 in late January.</p>
+<!-- <p>Registration will open for DataFest 2026 in late January.</p> -->
+<p>Registration is open, see [above](#signup)!
 </details>
 
 <details>
