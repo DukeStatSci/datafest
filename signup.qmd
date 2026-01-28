@@ -4,7 +4,7 @@
 
 ### Participants
 
-Registration to participate in DataFest 2026 @ Duke is not yet open. Please check back soon!
+<!-- Registration to participate in DataFest 2026 @ Duke is not yet open. Please check back soon! -->
 
 <!-- :::callout-important -->
 <!-- **Registration for DataFest 2025 has closed. The event is at capacity.** -->
@@ -12,34 +12,36 @@ Registration to participate in DataFest 2026 @ Duke is not yet open. Please chec
 
 <!-- If you'd like to be placed on a waitlist in the event of no-shows, please contact [Prof. Alexander Fisher](mailto:aaf29@duke.edu). -->
 
-<!-- Click on the option that applies to you. Regardless of the option you choose, you will automatically be placed on the ASA DataFest<sup>TM</sup> mailing list to receive updates and announcements. -->
+<!-- Register with or without a team below. Regardless of the option you choose, you will automatically be placed on the Duke DataFest mailing list to receive updates and announcements. -->
 
 <!-- :::callout-note -->
-<!-- **The registration deadline is 11:59PM March 27, 2025. Seats are limited, so sign up before it's too late!** -->
+<!-- **The registration deadline is 11:59PM March 9, 2026. Seats are limited, so sign up before it's too late!** -->
 <!-- ::: -->
 
-<!-- **Option 1: Team sign-up (2-5 students)** -->
+**Option 1: Team Registration**
 
-<!-- Click [here](https://forms.gle/CnQ5SgWfLy6Nf3Yo8) to sign up as a team of 2 to 5 students. -->
+Click [here](https://forms.gle/6dztmxV71zoCC8zH6) to sign up as a team of 2 to 5 students.
 
-<!-- **Option 2: Looking for teammates** -->
+**Option 2: Individual Registration**
 
 <!-- This registration option will open soon. -->
 
-<!-- If you do not have a team in mind but you're looking for teammates, click [here](https://forms.gle/GXj2cDxhWXuj3Gyv7) to leave us your information so that you can be matched with others. -->
+If you do not have a team, click [here](https://forms.gle/ubJx47rN5wwz998m9) to leave us your information so that you can be matched with others.
 
 ### Consultants
 
-Check back soon!
+<!-- Check back soon! -->
 
 <!-- Consultant sign-ups have closed. -->
 
-<!-- If you are interested in serving as a consultant during the event, please let us know your availability [here](https://forms.gle/RNB9ywSo4CBUTZNP6). -->
+Click [here](https://forms.gle/CWgToPWv3Hah8Y5J9) to let us know your availability if you would like to serve as a consultant during the event.
 
 ### Questions
 
 ::: callout-important
 
-If you would like to update your registration status, or have any questions about your registration, please send an email to [Dr. Alexander Fisher](mailto:aaf29@duke.edu).
+The registration **deadline is 11:59PM March 9, 2026.**
 
 :::
+
+If you would like to update your registration status, or have any questions about your registration, please send an email to [Dr. Alexander Fisher](mailto:aaf29@duke.edu).
