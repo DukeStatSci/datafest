@@ -59,4 +59,4 @@ More information can be found at <https://giving.duke.edu/>.
 
 ### Sponsorship questions?
 
-Please do not hesitate to contact [Alexander Fisher](mailto:alexander.fisher@duke.edu), ASA DataFest<small><sup>TM</sup></small> \@ Duke coordinator, with any questions. We will work with you to find the package that best meets your organization’s goals.
+Please do not hesitate to contact [Dr. Maria Tackett](mailto:maria.tackett@duke.edu) or [Dr. Alexander Fisher](mailto:alexander.fisher@duke.edu) with any questions. We will work with you to find the package that best meets your organization's goals.

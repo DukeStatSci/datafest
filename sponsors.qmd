@@ -16,7 +16,9 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 <br>
 
-![](/logos/unc_stats_or.png){style="float: left;padding-right:20px" width="320"}
+<br>
+
+![](/logos/unc_stats_or.png){style="float: left;padding-right:20px" width="330"}
 
 [UNC Department of Statistics and Operations Research ](https://stor.unc.edu/) focuses on developing the quantitative and computational skills practitioners need to to solve today's complex problems in statistics, probabilistic analysis, modeling, optimization, and evaluating systems. 
 
@@ -31,6 +33,8 @@ Click [here](/sponsorship.html) for more information about how you can support D
 ![](/logos/secondorder.png){style="float: left;padding-right:20px" width="320"}
 
 [2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world.
+
+<br>
 
 <br>
 
