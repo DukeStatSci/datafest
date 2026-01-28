@@ -680,3 +680,10 @@ main.content {
   }
 }
 
+/* Duke Blue for the "Important" label in callout-important */
+.callout.callout-important .callout-title-container {
+  color: #012169 !important;
+}
+
+
+

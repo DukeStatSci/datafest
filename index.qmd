@@ -1,6 +1,9 @@
 ---
-format: html
+format:
+  html:
+    css: styles.css
 ---
+
 <div class="bubble bubble-left" aria-hidden="true"></div>
 <div class="bubble bubble-right" aria-hidden="true"></div>
 
