@@ -1,33 +1,12 @@
 ---
-title: "Resources"
+title: "Workshops"
+toc: true
+css: styles2.css
 ---
-
-### Code repository, version control, and collaboration 
-
-- GitLab: https://gitlab.oit.duke.edu/
-
-- GitHub: https://www.github.com
-
-- *Happy Git with R*: https://happygitwithr.com/ 
-
-### Interactive dashboard:
-
-- Shiny 
-  - Deploy Shiny app on shinyapps.io: [https://docs.rstudio.com/shinyapps.io/getting-started.html](https://docs.rstudio.com/shinyapps.io/getting-started.html)
-  - Shiny tutorials: [https://shiny.rstudio.com/tutorial/](https://shiny.rstudio.com/tutorial/)
-  - [Statistical Computing RShiny Notes](https://sta323-sp22.github.io/slides/Lec18.html) 
-  
-- Tableau: 
-  - Tableau Public: [https://public.tableau.com/en-us/s](https://public.tableau.com/en-us/s)
-  - Tableau Desktop - free student license: [https://www.tableau.com/academic](https://www.tableau.com/academic)
-
 
 Workshops are graciously hosted by Duke's [Center for Data and Visualization Sciences](https://library.duke.edu/data).
 <!-- Live workshops along with links to register are listed below. -->
-Live workshops and information on registration will be listed here.
-Additionally, links to several previously recorded workshops are provided below.
 
-# Workshops
 
 ## Live workshops
 
@@ -268,3 +247,26 @@ Additionally, links to several previously recorded workshops are provided below.
 | [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)               |
 | [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)                        |
 </div>
+
+
+<!-- # Additional Resources -->
+
+<!-- ### Code repository, version control, and collaboration  -->
+
+<!-- - GitLab: https://gitlab.oit.duke.edu/ -->
+
+<!-- - GitHub: https://www.github.com -->
+
+<!-- - *Happy Git with R*: https://happygitwithr.com/  -->
+
+<!-- ### Interactive dashboard: -->
+
+<!-- - Shiny  -->
+<!--   - Deploy Shiny app on shinyapps.io: [https://docs.rstudio.com/shinyapps.io/getting-started.html](https://docs.rstudio.com/shinyapps.io/getting-started.html) -->
+<!--   - Shiny tutorials: [https://shiny.rstudio.com/tutorial/](https://shiny.rstudio.com/tutorial/) -->
+<!--   - [Statistical Computing RShiny Notes](https://sta323-sp22.github.io/slides/Lec18.html)  -->
+
+<!-- - Tableau:  -->
+<!--   - Tableau Public: [https://public.tableau.com/en-us/s](https://public.tableau.com/en-us/s) -->
+<!--   - Tableau Desktop - free student license: [https://www.tableau.com/academic](https://www.tableau.com/academic) -->
+
