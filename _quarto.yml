@@ -39,6 +39,7 @@ format:
     css: styles.css
     toc: false
     page-layout: full
+    include-after-body: aria-fix.html
 
 
 
