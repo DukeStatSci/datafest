@@ -20,8 +20,12 @@ editor:
 ::: section-box
 ## Event details
 
-![DataFest at Duke](images/datafest-groupphoto-24.jpg){.event-img-right width="1200" fig=false}
-
+<img
+  src="images/datafest-groupphoto-24.jpg"
+  alt="DataFest at Duke"
+  class="event-img-right"
+  width="1200"
+/>
 
 
 **When:** Friday, March 20 at 5:00pm - Sunday, March 22 at 5:00pm
