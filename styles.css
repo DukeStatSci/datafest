@@ -270,17 +270,17 @@ main.content {
 /* ===== MAKE NAVBAR SIGN UP POP ===== */
 .navbar a.nav-link[href*="signup"],
 .navbar a.nav-link[href*="#signup"] {
-  background-color: #e6b85c;   /* gold */
-  color: #01143E !important;
+  background-color: transparent;
+  color: #F5C36A !important;
   font-weight: 900;
+
   padding: 0.45rem 1.2rem;
   border-radius: 999px;
-  margin-left: 0.6rem;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-  transition: transform 0.15s ease,
-              box-shadow 0.15s ease,
-              background-color 0.15s ease;
+  border: 2px solid #E6B85C;
+
+  box-shadow: 0 0 0 0 rgba(230,184,92,0.0);
 }
+
 
 /* Hover / focus */
 .navbar a.nav-link[href*="signup"]:hover,
