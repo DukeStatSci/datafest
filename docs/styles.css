@@ -685,4 +685,32 @@ main.content {
   color: #012169 !important;
 }
 
+/* Force primary buttons to use gold-ring CTA style */
+a.btn.btn-primary,
+.btn.btn-primary {
+  background-color: #01143E !important;
+  color: #F5C36A !important;
+  font-weight: 900 !important;
+
+  border-radius: 999px !important;
+  border: 2px solid #E6B85C !important;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25) !important;
+
+  text-decoration: none !important;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+a.btn.btn-primary:hover,
+.btn.btn-primary:hover,
+a.btn.btn-primary:focus-visible,
+.btn.btn-primary:focus-visible {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 6px rgba(230,184,92,0.25),
+    0 8px 24px rgba(0,0,0,0.35) !important;
+}
+
+
 

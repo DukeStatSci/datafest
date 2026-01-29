@@ -23,7 +23,7 @@ The registration **deadline is 11:59PM March 9, 2026.**
 **Option 1: Team Registration**
 
 <a href="https://forms.gle/6dztmxV71zoCC8zH6" class="btn btn-primary">
-  Team registration (2-5 students)
+  Click here to register as a team (2-5 students)
 </a>
 
 **Option 2: Individual Registration**
@@ -33,7 +33,7 @@ The registration **deadline is 11:59PM March 9, 2026.**
 If you do not have a team, leave us your information so that you can be matched with others.
 
 <a href="https://forms.gle/ubJx47rN5wwz998m9" class="btn btn-primary">
-  Individual registration -- be matched with other participants
+  Click here to be matched with other participants
 </a>
 
 ### Consultants
