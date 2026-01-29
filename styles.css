@@ -66,7 +66,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 0.75rem); }
   align-items: center;
   background-color: #01143E;
   box-sizing: border-box;
-  height: calc(100vh - var(--nav-height));
+  height: calc(80vh - var(--nav-height));
   padding-top: calc(var(--nav-height) + 1rem);
   padding-bottom: 2.25rem;
   overflow: visible;
@@ -683,6 +683,12 @@ main.content {
 /* Duke Blue for the "Important" label in callout-important */
 .callout.callout-important .callout-title-container {
   color: #012169 !important;
+}
+
+
+.hero-img {
+  max-width: min(90vw, 900px);
+  height: auto;
 }
 
 
