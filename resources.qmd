@@ -227,26 +227,35 @@ Workshops are graciously hosted by Duke's [Center for Data and Visualization Sci
 
 <!-- - **Register**: [Click here to register](https://duke.libcal.com/event/11641401) -->
 
-<div class="section-box-light">
 ## Pre-recorded workshops
 
 ### Data Visualization
 
-|                                                                                        |
-|------------------------------------------------------------------------|
-| [Effective Data Visualization](https://warpwire.duke.edu/w/MesGAA/)                    |
-| [Presenting Data Science Results to Stakeholders](https://warpwire.duke.edu/w/15oFAA/) |
-| [Intro to Tableau](https://warpwire.duke.edu/w/ye0GAA/)                                |
-| [Visualization in Python with Altair](https://warpwire.duke.edu/w/-doGAA/)             |
+- [Effective Data Visualization](https://warpwire.duke.edu/w/MesGAA/)
+- [Presenting Data Science Results to Stakeholders](https://warpwire.duke.edu/w/15oFAA/) 
+- [Intro to Tableau](https://warpwire.duke.edu/w/ye0GAA/)                                
+- [Visualization in Python with Altair](https://warpwire.duke.edu/w/-doGAA/)
 
 ### Data wrangling in Python
+- [Intro to Tablular Data in Python & JupyterLab](https://warpwire.duke.edu/w/4-MGAA/) 
+- [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)               
+- [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)                        
 
-|                                                                                      |
-|------------------------------------------------------------------------|
-| [Intro to Tablular Data in Python & JupyterLab](https://warpwire.duke.edu/w/4-MGAA/) |
-| [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)               |
-| [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)                        |
-</div>
+
+<!-- |                                                                                        | -->
+<!-- |------------------------------------------------------------------------| -->
+<!-- | [Effective Data Visualization](https://warpwire.duke.edu/w/MesGAA/)                    | -->
+<!-- | [Presenting Data Science Results to Stakeholders](https://warpwire.duke.edu/w/15oFAA/) | -->
+<!-- | [Intro to Tableau](https://warpwire.duke.edu/w/ye0GAA/)                                | -->
+<!-- | [Visualization in Python with Altair](https://warpwire.duke.edu/w/-doGAA/)             | -->
+
+<!-- ### Data wrangling in Python -->
+
+<!-- |                                                                                      | -->
+<!-- |------------------------------------------------------------------------| -->
+<!-- | [Intro to Tablular Data in Python & JupyterLab](https://warpwire.duke.edu/w/4-MGAA/) | -->
+<!-- | [Tidy data (melt) & JOIN (merge)](https://warpwire.duke.edu/w/DYMHAA/)               | -->
+<!-- | [GroupBy & Pivot Tables](https://warpwire.duke.edu/w/cd4EAA/)                        | -->
 
 
 <!-- # Additional Resources -->
