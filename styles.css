@@ -66,7 +66,7 @@ html { scroll-padding-top: calc(var(--nav-height) + 0.75rem); }
   align-items: center;
   background-color: #01143E;
   box-sizing: border-box;
-
+  height: calc(80vh - var(--nav-height));
   padding-top: calc(var(--nav-height) + 1rem);
   padding-bottom: 2.25rem;
   overflow: visible;
@@ -131,7 +131,7 @@ main.content { padding-top: 0; }
   box-sizing: border-box;
 
   /* reserve navbar space so hero content starts below fixed header */
-  padding-top: calc(var(--nav-height) + 1rem);
+  padding-top: var(--nav-height);
   padding-bottom: 3rem; /* breathing room under image */
 
   /* do not hide the image — let it scale to fit */
@@ -142,7 +142,7 @@ main.content { padding-top: 0; }
 .hero-img {
   max-width: 100%;
   /* visible area limited by viewport height minus navbar */
-  max-height: calc(70vh - var(--nav-height));
+  max-height: calc(90vh - var(--nav-height));
   width: auto;
   height: auto;
   object-fit: contain;
@@ -637,7 +637,7 @@ main.content {
   z-index: 100;
   animation-name: rise;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 
 /* left bubble */
@@ -653,7 +653,7 @@ main.content {
   right: 20px;               
   background-image: url("icons/bubble2.png");
   animation-duration: 18s;  
-  animation-delay: 6s;           
+  animation-delay: 2.5s;           
   width: 90px;                 
   height: 90px;
 }
@@ -684,6 +684,5 @@ main.content {
 .callout.callout-important .callout-title-container {
   color: #012169 !important;
 }
-
 
 

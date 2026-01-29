@@ -6,14 +6,14 @@ project:
     - logos/
 
 website:
-  title: "DataFest"
+  title: "ASA DataFest<sup><small>TM</small></sup>"
   search: false
   navbar:
     pinned: true
     background: "#00539B" # match logo
     left:
       - text: "Home"
-        href: "#home"
+        href: "/index.html"
       - text: "Sign Up"
         href: "#signup"
       - text: "Schedule"
@@ -22,7 +22,7 @@ website:
         menu:
           - text: "Overview"
             href: "about.html"
-          - text: "COC"
+          - text: "Code of Conduct"
             href: "coc.html"
       - text: "FAQ"
         href: "#faq"

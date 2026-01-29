@@ -4,8 +4,8 @@
 
 <details>
 <summary>How do I sign up?</summary>
-<!-- <p>Registration will open for DataFest 2026 in late January.</p> -->
-<p>Registration is open, see [above](#signup)!
+<p>Registration is open, see <a href="#signup">above</a>!</p>
+
 </details>
 
 <details>
@@ -20,7 +20,7 @@
 
 <details>
 <summary>Who is eligible to compete?</summary>
-<p>All undergraduate students are eligible.</p>
+<p>All undergraduate students from any institution are eligible with a faculty sponsor. Note: the event is in-person and you must be physically present to participate. </p>
 </details>
 
 <details>
