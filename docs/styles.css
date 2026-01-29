@@ -712,5 +712,28 @@ a.btn.btn-primary:focus-visible,
     0 8px 24px rgba(0,0,0,0.35) !important;
 }
 
+/* FIX THE MENU OVERLAP ON MOBILE / SMALL BROWSER */
+
+/* Mobile nav: when the hamburger menu is open, push content down so it doesn't overlap */
+@media (max-width: 991.98px) {
+
+  /* Give the opened menu a solid background (so items are readable) */
+  .navbar-collapse.show {
+    background: #01143E;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    padding: 0.75rem 1rem;
+  }
+
+  /* Push the page content down when the collapse is open */
+  body:has(.navbar-collapse.show) .hero {
+    margin-top: 16rem; /* adjust (12–20rem) */
+  }
+
+  /* If you want the first section to move too (not just the hero) */
+  body:has(.navbar-collapse.show) main.content {
+    padding-top: calc(5rem + 16rem); /* 5rem matches your current padding-top */
+  }
+}
 
 

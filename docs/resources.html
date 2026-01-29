@@ -425,6 +425,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Find the About dropdown toggle (by its visible text)
+  const toggles = document.querySelectorAll(".navbar .dropdown-toggle");
+  for (const t of toggles) {
+    if (t.textContent.trim() === "About") {
+      // Ensure the toggle has an id
+      if (!t.id) t.id = "nav-menu-about";
+      // Ensure the dropdown menu references that id
+      const menu = t.parentElement?.querySelector(".dropdown-menu");
+      if (menu) menu.setAttribute("aria-labelledby", t.id);
+    }
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
