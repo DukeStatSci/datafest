@@ -9,7 +9,7 @@ format:
 
 
 <div class="hero" role="img" aria-label="DataFest 2026 logo">
-  <img src="images/df-26-logo.png" alt="DataFest 2026 logo" class="hero-img" />
+  <img src="images/df26-both.png" alt="DataFest 2026 logo" class="hero-img" />
 </div>
 
 <a href="#event-details" class="scroll-indicator" aria-label="Scroll to event details">
