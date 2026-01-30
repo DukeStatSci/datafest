@@ -737,3 +737,29 @@ a.btn.btn-primary:focus-visible,
 }
 
 
+/* fix toc color */
+/* ===== TOC active section (current heading) ===== */
+
+/* Active TOC link */
+.sidebar nav.toc a.active,
+.sidebar nav.toc a.toc-active,
+.margin-sidebar nav.toc a.active,
+.margin-sidebar nav.toc a.toc-active {
+  color: #F5C36A !important;        /* gold */
+  font-weight: 800;
+}
+
+/* Optional: gold left indicator bar */
+.sidebar nav.toc a.active::before,
+.margin-sidebar nav.toc a.active::before {
+  background-color: #F5C36A;
+}
+
+/* Optional: subtle dark background so it pops */
+.sidebar nav.toc a.active,
+.margin-sidebar nav.toc a.active {
+  background: rgba(230, 184, 92, 0.12);
+  border-radius: 6px;
+}
+
+
