@@ -35,7 +35,7 @@
 
 <details>
 <summary>Do I have to compete in a team?</summary>
-<p>Yes, but if you don't have a team in mind, select the "Looking for team" registration under the <a href="/signups.html">sign ups page</a> and we'll match you with others looking for teammates.</p>
+<p>Yes, but if you don't have a team in mind, select the "Looking for team" registration under the <a href="#signup">sign ups section</a> and we'll match you with others looking for teammates.</p>
 </details>
 
 <details>
@@ -56,7 +56,7 @@
 
 <details>
 <summary>How do I submit my analysis?</summary>
-<p>Once the registration window closes, participants will receive an email with a link to the project submission form.</p>
+<p>Once the event begins, participants will receive instructions on how to submit their project.</p>
 </details>
 
 <details>
