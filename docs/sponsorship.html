@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Please <a href="mailto:alexander.fisher@duke.edu">contact us</a> if you are interested in sponsorship and/or have any questions.</p>
 <section id="impact-of-your-sponsorship" class="level3">
 <h3 class="anchored" data-anchor-id="impact-of-your-sponsorship">Impact of Your Sponsorship</h3>
-<p>Your sponsorship of ASA DataFest<small><sup>TM</sup></small> benefits the ASA DataFest<small><sup>TM</sup></small> @ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding of our environment, our social relationships, and our physical and virtual selves.</p>
+<p>Your sponsorship of ASA DataFest<small><sup>TM</sup></small> benefits the ASA DataFest<small><sup>TM</sup></small> @ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding the world.</p>
 </section>
 <section id="benefits-of-sponsorship" class="level3">
 <h3 class="anchored" data-anchor-id="benefits-of-sponsorship">Benefits of Sponsorship</h3>
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="cauchy-sponsor---5000-and-above">Cauchy Sponsor - $5000 and above</h4>
 <ul>
 <li>Nomination of a judge for the final round of presentations</li>
-<li>If requested, company/ organization information session on Duke campus advertised to Duke StatSci students as well as all 2025 ASA DataFest<small><sup>TM</sup></small> participants. The information session is not concurrent with the DataFest event, but booked at a separate time.</li>
+<li>If requested, company/ organization information session on Duke campus advertised to Duke StatSci students as well as all 2026 ASA DataFest<small><sup>TM</sup></small> participants. The information session is not concurrent with the DataFest event, but booked at a separate time.</li>
 <li>All benefits of Pareto Sponsor</li>
 </ul>
 </section>
@@ -215,6 +215,21 @@ Durham, NC 27708-0581</p>
 </section>
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Find the About dropdown toggle (by its visible text)
+  const toggles = document.querySelectorAll(".navbar .dropdown-toggle");
+  for (const t of toggles) {
+    if (t.textContent.trim() === "About") {
+      // Ensure the toggle has an id
+      if (!t.id) t.id = "nav-menu-about";
+      // Ensure the dropdown menu references that id
+      const menu = t.parentElement?.querySelector(".dropdown-menu");
+      if (menu) menu.setAttribute("aria-labelledby", t.id);
+    }
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

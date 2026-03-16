@@ -10,7 +10,7 @@ Please [contact us](mailto:alexander.fisher@duke.edu) if you are interested in s
 
 ### Impact of Your Sponsorship
 
-Your sponsorship of ASA DataFest<small><sup>TM</sup></small> benefits the ASA DataFest<small><sup>TM</sup></small> \@ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding of our environment, our social relationships, and our physical and virtual selves.
+Your sponsorship of ASA DataFest<small><sup>TM</sup></small> benefits the ASA DataFest<small><sup>TM</sup></small> \@ Duke. Any residual funds will support undergraduate statistics education, foster the new generation of data science, and advance our mission of promoting the use of data in the understanding the world. 
 
 ### Benefits of Sponsorship
 
@@ -21,7 +21,7 @@ Sponsors will be provided with various advertising and recruiting opportunities.
 #### Cauchy Sponsor - \$5000 and above
 
 -   Nomination of a judge for the final round of presentations
--   If requested, company/ organization information session on Duke campus advertised to Duke StatSci students as well as all 2025 ASA DataFest<small><sup>TM</sup></small> participants. The information session is not concurrent with the DataFest event, but booked at a separate time.
+-   If requested, company/ organization information session on Duke campus advertised to Duke StatSci students as well as all 2026 ASA DataFest<small><sup>TM</sup></small> participants. The information session is not concurrent with the DataFest event, but booked at a separate time.
 -   All benefits of Pareto Sponsor
 
 #### Pareto Sponsor - \$2,500 - \$4,999
