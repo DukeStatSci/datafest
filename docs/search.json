@@ -228,14 +228,14 @@
     "href": "df-slides.html#stats",
     "title": "‎",
     "section": "Stats",
-    "text": "Stats\n\n220 participants\n\n\n\n58 teams\n\n\n\n\n4 award categories\n\n\n\n\n1 surprise data set"
+    "text": "Stats\n\n137 Participants\n\n\n\n37 teams\n\n\n\n\n4 award categories\n\n\n\n\n1 surprise data set"
   },
   {
     "objectID": "df-slides.html#presentations",
     "href": "df-slides.html#presentations",
     "title": "‎",
     "section": "Presentations",
-    "text": "Presentations\n\nStop work at noon on Sunday\nBetween noon-12:30pm upload your presentation and write up\nCheck slack for room assignment\nFirst round presentations start at 1pm\nSecond (final) round presentations start at 3pm\n\nSame presentation as before\nAll are welcome!\n\n4 minutes (sharp!) + up to 5 minute Q&A\n3 content slides max (+ cover slide with team name if preferred) - PDF preferred, check with organizers for other formats\n1 page max write up (so the judges can refer back to it during deliberations) - PDF required"
+    "text": "Presentations\n\nUpload presentations by noon (12:00PM) on Sunday\nCheck slack for room assignment\nFirst round presentations start at 1pm\nSecond (final) round presentations start at 3pm\n\nSame presentation as before\nAll are welcome!\n\n4 minutes (sharp!) + up to 4 minute Q&A\n3 content slides max (+ cover slide with team name if preferred) - PDF/powerpoint formats only."
   },
   {
     "objectID": "df-slides.html#winning-categories",
@@ -249,7 +249,7 @@
     "href": "df-slides.html#data-distribution",
     "title": "‎",
     "section": "Data distribution",
-    "text": "Data distribution\nTwo methods:\n\nIf using the RStudio/Jupyter containers, data will appear magically for you, find credentials to log-in at check-in counter!\nIf not, download from the link pinned in slack (link will only be available for a short time after kickoff)\n\n\nRead the proprietary statement!\nData can only be used for DataFest and should not be shared with anyone outside of DataFest or posted publicly\nAdvice: Working with large data can be tricky, if you don’t have your own tricks up your sleeves, ask/look for advice on working with large data"
+    "text": "Data distribution\nTwo methods:\n\nIf using the RStudio/Jupyter containers, data will appear magically for you, find credentials to log-in at check-in counter!\nIf not, download from the link pinned in slack (link will only be available for a short time after kickoff)\n\n\nRead the proprietary statement!\nAdvice # 1: Working with large data can be tricky, if you don’t have your own tricks up your sleeves, ask/look for advice on working with large data\nAdvice #2: Stick around, this is wear the food and help is!\n\n\n\n\n\n\n\nReminder\n\n\n\nData can only be used for DataFest and should not be shared with anyone outside of DataFest or posted publicly"
   },
   {
     "objectID": "df-slides.html#rules-recommendations",
@@ -270,21 +270,21 @@
     "href": "df-slides.html#schedule-of-events",
     "title": "‎",
     "section": "Schedule of events",
-    "text": "Schedule of events\n\nhttps://dukestatsci.github.io/datafest/schedule.html\nPeriodic activities; win prizes\nGroup photo\nAdvice: Stick around :)"
+    "text": "Schedule of events\n\nhttps://dukestatsci.github.io/datafest/schedule.html"
   },
   {
     "objectID": "df-slides.html#questions",
     "href": "df-slides.html#questions",
     "title": "‎",
     "section": "Questions?",
-    "text": "Questions?\nFind the organizers near the check-in area or flag down any consultant/staff (in the yellow shirts)"
+    "text": "Questions?\nFind the organizers near the check-in area or flag down any consultant/staff (in the white shirts)"
   },
   {
     "objectID": "df-slides.html#whats-next",
     "href": "df-slides.html#whats-next",
     "title": "‎",
     "section": "What’s next?",
-    "text": "What’s next?\nTonight:\n\nCheck-in if you haven’t already\nEnjoy dinner!\nActivity\n12:00a consulting ends & DataFest closes\n\nSee the schedule for the most up-to-date info about the event: https://dukestatsci.github.io/datafest/schedule.html"
+    "text": "What’s next?\nTonight:\n\nCheck-in if you haven’t already\nEnjoy dinner!\n9:00PM consulting ends & DataFest closes\n\nSee the schedule for the most up-to-date info about the event: https://dukestatsci.github.io/datafest/schedule.html"
   },
   {
     "objectID": "df-slides.html#thank-you-sponsors",
@@ -292,5 +292,33 @@
     "title": "‎",
     "section": "Thank you, sponsors!",
     "text": "Thank you, sponsors!"
+  },
+  {
+    "objectID": "df-slides.html#this-weekend",
+    "href": "df-slides.html#this-weekend",
+    "title": "‎",
+    "section": "This weekend",
+    "text": "This weekend"
+  },
+  {
+    "objectID": "df-slides.html#rules",
+    "href": "df-slides.html#rules",
+    "title": "‎",
+    "section": "Rules",
+    "text": "Rules\n\nDo not post the data or the data source publicly"
+  },
+  {
+    "objectID": "df-slides.html#recommendations",
+    "href": "df-slides.html#recommendations",
+    "title": "‎",
+    "section": "Recommendations",
+    "text": "Recommendations\n\nWear your name badge at all times\nStick around the premises — that’s where help, food, and each others’ company is!"
+  },
+  {
+    "objectID": "df-slides.html#the-1-rule",
+    "href": "df-slides.html#the-1-rule",
+    "title": "‎",
+    "section": "The #1 Rule",
+    "text": "The #1 Rule\ndata remains secret\n\ndo not share any information about the data set (the source, features, etc.) outside of this event (e.g. no public GitHub repos, etc.) prior to May 2.\ndo not input or upload any portion of the data into any generative AI platform or chatbot"
   }
 ]
