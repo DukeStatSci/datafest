@@ -2,9 +2,10 @@
 
 <!-- https://forms.gle/uqqJvR4VhM1YuKCR8 -->
 
-### Participants
+<!-- ### Participants -->
 
-The registration deadline has been extended until **12:00PM NOON EDT Wednesday, March 18, 2026.**
+Registration for DataFest 2026 has closed. 
+<!-- The registration deadline has been extended until **12:00PM NOON EDT Wednesday, March 18, 2026.** -->
 
 <!-- Registration to participate in DataFest 2026 @ Duke is not yet open. Please check back soon! -->
 
@@ -20,31 +21,31 @@ The registration deadline has been extended until **12:00PM NOON EDT Wednesday, 
 <!-- **The registration deadline is 11:59PM March 9, 2026. Seats are limited, so sign up before it's too late!** -->
 <!-- ::: -->
 
-**Option 1: Team Registration**
+<!-- **Option 1: Team Registration** -->
 
-<a href="https://forms.gle/6dztmxV71zoCC8zH6" class="btn btn-primary">
-  Click here to register as a team (2-5 students)
-</a>
+<!-- <a href="https://forms.gle/6dztmxV71zoCC8zH6" class="btn btn-primary"> -->
+<!--   Click here to register as a team (2-5 students) -->
+<!-- </a> -->
 
-**Option 2: Individual Registration**
+<!-- **Option 2: Individual Registration** -->
 
 <!-- This registration option will open soon. -->
 
-If you do not have a team, leave us your information so that you can be matched with others.
+<!-- If you do not have a team, leave us your information so that you can be matched with others. -->
 
-<a href="https://forms.gle/ubJx47rN5wwz998m9" class="btn btn-primary">
-  Click here to be matched with other participants
-</a>
+<!-- <a href="https://forms.gle/ubJx47rN5wwz998m9" class="btn btn-primary"> -->
+<!--   Click here to be matched with other participants -->
+<!-- </a> -->
 
-### Consultants
+<!-- ### Consultants -->
 
 <!-- Check back soon! -->
 
 <!-- Consultant sign-ups have closed. -->
 
-<a href="https://forms.gle/CWgToPWv3Hah8Y5J9" class="btn btn-primary">
- Consultant availability (sign up to help during the event)
-</a>
+<!-- <a href="https://forms.gle/CWgToPWv3Hah8Y5J9" class="btn btn-primary"> -->
+<!--  Consultant availability (sign up to help during the event) -->
+<!-- </a> -->
 
 ### Questions?
 

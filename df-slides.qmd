@@ -2,7 +2,7 @@
 title: "‎ "
 format: revealjs
 title-slide-attributes:
-    data-background-image: "/logos/df-25-04.png"
+    data-background-image: "/images/df26-logo-slide.png"
 ---
 
 ## 
