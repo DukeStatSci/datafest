@@ -2,11 +2,17 @@
 title: "Sponsors"
 ---
 
-## Thank you 2025 Sponsors!
+## Thank you 2026 Sponsors!
 
 Click [here](/sponsorship.html) for more information about how you can support DataFest at Duke. You can also [contact us](mailto:alexander.fisher@duke.edu) if you have any questions.
 
 <div class="section-box-light">
+
+## Cauchy Sponsors
+
+![](/logos/duke-trinity.png){style="float: left;padding-right:20px" width="250"}
+
+[Duke Trinity College of Arts & Sciences](https://trinity.duke.edu/) has three divisions - the Arts & Humanities, Natural Sciences and Social Sciences - serves about 80% of the student population, in addition to graduate and professional students. Its mission is to provide "a world-class liberal arts education to undergraduate students", advance knowledge, and promote an "intellectual environment" and appreciate for "human difference and potential."
 
 ## Pareto Sponsors (\$2,500 - \$4,999)
 
@@ -18,10 +24,6 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 <br>
 
-![](/logos/unc_stats_or.png){style="float: left;padding-right:20px" width="330"}
-
-[UNC Department of Statistics and Operations Research ](https://stor.unc.edu/) focuses on developing the quantitative and computational skills practitioners need to to solve today's complex problems in statistics, probabilistic analysis, modeling, optimization, and evaluating systems. 
-
 
 
 <!-- ![](/logos/duke-pratt-logo-2.png){style="width:200px;float: left;padding-right:20px"} -->
@@ -30,7 +32,7 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 ## Lognormal Sponsors (\$1,000 - \$2,499)
 
-![](/logos/secondorder.png){style="float: left;padding-right:20px" width="320"}
+![](/logos/secondorder.png){style="float: left;padding-right:20px" width="300"}
 
 [2nd Order Solutions (2OS)](https://2os.com/) is a boutique credit advisory firm that provides credit risk consultancy services for clients ranging from top 10 banks to financial technology startups throughout the world.
 
@@ -38,26 +40,25 @@ Click [here](/sponsorship.html) for more information about how you can support D
 
 <br>
 
-![](logos/duke-bass-connections.png){style="float: left;padding-right:20px" width="320"}
+![](/logos/unc_stats_or.png){style="float: left;padding-right:20px" width="330"}
 
-[Duke Bass Connections](https://bassconnections.duke.edu/about) brings together students and faculty in interdisicplinary teams to research complex questions and societal challenges. Students gain experience doing academic research, collaborating with peers and faculty, and applying their knowledge and skills to solve problems and work with community partners.
+[UNC Department of Statistics and Operations Research ](https://stor.unc.edu/) focuses on developing the quantitative and computational skills practitioners need to to solve today's complex problems in statistics, probabilistic analysis, modeling, optimization, and evaluating systems. 
 
-<br>
+<!-- ![](logos/duke-bass-connections.png){style="float: left;padding-right:20px" width="320"} -->
 
-![](logos/duke-cct.png){style="float: left;padding-right:20px" width="300" height="120"} [Duke Center for Computational Thinking](https://computationalthinking.duke.edu/) works with partner programs and organizations across Duke to deliver learning opportunities that align with our vision of preparing all Duke students -- regardless of field of study -- for the digital twenty-first century.
+<!-- [Duke Bass Connections](https://bassconnections.duke.edu/about) brings together students and faculty in interdisicplinary teams to research complex questions and societal challenges. Students gain experience doing academic research, collaborating with peers and faculty, and applying their knowledge and skills to solve problems and work with community partners. -->
 
-<br>
+<!-- <br> -->
+
+<!-- ![](logos/duke-cct.png){style="float: left;padding-right:20px" width="300" height="120"} [Duke Center for Computational Thinking](https://computationalthinking.duke.edu/) works with partner programs and organizations across Duke to deliver learning opportunities that align with our vision of preparing all Duke students -- regardless of field of study -- for the digital twenty-first century. -->
+
+<!-- <br> -->
 
 ![](logos/duke-cs.png){style="float: left;padding-right:20px"}[The Department of Computer Science at Duke](https://www.cs.duke.edu/) is an internationally recognized leader in research and education. Undergraduates take classes with renowned faculty, engage in cutting-edge research, and build a strong foundation for future study or work in a wide variety of fields. One of the many hallmarks of Duke Computer Science's success has been fruitful collaborations among different groups within the department, with research groups in other departments at Duke, with other institutes, and with industry. --\>
 <br>
-![](/logos/ssri.png){style="float: left;padding-right:20px" width="250"}
+<!-- ![](/logos/ssri.png){style="float: left;padding-right:20px" width="250"} -->
 
-[Duke Social Science Research Institute (SSRI)](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. SSRI promotes multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline.
-
-<br>
-![](/logos/duke-trinity.png){style="float: left;padding-right:20px" width="250"}
-
-[Duke Trinity College of Arts & Sciences](https://trinity.duke.edu/) has three divisions - the Arts & Humanities, Natural Sciences and Social Sciences - serves about 80% of the student population, in addition to graduate and professional students. Its mission is to provide "a world-class liberal arts education to undergraduate students", advance knowledge, and promote an "intellectual environment" and appreciate for "human difference and potential."
+<!-- [Duke Social Science Research Institute (SSRI)](https://ssri.duke.edu/) brings together researchers with interests in problems that cross the various social and behavioral sciences, including problems that connect with the humanities and natural sciences. SSRI promotes multidisciplinary collaboration among such scholars as they work on important social issues that are challenging to address fully from within any given discipline. -->
 
 
 ## Acknowledgements
@@ -83,7 +84,7 @@ The [Office of Information Technology](https://oit.duke.edu/) manages Duke’s c
 
 <img src="/logos/NCShare.png" style="width:160px;float: left;padding-right:20px"/>
 
-The [North Carolina Shared Research & Education collaborative infrastructure](https://ncshare.org/about/) (NCShare) is bringing a high-speed research network to North Carolina’s minority and higher education institutions.
+The [North Carolina Shared Research & Education collaborative infrastructure](https://ncshare.org/about/) (NCShare) is an NSF-funded project bringing a high-speed research network to North Carolina’s minority and higher education institutions.
 
 <img src="/logos/asa.jpg" style="width:320px;float: left;padding-right:20px"/>
 
