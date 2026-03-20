@@ -94,7 +94,7 @@ Union (SSMU) at Duke University.
 ## Sponsors
 
 <a href="sponsors.html" class="sponsors-image-link">
-<img src="logos/sponsors.png" alt="DataFest Sponsors" class="sponsors-full-image" loading="lazy"/>
+<img src="logos/sponsors2026.png" alt="DataFest Sponsors" class="sponsors-full-image" loading="lazy"/>
 </a>
 :::
 

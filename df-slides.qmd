@@ -176,6 +176,9 @@ See the schedule for the most up-to-date info about the event: <https://dukestat
 
 ## Thank you, [sponsors](https://dukestatsci.github.io/datafest/sponsors.html)!
 
-![](logos/df24-sponsors.png){fig-align="center"}
+![](logos/sponsors2026.png){fig-align="center"}
+<!-- <a href="sponsors.html" class="sponsors-image-link"> -->
+<!-- <img src="logos/sponsors2026.png" alt="DataFest Sponsors" class="sponsors-full-image" loading="lazy"/> -->
+<!-- </a> -->
 
 # Meet the data!
