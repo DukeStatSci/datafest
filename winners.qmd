@@ -62,6 +62,7 @@ format:
 *Project recognized by the judges for outstanding achievement outside of the core award categories.*
 
 ["The Sepsis Burden: Geographic and Social Disparities represented in Stormont Vail Health"](/presentations/DataDevils2026.pdf) by Tien Thai, Claire Peng, Kaixiang Loke, and Lola Liu.
+
 *Judges were impressed by insights surrounding Sepsis cases and their prevalence being related to socio-economic status as seen by interpretation of the random-forest model.*
 
 ### Honorable mention
