@@ -5,7 +5,7 @@ format:
     toc: true
 ---
 
-# 2025 Winners
+# 2026 Winners
 
 ### Best Statistical Analysis
 
@@ -13,11 +13,9 @@ format:
 <!-- ![](images/2025/best_stat.jpeg) -->
 <!-- ::: -->
 
-[Spatial and Structural Optimization of Commercial Real Estate in
-California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Amanda Guo, and Neha Jatla.
+["From Patterns to Prevention: How Social Determinants Shape Type 2 Diabetes Care Pathways"](/presentations/CarolinaCorrelations2026.pdf) by Eric Hu, Ruitong Liu, Mia Zhou, and Gloria Yang.
 
-*The judges were impressed by their use of fragmentation as a predictor as well as leveraging residential trends to predict commercial trends.*
-
+*Their customer risk model particularly stood out to the judges as providing a potential for large eﬀiciency improvement and overall improved customer outcomes.*
 
 ### Best Insight
 
@@ -25,9 +23,9 @@ California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Aman
 <!-- ![](images/2025/best_insight.jpeg) -->
 <!-- ::: -->
 
-[(High) Rise of Manhattan Finance](/presentations/heels_excel_2025.pdf) by Alyssa Albritton, Duaa Alzouby, Layla Gusa, Madelyn Pallotta-Barton, and Riham Mohammed.
+["Financial Friction: Markov Analysis of Patient Journeys"](/presentations/Regressors2026.pdf) by Kat Craig and Sam Adamczeski.
 
-*The judges were impressed by their actionable and nuaced business insights.*
+*Judges were impressed by actionable insights that could help improve customer outcomes for those under financial stress. Their insights were based on specific real life examples.*
  
 
 ### Best Visualizations
@@ -36,9 +34,9 @@ California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Aman
 <!-- ![](images/2025/best_viz.jpeg) -->
 <!-- ::: -->
 
-["Where should I locate my new office?](/presentations/tldr_2025.pdf) by Jason Deng, Sophia Shen, Kevin Tao, Lucy Wang, and Thomas You.
+["Tracing the Last Mile"](/presentations/WeNeedACoolName2026.pdf) by Jovid Jumaev, Long Nguyen, Pratik Shrestha, and Tram Le.
 
-*The judges were impressed by this team's creation of visuals that were dynamic, consistent and infomative.*
+*Judges were impressed by their Sankey plot that detailed the customer journey for sepsis patients, noting this was the best visualization for a customer's journey they saw and helped to convey their overall story about quick diagnosis.*
 
 
 ### Best Use of Outside Data
@@ -47,9 +45,9 @@ California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Aman
 <!-- ![](images/2025/best_data.jpeg) -->
 <!-- ::: -->
 
-[Predicting Leasing Activity with Economic Indicators](/presentations/apple_seers_2025.pdf) by Cooper Ruffing, Liane Ma, Amy Xu, Hyunjin Lee, and Phillip Lin.
+["Can income predict the rate of chronic disease per county?"](/presentations/UpperCase2026.pdf) by Lucy Liu, Kaya Li, Sathvika Kommera, and Liam Kiley.
 
-*The judges were impressed by this team's use of FRED data coupled with unemployment data.*
+*Judges were impressed by this group's use of income data from the census which helped them to analyze how economic situation affected customers.*
 
 <!-- [**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo. -->
 
@@ -63,10 +61,14 @@ California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Aman
 
 *Project recognized by the judges for outstanding achievement outside of the core award categories.*
 
-[Resilience in Commercial Real Estate: Post-COVID Comebacks & Strategic Opportunities](/presentations/datafesters_2025.pdf) by Eric Ge, Ezi Ilabor, Yae Young Kim, and Kaley Wong.
+["The Sepsis Burden: Geographic and Social Disparities represented in Stormont Vail Health"](/presentations/DataDevils2026.pdf) by Tien Thai, Claire Peng, Kaixiang Loke, and Lola Liu.
+*Judges were impressed by insights surrounding Sepsis cases and their prevalence being related to socio-economic status as seen by interpretation of the random-forest model.*
 
-*The judges were impressed by this group's use of resilience scores to provide framework from which to gain real world value.*
+### Honorable mention
 
+["Healthcare Utilization & Social Determinants: Trends in ED Use, Admissions, & Length of Stay"](/presentationsd/appleSeers2026.pdf) by Hyunjin Lee, Liane Ma, Cooper Ruffing, and Amy Xu. 
+
+*Judges appreciated actionable insights based on regressions that tied length of stay and repeat visits to socioeconomic factors and barriers to health care providers.*
 
 # Past winners
 

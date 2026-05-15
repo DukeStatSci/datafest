@@ -2,6 +2,71 @@
 title: "Past winners"
 ---
 
+
+# 2025 Winners
+
+### Best Statistical Analysis
+
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_stat.jpeg) -->
+<!-- ::: -->
+
+[Spatial and Structural Optimization of Commercial Real Estate in
+California](/presentations/standard_deviants_2025.pdf) by Niyathi Gorantla, Amanda Guo, and Neha Jatla.
+
+*The judges were impressed by their use of fragmentation as a predictor as well as leveraging residential trends to predict commercial trends.*
+
+
+### Best Insight
+
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_insight.jpeg) -->
+<!-- ::: -->
+
+[(High) Rise of Manhattan Finance](/presentations/heels_excel_2025.pdf) by Alyssa Albritton, Duaa Alzouby, Layla Gusa, Madelyn Pallotta-Barton, and Riham Mohammed.
+
+*The judges were impressed by their actionable and nuaced business insights.*
+ 
+
+### Best Visualizations
+
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_viz.jpeg) -->
+<!-- ::: -->
+
+["Where should I locate my new office?](/presentations/tldr_2025.pdf) by Jason Deng, Sophia Shen, Kevin Tao, Lucy Wang, and Thomas You.
+
+*The judges were impressed by this team's creation of visuals that were dynamic, consistent and infomative.*
+
+
+### Best Use of Outside Data
+
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/best_data.jpeg) -->
+<!-- ::: -->
+
+[Predicting Leasing Activity with Economic Indicators](/presentations/apple_seers_2025.pdf) by Cooper Ruffing, Liane Ma, Amy Xu, Hyunjin Lee, and Phillip Lin.
+
+*The judges were impressed by this team's use of FRED data coupled with unemployment data.*
+
+<!-- [**Recruitment, distribution and questions**](/presentations/NEON-presentation.pdf) by Sophie Guo, Carrie Hang, Hanoc Codjie, Lipsa Tripathy & Alejandra Camargo. -->
+
+<!-- *The judges were impressed by formal vs. informal language analysis grounded in literature.* -->
+
+### Judges' Pick
+
+<!-- ::: {.column-margin} -->
+<!-- ![](images/2025/judge_pick.jpeg) -->
+<!-- ::: -->
+
+*Project recognized by the judges for outstanding achievement outside of the core award categories.*
+
+[Resilience in Commercial Real Estate: Post-COVID Comebacks & Strategic Opportunities](/presentations/datafesters_2025.pdf) by Eric Ge, Ezi Ilabor, Yae Young Kim, and Kaley Wong.
+
+*The judges were impressed by this group's use of resilience scores to provide framework from which to gain real world value.*
+
+
+
 # 2024 Winners
 
 ::: callout
